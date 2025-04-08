@@ -200,3 +200,11 @@
 *   [PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR) 开发团队。
 *   [Fuse.js](https://fusejs.io/) 提供客户端模糊搜索功能。
 *   相关库: MSS, Keyboard, BeautifulSoup, OpenCV, NumPy。
+
+## 演示视频
+
+
+https://github.com/user-attachments/assets/0469141c-b061-4482-adcf-d57b468892c9
+
+
+
