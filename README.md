@@ -19,6 +19,11 @@
 *   **区域选择图形界面**: 简单的图形界面，用于定义 OCR 的屏幕区域。
 *   **图像预处理**: 基本的图像预处理，可能提高 OCR 准确率。
 
+## 演示视频
+
+
+https://github.com/user-attachments/assets/0469141c-b061-4482-adcf-d57b468892c9
+
 ## 工作原理
 
 1.  **(一次性设置 / 数据更新):** 运行 `extract_questions.py`。此脚本会查找其目录中的所有 `.html` 文件，解析它们以提取问题、答案和解析，并将所有内容保存到 `combined_questions_data.json`。
@@ -201,10 +206,6 @@
 *   [Fuse.js](https://fusejs.io/) 提供客户端模糊搜索功能。
 *   相关库: MSS, Keyboard, BeautifulSoup, OpenCV, NumPy。
 
-## 演示视频
-
-
-https://github.com/user-attachments/assets/0469141c-b061-4482-adcf-d57b468892c9
 
 
 
