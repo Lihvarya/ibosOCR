@@ -24,6 +24,8 @@
 
 https://github.com/user-attachments/assets/0469141c-b061-4482-adcf-d57b468892c9
 
+B站完整版：https://www.bilibili.com/video/BV18WdbYLEFn
+
 ## 工作原理
 
 1.  **(一次性设置 / 数据更新):** 运行 `extract_questions.py`。此脚本会查找其目录中的所有 `.html` 文件，解析它们以提取问题、答案和解析，并将所有内容保存到 `combined_questions_data.json`。
