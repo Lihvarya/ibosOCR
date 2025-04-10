@@ -7198,5 +7198,2789 @@
         "student_answer": "未提供",
         "correct_answer": "A",
         "analysis": "tail -f实时跟踪日志文件（第4章4.3.3节）。"
+    },
+    {
+        "bank_name": "测试8",
+        "id": "4612940797941295748",
+        "number": 1,
+        "type": "单选",
+        "text": "要还原windows server 2008 域控制器的系统状态数据，需要在启动的时候选择（ ）。（选择1项）",
+        "options": [
+            "启动日志",
+            "目录还原模式",
+            "最后一次正确配置",
+            "带网络连接的安全模式"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试8",
+        "id": "4629892830300427010",
+        "number": 2,
+        "type": "单选",
+        "text": "网络操作系统中，哪个协议用于域名到 IP 地址的转换？",
+        "options": [
+            "HTTP",
+            "FTP",
+            "DNS",
+            "SMTP"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "C",
+        "analysis": "DNS（域名系统）协议用于将域名转换为 IP 地址。"
+    },
+    {
+        "bank_name": "测试8",
+        "id": "4631951644415089059",
+        "number": 3,
+        "type": "单选",
+        "text": "网络操作系统的核心是？",
+        "options": [
+            "内核",
+            "用户界面",
+            "网络协议",
+            "应用程序"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "网络操作系统的核心是内核，它负责管理系统的资源和提供基本的服务。"
+    },
+    {
+        "bank_name": "测试8",
+        "id": "4644790194957965826",
+        "number": 4,
+        "type": "多选",
+        "text": "将Linux命令输出重定向到文件的符号是？",
+        "options": [
+            ">",
+            ">>",
+            "<",
+            "<<"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B",
+        "analysis": ">覆盖写入，>>追加写入（第4章4.3.3节）。"
+    },
+    {
+        "bank_name": "测试8",
+        "id": "4655253440352940130",
+        "number": 5,
+        "type": "单选",
+        "text": "在Windows故障转移集群中，用于存储共享配置的磁盘称为？",
+        "options": [
+            "仲裁磁盘",
+            "数据磁盘",
+            "系统磁盘",
+            "备份磁盘"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "仲裁磁盘存储集群配置信息（第4章4.2.5节）。"
+    },
+    {
+        "bank_name": "测试8",
+        "id": "4659246149767371275",
+        "number": 6,
+        "type": "单选",
+        "text": "安装windows server 2008 操作系统后，第一次登录使用的账户是（ ）。（选择1项）",
+        "options": [
+            "只能使用administrator 登录",
+            "任何一个用户账户",
+            "在安装过程中创建用户账号",
+            "Guest"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试8",
+        "id": "4662247949187705917",
+        "number": 7,
+        "type": "单选",
+        "text": "在windows Server 2008中，要创建隐藏共享文件夹，只需要在共享名后加（ ）符号。（选择1项）",
+        "options": [
+            "%",
+            "$",
+            "&",
+            "*"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试8",
+        "id": "4688620342110686727",
+        "number": 8,
+        "type": "多选",
+        "text": "修改Linux运行级别的命令是？",
+        "options": [
+            "init",
+            "systemctl isolate",
+            "telinit",
+            "systemd"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B,C",
+        "analysis": "这些命令都可以改变运行级别（第4章4.3.3节）。"
+    },
+    {
+        "bank_name": "测试8",
+        "id": "4734709718679886310",
+        "number": 9,
+        "type": "多选",
+        "text": "Linux中用于管理多云环境的工具是？",
+        "options": [
+            "Terraform",
+            "Ansible",
+            "Azure Functions",
+            "Crossplane"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B,D",
+        "analysis": "Terraform Ansible Crossplane这些工具都支持多云管理（第4章4.3.3节）。"
+    },
+    {
+        "bank_name": "测试8",
+        "id": "4745513011451437081",
+        "number": 10,
+        "type": "单选",
+        "text": "下列关于网络操作系统的说法中，正确的是：",
+        "options": [
+            "网络操作系统只能在局域网中使用",
+            "网络操作系统与分布式操作系统的功能完全相同",
+            "网络操作系统主要用于管理网络硬件设备",
+            "网络操作系统可以实现文件共享和远程资源访问"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "D",
+        "analysis": "网络操作系统不仅限于局域网，也可用于广域网；与分布式操作系统功能有交集但不完全相同；其主要功能是提供资源共享和远程访问，而不仅仅是管理硬件设备。"
+    },
+    {
+        "bank_name": "测试8",
+        "id": "4778005001410336329",
+        "number": 11,
+        "type": "单选",
+        "text": "Hyper-V属于哪种虚拟化类型？",
+        "options": [
+            "全虚拟化",
+            "半虚拟化",
+            "硬件辅助虚拟化",
+            "容器虚拟化"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "Hyper-V是全虚拟化技术（第4章4.2.4节）。"
+    },
+    {
+        "bank_name": "测试8",
+        "id": "4779188647028293560",
+        "number": 12,
+        "type": "单选",
+        "text": "Linux中用于存储复制的工具是？",
+        "options": [
+            "DRBD",
+            "rsync",
+            "scp",
+            "nfs"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "DRBD（分布式复制块设备）提供存储复制（第4章4.3.3节）。"
+    },
+    {
+        "bank_name": "测试8",
+        "id": "4784376687285879127",
+        "number": 13,
+        "type": "多选",
+        "text": "Linux中用于自动化配置管理的工具是？",
+        "options": [
+            "SSL",
+            "Puppet",
+            "Chef",
+            "Ansible"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B,C,D",
+        "analysis": "Puppet Chef Ansible这些都是常用的配置管理工具（第4章4.3.3节）。"
+    },
+    {
+        "bank_name": "测试8",
+        "id": "4789050852870374911",
+        "number": 14,
+        "type": "单选",
+        "text": "DNS 的功能为",
+        "options": [
+            "将物理地址映射为网络地址",
+            "将IP地址映射为MAC地址",
+            "将MAC地址映射为IP地址",
+            "将主机名映射为IP地址"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "D",
+        "analysis": "DNS（域名系统）的功能是将主机名映射为IP地址。"
+    },
+    {
+        "bank_name": "测试8",
+        "id": "4805214297056811029",
+        "number": 15,
+        "type": "单选",
+        "text": "在网络操作系统中，以下哪个不是网络操作系统的特点？",
+        "options": [
+            "支持分布式文件系统",
+            "提供网络资源管理",
+            "支持实时调度",
+            "支持批处理作业"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "C",
+        "analysis": "网络操作系统的特点包括支持分布式文件系统、提供网络资源管理和支持批处理作业等，而支持实时调度不是网络操作系统的典型特点。"
+    },
+    {
+        "bank_name": "测试8",
+        "id": "4810232295753752439",
+        "number": 16,
+        "type": "单选",
+        "text": "查看运行中Docker容器的命令是？",
+        "options": [
+            "docker ps",
+            "docker ls",
+            "docker list",
+            "docker status"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "docker ps列出运行中的容器（第4章4.3.3节）。"
+    },
+    {
+        "bank_name": "测试8",
+        "id": "4876580735822702617",
+        "number": 17,
+        "type": "单选",
+        "text": "网络操作系统中，哪个协议用于电子邮件传输？",
+        "options": [
+            "HTTP",
+            "FTP",
+            "SMTP",
+            "SNMP"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "C",
+        "analysis": "SMTP（简单邮件传输协议）用于电子邮件传输。"
+    },
+    {
+        "bank_name": "测试8",
+        "id": "4877738453011562982",
+        "number": 18,
+        "type": "单选",
+        "text": "网络操作系统是一种",
+        "options": [
+            "系统软件",
+            "系统硬件",
+            "应用软件",
+            "支援软件"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "网络操作系统是系统软件的一种，用于管理和控制网络资源的分配和使用。"
+    },
+    {
+        "bank_name": "测试8",
+        "id": "4878452118386327474",
+        "number": 19,
+        "type": "多选",
+        "text": "使用Spotlight监视工具监视服务器性能时，可以监视的对象包括（ ）。（选择3项）",
+        "options": [
+            "监视进程",
+            "监视CPU",
+            "监视内存",
+            "监视文件夹"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B,C",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试8",
+        "id": "4903573917890845828",
+        "number": 20,
+        "type": "单选",
+        "text": "Windows Server中用于重置TCP/IP协议栈的命令是？",
+        "options": [
+            "netsh int ip reset",
+            "ipconfig /renew",
+            "netstat -ano",
+            "ping -f"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "netsh int ip reset可以重置TCP/IP栈（第4章4.2.5节）。"
+    },
+    {
+        "bank_name": "测试8",
+        "id": "4917458351585753947",
+        "number": 21,
+        "type": "多选",
+        "text": "Linux中用于限制进程CPU使用率的命令是？",
+        "options": [
+            "cp",
+            "nice",
+            "renice",
+            "cpulimit"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B,C,D",
+        "analysis": "nice/renice/cpulimit都可以控制CPU使用（第4章4.3.3节）。"
+    },
+    {
+        "bank_name": "测试8",
+        "id": "4927375039383286681",
+        "number": 22,
+        "type": "单选",
+        "text": "Linux中常用的容器技术是？",
+        "options": [
+            "VMware",
+            "KVM",
+            "Xen",
+            "Docker"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "D",
+        "analysis": "Docker是Linux主流容器平台（第4章4.3.1节）。"
+    },
+    {
+        "bank_name": "测试8",
+        "id": "4951237330717368320",
+        "number": 23,
+        "type": "单选",
+        "text": "Windows Server中用于监控性能的图形化工具是？",
+        "options": [
+            "性能监视器",
+            "任务管理器",
+            "资源监视器",
+            "事件查看器"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "性能监视器提供详细的性能图表（第4章4.2.5节）。"
+    },
+    {
+        "bank_name": "测试8",
+        "id": "4971366283587671939",
+        "number": 24,
+        "type": "多选",
+        "text": "Windows Server中用于远程批量管理的协议是？",
+        "options": [
+            "WinRM",
+            "RDP",
+            "SSL",
+            "SSH"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B,D",
+        "analysis": "WinRM RDP SSH这些协议都支持远程管理（第4章4.2.5节）。"
+    },
+    {
+        "bank_name": "测试8",
+        "id": "4998770496106863463",
+        "number": 25,
+        "type": "单选",
+        "text": "你是公司的网络管理员，工作职责之一就是负责维护文件服务器。你想审核windows server2008服务器上的共享word文件被删除情况，需要启动审核策略的（ ）。（选择1项）",
+        "options": [
+            "审核策略更改",
+            "审核登录事件",
+            "审核对象访问",
+            "审核账户管理"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "C",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试8",
+        "id": "5008665220985038291",
+        "number": 26,
+        "type": "单选",
+        "text": "网络操作系统通常不包括以下哪种类型的服务？",
+        "options": [
+            "Web服务",
+            "数据库服务",
+            "邮件服务",
+            "图形设计服务"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "D",
+        "analysis": "Web服务、数据库服务和邮件服务都是网络操作系统常见的服务类型，而图形设计服务不是网络操作系统提供的服务。"
+    },
+    {
+        "bank_name": "测试8",
+        "id": "5011193547764747856",
+        "number": 27,
+        "type": "多选",
+        "text": "在网络操作系统中，以下哪个是常用的网络操作系统？",
+        "options": [
+            "Unix",
+            "Windows",
+            "Linux",
+            "macOS"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B,C",
+        "analysis": "Windows和Linux是常用的网络操作系统，Unix虽然也是网络操作系统，但在现代应用中不如Windows和Linux普及。macOS主要用于苹果公司的个人计算机产品，不是常用的网络操作系统。"
+    },
+    {
+        "bank_name": "测试8",
+        "id": "5012150726910913909",
+        "number": 28,
+        "type": "单选",
+        "text": "Windows Server中用于限制用户登录时间的命令是？",
+        "options": [
+            "net user",
+            "net accounts",
+            "net config",
+            "net time"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "net user username /times可以设置登录时间（第4章4.2.5节）。"
+    },
+    {
+        "bank_name": "测试8",
+        "id": "5014286594822922808",
+        "number": 29,
+        "type": "单选",
+        "text": "网络操作系统中，以下哪个 / 些安装常见的网络服务软件？",
+        "options": [
+            "Apache",
+            "Microsoft SQL Server",
+            "IIS",
+            "Adobe Photoshop"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "D",
+        "analysis": "Apache是Web服务器软件，Microsoft SQL Server是数据库服务器软件，IIS是微软提供的互联网信息服务，而Adobe Photoshop是图像处理软件，不属于网络服务软件。题目问的是“以下哪个/些安装常见的网络服务软件”，由于选项是单个选择，最符合题意的答案是包含多个网络服务软件的选项之外的最常见网络服务软件代表，这里理解为题目希望识别出不属于网络服务软件的选项，故选择D。"
+    },
+    {
+        "bank_name": "测试8",
+        "id": "5037854515794138657",
+        "number": 30,
+        "type": "单选",
+        "text": "在Windows Server中，哪个工具可以分析启动项对系统启动时间的影响？",
+        "options": [
+            "任务管理器",
+            "性能监视器",
+            "系统配置",
+            "事件查看器"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "C",
+        "analysis": "系统配置（msconfig）可以管理启动项（第4章4.2.5节）。"
+    },
+    {
+        "bank_name": "测试8",
+        "id": "5043570517430220331",
+        "number": 31,
+        "type": "单选",
+        "text": "在客户 / 服务器模式下的网络操作系统主要指的是",
+        "options": [
+            "重定向程序和传输协议软件",
+            "工作站操作系统",
+            "服务器操作系统",
+            "网络服务软件和传输协议软件"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "C",
+        "analysis": "在客户/服务器模式下，网络操作系统主要指的是服务器操作系统，负责管理服务器资源和提供网络服务。"
+    },
+    {
+        "bank_name": "测试8",
+        "id": "5057197403707296689",
+        "number": 32,
+        "type": "单选",
+        "text": "Linux中用于增量备份的命令是？",
+        "options": [
+            "cpio",
+            "tar",
+            "dd",
+            "rsync"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "D",
+        "analysis": "rsync支持增量备份（第4章4.3.3节）。"
+    },
+    {
+        "bank_name": "测试8",
+        "id": "5063652425998813106",
+        "number": 33,
+        "type": "多选",
+        "text": "网络操作系统的用户认证方式有？",
+        "options": [
+            "密码认证",
+            "证书认证",
+            "指纹认证",
+            "面部识别认证"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B",
+        "analysis": "网络操作系统的用户认证方式通常包括密码认证和证书认证，指纹认证和面部识别认证虽然也是认证方式，但在网络操作系统中不常用或需要特定硬件支持。"
+    },
+    {
+        "bank_name": "测试8",
+        "id": "5065636869288789876",
+        "number": 34,
+        "type": "单选",
+        "text": "小王负责管理一个Windows Server 2008域模式的网络，一个用户向小王报告说出于工作关系他要出差两个月，为了提高网络的安全性，在这两个月中小王应该( )处理该用户账号。 （选择1项）",
+        "options": [
+            "将该用户账号的删除，待该用户出差回来再为他创建一个新账号",
+            "在用户属性中将该用户的账号禁用，待该用户出差回来再启用该账号",
+            "将该用户从所属的组中全部删除，待该用户出差回来再加入到原来的组",
+            "将该用户的一切权限全部删除，待该用户出差回来再重新赋予相应权限"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试8",
+        "id": "5067987561753913501",
+        "number": 35,
+        "type": "单选",
+        "text": "管理员小王想让工作组中的用户自己能够配置本机的网络IP设置，但是又不想让他们拥有其它的额外管理权限，那么小王应该将其加入（ ）组。（选择1项）",
+        "options": [
+            "Administrators",
+            "Power users",
+            "Users",
+            "Network configuration operators"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "D",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试8",
+        "id": "5085918830032969984",
+        "number": 36,
+        "type": "多选",
+        "text": "查看Linux系统启动时间的命令是？",
+        "options": [
+            "uptime",
+            "who -b",
+            "last reboot",
+            "init"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B,C",
+        "analysis": "这些命令都可以查看系统启动信息（第4章4.3.3节）。"
+    },
+    {
+        "bank_name": "测试8",
+        "id": "5118958912457441453",
+        "number": 37,
+        "type": "单选",
+        "text": "Linux中查找文件名包含\"log\"的文件的命令是？",
+        "options": [
+            "find / -name \"log\"",
+            "grep \"log\" /var/log/*",
+            "ls -l | grep log",
+            "locate log"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "find按文件名搜索（第4章4.3.3节）。"
+    },
+    {
+        "bank_name": "测试8",
+        "id": "5132455397664252321",
+        "number": 38,
+        "type": "多选",
+        "text": "Windows Server中实现高可用的功能是？",
+        "options": [
+            "故障转移集群",
+            "网络负载平衡",
+            "存储副本",
+            "任务管理器"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B,C",
+        "analysis": "故障转移集群 网络负载平衡 存储副本这些功能都可以提高可用性（第4章4.2.1节）。"
+    },
+    {
+        "bank_name": "测试8",
+        "id": "5141236951086266144",
+        "number": 39,
+        "type": "单选",
+        "text": "在网络操作系统中，下列哪项不是网络服务的类型？",
+        "options": [
+            "域名服务",
+            "邮件服务",
+            "数据库服务",
+            "视频游戏服务"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "D",
+        "analysis": "域名服务、邮件服务和数据库服务都是常见的网络服务类型，而视频游戏服务通常不被归类为网络操作系统的基本服务类型。"
+    },
+    {
+        "bank_name": "测试8",
+        "id": "5143605097348808673",
+        "number": 40,
+        "type": "单选",
+        "text": "Windows Server中用于管理用户的命令行工具是？",
+        "options": [
+            "adduser",
+            "useradd",
+            "usermod",
+            "net user"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "D",
+        "analysis": "net user管理Windows用户（第4章4.2.3节）。"
+    },
+    {
+        "bank_name": "测试8",
+        "id": "5149091894654002619",
+        "number": 41,
+        "type": "单选",
+        "text": "Windows Server中用于加密整个磁盘的功能是？",
+        "options": [
+            "BitLocker",
+            "EFS",
+            "TPM",
+            "SSL"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "BitLocker提供全盘加密（第4章4.2.5节）。"
+    },
+    {
+        "bank_name": "测试8",
+        "id": "5161657025691409282",
+        "number": 42,
+        "type": "多选",
+        "text": "以下哪些协议属于 TCP/IP 协议族？",
+        "options": [
+            "IP",
+            "TCP",
+            "UDP",
+            "HTTP"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B,C,D",
+        "analysis": "TCP/IP协议族包括IP、TCP、UDP等协议，而HTTP是基于TCP的应用层协议，也属于TCP/IP协议族的一部分。"
+    },
+    {
+        "bank_name": "测试8",
+        "id": "5242879988911371466",
+        "number": 43,
+        "type": "单选",
+        "text": "Windows Server中用于提供Web服务的组件是？",
+        "options": [
+            "IIS",
+            "SQL Server",
+            "Exchange Server",
+            "Active Directory"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "IIS（Internet信息服务）是Windows的Web服务器（第4章4.2.1节）。"
+    },
+    {
+        "bank_name": "测试8",
+        "id": "5253871956847180689",
+        "number": 44,
+        "type": "单选",
+        "text": "网络操作系统的主要功能不包括以下哪一项？",
+        "options": [
+            "文件服务",
+            "打印服务",
+            "网络管理",
+            "视频播放"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "D",
+        "analysis": "网络操作系统的主要功能包括文件服务、打印服务、网络管理等，而视频播放不是其主要功能。"
+    },
+    {
+        "bank_name": "测试8",
+        "id": "5254494412081836183",
+        "number": 45,
+        "type": "单选",
+        "text": "在windows server 2008系统中，默认的密码最长使用时间是（ ）（选择1项）",
+        "options": [
+            "30 天",
+            "35天",
+            "42天",
+            "48天"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "C",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试8",
+        "id": "5304875229589478094",
+        "number": 46,
+        "type": "单选",
+        "text": "Linux中用于抓取网络数据包的工具是？",
+        "options": [
+            "tcpdump",
+            "wireshark",
+            "ngrep",
+            "以上都是"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "D",
+        "analysis": "这些工具都可以抓取网络包（第4章4.3.3节）。"
+    },
+    {
+        "bank_name": "测试8",
+        "id": "5309460856396258008",
+        "number": 47,
+        "type": "单选",
+        "text": "在windows Server 2008中基本磁盘类型中，一块磁盘最多可以创建多少( )个主分区？（选择1项）",
+        "options": [
+            "2",
+            "3",
+            "4",
+            "5"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "C",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试8",
+        "id": "5322224815995591960",
+        "number": 48,
+        "type": "多选",
+        "text": "Windows Server中用于查看路由表的命令是？",
+        "options": [
+            "route print",
+            "netstat -r",
+            "ipconfig /all",
+            "Corosync"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B",
+        "analysis": "route print netstat -r这两个命令都可以显示路由表（第4章4.2.5节）。"
+    },
+    {
+        "bank_name": "测试8",
+        "id": "5364054080700069705",
+        "number": 49,
+        "type": "多选",
+        "text": "在Linux中，用于检查容器安全性的工具是？",
+        "options": [
+            "libvirt",
+            "lynis",
+            "openscap",
+            "docker-bench-security"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B,C,D",
+        "analysis": "docker-bench-security lynis openscap这些工具都可以检查容器安全（第4章4.3.3节）。"
+    },
+    {
+        "bank_name": "测试8",
+        "id": "5370048188459256545",
+        "number": 50,
+        "type": "单选",
+        "text": "边缘计算的主要特点是？",
+        "options": [
+            "低延迟",
+            "数据本地处理",
+            "减少带宽消耗",
+            "以上都是"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "D",
+        "analysis": "这些都是边缘计算的优势（第4章4.3.3节）。"
+    },
+    {
+        "bank_name": "测试8",
+        "id": "5375710113681111800",
+        "number": 51,
+        "type": "单选",
+        "text": "在Windows server 2008 系统中，以下 （ ）是镜像卷的特点。（选择1项）",
+        "options": [
+            "磁盘空间利用率为100%",
+            "具有容错功能",
+            "由两块磁盘以上的空间组成",
+            "镜像卷所在的磁盘提供的空间不必相同"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试8",
+        "id": "5380951716981333932",
+        "number": 52,
+        "type": "单选",
+        "text": "Windows Server中用于恢复系统的命令行工具是？",
+        "options": [
+            "dism",
+            "sfc",
+            "chkdsk",
+            "bootrec"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "DISM（部署映像服务和管理）可以修复系统（第4章4.2.5节）。"
+    },
+    {
+        "bank_name": "测试8",
+        "id": "5386800712251039660",
+        "number": 53,
+        "type": "单选",
+        "text": "Linux系统启动过程中第一个加载的程序是？",
+        "options": [
+            "init",
+            "systemd",
+            "BIOS",
+            "GRUB"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "D",
+        "analysis": "GRUB是Linux的引导加载程序（第4章4.3.2节）。"
+    },
+    {
+        "bank_name": "测试8",
+        "id": "5400561226161350117",
+        "number": 54,
+        "type": "单选",
+        "text": "在windows server 2008中，要改变ping命令每次发送的数据包大小，使用（ ）。（选择1项）",
+        "options": [
+            "a) –l",
+            "b) –a",
+            "c) –t",
+            "d) -?"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试8",
+        "id": "5418692519122986616",
+        "number": 55,
+        "type": "多选",
+        "text": "下列哪些卷可以提高磁盘性能哪些卷可以容错（ ）（选择2项）",
+        "options": [
+            "简单卷",
+            "跨区卷",
+            "镜像卷",
+            "RAID5卷"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "C,D",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试8",
+        "id": "5423698484079342787",
+        "number": 56,
+        "type": "多选",
+        "text": "赋予Shell脚本执行权限的命令是？",
+        "options": [
+            "chmod +x script.sh",
+            "chmod 755 script.sh",
+            "chown user script.sh",
+            "chmod 633 script.sh"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B",
+        "analysis": "+x或755均可赋予执行权限（第4章4.3.3节）。"
+    },
+    {
+        "bank_name": "测试8",
+        "id": "5468853249340295532",
+        "number": 57,
+        "type": "多选",
+        "text": "以下哪几项是网络操作系统的基本功能？",
+        "options": [
+            "文件服务",
+            "打印服务",
+            "硬件维修",
+            "通信服务"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B,D",
+        "analysis": "硬件维修不属于操作系统功能（第4章4.1.1节）。"
+    },
+    {
+        "bank_name": "测试8",
+        "id": "5487469222214801211",
+        "number": 58,
+        "type": "单选",
+        "text": "下列关于网络操作系统的说法中，错误的是：",
+        "options": [
+            "网络操作系统可以实现进程间通信",
+            "网络操作系统可以实现分布式计算",
+            "网络操作系统可以实现远程登录",
+            "网络操作系统可以实现单机操作"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "D",
+        "analysis": "网络操作系统主要用于管理网络资源，提供网络通信、分布式计算和远程登录等功能，而单机操作通常不需要网络操作系统，单机操作系统即可满足需求。"
+    },
+    {
+        "bank_name": "测试8",
+        "id": "5488811467018806409",
+        "number": 59,
+        "type": "单选",
+        "text": "Windows容器使用的隔离技术是？",
+        "options": [
+            "Hyper-V隔离",
+            "进程隔离",
+            "两者都有",
+            "都不使用"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "C",
+        "analysis": "Windows容器支持两种隔离模式（第4章4.2.4节）。"
+    },
+    {
+        "bank_name": "测试8",
+        "id": "5515624627692692345",
+        "number": 60,
+        "type": "单选",
+        "text": "创建Docker容器的命令是？",
+        "options": [
+            "docker run",
+            "docker build",
+            "docker pull",
+            "docker images"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "docker run从镜像启动容器（第4章4.3.3节）。"
+    },
+    {
+        "bank_name": "测试8",
+        "id": "5529194300368532741",
+        "number": 61,
+        "type": "单选",
+        "text": "以下哪个协议用于动态分配IP地址？",
+        "options": [
+            "DNS",
+            "DHCP",
+            "HTTP",
+            "FTP"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "DHCP（动态主机配置协议）用于自动分配IP地址（第4章4.2.3节）。"
+    },
+    {
+        "bank_name": "测试8",
+        "id": "5544339998108233060",
+        "number": 62,
+        "type": "多选",
+        "text": "安装网络操作系统时，需要考虑的因素有？",
+        "options": [
+            "硬件兼容性",
+            "功能需求",
+            "安全性",
+            "成本"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B,C,D",
+        "analysis": "安装网络操作系统时，需要考虑硬件兼容性、功能需求、安全性和成本等多个因素。"
+    },
+    {
+        "bank_name": "测试8",
+        "id": "5555176020698648100",
+        "number": 63,
+        "type": "单选",
+        "text": "操作系统在计算机系统中位于（ ）之间",
+        "options": [
+            "硬件层和语言处理层之间",
+            "中央处理器CPU中",
+            "语言处理层和应用程序层之间",
+            "应用程序层和用户之间"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "C",
+        "analysis": "操作系统位于硬件层和应用程序层之间，负责管理硬件资源和提供应用程序接口。"
+    },
+    {
+        "bank_name": "测试8",
+        "id": "5585567458072353019",
+        "number": 64,
+        "type": "多选",
+        "text": "Linux中常用的集群管理工具是？",
+        "options": [
+            "Pacemaker",
+            "Corosync",
+            "DRBD",
+            "rsync"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B,C",
+        "analysis": "Pacemaker Corosync DRBD这些工具常用于Linux集群（第4章4.3.3节）。"
+    },
+    {
+        "bank_name": "测试8",
+        "id": "5626225579096251842",
+        "number": 65,
+        "type": "单选",
+        "text": "在网络操作系统中，哪个服务允许用户远程访问文件？",
+        "options": [
+            "FTP",
+            "Telnet",
+            "NFS",
+            "SMTP"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "C",
+        "analysis": "NFS（网络文件系统）允许用户远程访问文件。FTP主要用于文件传输，Telnet用于远程登录，SMTP用于电子邮件传输。"
+    },
+    {
+        "bank_name": "测试8",
+        "id": "5639298994538161362",
+        "number": 66,
+        "type": "单选",
+        "text": "Windows Server的启动配置文件是？",
+        "options": [
+            "boot.ini",
+            "BCD",
+            "config.sys",
+            "autoexec.bat"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "Windows使用BCD（启动配置数据）存储启动信息（第4章4.2.2节）。"
+    },
+    {
+        "bank_name": "测试8",
+        "id": "5657849767537097951",
+        "number": 67,
+        "type": "单选",
+        "text": "电子邮件地址由两部分组成，即用户名 @ （ ）",
+        "options": [
+            "DNS",
+            "域名",
+            "匿名",
+            "设备名"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "D",
+        "analysis": "电子邮件地址由用户名和域名组成，中间用@符号分隔。"
+    },
+    {
+        "bank_name": "测试8",
+        "id": "5663221501866279640",
+        "number": 68,
+        "type": "单选",
+        "text": "Linux中用于安全文件传输的协议是？",
+        "options": [
+            "FTP",
+            "SFTP",
+            "TFTP",
+            "HTTP"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "SFTP（SSH文件传输协议）提供加密传输（第4章4.3.3节）。"
+    },
+    {
+        "bank_name": "测试8",
+        "id": "5702902791809803876",
+        "number": 69,
+        "type": "单选",
+        "text": "Windows Server中创建系统映像备份的工具是？",
+        "options": [
+            "系统还原",
+            "磁盘管理",
+            "Windows备份",
+            "注册表编辑器"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "C",
+        "analysis": "Windows备份可以创建系统映像（第4章4.2.3节）。"
+    },
+    {
+        "bank_name": "测试8",
+        "id": "5729932164967559742",
+        "number": 70,
+        "type": "单选",
+        "text": "在混合云架构中，用于实现网络互联的技术是？",
+        "options": [
+            "VPN",
+            "ExpressRoute",
+            "Direct Connect",
+            "以上都是"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "D",
+        "analysis": "这些技术都可以实现混合云网络连接（第4章4.3.3节）。"
+    },
+    {
+        "bank_name": "测试8",
+        "id": "5734409611360105248",
+        "number": 71,
+        "type": "单选",
+        "text": "在windows server 2008 中，在任务计划程序中创建一个任务时，必须要指定一个（ ），否则相应的任务永远不会自动执行。（选择1项）",
+        "options": [
+            "描述信息",
+            "触发器",
+            "条件",
+            "历史信息"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试8",
+        "id": "5741974414266731016",
+        "number": 72,
+        "type": "多选",
+        "text": "Linux中用于扫描rootkit的工具是？",
+        "options": [
+            "chkrootkit",
+            "nfs",
+            "lynis",
+            "rkhunter"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,C,D",
+        "analysis": "chkrootkit rkhunter lynis这些工具都可以检测rootkit（第4章4.3.3节）。"
+    },
+    {
+        "bank_name": "测试8",
+        "id": "5745115773349984151",
+        "number": 73,
+        "type": "多选",
+        "text": "在 Linux 中，用于服务网格 (Service Mesh) 的工具是？",
+        "options": [
+            "Mesh",
+            "Linkerd",
+            "Consul",
+            "Istio"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B,C,D",
+        "analysis": "Istio Linkerd Consul这些工具都实现了服务网格（第4章4.3.3节）。"
+    },
+    {
+        "bank_name": "测试8",
+        "id": "5760733915866580967",
+        "number": 74,
+        "type": "单选",
+        "text": "当为某个硬件安装或升级了驱动程序以后重启计算机时，出现蓝屏。这时可以在启动时选择（ ），使系统恢复到安装驱动程序前的状态。（选择1项）",
+        "options": [
+            "目录服务还原模式",
+            "启用低分辨率视频",
+            "最近一次正确配置",
+            "正常启动Windows"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "C",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "4644880558461361582",
+        "number": 1,
+        "type": "单选",
+        "text": "在Windows中，利用“回收站”。（ ）",
+        "options": [
+            "A. 只能恢复刚刚被删除的文件.文件夹",
+            "B. 可以在任何时刻恢复以前被删除的所有文件、文件夹",
+            "C. 只能在一定时间范围内恢复被删除的硬盘上的文件、文件夹",
+            "D. 只能在一定时间范围内恢复被删除的软盘上的文件、文件夹"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "C",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "4670021719406433313",
+        "number": 2,
+        "type": "单选",
+        "text": "“文件”菜单中的命令项“发送”用于（ ）",
+        "options": [
+            "A. 把选择好的文件复制到另一个文件夹中",
+            "B. 把选择好的文件交给某个应用程序去处理",
+            "C. 把选择好的文件或文件夹装入内存",
+            "D. 把选择好的文件或文件夹复制到一张软盘或B或C"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "D",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "4675537521523629303",
+        "number": 3,
+        "type": "单选",
+        "text": "Windows中用于导出事件日志的命令是？",
+        "options": [
+            "wevtutil epl",
+            "export-eventlog",
+            "两者都是",
+            "都不是"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "wevtutil epl可以导出事件日志（第4章4.2.5节）"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "4681016658181591626",
+        "number": 4,
+        "type": "单选",
+        "text": "以下不属于网络操作系统安全措施的是？",
+        "options": [
+            "防火墙",
+            "加密技术",
+            "定期更新系统",
+            "安装游戏软件"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "D",
+        "analysis": "防火墙、加密技术和定期更新系统都是网络操作系统中常见的安全措施。而安装游戏软件与网络操作系统的安全无直接关系，因此不属于安全措施。"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "4681974056560602587",
+        "number": 5,
+        "type": "多选",
+        "text": "在Linux中，用于配置管理的工具是？",
+        "options": [
+            "Ansible",
+            "Docker",
+            "Chef",
+            "SaltStack"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,C,D",
+        "analysis": "Ansible、SaltStack和Chef是配置管理工具，Docker是容器平台（第4章4.3.3节）"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "4700450312783709202",
+        "number": 6,
+        "type": "单选",
+        "text": "Windows中用于批量部署的工具是？",
+        "options": [
+            "MDT",
+            "WDS",
+            "SCCM",
+            "以上都是"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "D",
+        "analysis": "这些工具都支持批量部署（第4章4.2.5节）"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "4725736208349267959",
+        "number": 7,
+        "type": "单选",
+        "text": "Windows Server中用于限制CPU使用的工具是？",
+        "options": [
+            "资源管理器",
+            "任务管理器",
+            "两者都是",
+            "都不是"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "资源管理器可以设置CPU限制（第4章4.2.5节）"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "4732674567895875324",
+        "number": 8,
+        "type": "单选",
+        "text": "Windows的“回收站”是（ ）",
+        "options": [
+            "A. 硬盘中的一块区域",
+            "B. 软盘中的一块区域",
+            "C. 高速缓存中的一块区域",
+            "D. 内存中的一块区域"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "4740651299635807973",
+        "number": 9,
+        "type": "多选",
+        "text": "Windows Server中用于集中监控的工具是？",
+        "options": [
+            "SCOM",
+            "PRTG",
+            "SolarWinds",
+            "Event Viewer"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B,C",
+        "analysis": "SCOM、PRTG和SolarWinds是专业监控工具，Event Viewer仅用于日志（第4章4.2.5节）"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "4741506780568968857",
+        "number": 10,
+        "type": "单选",
+        "text": "以下哪种不是常见的网络操作系统？",
+        "options": [
+            "Windows Server",
+            "Linux",
+            "Android",
+            "macOS Server"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "C",
+        "analysis": "Android是一种基于Linux内核的操作系统，主要用于移动设备，不属于常见的网络操作系统范畴。"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "4742943379328303435",
+        "number": 11,
+        "type": "多选",
+        "text": "Linux中用于安全审计的工具是？",
+        "options": [
+            "auditd",
+            "lynis",
+            "OpenSCAP",
+            "Wireshark"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B,C",
+        "analysis": "auditd、lynis和OpenSCAP用于安全审计，Wireshark是抓包工具（第4章4.3.3节）"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "4772303517187631622",
+        "number": 12,
+        "type": "单选",
+        "text": "鼠标是Windows环境中的一种重要的（ ）",
+        "options": [
+            "A. 画图工具",
+            "B. 指示工具",
+            "C. 输入工具",
+            "D. 输出工具"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "C",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "4796951500731719495",
+        "number": 13,
+        "type": "单选",
+        "text": "在Linux中，用于日志时间戳转换的命令是？",
+        "options": [
+            "date",
+            "awk",
+            "perl",
+            "以上都是"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "D",
+        "analysis": "这些工具都可以处理时间戳（第4章4.3.3节）"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "4830784344583218592",
+        "number": 14,
+        "type": "单选",
+        "text": "Windows桌面上窗口的大小一般情况下可以（ ）",
+        "options": [
+            "A. 仅变大",
+            "B. 大小皆可变",
+            "C. 仅变小",
+            "D. 不能变大和变小"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "4837907057083302118",
+        "number": 15,
+        "type": "单选",
+        "text": "Windows中用于查看PATH变量的命令是？",
+        "options": [
+            "echo %PATH%",
+            "set PATH",
+            "两者都是",
+            "都不是"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "echo %PATH%显示PATH变量（第4章4.2.5节）"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "4839482136134198531",
+        "number": 16,
+        "type": "单选",
+        "text": ".在Windows中，使用鼠标选定不连续的多个文件时，应该选按住（ ）键，然后逐个单击要选定的文件。[1分]",
+        "options": [
+            "A. CTRL",
+            "B. SHIFT",
+            "C. TAB",
+            "D. ESC"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "4839732303697341476",
+        "number": 17,
+        "type": "单选",
+        "text": "Windows中用于检测恶意软件的工具是？",
+        "options": [
+            "Windows Defender",
+            "Microsoft Defender ATP",
+            "两者都是",
+            "都不是"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "C",
+        "analysis": "这两个工具都提供恶意软件防护（第4章4.2.5节）"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "4847904972554128680",
+        "number": 18,
+        "type": "单选",
+        "text": ".在Windows的“我的电脑”窗口中，若已选定了文件或文件夹，为了设置其属性，可以打开属性对话框的操作是（ ）",
+        "options": [
+            "A. 用鼠标右键单击“文件”菜单中的“属性”命令",
+            "B. 用鼠标右键单击该文件或文件夹名，然后从弹出的快捷菜单中选择",
+            "C. 用鼠标右键单击“任务栏”中的空白处，然后从弹出的快捷菜单中",
+            "D. 用鼠标右键单击“查看”菜单中“工具栏”下的“属性”图标"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "4848242990420536215",
+        "number": 19,
+        "type": "单选",
+        "text": "Windows为用户提供的环境是（ ）",
+        "options": [
+            "A. 单用户，单任务",
+            "B. 单用户，多任务",
+            "C. 多用户，单任务",
+            "D. 多用户，多任务"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "4862024715427640629",
+        "number": 20,
+        "type": "单选",
+        "text": "Linux系统中，如何查看当前登录用户？",
+        "options": [
+            "A. who",
+            "B. user",
+            "C. login",
+            "D. users"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "4870121219240104321",
+        "number": 21,
+        "type": "多选",
+        "text": "在Linux中，用于日志集中管理的工具是？",
+        "options": [
+            "ELK Stack",
+            "Syslog",
+            "Fluentd",
+            "Graylog"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,C,D",
+        "analysis": "ELK、Graylog和Fluentd支持集中管理，Syslog是基础协议（第4章4.3.3节）"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "4874874401519448087",
+        "number": 22,
+        "type": "单选",
+        "text": "在Windows中“任务栏”的主要作用是（ ）",
+        "options": [
+            "A. 显示系统的所有功能",
+            "B. 只显示当前活动窗口名",
+            "C. 只显示正在后台工作的窗口名",
+            "D. 实现窗口间切换"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "D",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "4881183797850525740",
+        "number": 23,
+        "type": "单选",
+        "text": "为了正常退出Windows，用户采取安全操作是（ ）",
+        "options": [
+            "A. 在任意时刻关掉计算机电源",
+            "B. 选择系统菜单中的“关闭系统”并进行人机对话",
+            "C. 在没有任何程序执行的情况下关掉针算机的电源",
+            "D. 在没有任何程序执行的情况下按ALT+CLTR+DEL"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "4896387377725683650",
+        "number": 24,
+        "type": "单选",
+        "text": "在Linux系统中，哪个命令用于查看当前目录下的文件和文件夹？",
+        "options": [
+            "A. ls",
+            "B. pwd",
+            "C. cd",
+            "D. mkdir"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "4903683818201998584",
+        "number": 25,
+        "type": "多选",
+        "text": "Linux中用于跨版本升级的工具是？",
+        "options": [
+            "do-release-upgrade",
+            "yum upgrade",
+            "apt dist-upgrade",
+            "git pull"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B,C",
+        "analysis": "前三个是系统升级工具，git用于代码管理（第4章4.3.3节）"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "4908917940975903681",
+        "number": 26,
+        "type": "单选",
+        "text": "在Windows环境中，对磁盘文件进行有效管理的工具是（ ）",
+        "options": [
+            "A. 写字板",
+            "B. 我的公文包",
+            "C. 文件管理器",
+            "D. 资源管理器或文件管理器"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "D",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "4937451863279732171",
+        "number": 27,
+        "type": "单选",
+        "text": "Windows环境中，鼠标器成漏状表示（ ）",
+        "options": [
+            "A. Windows正在执行某一处理任务，请用户等待",
+            "B. Windows执行的程序出错，中止其执行",
+            "C. 提示用户注意某个事项，而不影响计算机工作",
+            "D. 等待用户键入Y或N，以便继续"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "4943701379228162390",
+        "number": 28,
+        "type": "单选",
+        "text": "以下哪种协议用于文件传输？",
+        "options": [
+            "HTTP",
+            "FTP",
+            "SMTP",
+            "TCP"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "FTP（File Transfer Protocol）是专门用于文件传输的协议。"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "4945544502778703404",
+        "number": 29,
+        "type": "单选",
+        "text": "Windows Server中用于优化启动速度的设置是？",
+        "options": [
+            "禁用不必要的服务",
+            "调整启动项",
+            "使用快速启动",
+            "以上都是"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "D",
+        "analysis": "这些方法都可以优化启动速度（第4章4.2.5节）"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "4955916301312664118",
+        "number": 30,
+        "type": "单选",
+        "text": "在Linux系统中，哪个命令用于查看当前系统的运行时间和平均负载？",
+        "options": [
+            "A. uptime",
+            "B. load",
+            "C. time",
+            "D. duration"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "5023225474928593048",
+        "number": 31,
+        "type": "单选",
+        "text": "Linux操作系统的内核作者是谁？",
+        "options": [
+            "A. Linus Torvalds",
+            "B. Dennis Ritchie",
+            "C. Ken Thompson",
+            "D. Bill Gates"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "5033439788367014848",
+        "number": 32,
+        "type": "单选",
+        "text": "在Windows中，“取消”按钮表示（ ）",
+        "options": [
+            "A. 什么都不做",
+            "B. 放弃当前的选择或操作",
+            "C. 继续做",
+            "D. 退出"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "5036745883998760328",
+        "number": 33,
+        "type": "单选",
+        "text": "在Linux中，用于网络加速的技术是？",
+        "options": [
+            "TCP BBR",
+            "QUIC",
+            "两者都是",
+            "都不是"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "C",
+        "analysis": "这些技术都可以优化网络性能（第4章4.3.3节）"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "5038209048990399467",
+        "number": 34,
+        "type": "多选",
+        "text": "在Linux中，用于优化磁盘I/O的调度算法是？",
+        "options": [
+            "FIFO",
+            "Deadline",
+            "NOOP",
+            "CFQ"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B,C,D",
+        "analysis": "CFQ、Deadline和NOOP是Linux I/O调度器，FIFO是通用算法（第4章4.3.3节）"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "5084763190692621187",
+        "number": 35,
+        "type": "单选",
+        "text": "Windows中用于恢复注册表的命令是？",
+        "options": [
+            "reg restore",
+            "reg import",
+            "两者都是",
+            "都不是"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "reg restore可以恢复注册表备份（第4章4.2.5节）"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "5093142320421138431",
+        "number": 36,
+        "type": "单选",
+        "text": "Windows的“桌面”指的是（ ）",
+        "options": [
+            "A. 整个屏幕",
+            "B. 全部窗口",
+            "C. 某个窗口",
+            "D. 活动窗口"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "5099746396412284514",
+        "number": 37,
+        "type": "单选",
+        "text": "在“我的电脑”窗口中用鼠标双击“软盘A：”图标，将会（ ）",
+        "options": [
+            "A. 格式化该软盘",
+            "B. 把该软盘内容复制到硬盘",
+            "C. 删除该软盘的所有文件",
+            "D. 显示该软盘的内容"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "D",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "5100371784811894236",
+        "number": 38,
+        "type": "单选",
+        "text": "Windows具有许多DOS所不具备的能特点，例如：（ ）",
+        "options": [
+            "A. 可同时运行多个程序，用户与这几个程序之间可同时进行交互操作",
+            "B. 可完全利用鼠标，而不能再使用键盘进行各种操作",
+            "C. 可使计算机不再需要程序，只需用户点一下鼠标就能完成各种操作",
+            "D. 支持即插即用，当前插入新硬件后，系统能自动识别并进行相关配置"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "5124706597218401470",
+        "number": 39,
+        "type": "单选",
+        "text": "在Linux中，用于容器运行时监控的工具是？",
+        "options": [
+            "cAdvisor",
+            "Sysdig",
+            "Docker stats",
+            "以上都是"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "D",
+        "analysis": "这些工具都支持容器监控（第4章4.3.3节）"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "5137200869460762031",
+        "number": 40,
+        "type": "单选",
+        "text": "Windows中用于查看时间源的命令是？",
+        "options": [
+            "w32tm /query /source",
+            "net time /querysntp",
+            "两者都是",
+            "都不是"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "这个命令显示当前时间源（第4章4.2.5节）"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "5144136218440766894",
+        "number": 41,
+        "type": "单选",
+        "text": "Windows是一种（ ）操作系统。",
+        "options": [
+            "A. 窗口",
+            "B. 图形化",
+            "C. 命令",
+            "D. 窗口方式多任务"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "5158518743917680461",
+        "number": 42,
+        "type": "单选",
+        "text": "下列四项中，不是文件属性的是（ ）",
+        "options": [
+            "A. 系统",
+            "B. 隐藏",
+            "C. 文档",
+            "D. 只读"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "5162817159350999112",
+        "number": 43,
+        "type": "多选",
+        "text": "Windows中用于管理SQL Server的命令行工具是？",
+        "options": [
+            "sqlcmd",
+            "bcp",
+            "mssql-cli",
+            "SSMS"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B,C",
+        "analysis": "sqlcmd、bcp和mssql-cli都是命令行工具，SSMS是图形界面（第4章4.2.5节）"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "5171226445512190747",
+        "number": 44,
+        "type": "单选",
+        "text": "在Windows环境下鼠标是重要的输入工具，而键盘（ ）",
+        "options": [
+            "A. 无法起作用",
+            "B. 仅能配合鼠标，在输入中起辅助作用",
+            "C. 仅能在菜单中运用，不能在窗口中操作",
+            "D. 也能完成几乎所有的操作"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "D",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "5189952573967094201",
+        "number": 45,
+        "type": "单选",
+        "text": "在Windows的“资源管理器”或“我的电脑”窗口中，要选择多个不相邻的文件，其选择文件的方法为（ ）",
+        "options": [
+            "A. 用鼠标逐个单击各文件",
+            "B. 用鼠标单击第一个文件，再用鼠标右键逐个单击各个文件",
+            "C. 按下CTRL键并保持，再用鼠标逐个单击各个文件",
+            "D. 按下Shift键并保持，用鼠标逐个单击各文件"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "C",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "5195097371341719064",
+        "number": 46,
+        "type": "单选",
+        "text": ".撤消一次或多次操作，可以用下面哪条命令（ ）。",
+        "options": [
+            "A. Alt+Z",
+            "B. Alt+Q",
+            "C. Ctrl+Z",
+            "D. Ctr1+Q"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "C",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "5196137625257045240",
+        "number": 47,
+        "type": "单选",
+        "text": "在 Linux 系统中，用于切换用户的命令是？",
+        "options": [
+            "cd",
+            "su",
+            "ls",
+            "pwd"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "在Linux系统中，su命令用于切换用户身份，而cd用于改变当前工作目录，ls用于列出目录内容，pwd用于显示当前工作目录的路径。"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "5200845978717996309",
+        "number": 48,
+        "type": "单选",
+        "text": "Docker中用于构建镜像的文件是？",
+        "options": [
+            "Dockerfile",
+            "docker-compose.yml",
+            "container.yaml",
+            "image.conf"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "Dockerfile定义镜像构建步骤（第4章4.3.3节）"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "5203309873944079724",
+        "number": 49,
+        "type": "单选",
+        "text": "Windows Server中用于修复启动问题的工具是？",
+        "options": [
+            "启动修复",
+            "系统还原",
+            "两者都是",
+            "都不是"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "C",
+        "analysis": "这两个工具都可以修复启动问题（第4章4.2.5节）"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "5214289983046852451",
+        "number": 50,
+        "type": "单选",
+        "text": "Windows中用于设置永久环境变量的工具是？",
+        "options": [
+            "系统属性",
+            "setx",
+            "两者都是",
+            "都不是"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "C",
+        "analysis": "这两种方法都可以设置永久变量（第4章4.2.5节）"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "5215957449756758961",
+        "number": 51,
+        "type": "多选",
+        "text": "Linux中用于调整内核参数的文件是？",
+        "options": [
+            "/etc/sysctl.conf",
+            "/proc/sys",
+            "/etc/security/limits.conf",
+            "/etc/hosts"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B,C",
+        "analysis": "前三个文件涉及内核参数和资源限制，/etc/hosts是域名解析（第4章4.3.3节）"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "5223713146375909859",
+        "number": 52,
+        "type": "单选",
+        "text": "Windows Server中用于时间同步的命令是？",
+        "options": [
+            "w32tm",
+            "net time",
+            "两者都是",
+            "都不是"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "C",
+        "analysis": "这两个命令都可以同步时间（第4章4.2.5节）"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "5227257514777630621",
+        "number": 53,
+        "type": "多选",
+        "text": "Linux中用于修复文件系统的命令是？",
+        "options": [
+            "fsck",
+            "e2fsck",
+            "xfs_repair",
+            "mkfs"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B,C",
+        "analysis": "前三个是修复工具，mkfs用于格式化（第4章4.3.3节）"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "5229370855413322772",
+        "number": 54,
+        "type": "单选",
+        "text": "在Linux系统中，以下哪个命令用于创建一个新文件夹？",
+        "options": [
+            "A. mkdir",
+            "B. makedir",
+            "C. newdir",
+            "D. create"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "5234036011121034640",
+        "number": 55,
+        "type": "单选",
+        "text": "Windows“开始”菜单中包含了Windows95系统的（ ）",
+        "options": [
+            "A. 主要功能",
+            "B. 全部功能",
+            "C. 部分功能",
+            "D. 初始化功能"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "5246593627525969499",
+        "number": 56,
+        "type": "单选",
+        "text": "Linux系统中，哪个命令用于查看当前系统的磁盘使用情况？",
+        "options": [
+            "A. df",
+            "B. disk",
+            "C. diskusage",
+            "D. space"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "5268217700919851252",
+        "number": 57,
+        "type": "单选",
+        "text": "Windows中用于设置服务启动类型的命令是？",
+        "options": [
+            "sc config",
+            "net config",
+            "两者都是",
+            "都不是"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "sc config可以设置启动类型（第4章4.2.5节）"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "5312783085840922495",
+        "number": 58,
+        "type": "单选",
+        "text": "在Linux中，哪个命令用于查看当前路径？",
+        "options": [
+            "A. path",
+            "B. pwd",
+            "C. cd",
+            "D. ls"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "5320933452638241852",
+        "number": 59,
+        "type": "多选",
+        "text": "Linux中用于网络流量控制的工具是？",
+        "options": [
+            "ping",
+            "iptables",
+            "nftables",
+            "tc"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B,C,D",
+        "analysis": "tc、iptables和nftables控制流量，ping是连通性测试（第4章4.3.3节）"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "5326662570571800039",
+        "number": 60,
+        "type": "单选",
+        "text": "Windows的运行需要一定的硬件环境，下面所有诸方面中有一条正确（ ）",
+        "options": [
+            "A. CPU必须是Pentium或其以上的",
+            "B. 内存容量至少32MB",
+            "C. 硬盘至少40MB以上",
+            "D. 必须配有网卡"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "C",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "5327915791713004193",
+        "number": 61,
+        "type": "多选",
+        "text": "在Linux中，用于系统迁移的工具是？",
+        "options": [
+            "scp",
+            "dd",
+            "clonezilla",
+            "rsync"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B,C,D",
+        "analysis": "rsync、dd和clonezilla支持系统迁移，scp仅用于文件传输（第4章4.3.3节）"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "5337083756430851928",
+        "number": 62,
+        "type": "单选",
+        "text": "网络操作系统中，用户权限最小的是？",
+        "options": [
+            "管理员",
+            "普通用户",
+            "来宾用户",
+            "超级用户"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "C",
+        "analysis": "在网络操作系统中，来宾用户的权限通常是最小的，仅具有基本的访问权限。"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "5340475323852527448",
+        "number": 63,
+        "type": "单选",
+        "text": ".Windows中的图标实际被保存在（ ）",
+        "options": [
+            "A. 内存中",
+            "B. 图形文件",
+            "C. CMOS",
+            "D. EPROM"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "5400759629128336521",
+        "number": 64,
+        "type": "单选",
+        "text": "Windows中用于限制磁盘配额的命令是？",
+        "options": [
+            "fsutil quota",
+            "diskquota",
+            "两者都是",
+            "都不是"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "fsutil quota管理磁盘配额（第4章4.2.5节）"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "5411772761518051906",
+        "number": 65,
+        "type": "多选",
+        "text": "用于描述API的规范是？",
+        "options": [
+            "OpenAPI",
+            "Apigee",
+            "API Blueprint",
+            "RAML"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B,D",
+        "analysis": "OpenAPI RAML API Blueprint这些都是API描述语言（第4章4.3.3节）"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "5444883166592287129",
+        "number": 66,
+        "type": "单选",
+        "text": "在Linux中，以下哪个命令用于下载文件？",
+        "options": [
+            "A. wget",
+            "B. get",
+            "C. fetch",
+            "D. pull"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "5454999559341714933",
+        "number": 67,
+        "type": "单选",
+        "text": "Windows中用于优化网络性能的命令是？",
+        "options": [
+            "netsh interface tcp set global",
+            "netsh int ip set global",
+            "netsh winsock reset",
+            "以上都是"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "D",
+        "analysis": "这些命令都可以优化网络（第4章4.2.5节）"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "5460489234004809115",
+        "number": 68,
+        "type": "单选",
+        "text": "下列命名有一个Windows中为非法命名，它是（ ）",
+        "options": [
+            "A. my filel",
+            "B. Basic program",
+            "C. card \"01\"",
+            "D. class1.dat"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "C",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "5471303850356432682",
+        "number": 69,
+        "type": "多选",
+        "text": "Linux中常用的监控系统是？",
+        "options": [
+            "Task Manager",
+            "Zabbix",
+            "Nagios",
+            "Prometheus"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B,C,D",
+        "analysis": "Prometheus、Zabbix和Nagios是主流监控系统，Task Manager是Windows工具（第4章4.3.3节）"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "5472814037324252984",
+        "number": 70,
+        "type": "单选",
+        "text": ".在Windows桌面上可以同时打开（ ）窗口",
+        "options": [
+            "A. 一个",
+            "B. 二个",
+            "C. 三个",
+            "D. 多个"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "D",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "5492509711817560360",
+        "number": 71,
+        "type": "单选",
+        "text": "Windows中用于优化TCP/IP协议栈的命令是？",
+        "options": [
+            "netsh int tcp set global",
+            "netsh interface ipv4 set global",
+            "两者都是",
+            "都不是"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "这个命令可以调整TCP参数（第4章4.2.5节）"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "5506705440940654525",
+        "number": 72,
+        "type": "单选",
+        "text": "2.如果Windows的回收站图标没有纸张露出，则表明该回收站（ ）[1分]",
+        "options": [
+            "A. 不能用",
+            "B. 已被清空",
+            "C. 已满",
+            "D. 以上说法均不对"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "D",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "5519305206016350816",
+        "number": 73,
+        "type": "单选",
+        "text": "Windows容器支持的基础镜像类型是？",
+        "options": [
+            "Windows Server Core",
+            "Nano Server",
+            "两者都是",
+            "都不是"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "C",
+        "analysis": "Windows支持这两种基础镜像（第4章4.2.4节）"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "5528201587093819298",
+        "number": 74,
+        "type": "单选",
+        "text": "Windows Server中用于无人值守安装的文件是？",
+        "options": [
+            "autounattend.xml",
+            "sysprep.inf",
+            "unattend.txt",
+            "以上都是"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "现代Windows使用XML应答文件（第4章4.2.5节）"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "5540713110117454820",
+        "number": 75,
+        "type": "多选",
+        "text": "Linux中用于API网关的工具是？",
+        "options": [
+            "Nagios",
+            "Tyk",
+            "Apigee",
+            "Kong"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B,C,D",
+        "analysis": "Kong Tyk Apigee这些都是API网关解决方案（第4章4.3.3节）"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "5559282635824779010",
+        "number": 76,
+        "type": "多选",
+        "text": "在Linux中，用于检查文件完整性的工具是？",
+        "options": [
+            "AIDE",
+            "Tripwire",
+            "Samhain",
+            "chmod"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B,C",
+        "analysis": "前三个工具检测文件变更，chmod修改权限（第4章4.3.3节）"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "5561929488578937492",
+        "number": 77,
+        "type": "单选",
+        "text": "Linux系统中，文件权限的表示方法中，'r'代表什么？",
+        "options": [
+            "A. 读",
+            "B. 写",
+            "C. 执行",
+            "D. 所有权限"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "5567999835996220837",
+        "number": 78,
+        "type": "单选",
+        "text": "在Linux中，用于加载环境配置的文件是？",
+        "options": [
+            "~/.bashrc",
+            "/etc/profile",
+            "两者都是",
+            "都不是"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "C",
+        "analysis": "这些文件都会在登录时加载（第4章4.3.3节）"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "5580565725998130258",
+        "number": 79,
+        "type": "单选",
+        "text": "在Linux中，哪个命令用于查看当前路径下的隐藏文件？",
+        "options": [
+            "A. ls -a",
+            "B. ls -h",
+            "C. ls -l",
+            "D. ls -d"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "5582273418480239002",
+        "number": 80,
+        "type": "单选",
+        "text": "Windows任务栏上存放的是（ ）[1分]",
+        "options": [
+            "A. 当前窗口的图标",
+            "B. 已启动，并正在执行的程序名",
+            "C. 所有已打开窗口的图标",
+            "D. 已打开的文件名"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "C",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "5597153294305480415",
+        "number": 81,
+        "type": "单选",
+        "text": "在Linux中，用于MySQL性能分析的工具是？",
+        "options": [
+            "Apigee",
+            "mysqldumpslow",
+            "pt-query-digest",
+            "EXPLAIN"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "D",
+        "analysis": "EXPLAIN mysqldumpslow pt-query-digest这些工具都用于MySQL性能分析（第4章4.3.3节）"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "5610997975395354592",
+        "number": 82,
+        "type": "单选",
+        "text": "以下哪个是Linux 常用的桌面环境？",
+        "options": [
+            "KDE",
+            "Office",
+            "Photoshop",
+            "Chrome"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "Linux 常用的桌面环境有多种，其中 KDE 是较为知名和常用的一种。Office 是办公软件套件，Photoshop 是图像处理软件，Chrome 是网络浏览器，它们均不是 Linux 的桌面环境。"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "5631128879741934688",
+        "number": 83,
+        "type": "多选",
+        "text": "Linux中用于限制用户资源的配置文件是？",
+        "options": [
+            "/etc/security/limits.conf",
+            "/etc/cgroup.conf",
+            "/etc/sysctl.conf",
+            "/etc/passwd"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B,C",
+        "analysis": "前三个涉及资源限制，/etc/passwd存储用户信息（第4章4.3.3节）"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "5635290685003787776",
+        "number": 84,
+        "type": "多选",
+        "text": "Linux中用于查看环境变量的命令是？",
+        "options": [
+            "env",
+            "printenv",
+            "export",
+            "set"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B",
+        "analysis": "env和printenv显示环境变量，export和set用于设置（第4章4.3.3节）"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "5641987180814045289",
+        "number": 85,
+        "type": "多选",
+        "text": "在Linux中，用于恢复误删文件的工具是？",
+        "options": [
+            "extundelete",
+            "photorec",
+            "testdisk",
+            "rm"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B,C",
+        "analysis": "前三个是恢复工具，rm是删除命令（第4章4.3.3节）"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "5645161875254446426",
+        "number": 86,
+        "type": "单选",
+        "text": "网络操作系统的主要功能不包括？",
+        "options": [
+            "网络通信",
+            "资源管理",
+            "图形界面设计",
+            "网络服务"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "C",
+        "analysis": "网络操作系统的主要功能集中在网络通信、资源管理和网络服务上，而图形界面设计并非其主要功能。"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "5649521733667768399",
+        "number": 87,
+        "type": "单选",
+        "text": "在网络操作系统中，DHCP的作用是？",
+        "options": [
+            "解析域名",
+            "自动分配 IP地址",
+            "管理文件",
+            "控制网络流量"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "DHCP（动态主机配置协议）的主要功能是在网络中自动为计算机分配 IP 地址。解析域名是 DNS（域名系统）的功能，管理文件和控制网络流量并非 DHCP 的主要职责。"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "5650802774604334061",
+        "number": 88,
+        "type": "单选",
+        "text": "Windows Server中用于分析事件日志的命令是？",
+        "options": [
+            "wevtutil",
+            "get-eventlog",
+            "两者都是",
+            "都不是"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "C",
+        "analysis": "这两个命令都可以查询事件日志（第4章4.2.5节）"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "5659608460947604034",
+        "number": 89,
+        "type": "多选",
+        "text": "Linux中用于分析日志的正则表达式工具是？",
+        "options": [
+            "grep",
+            "cat",
+            "sed",
+            "awk"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,C,D",
+        "analysis": "grep、awk和sed支持正则匹配，cat仅显示内容（第4章4.3.3节）"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "5662845226998811070",
+        "number": 90,
+        "type": "单选",
+        "text": "Windows Server中用于单点登录的技术是？",
+        "options": [
+            "Active Directory",
+            "ADFS",
+            "两者都是",
+            "都不是"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "C",
+        "analysis": "这些技术都支持SSO（第4章4.2.5节）"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "5664592964261272865",
+        "number": 91,
+        "type": "单选",
+        "text": "在Linux中，用于修改时区的命令是？",
+        "options": [
+            "timedatectl",
+            "tzselect",
+            "两者都是",
+            "都不是"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "C",
+        "analysis": "这两个命令都可以设置时区（第4章4.3.3节）"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "5701450268816054934",
+        "number": 92,
+        "type": "单选",
+        "text": "Windows中用于迁移用户配置的工具是？",
+        "options": [
+            "USMT",
+            "Windows轻松传送",
+            "两者都是",
+            "都不是"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "C",
+        "analysis": "这两个工具都支持用户迁移（第4章4.2.5节）"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "5706687804198115633",
+        "number": 93,
+        "type": "单选",
+        "text": "在Kubernetes中，最小的部署单位是？",
+        "options": [
+            "Pod",
+            "Container",
+            "Node",
+            "Cluster"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "Pod是K8s最小调度单位（第4章4.3.3节）"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "5710442427601003319",
+        "number": 94,
+        "type": "单选",
+        "text": "在Linux中，用于查看服务依赖关系的命令是？",
+        "options": [
+            "systemctl list-dependencies",
+            "service --status-all",
+            "两者都是",
+            "都不是"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "这个命令显示服务依赖（第4章4.3.3节）"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "5714004174346361398",
+        "number": 95,
+        "type": "单选",
+        "text": "在Windows系统默认状态下为了实现全角与半角之间状态切换，应按的键是（ ）",
+        "options": [
+            "A. Shift+空格",
+            "B. CTRL+空格键",
+            "C. Shift+Ctrl",
+            "D. Shift+F9"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "5725550453370337067",
+        "number": 96,
+        "type": "单选",
+        "text": "Windows Server 中，默认的管理员账号是？",
+        "options": [
+            "guest",
+            "administrator",
+            "user",
+            "root"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "在Windows Server系统中，默认的管理员账号是“administrator”。"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "5727361654140561757",
+        "number": 97,
+        "type": "单选",
+        "text": "Windows Server中用于QoS设置的命令是？",
+        "options": [
+            "netsh int tcp set global",
+            "netsh interface set interface",
+            "netsh qos add",
+            "以上都是"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "D",
+        "analysis": "这些命令都涉及QoS配置（第4章4.2.5节）"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "5744845976514241794",
+        "number": 98,
+        "type": "单选",
+        "text": "Windows Server中用于就地升级的命令是？",
+        "options": [
+            "setup.exe /auto upgrade",
+            "dism /online /upgrade-image",
+            "两者都是",
+            "都不是"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "setup.exe支持就地升级（第4章4.2.5节）"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "5745294129177334153",
+        "number": 99,
+        "type": "单选",
+        "text": ".Windows中剪贴板是（ ）",
+        "options": [
+            "A. 硬盘上某个区域",
+            "B. 软盘上的一块区域",
+            "C. 内存中的一块区域",
+            "D. cache中一块区域"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "C",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试9",
+        "id": "5747313160912565932",
+        "number": 100,
+        "type": "多选",
+        "text": "Linux中用于自动化安装的工具是？",
+        "options": [
+            "Kickstart",
+            "AutoYaST",
+            "Cloud-init",
+            "Vagrant"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B,C",
+        "analysis": "前三个是自动化安装工具，Vagrant用于开发环境（第4章4.3.3节）"
     }
 ]
