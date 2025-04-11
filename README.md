@@ -56,24 +56,34 @@ B站完整版：https://www.bilibili.com/video/BV18WdbYLEFn
 
 ### `extract_questions.py`
 
-此脚本是项目的 **数据准备工具**。其主要职责是：
+此脚本现在是项目的 **数据准备和整合工具**。其主要职责已扩展为：
 
-*   **查找源文件:** 使用 `glob` 在其所在目录中搜索所有以 `.html` 扩展名结尾的文件。
-*   **解析 HTML:** 对找到的每个 HTML 文件（`search_questions.html` 本身除外），使用 `BeautifulSoup` 和 `lxml` 解析器分析 HTML 结构。
-*   **识别题目:** 特别查找带有 `question-item` 类的 `<div>` 元素，假定每个这样的 div 代表一个题目块。
-*   **提取数据字段:** 在每个 `question-item` 内，尝试提取：
-    *   **ID:** 主 div 的 `id` 属性。
-    *   **编号和类型:** 从具有 `question-item__type` 类的元素中解析类似 "1.【单选题】" 的文本。
-    *   **题目文本:** 从 `div.question-item__content` 提取内容，保留换行符。
-    *   **选项:** 从 `ul.question-item__option` 中提取列表项 (`<li>`)。
-    *   **答案:** 在 `div.stu-answer` 中查找学生答案和正确答案，定位特定的 `<span>` 和 `<b>` 标签或类名（`true-answer`）。
-    *   **解析:** 从 `div.analysis` 或嵌套元素（如 `div.analysis-content`）中提取解析文本，处理常见的模式如 "本题解析："。
-*   **清理文本:** 使用 `clean_text` 函数去除多余的空白、常见的样板前缀（如 "A."、"本题解析："），并处理空值或占位符（如 "【无】"）。
-*   **标记题库名称:** 根据源 HTML 文件名生成可读的“题库名称”（例如，`physics_midterm.html` 变成 `physics_midterm`），并将其作为 `bank_name` 字段添加到每个提取的题目字典中。这允许在搜索结果中识别题目的来源。
-*   **整合数据:** 将从所有处理过的 HTML 文件中提取的所有题目字典聚合到一个列表中。
-*   **输出 JSON:** 最后，将这个组合列表以 UTF-8 编码和美化格式（缩进）保存到一个名为 `combined_questions_data.json` 的文件中。此 JSON 文件是 `search_questions.html` 使用的数据库。
+*   **HTML 数据提取 (功能与之前相同):**
+    *   **查找源文件:** 使用 `glob` 在其所在目录中搜索所有以 `.html` 扩展名结尾的文件。
+    *   **解析 HTML:** 对找到的每个 HTML 文件（`search_questions.html` 本身除外），使用 `BeautifulSoup` 和 `lxml` 解析器分析 HTML 结构。
+    *   **识别题目:** 特别查找带有 `question-item` 类的 `<div>` 元素，假定每个这样的 div 代表一个题目块。
+    *   **提取数据字段:**  （与之前描述相同，包括 ID, 编号和类型, 题目文本, 选项, 答案, 解析）。
+    *   **清理文本:** 使用 `clean_text` 函数去除多余的空白、常见的样板前缀，并处理空值或占位符。
+    *   **标记题库名称:** 根据源 HTML 文件名生成可读的“题库名称”。
+    *   **整合数据:** 将从所有处理过的 HTML 文件中提取的所有题目字典聚合到一个列表中。
+    *   **初步 JSON 输出:**  将提取的题目数据 **立即保存到** `combined_questions_data.json` 文件中，作为中间步骤和初始数据备份。
 
-**注意:** 此脚本期望源 HTML 文件具有基于其搜索的 CSS 类名的相当一致的结构。如果您的 HTML 结构差异很大，您可能需要调整选择器 (`find`, `find_all`)。
+*   **JSON 数据合并与去重 (新增功能):**
+    *   **查找 JSON 文件:** 在脚本所在目录中，使用 `glob` 查找所有以 `*.json` 结尾的文件，**包括刚刚从 HTML 提取生成的 `combined_questions_data.json` 以及任何其他 JSON 文件**。
+    *   **加载 JSON 数据:** 从找到的每个 JSON 文件中加载数据。脚本 **假设每个 JSON 文件都包含一个题目列表** 作为顶层结构。如果文件内容不是列表，则会发出警告并跳过该文件的数据。
+    *   **合并数据:** 将从所有 JSON 文件加载的数据合并到一个总列表中。
+    *   **数据去重:**  使用基于 JSON 序列化签名的方法，检测并移除 **完全重复** 的题目条目。去重过程会记录移除的重复条目数量，并保留第一个遇到的唯一条目。
+    *   **最终 JSON 输出:** 将去重后的 **唯一题目数据** 列表 **覆盖保存回** `combined_questions_data.json` 文件。这意味着最终的 `combined_questions_data.json` 文件将包含从所有 HTML 文件提取并与所有其他 JSON 文件合并，并且去重后的结果。
+
+**关键更新说明:**
+
+*   `extract_questions.py` 现在不仅处理 HTML 文件，还会 **合并当前目录下所有 `*.json` 文件的数据**，并对所有数据进行 **去重**。
+*   脚本执行流程变为：先从 HTML 提取并保存初始 JSON，然后加载所有 JSON 文件进行合并和去重，最后将去重结果覆盖保存到 `combined_questions_data.json`。
+*   合并过程包括之前生成的 `combined_questions_data.json` 本身，这意味着您可以多次运行 `extract_questions.py`，它会将新的 HTML 提取结果与之前的数据合并，并自动去重，保持 `combined_questions_data.json` 内容的最新和唯一。
+
+**注意:**  此脚本仍然期望源 HTML 文件具有一致的结构以便提取题目信息。同时，合并的 JSON 文件应包含题目列表。如有需要，您可能需要根据您的 HTML 和 JSON 数据结构调整脚本中的选择器和数据处理逻辑。
+
+
 
 ### `realtime_ocr.py`
 
