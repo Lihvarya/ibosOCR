@@ -93,14 +93,36 @@ B站完整版：https://www.bilibili.com/video/BV18WdbYLEFn
 
 ### `realtime_ocr.py`
 
-主应用程序脚本。它协调屏幕捕获、OCR 过程、热键监听以及与搜索界面的通信。它依赖于：
+主应用程序脚本，现在进行了重大更新，以实现 **通过 Server-Sent Events (SSE) 与 Web 界面进行实时通信**。 它仍然负责屏幕捕获、OCR 处理和热键监听，但搜索触发机制已更改。 其主要职责包括:
 
-*   `mss`: 用于高效的屏幕捕获。
-*   `PaddleOCR`: 用于核心的光学字符识别。
-*   `opencv-python`: 用于图像预处理（灰度转换、阈值处理）。
-*   `keyboard`: 用于捕获全局热键（需要管理员/root 权限）。
-*   `http.server` / `socketserver`: 用于运行简单的本地 Web 服务器。
-*   `webbrowser`: 用于打开搜索结果页面。
+*   **屏幕捕获**:  使用 `mss` 库高效地捕获用户定义的屏幕区域的图像。
+*   **OCR 处理**: 使用 PaddleOCR 引擎对捕获的图像进行光学字符识别，提取文本。
+*   **文本清理**: 对 OCR 结果进行预处理和清理，移除噪声字符，得到可用于搜索的干净文本。
+*   **图像预处理**:  使用 OpenCV (`opencv-python`) 对捕获的图像进行灰度化和自适应阈值处理，以提升 OCR 效果。
+*   **本地 Web 服务器 (改进)**:
+    *   使用 `http.server` 和 `socketserver` 启动一个本地 HTTP 服务器，用于托管 `search_questions.html` 页面和 `combined_questions_data.json` 数据文件。
+    *   **新增 SSE 端点**:  在服务器中集成 **Server-Sent Events (SSE) 功能**，通过 `/ocr-events` 路径提供 SSE 端点。
+    *   **定制的请求处理器**:  使用自定义的 `RequestHandler` 类，扩展了 `SimpleHTTPRequestHandler`，以处理 SSE 连接和文件服务，并允许指定服务目录。
+*   **SSE 通信**:
+    *   **实时文本推送**: 当 OCR 识别出新的、与上次不同的文本时，`realtime_ocr.py` **不再直接打开新的浏览器标签页**。而是将 **识别出的文本通过 SSE 连接实时推送** 到已打开的 `search_questions.html` 页面。
+    *   **单页面更新**:  `search_questions.html` 页面保持打开状态，并通过 JavaScript 监听来自 SSE 端点的实时文本消息。接收到消息后，页面 **自动更新搜索框内容并触发搜索**，无需用户手动操作或页面重新加载。
+    *   **优化的用户体验**:  通过 SSE，实现了 **更流畅、更集成的搜索体验**。用户只需启动脚本并打开 `search_questions.html` 页面一次，后续的所有 OCR 识别和搜索都将在该页面内实时更新显示。
+*   **热键控制**:  仍然使用 `keyboard` 库监听全局热键，用于：
+    *   **`Ctrl+Alt+O` (默认)**: 切换连续 OCR 功能的开启和关闭。
+    *   **`Ctrl+Alt+R` (默认)**: 重新选择屏幕捕获区域。
+    *   **`Ctrl+Alt+Q` (默认)**: 安全退出 `realtime_ocr.py` 脚本并关闭本地 Web 服务器。
+*   **配置**:  仍然支持通过 `ocr_config.json` 文件保存和加载屏幕区域配置，以及通过脚本内的变量配置 OCR 语言、GPU 使用、热键和服务器端口等。
+
+**关键更新说明:**
+
+*   **SSE 实时通信**:  `realtime_ocr.py` 的核心更新是引入了 SSE 功能，实现了与 `search_questions.html` 页面的实时双向通信。
+*   **无浏览器跳转搜索**:  移除了之前每次 OCR 识别都打开新浏览器标签页的行为。现在，搜索结果在 **同一个 `search_questions.html` 页面内实时更新**。
+*   **更流畅的用户体验**:  用户体验得到显著提升，操作更加连贯和高效。
+*   **优化的服务器**:  Web 服务器部分进行了重构，更清晰地处理静态文件服务和 SSE 连接。
+
+**依赖项**:  与之前版本基本相同，主要变化是强调了对 `queue` 和 `select` 模块的依赖，这两个模块是实现 SSE 消息队列和非阻塞 socket 操作所必需的。 完整依赖列表请参考之前的 README 文档。
+
+
 
 ### `search_questions.html`
 
