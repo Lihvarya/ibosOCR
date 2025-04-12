@@ -3,388 +3,211 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>题库搜索 (模糊匹配)</title>
-    <!-- Add Fuse.js from CDN -->
+    <title>题库搜索</title> <!-- Updated Title -->
     <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2/dist/fuse.min.js"></script>
     <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-            line-height: 1.6;
-            margin: 20px;
-            background-color: #f8f9fa;
-            color: #212529;
-        }
-        .container {
-            max-width: 900px;
-            margin: auto;
-            background: #ffffff;
-            padding: 25px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        h1 {
-            text-align: center;
-            color: #343a40;
-            margin-bottom: 25px;
-        }
-        .search-box {
-            width: 100%;
-            padding: 12px 15px;
-            margin-bottom: 25px;
-            border: 1px solid #ced4da;
-            border-radius: 4px;
-            box-sizing: border-box;
-            font-size: 1rem;
-        }
-        .search-box:focus {
-            border-color: #80bdff;
-            outline: 0;
-            box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
-        }
-        .question-block {
-            border: 1px solid #e9ecef;
-            background-color: #ffffff;
-            padding: 15px 20px;
-            margin-bottom: 15px;
-            border-radius: 5px;
-            position: relative; /* For bank tag positioning */
-            transition: box-shadow 0.2s ease-in-out;
-        }
-        .question-block:hover {
-             box-shadow: 0 2px 4px rgba(0,0,0,0.07);
-        }
-        .question-block h3 {
-            margin-top: 0;
-            margin-bottom: 12px;
-            font-size: 1.1em;
-            color: #0056b3; /* Darker blue */
-            padding-right: 100px; /* Space for tag */
-            line-height: 1.4;
-        }
-        .bank-tag {
-            position: absolute;
-            top: 12px;
-            right: 15px;
-            background-color: #e2e6ea;
-            color: #495057;
-            padding: 4px 10px;
-            border-radius: 12px; /* Pill shape */
-            font-size: 0.75em;
-            font-weight: 500;
-        }
-        .question-text {
-            margin-bottom: 10px;
-            white-space: pre-wrap; /* Preserve line breaks */
-            color: #495057; /* Slightly lighter than black */
-        }
-        .question-block ul {
-            list-style: none;
-            padding-left: 5px; /* Slight indent */
-            margin-bottom: 12px;
-        }
-        .question-block li {
-            margin-bottom: 6px;
-            color: #343a40;
-        }
-        .answer-info {
-            font-size: 0.9em;
-            color: #6c757d; /* Gray text */
-            margin-top: 12px;
-            padding-top: 12px;
-            border-top: 1px dashed #dee2e6;
-        }
-        .answer-info .correct {
-            color: #28a745; /* Bootstrap success green */
-            font-weight: bold;
-        }
-        .analysis {
-             font-size: 0.9em;
-             color: #343a40;
-             background-color: #f1f3f5; /* Very light gray */
-             padding: 10px 12px;
-             border-radius: 4px;
-             margin-top: 8px;
-             white-space: pre-wrap;
-             border-left: 3px solid #adb5bd; /* Accent border */
-        }
-         .analysis strong {
-             color: #0056b3;
-         }
-        #resultsCount {
-            margin-bottom: 15px;
-            font-style: italic;
-            color: #6c757d;
-            text-align: right;
-            font-size: 0.9em;
-        }
-        .highlight {
-            background-color: #fff3cd; /* Light yellow */
-            font-weight: 600;
-            padding: 0 2px;
-            border-radius: 2px;
-            color: #594400;
-        }
-        .error-message {
-            color: #dc3545; /* Bootstrap danger red */
-            font-weight: bold;
-            text-align: center;
-            padding: 20px;
-            background-color: #f8d7da;
-            border: 1px solid #f5c6cb;
-            border-radius: 4px;
-        }
-        .loading-message {
-            text-align: center;
-            padding: 20px;
-            font-style: italic;
-            color: #6c757d;
-        }
-
+        /* CSS remains the same as previous version */
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; line-height: 1.6; margin: 20px; background-color: #f8f9fa; color: #212529; }
+        .container { max-width: 900px; margin: auto; background: #ffffff; padding: 25px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        h1 { text-align: center; color: #343a40; margin-bottom: 25px; }
+        .search-box { width: 100%; padding: 12px 15px; margin-bottom: 25px; border: 1px solid #ced4da; border-radius: 4px; box-sizing: border-box; font-size: 1rem; }
+        .search-box:focus { border-color: #80bdff; outline: 0; box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25); }
+        .question-block { border: 1px solid #e9ecef; background-color: #ffffff; padding: 15px 20px; margin-bottom: 15px; border-radius: 5px; position: relative; transition: box-shadow 0.2s ease-in-out; }
+        .question-block:hover { box-shadow: 0 2px 4px rgba(0,0,0,0.07); }
+        .question-block h3 { margin-top: 0; margin-bottom: 12px; font-size: 1.1em; color: #0056b3; padding-right: 100px; line-height: 1.4; }
+        .bank-tag { position: absolute; top: 12px; right: 15px; background-color: #e2e6ea; color: #495057; padding: 4px 10px; border-radius: 12px; font-size: 0.75em; font-weight: 500; }
+        .question-text { margin-bottom: 10px; white-space: pre-wrap; color: #495057; }
+        .question-block ul { list-style: none; padding-left: 5px; margin-bottom: 12px; }
+        .question-block li { margin-bottom: 6px; color: #343a40; }
+        .answer-info { font-size: 0.9em; color: #6c757d; margin-top: 12px; padding-top: 12px; border-top: 1px dashed #dee2e6; }
+        .answer-info .correct { color: #28a745; font-weight: bold; }
+        .analysis { font-size: 0.9em; color: #343a40; background-color: #f1f3f5; padding: 10px 12px; border-radius: 4px; margin-top: 8px; white-space: pre-wrap; border-left: 3px solid #adb5bd; }
+        .analysis strong { color: #0056b3; }
+        #resultsCount { margin-bottom: 15px; font-style: italic; color: #6c757d; text-align: right; font-size: 0.9em; }
+        .highlight { background-color: #fff3cd; font-weight: 600; padding: 0 2px; border-radius: 2px; color: #594400; }
+        .error-message, .info-message, .loading-message { color: #6c757d; font-weight: normal; text-align: center; padding: 20px; background-color: #e9ecef; border: 1px solid #dee2e6; border-radius: 4px; margin-top: 10px; }
+        .error-message { color: #dc3545; background-color: #f8d7da; border-color: #f5c6cb; font-weight: bold;}
+        #sse-status { font-size: 0.8em; text-align: center; color: #6c757d; margin-top: -15px; margin-bottom: 15px; height: 1.2em;}
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>题库搜索 (支持模糊匹配)</h1>
-        <input type="text" id="searchInput" class="search-box" placeholder="输入题目、选项、题库名等关键字...">
+        <h1>题库搜索 (实时更新)</h1>
+        <div id="sse-status">等待连接...</div>
+        <input type="text" id="searchInput" class="search-box" placeholder="等待实时OCR输入或手动输入关键字...">
         <div id="resultsCount"></div>
         <div id="results">
              <p class="loading-message">正在加载题库数据...</p>
-            <!-- Search results will be displayed here -->
         </div>
     </div>
 
     <script>
         let allQuestions = [];
-        let fuse = null; // Global variable for the Fuse instance
+        let fuse = null;
+        let sseConnection = null; // Variable to hold EventSource connection
 
-        // --- Fuse.js Configuration ---
+        // Fuse.js options (same as before)
         const fuseOptions = {
-           shouldSort: true,    // Rank results by relevance
-           threshold: 0.4,      // Adjust fuzziness (0.0 = exact, 1.0 = anything) - 0.4 is a decent starting point
-           location: 0,
-           distance: 100,       // How far the pattern can be from the expected location
-           maxPatternLength: 32,
-           minMatchCharLength: 1,
-           keys: [              // Fields to search within each question object
-             { name: "text", weight: 0.7 },          // Give higher weight to question text
-             { name: "options", weight: 0.5 },       // Slightly lower for options
-             { name: "correct_answer", weight: 0.3 },
-             { name: "analysis", weight: 0.2 },
-             { name: "bank_name", weight: 0.4 },
-             { name: "type", weight: 0.1 }
-             // Note: Weighting is optional but can improve relevance
-           ]
+           shouldSort: true, threshold: 0.4, location: 0, distance: 100,
+           maxPatternLength: 32, minMatchCharLength: 1,
+           keys: [ { name: "text", weight: 0.7 }, { name: "options", weight: 0.5 }, { name: "correct_answer", weight: 0.3 }, { name: "analysis", weight: 0.2 }, { name: "bank_name", weight: 0.4 }, { name: "type", weight: 0.1 } ]
         };
 
-        // --- Load Data & Initialize Fuse ---
+        // --- Load Data & Initialize Fuse (mostly unchanged) ---
         async function loadQuestions() {
+            // ... (loadQuestions function remains the same as the previous version, initializing Fuse) ...
             const resultsContainer = document.getElementById('results');
             try {
-                const response = await fetch('combined_questions_data.json'); // Ensure this filename matches your Python output
-                if (!response.ok) {
-                    throw new Error(`HTTP error! status: ${response.status} - ${response.statusText}`);
-                }
-                // Check content type
+                const response = await fetch('combined_questions_data.json');
+                if (!response.ok) throw new Error(`HTTP ${response.status}: ${response.statusText}`);
                 const contentType = response.headers.get("content-type");
-                if (!contentType || !contentType.includes("application/json")) {
-                     console.error("Received non-JSON response. Check server and file path.");
-                     throw new Error(`Expected JSON, but got ${contentType}`);
-                }
-
+                if (!contentType || !contentType.includes("application/json")) throw new Error(`Expected JSON, got ${contentType}`);
                 allQuestions = await response.json();
-                console.log(`Successfully loaded ${allQuestions.length} questions.`);
-                resultsContainer.innerHTML = ''; // Clear loading message
+                console.log(`Loaded ${allQuestions.length} questions.`);
+                resultsContainer.innerHTML = ''; // Clear loading
 
-                // Initialize Fuse.js index
                 if (allQuestions.length > 0) {
                     console.log("Initializing Fuse.js index...");
                     fuse = new Fuse(allQuestions, fuseOptions);
-                    console.log("Fuse.js index created successfully.");
+                    console.log("Fuse.js index created.");
+                    displayQuestions([], ''); // Show empty state initially
                 } else {
-                    console.warn("No questions found in data file, Fuse index not created.");
+                    console.warn("No questions found.");
                     fuse = null;
-                    resultsContainer.innerHTML = '<p>题库为空。</p>'; // Show message if empty
+                    resultsContainer.innerHTML = '<p class="info-message">题库为空。</p>';
                 }
-                // displayQuestions(allQuestions); // Don't display all initially unless needed
-
             } catch (error) {
-                console.error("Fatal Error loading questions data:", error);
-                resultsContainer.innerHTML = `<p class="error-message">无法加载题库数据。<br>请检查 'combined_questions_data.json' 文件是否存在且格式正确，以及本地服务器是否运行。<br><small>(${error})</small></p>`;
+                console.error("Fatal Error loading questions:", error);
+                resultsContainer.innerHTML = `<p class="error-message">无法加载题库数据。<br><small>(${error})</small></p>`;
                 fuse = null;
             }
         }
 
-        // --- Highlight Matched Text ---
+        // --- Highlight Text (unchanged) ---
         function highlightText(text, term) {
-            if (!term || !text) return text || ''; // Handle null/undefined safely
-            try {
-                // Escape special regex characters in the search term
-                const escapedTerm = term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-                // Create case-insensitive global regex
-                const regex = new RegExp(`(${escapedTerm})`, 'gi');
-                // Replace matches with highlighted span, ensure text is string
-                return String(text).replace(regex, '<span class="highlight">$1</span>');
-            } catch (e) {
-                 console.error("Error during highlighting:", e);
-                 return text; // Return original text on error
-            }
+            // ... (highlightText function remains the same) ...
+            if (!term || !text) return text || '';
+            try { const esc = term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); return String(text).replace(new RegExp(`(${esc})`, 'gi'), '<span class="highlight">$1</span>'); }
+            catch (e) { return text; }
         }
 
-        // --- Display Filtered Questions ---
+        // --- Display Questions (unchanged) ---
         function displayQuestions(questionsToDisplay, searchTerm = '') {
+             // ... (displayQuestions function remains the same, ensures input is array, handles empty states) ...
             const resultsContainer = document.getElementById('results');
             const resultsCountContainer = document.getElementById('resultsCount');
-            resultsContainer.innerHTML = ''; // Clear previous results
+            resultsContainer.innerHTML = '';
 
             if (!Array.isArray(questionsToDisplay)) {
-                 console.error("displayQuestions received non-array input:", questionsToDisplay);
-                 resultsContainer.innerHTML = '<p class="error-message">显示结果时出错。</p>';
-                 resultsCountContainer.textContent = '';
-                 return;
+                 resultsContainer.innerHTML = '<p class="error-message">显示时出错。</p>';
+                 resultsCountContainer.textContent = ''; return;
             }
-
-            if (questionsToDisplay.length === 0 && searchTerm) { // Only show "not found" if a search was performed
-                resultsContainer.innerHTML = '<p>没有找到与“' + searchTerm + '”匹配的题目。</p>';
-                resultsCountContainer.textContent = '';
-                return;
-            } else if (questionsToDisplay.length === 0 && !searchTerm) {
-                 resultsContainer.innerHTML = '<p>题库已加载，请输入关键字搜索。</p>'; // Initial state or empty search
-                 resultsCountContainer.textContent = '';
-                 return;
+            if (questionsToDisplay.length === 0) {
+                if (searchTerm) { resultsContainer.innerHTML = '<p class="info-message">没有找到与“' + searchTerm + '”匹配的题目。</p>'; }
+                else { resultsContainer.innerHTML = '<p class="info-message">请输入关键字或等待实时OCR输入。</p>'; }
+                 resultsCountContainer.textContent = ''; return;
             }
-
-
-             resultsCountContainer.textContent = `找到 ${questionsToDisplay.length} 个相关结果。`;
-
-             // Create and append HTML for each question
-             questionsToDisplay.forEach(q => {
-                if (!q) return; // Skip if item is somehow null/undefined
-                const div = document.createElement('div');
-                div.className = 'question-block';
-
-                // Bank Name Tag
-                const bankTag = document.createElement('span');
-                bankTag.className = 'bank-tag';
-                bankTag.textContent = q.bank_name || '未知题库';
-                bankTag.title = `来源题库: ${q.bank_name || '未知'}`;
-                div.appendChild(bankTag);
-
-                // Question Title (Number and Type)
-                const title = document.createElement('h3');
-                title.textContent = `${q.number || '?'}.【${q.type || '未知'}】`;
-                div.appendChild(title);
-
-                // Question Text (Highlighted)
-                const textP = document.createElement('div');
-                textP.className = 'question-text';
-                textP.innerHTML = highlightText(q.text, searchTerm);
-                div.appendChild(textP);
-
-                // Options (Highlighted)
-                if (q.options && Array.isArray(q.options) && q.options.length > 0) {
-                    const ul = document.createElement('ul');
-                    q.options.forEach(opt => {
-                        const li = document.createElement('li');
-                        li.innerHTML = highlightText(opt, searchTerm);
-                        ul.appendChild(li);
-                    });
-                    div.appendChild(ul);
-                }
-
-                 // Answer Info (Correct Answer Highlighted)
-                const answerDiv = document.createElement('div');
-                answerDiv.className = 'answer-info';
-                answerDiv.innerHTML = `
-                    <span>我的答案：${q.student_answer || '无'}</span><br>
-                    <span class="correct">正确答案：${highlightText(q.correct_answer, searchTerm)}</span>
-                `;
-                 div.appendChild(answerDiv);
-
-                // Analysis (Highlighted)
-                if (q.analysis && q.analysis !== "无") {
-                     const analysisP = document.createElement('div');
-                     analysisP.className = 'analysis';
-                     analysisP.innerHTML = `<strong>解析：</strong> ${highlightText(q.analysis, searchTerm)}`;
-                     div.appendChild(analysisP);
-                }
-
+            resultsCountContainer.textContent = `找到 ${questionsToDisplay.length} 个相关结果。`;
+             questionsToDisplay.forEach(q => { /* ... create and append question elements ... */
+                if (!q) return; const div = document.createElement('div'); div.className = 'question-block';
+                const bankTag = document.createElement('span'); bankTag.className = 'bank-tag'; bankTag.textContent = q.bank_name || '未知题库'; div.appendChild(bankTag);
+                const title = document.createElement('h3'); title.textContent = `${q.number || '?'}.【${q.type || '未知'}】`; div.appendChild(title);
+                const textP = document.createElement('div'); textP.className = 'question-text'; textP.innerHTML = highlightText(q.text, searchTerm); div.appendChild(textP);
+                if (q.options && Array.isArray(q.options) && q.options.length > 0) { const ul = document.createElement('ul'); q.options.forEach(opt => { const li = document.createElement('li'); li.innerHTML = highlightText(opt, searchTerm); ul.appendChild(li); }); div.appendChild(ul); }
+                const answerDiv = document.createElement('div'); answerDiv.className = 'answer-info'; answerDiv.innerHTML = `<span>我的答案：${q.student_answer || '无'}</span><br><span class="correct">正确答案：${highlightText(q.correct_answer, searchTerm)}</span>`; div.appendChild(answerDiv);
+                if (q.analysis && q.analysis !== "无") { const analysisP = document.createElement('div'); analysisP.className = 'analysis'; analysisP.innerHTML = `<strong>解析：</strong> ${highlightText(q.analysis, searchTerm)}`; div.appendChild(analysisP); }
                 resultsContainer.appendChild(div);
              });
         }
 
-        // --- Perform Search (Using Fuse.js) ---
+        // --- Perform Search (Using Fuse.js - unchanged from previous version) ---
         function searchQuestions() {
+            // ... (searchQuestions function using Fuse remains the same, including debounce) ...
             const searchInput = document.getElementById('searchInput');
-            if (!searchInput) { console.error("Search input element missing!"); return; }
-
-            const searchTerm = searchInput.value.trim(); // Keep original case for highlighting
-
-            // Debounce: If user is typing fast, wait a bit before searching
-            // Simple implementation: use a timeout (more advanced libraries exist)
-            clearTimeout(window.searchTimeout); // Clear previous timeout
+            if (!searchInput) return;
+            const searchTerm = searchInput.value.trim();
+            clearTimeout(window.searchTimeout);
             window.searchTimeout = setTimeout(() => {
-                console.log(`[${new Date().toLocaleTimeString()}] Debounced search for: '${searchTerm}'`);
-
-                if (!fuse) {
-                    console.warn("Fuse.js index not available.");
-                    displayQuestions([], searchTerm); // Show no results
-                    return;
-                }
-
-                if (!searchTerm) {
-                    console.log("Search term empty, clearing results or showing default.");
-                    displayQuestions([], ''); // Clear results for empty search
-                    // Or display all: displayQuestions(allQuestions, '');
-                    return;
-                }
-
-                // Perform search using Fuse
+                console.log(`Searching for: '${searchTerm}'`);
+                if (!fuse) { displayQuestions([], searchTerm); return; }
+                if (!searchTerm) { displayQuestions([], ''); return; } // Clear results for empty search
                 const fuseResults = fuse.search(searchTerm);
-                console.log(`Fuse search found ${fuseResults.length} results.`);
-
-                // Extract the original question items from Fuse results
                 const filteredQuestions = fuseResults.map(result => result.item);
-
-                displayQuestions(filteredQuestions, searchTerm); // Display matches
-            }, 250); // Wait 250ms after last keystroke before searching
-
+                displayQuestions(filteredQuestions, searchTerm);
+            }, 250);
         }
 
-        // --- Handle URL Query Parameter ---
-        function processUrlQuery() {
-            const urlParams = new URLSearchParams(window.location.search);
-            if (urlParams.has('query')) {
-                const searchQuery = urlParams.get('query'); // Get decoded query
-                const searchInput = document.getElementById('searchInput');
-                if (searchInput) {
-                    console.log(`[${new Date().toLocaleTimeString()}] URL Query Found: '${searchQuery}'. Setting input and dispatching event.`);
-                    searchInput.value = searchQuery; // Set input value
+        // --- *** NEW: Setup SSE Connection *** ---
+        function setupSSE() {
+            const sseStatusDiv = document.getElementById('sse-status');
+            const searchInput = document.getElementById('searchInput');
+            const ssePath = '/ocr-events'; // Must match SSE_ENDPOINT in Python script
 
-                    // Dispatch an 'input' event to trigger the search listener
-                    const event = new Event('input', { bubbles: true, cancelable: true });
-                    searchInput.dispatchEvent(event);
-                } else {
-                     console.error("Search input element not found during URL processing!");
-                }
-            } else {
-                 console.log("No 'query' parameter found in URL.");
-                 // Optionally display all questions if no query is present
-                 // displayQuestions(allQuestions, '');
+            console.log(`Attempting to connect to SSE at ${ssePath}...`);
+            sseStatusDiv.textContent = "连接中...";
+            sseStatusDiv.style.color = "#ffc107"; // Yellowish for connecting
+
+            // Close previous connection if exists
+            if (sseConnection) {
+                sseConnection.close();
             }
-        }
 
+            sseConnection = new EventSource(ssePath);
+
+            sseConnection.onopen = function() {
+                console.log("SSE Connection established.");
+                sseStatusDiv.textContent = "已连接到实时OCR";
+                sseStatusDiv.style.color = "#28a745"; // Green for connected
+            };
+
+            sseConnection.onmessage = function(event) {
+                const newQuery = event.data;
+                console.log("SSE Message Received:", newQuery);
+                if (searchInput && newQuery) {
+                     // Update input value ONLY if it's different to avoid loop/flicker
+                    if (searchInput.value !== newQuery) {
+                         searchInput.value = newQuery;
+                         // Dispatch 'input' event to trigger the search function's debounce logic
+                         const inputEvent = new Event('input', { bubbles: true, cancelable: true });
+                         searchInput.dispatchEvent(inputEvent);
+                         console.log("Input updated and event dispatched for search.");
+                    } else {
+                         console.log("SSE received same text as input, skipping dispatch.");
+                    }
+
+                }
+            };
+
+            sseConnection.onerror = function(err) {
+                console.error("SSE Connection Error:", err);
+                sseStatusDiv.textContent = "连接中断 (请重启Python脚本?)";
+                sseStatusDiv.style.color = "#dc3545"; // Red for error
+                if (sseConnection) {
+                    sseConnection.close(); // Close the connection on error
+                }
+                // Optional: Implement retry logic here
+                // setTimeout(setupSSE, 5000); // Try reconnecting after 5 seconds
+            };
+        }
 
         // --- Event Listeners ---
-         // Use optional chaining for safety in case element doesn't exist
         document.getElementById('searchInput')?.addEventListener('input', searchQuestions);
 
         // --- Initial Load ---
         document.addEventListener('DOMContentLoaded', async () => {
-            console.log(`[${new Date().toLocaleTimeString()}] DOMContentLoaded: Page loaded.`);
-            await loadQuestions(); // Load data and initialize Fuse index
-            console.log(`[${new Date().toLocaleTimeString()}] DOMContentLoaded: loadQuestions completed.`);
-            processUrlQuery();     // Check for and process URL query AFTER data/index are ready
-            console.log(`[${new Date().toLocaleTimeString()}] DOMContentLoaded: Initialization complete.`);
+            console.log("DOMContentLoaded: Page loaded.");
+            await loadQuestions(); // Load data and initialize Fuse
+            console.log("DOMContentLoaded: loadQuestions completed.");
+            setupSSE(); // *** Initialize SSE connection AFTER page load ***
+            console.log("DOMContentLoaded: SSE setup initiated.");
+        });
+
+        // Optional: Close SSE connection when the page is unloaded
+        window.addEventListener('beforeunload', () => {
+            if (sseConnection) {
+                console.log("Closing SSE connection on page unload.");
+                sseConnection.close();
+            }
         });
 
     </script>
