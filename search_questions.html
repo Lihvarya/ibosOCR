@@ -6,17 +6,17 @@
     <title>题库搜索</title> <!-- Updated Title -->
     <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2/dist/fuse.min.js"></script>
     <style>
-        /* CSS remains the same as previous version */
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; line-height: 1.6; margin: 20px; background-color: #f8f9fa; color: #212529; }
+        /* CSS 调整开始 */
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; line-height: 1.6; margin: 20px; background-color: #f8f9fa; color: #212529; font-size: 1rem; /* 显式设置 body 基础字体大小为 1rem (通常浏览器默认也是 16px) */ }
         .container { max-width: 900px; margin: auto; background: #ffffff; padding: 25px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
         h1 { text-align: center; color: #343a40; margin-bottom: 25px; }
         .search-box { width: 100%; padding: 12px 15px; margin-bottom: 25px; border: 1px solid #ced4da; border-radius: 4px; box-sizing: border-box; font-size: 1rem; }
         .search-box:focus { border-color: #80bdff; outline: 0; box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25); }
         .question-block { border: 1px solid #e9ecef; background-color: #ffffff; padding: 15px 20px; margin-bottom: 15px; border-radius: 5px; position: relative; transition: box-shadow 0.2s ease-in-out; }
         .question-block:hover { box-shadow: 0 2px 4px rgba(0,0,0,0.07); }
-        .question-block h3 { margin-top: 0; margin-bottom: 12px; font-size: 1.1em; color: #0056b3; padding-right: 100px; line-height: 1.4; }
+        .question-block h3 { margin-top: 0; margin-bottom: 12px; font-size: 1.15em; /* 稍微增大标题字体 */ color: #0056b3; padding-right: 100px; line-height: 1.4; }
         .bank-tag { position: absolute; top: 12px; right: 15px; background-color: #e2e6ea; color: #495057; padding: 4px 10px; border-radius: 12px; font-size: 0.75em; font-weight: 500; }
-        .question-text { margin-bottom: 10px; white-space: pre-wrap; color: #495057; }
+        .question-text { margin-bottom: 10px; white-space: pre-wrap; color: #000101; font-size: 1.05rem; font-weight: 400; font-family: inherit; /* 继承body的字体设置 */ }
         .question-block ul { list-style: none; padding-left: 5px; margin-bottom: 12px; }
         .question-block li { margin-bottom: 6px; color: #343a40; }
         .answer-info { font-size: 0.9em; color: #6c757d; margin-top: 12px; padding-top: 12px; border-top: 1px dashed #dee2e6; }
@@ -28,6 +28,7 @@
         .error-message, .info-message, .loading-message { color: #6c757d; font-weight: normal; text-align: center; padding: 20px; background-color: #e9ecef; border: 1px solid #dee2e6; border-radius: 4px; margin-top: 10px; }
         .error-message { color: #dc3545; background-color: #f8d7da; border-color: #f5c6cb; font-weight: bold;}
         #sse-status { font-size: 0.8em; text-align: center; color: #6c757d; margin-top: -15px; margin-bottom: 15px; height: 1.2em;}
+        /* CSS 调整结束 */
     </style>
 </head>
 <body>
@@ -93,31 +94,75 @@
 
         // --- Display Questions (unchanged) ---
         function displayQuestions(questionsToDisplay, searchTerm = '') {
-             // ... (displayQuestions function remains the same, ensures input is array, handles empty states) ...
             const resultsContainer = document.getElementById('results');
             const resultsCountContainer = document.getElementById('resultsCount');
             resultsContainer.innerHTML = '';
 
             if (!Array.isArray(questionsToDisplay)) {
-                 resultsContainer.innerHTML = '<p class="error-message">显示时出错。</p>';
-                 resultsCountContainer.textContent = ''; return;
+                resultsContainer.innerHTML = '<p class="error-message">显示时出错。</p>';
+                resultsCountContainer.textContent = ''; return;
             }
             if (questionsToDisplay.length === 0) {
-                if (searchTerm) { resultsContainer.innerHTML = '<p class="info-message">没有找到与“' + searchTerm + '”匹配的题目。</p>'; }
+                if (searchTerm) { resultsContainer.innerHTML = '<p class="info-message">没有找到与"' + searchTerm + '"匹配的题目。</p>'; }
                 else { resultsContainer.innerHTML = '<p class="info-message">请输入关键字或等待实时OCR输入。</p>'; }
-                 resultsCountContainer.textContent = ''; return;
+                resultsCountContainer.textContent = ''; return;
             }
             resultsCountContainer.textContent = `找到 ${questionsToDisplay.length} 个相关结果。`;
-             questionsToDisplay.forEach(q => { /* ... create and append question elements ... */
-                if (!q) return; const div = document.createElement('div'); div.className = 'question-block';
-                const bankTag = document.createElement('span'); bankTag.className = 'bank-tag'; bankTag.textContent = q.bank_name || '未知题库'; div.appendChild(bankTag);
-                const title = document.createElement('h3'); title.textContent = `${q.number || '?'}.【${q.type || '未知'}】`; div.appendChild(title);
-                const textP = document.createElement('div'); textP.className = 'question-text'; textP.innerHTML = highlightText(q.text, searchTerm); div.appendChild(textP);
-                if (q.options && Array.isArray(q.options) && q.options.length > 0) { const ul = document.createElement('ul'); q.options.forEach(opt => { const li = document.createElement('li'); li.innerHTML = highlightText(opt, searchTerm); ul.appendChild(li); }); div.appendChild(ul); }
-                const answerDiv = document.createElement('div'); answerDiv.className = 'answer-info'; answerDiv.innerHTML = `<span>我的答案：${q.student_answer || '无'}</span><br><span class="correct">正确答案：${highlightText(q.correct_answer, searchTerm)}</span>`; div.appendChild(answerDiv);
-                if (q.analysis && q.analysis !== "无") { const analysisP = document.createElement('div'); analysisP.className = 'analysis'; analysisP.innerHTML = `<strong>解析：</strong> ${highlightText(q.analysis, searchTerm)}`; div.appendChild(analysisP); }
+            questionsToDisplay.forEach(q => {
+                if (!q) return;
+                const div = document.createElement('div');
+                div.className = 'question-block';
+                
+                const bankTag = document.createElement('span');
+                bankTag.className = 'bank-tag';
+                bankTag.textContent = q.bank_name || '未知题库';
+                div.appendChild(bankTag);
+                
+                const title = document.createElement('h3');
+                title.textContent = `${q.number || '?'}.【${q.type || '未知'}】`;
+                div.appendChild(title);
+                
+                const textP = document.createElement('pre');
+                textP.className = 'question-text';
+                textP.textContent = q.text;
+                div.appendChild(textP);
+                
+                if (q.options && Array.isArray(q.options) && q.options.length > 0) {
+                    const ul = document.createElement('ul');
+                    const letters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'];
+                    q.options.forEach((opt, index) => {
+                        const li = document.createElement('li');
+                        li.textContent = `${letters[index]}. ${opt}`;
+                        ul.appendChild(li);
+                    });
+                    div.appendChild(ul);
+                }
+                
+                const answerDiv = document.createElement('div');
+                answerDiv.className = 'answer-info';
+                const studentAns = document.createElement('span');
+                studentAns.textContent = `我的答案：${q.student_answer || '无'}`;
+                const correctAns = document.createElement('span');
+                correctAns.className = 'correct';
+                correctAns.textContent = `正确答案：${q.correct_answer}`;
+                answerDiv.appendChild(studentAns);
+                answerDiv.appendChild(document.createElement('br'));
+                answerDiv.appendChild(correctAns);
+                div.appendChild(answerDiv);
+                
+                if (q.analysis && q.analysis !== "无") {
+                    const analysisP = document.createElement('div');
+                    analysisP.className = 'analysis';
+                    const strong = document.createElement('strong');
+                    strong.textContent = '解析：';
+                    analysisP.appendChild(strong);
+                    const analysisText = document.createTextNode(q.analysis);
+                    analysisP.appendChild(analysisText);
+                    div.appendChild(analysisP);
+                }
+                
                 resultsContainer.appendChild(div);
-             });
+            });
         }
 
         // --- Perform Search (Using Fuse.js - unchanged from previous version) ---
