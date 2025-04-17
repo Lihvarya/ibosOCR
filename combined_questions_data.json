@@ -1,1594 +1,1002 @@
 [
     {
-        "bank_name": "测试10",
-        "id": "4613154894085199420",
+        "bank_name": "测试11",
+        "id": "4646602748264137029",
         "number": 1,
-        "type": "单选",
-        "text": "Photoshop 支持多种图像格式，以下哪种不是它支持的格式？",
-        "options": [
-            "PSD",
-            "JPEG",
-            "BMP",
-            "PPT"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "D",
-        "analysis": "Photoshop 支持 PSD、JPEG、BMP 等多种图像格式，PPT 是演示文稿格式，不是 Photoshop 支持的图像格式，D 正确，A、B、C 错误。"
-    },
-    {
-        "bank_name": "测试10",
-        "id": "4613327603562543129",
-        "number": 2,
-        "type": "单选",
-        "text": "在 XML 中，标记命名规则规定标记必须以什么开头？",
-        "options": [
-            "字母、下画线（_）或冒号（:）",
-            "数字",
-            "句号（.）",
-            "连字符（-）"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "A",
-        "analysis": "在 XML 中，标记必须以字母、下画线（_）或冒号（:）开头，所以选 A。"
-    },
-    {
-        "bank_name": "测试10",
-        "id": "4617260909410551047",
-        "number": 3,
-        "type": "单选",
-        "text": "在 HTML 中，无序列表的开始标签是？",
-        "options": [
-            "<ul>",
-            "<ol>",
-            "<dl>",
-            "<li>"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "A",
-        "analysis": "在 HTML 中，无序列表以 开始，所以选 A。"
-    },
-    {
-        "bank_name": "测试10",
-        "id": "4634520979714931773",
-        "number": 4,
-        "type": "单选",
-        "text": "Fireworks 采用切片技术的目的是什么？",
-        "options": [
-            "获得较高的下载速度",
-            "提高图像质量",
-            "使图像更美观",
-            "便于图像编辑"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "A",
-        "analysis": "Fireworks 采用切片技术可将大图像分隔为多个小碎片，从而获得较高的下载速度，A 正确；切片技术与提高图像质量、美观度、便于编辑无直接关系，B、C、D 错误。"
-    },
-    {
-        "bank_name": "测试10",
-        "id": "4645439500207637341",
-        "number": 5,
-        "type": "单选",
-        "text": "在 XML 中，标记是否区分大小写？",
-        "options": [
-            "是",
-            "否",
-            "部分区分",
-            "视情况而定"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "A",
-        "analysis": "在 XML 中，标记必须区分大小写， 和 是不同标记，所以选 A。"
-    },
-    {
-        "bank_name": "测试10",
-        "id": "4648487246692292991",
-        "number": 6,
-        "type": "单选",
-        "text": "在网页制作中，以下哪种工具不是常用的网页及素材制作工具软件？",
-        "options": [
-            "Fireworks",
-            "Dreamweaver",
-            "Adobe Photoshop",
-            "Visual Studio"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "D",
-        "analysis": "Visual Studio 主要用于软件开发，不是常用的网页及素材制作工具；Fireworks 用于网络图形设计，Dreamweaver 是主页编辑工具，Adobe Photoshop 用于图像处理，A、B、C 错误，D 正确。"
-    },
-    {
-        "bank_name": "测试10",
-        "id": "4676944041626322196",
-        "number": 7,
-        "type": "单选",
-        "text": "在 XML 中，注释文本中不能出现的字符或字符串是？",
-        "options": [
-            "-- 或 ->",
-            "<! 或>!",
-            "{或}",
-            "(或)"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "A",
-        "analysis": "在 XML 注释文本中，不能出现 -- 或 ->，否则 XML 解析器可能混淆，所以选 A。"
-    },
-    {
-        "bank_name": "测试10",
-        "id": "4693421924276772089",
-        "number": 8,
-        "type": "单选",
-        "text": "统一资源定位器（URL）的构成不包括以下哪部分？",
-        "options": [
-            "protocol",
-            "machine.name",
-            "directory 和 filename",
-            "标记名"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "D",
-        "analysis": "URL 由 protocol、machine.name、port（通常可省略）、directory 和 filename 组成，不包括标记名，所以选 D。"
-    },
-    {
-        "bank_name": "测试10",
-        "id": "4744898554853166852",
-        "number": 9,
-        "type": "单选",
-        "text": "在 XML 中，空格属性名为？",
-        "options": [
-            "xml:space",
-            "xml:lang",
-            "space",
-            "lang"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "A",
-        "analysis": "在 XML 中，空格属性名为 xml:space，用于说明是否保留 XML 元素数据内容中的空格字符，所以选 A。"
-    },
-    {
-        "bank_name": "测试10",
-        "id": "4747094877347081190",
-        "number": 10,
-        "type": "单选",
-        "text": "在 HTML 中，设置表格间距的属性是？",
-        "options": [
-            "width=#",
-            "height=#",
-            "border=#",
-            "cellspacing=#"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "D",
-        "analysis": "在 HTML 中，cellspacing=# 用于设置表格间距，所以选 D。"
-    },
-    {
-        "bank_name": "测试10",
-        "id": "4767635663643783994",
-        "number": 11,
-        "type": "单选",
-        "text": "在 XML 中，语言属性的取值多以什么为标准？",
-        "options": [
-            "国际标准 ISO639 中的编码",
-            "IANA 中定义的编码",
-            "用户自定义编码",
-            "ASCII 编码"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "A",
-        "analysis": "XML 语言属性取值多以国际标准 ISO639 中的编码为标准，如英语编码是 en，所以选 A。"
-    },
-    {
-        "bank_name": "测试10",
-        "id": "4769307922501396758",
-        "number": 12,
-        "type": "单选",
-        "text": "在 HTML 中，<br>标签的作用是？",
-        "options": [
-            "分段",
-            "分行",
-            "划横线",
-            "设置文本字体"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "B",
-        "analysis": "在 HTML 里， 用于强制换行，所以选 B。"
-    },
-    {
-        "bank_name": "测试10",
-        "id": "4789334281497338698",
-        "number": 13,
-        "type": "单选",
-        "text": "在框架中，创建多个行的属性是？",
-        "options": [
-            "cols=\"x\"",
-            "rows=\"x\"",
-            "border=\"x\"",
-            "frameborder=\"x\""
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "B",
-        "analysis": "在框架中，rows=\"x\" 属性可创建多个行，所以选 B。"
-    },
-    {
-        "bank_name": "测试10",
-        "id": "4793628620881921272",
-        "number": 14,
-        "type": "单选",
-        "text": "在 HTML 中，用于创建一个段落的标签是？",
-        "options": [
-            "<hr>",
-            "<nobr>",
-            "<p>",
-            "<br>"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "C",
-        "analysis": "答案选 C。在 HTML 里， 标签用于定义一个段落； 标签是用来在页面中创建一条水平线，通常用于分隔内容主题； 标签用于禁止文本自动换行； 标签用于在文本中插入一个换行符。所以正确答案是 C。"
-    },
-    {
-        "bank_name": "测试10",
-        "id": "4796924361418708007",
-        "number": 15,
-        "type": "单选",
-        "text": "在 XML 中，处理指示的格式是？",
-        "options": [
-            "<?处理指示名 处理指示信息?>",
-            "<! 处理指示名 处理指示信息！>",
-            "{处理指示名 处理指示信息}",
-            "(处理指示名 处理指示信息)"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "A",
-        "analysis": "在 XML 中，处理指示遵循的格式为 ，所以选 A。"
-    },
-    {
-        "bank_name": "测试10",
-        "id": "4809964244248338101",
-        "number": 16,
-        "type": "单选",
-        "text": "在 HTML 中，图像链接的格式是？",
-        "options": [
-            "<a href=\"URL\">字符串</a>",
-            "<a name=\"name\">text</a>",
-            "<a href=\"URL#name\">text</a>",
-            "<a href=\"URL\"><img src=\"URL\"></a>"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "D",
-        "analysis": "在 HTML 中，图像链接格式是 ，所以选 D。"
-    },
-    {
-        "bank_name": "测试10",
-        "id": "4815961819885245502",
-        "number": 17,
         "type": "多选",
-        "text": "XML 与 HTML 相比，具有哪些特点？",
+        "text": "Dreamweaver 的工作环境包含以下哪些部分？",
         "options": [
-            "是元标记语言，用户可自定义标记",
-            "描述的是结构和语义，而非显示格式",
-            "文档显示需借助特有技术支持",
-            "标记固定，含义特定"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "A,B,C",
-        "analysis": "XML 是元标记语言，描述结构和语义，显示需借助样式表等技术；HTML 标记固定，D 是 HTML 特点，A、B、C 正确。"
-    },
-    {
-        "bank_name": "测试10",
-        "id": "4816208674582438482",
-        "number": 18,
-        "type": "多选",
-        "text": "在 XML 标记属性中，空格属性和语言属性具有以下哪些特点？",
-        "options": [
-            "都是可继承属性",
-            "空格属性用于说明是否保留元素数据中的空格，语言属性用于指定元素使用的语言",
-            "空格属性取值只有 yes 和 no",
-            "语言属性取值只能用 ISO639 编码"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "A,B",
-        "analysis": "空格属性和语言属性都是可继承属性，空格属性取值为 default 和 preserve，语言属性取值多以 ISO639 编码为标准，也可用 IANA 编码并加前缀等，C、D 错误，A、B 正确。"
-    },
-    {
-        "bank_name": "测试10",
-        "id": "4849109017161837688",
-        "number": 19,
-        "type": "单选",
-        "text": "在 XML 文档显示中，W3C 推荐的表达 XML 文档数据显示格式的标准不包括以下哪种？",
-        "options": [
-            "层叠样式表（CSS）",
-            "扩展样式表语言（XSL）",
-            "XSLT（XSL Transformations）",
-            "HTML"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "D",
-        "analysis": "HTML 主要用于网页内容格式化和布局，并非 W3C 推荐用于表达 XML 文档数据显示格式的标准；CSS 和 XSL 是相关标准，XSLT 是 XSL 的一部分，用于转换 XML 文档格式，A、B、C 错误，D 正确。"
-    },
-    {
-        "bank_name": "测试10",
-        "id": "4859514924544824048",
-        "number": 20,
-        "type": "单选",
-        "text": "在框架中，用于指定框架中显示的 HTML 文档位置的标记是？",
-        "options": [
-            "<frameset>",
-            "<frame>",
-            "<noframe>",
-            "<html>"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "B",
-        "analysis": "在框架中，标记通过 src=\"x\" 来指定框架中显示的 HTML 文档位置，所以选 B。"
-    },
-    {
-        "bank_name": "测试10",
-        "id": "4894198797540615142",
-        "number": 21,
-        "type": "单选",
-        "text": "在 HTML 中，图像的基本格式中，alt 属性的作用是？",
-        "options": [
-            "指定图像文件的 URL",
-            "设置图像与文本的对齐方式",
-            "设置图像的大小",
-            "告诉不支持图像的浏览器用 text 代替该图"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "D",
-        "analysis": "在 HTML 图像基本格式中，alt 属性用于告诉不支持图像的浏览器用 text 代替该图，所以选 D。"
-    },
-    {
-        "bank_name": "测试10",
-        "id": "4896474775281225820",
-        "number": 22,
-        "type": "单选",
-        "text": "超文本链接由哪两部分组成？",
-        "options": [
-            "被指向的目标和指向目标的链接",
-            "统一资源定位器和指向目标的链接",
-            "图像和指向目标的链接",
-            "文本和指向目标的链接"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "A",
-        "analysis": "超文本链接由被指向的目标和指向目标的链接两部分组成，所以选 A。"
-    },
-    {
-        "bank_name": "测试10",
-        "id": "4907444980065713240",
-        "number": 23,
-        "type": "单选",
-        "text": "在 HTML 中，当表格宽度大于文本宽度时，设置文本左对齐的属性值是？",
-        "options": [
-            "left",
-            "center",
-            "right",
-            "top"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "A",
-        "analysis": "在 HTML 中，当表格宽度大于文本宽度时，align=left 可使文本左对齐，所以选 A。"
-    },
-    {
-        "bank_name": "测试10",
-        "id": "4958942720865600230",
-        "number": 24,
-        "type": "单选",
-        "text": "利用 XSLT 可以将 XML 文档转换为以下哪种格式？",
-        "options": [
-            "只能转换为 HTML 文档",
-            "只能转换为 XML 文档",
-            "只能转换为文本文件",
-            "可以转换为多种格式，如 HTML、XML、VRML 等"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "D",
-        "analysis": "XSLT 可以很好地描述 XML 文档向多种格式文档的转换方法，包括 HTML、XML、VRML、SVG 等，D 正确，A、B、C 错误。"
-    },
-    {
-        "bank_name": "测试10",
-        "id": "4971400791964793977",
-        "number": 25,
-        "type": "单选",
-        "text": "Dreamweaver 的特点不包括以下哪点？",
-        "options": [
-            "提供可视化网页开发，不降低 HTML 原码的控制",
-            "支持跨浏览器的 Dynamic HTML 等技术",
-            "提供行为和时间线控件进行动画处理",
-            "只能使用一种脚本语言"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "D",
-        "analysis": "Dreamweaver 可使用多种脚本语言，如 VBScript 和 JavaScript 等，A、B、C 是其特点，D 错误。"
-    },
-    {
-        "bank_name": "测试10",
-        "id": "4978492219884141124",
-        "number": 26,
-        "type": "多选",
-        "text": "HTML 中，以下哪些字符需要使用转义序列表示？",
-        "options": [
-            "<",
-            ">",
-            "&",
-            "#"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "A,B,C",
-        "analysis": "在 HTML 使用的 ISO 8859 Latin - 1 字符集中，<、>、& 有特殊含义，需用转义序列表示，# 不需要，A、B、C 正确。"
-    },
-    {
-        "bank_name": "测试10",
-        "id": "4999855097112025060",
-        "number": 27,
-        "type": "单选",
-        "text": "动态网页技术主要依赖于什么编程？",
-        "options": [
-            "服务器端编程",
-            "客户端编程",
-            "前后端结合编程",
-            "云端编程"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "A",
-        "analysis": "动态网页技术主要依赖服务器端编程，包括 CGI 版本、Server - API 程序、Java Serverlets 以及服务器端脚本语言等，A 正确，B、C、D 错误。"
-    },
-    {
-        "bank_name": "测试10",
-        "id": "5004021101544375407",
-        "number": 28,
-        "type": "单选",
-        "text": "在 HTML 中，小于号（<）的转义序列是以下哪一个？",
-        "options": [
-            "&amp; 或 &#38;",
-            "&gt; 或 &#62;",
-            "&lt; 或 &#60;",
-            "&quot; 或 &#34;"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "C",
-        "analysis": "答案选 C。下面对各选项进行分析： 选项 A：& 或 & 是和号（&）的转义序列，不是小于号的转义序列。 选项 B：> 或 > 是大于号（>）的转义序列，并非小于号的转义序列。 选项 C：< 或 < 是小于号（<）的转义序列，在 HTML 中，当需要显示小于号这个字符本身时，使用这两个转义序列来避免被解析为标签的开始。 选项 D：\" 或 \" 是引号（\"）的转义序列，与小于号无关。"
-    },
-    {
-        "bank_name": "测试10",
-        "id": "5006393531577073347",
-        "number": 29,
-        "type": "单选",
-        "text": "在 HTML 中，表格列名的标签是？",
-        "options": [
-            "<table>",
-            "<tr>",
-            "<th>",
-            "<td>"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "C",
-        "analysis": "在 HTML 中，用于说明表格的列数和相应栏目的名称，所以选 C。"
-    },
-    {
-        "bank_name": "测试10",
-        "id": "5016569551334882397",
-        "number": 30,
-        "type": "单选",
-        "text": "在 HTML 中，设置文本颜色的属性是？",
-        "options": [
-            "background",
-            "bgcolor",
-            "text",
-            "link"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "C",
-        "analysis": "在 HTML 的标签中，text 属性用于指定文本颜色，所以选 C。"
-    },
-    {
-        "bank_name": "测试10",
-        "id": "5020406574181562039",
-        "number": 31,
-        "type": "多选",
-        "text": "在 XML 元素中，以下哪些属于元素内容？",
-        "options": [
-            "其他元素",
-            "字符数据",
-            "实体引用",
-            "处理指令"
+            "主菜单",
+            "应用程序栏",
+            "文档工具栏",
+            "属性面板"
         ],
         "student_answer": "未提供",
         "correct_answer": "A,B,C,D",
-        "analysis": "XML 元素内容可包含其他元素、字符数据、实体引用、处理指令、注释和 CDATA 部分等，A、B、C、D 都正确。"
+        "analysis": "Dreamweaver 工作环境包括主菜单、应用程序栏、文档工具栏、属性面板以及其他多种面板等，A、B、C、D 都正确。"
     },
     {
-        "bank_name": "测试10",
-        "id": "5022080396894746294",
+        "bank_name": "测试11",
+        "id": "4651945897511907611",
+        "number": 2,
+        "type": "单选",
+        "text": "在网站创建过程中，选择域名时，以下哪种做法不恰当？",
+        "options": [
+            "选择与公司商标或业务无关的域名",
+            "选择简短易记的域名",
+            "选择包含产品类型的域名",
+            "选择没有歧义的域名"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "选择域名时，应尽量选择与公司商标、业务相关，简短易记且没有歧义的域名，选择与公司商标或业务无关的域名不利于品牌推广和用户记忆，A 不恰当。B、C、D 是恰当的做法。"
+    },
+    {
+        "bank_name": "测试11",
+        "id": "4663794379279822504",
+        "number": 3,
+        "type": "单选",
+        "text": "在进行域名注册时，可到哪个机构进行注册？",
+        "options": [
+            "中国互联网络信息中心（www.cnnic.net.cn）",
+            "www",
+            "百度",
+            "腾讯"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "可到中国互联网络信息中心（www.cnnic.net.cn）注册域名，A 正确；百度、腾讯不负责域名注册，排除 B、C、D。"
+    },
+    {
+        "bank_name": "测试11",
+        "id": "4681863836823946161",
+        "number": 4,
+        "type": "单选",
+        "text": "在 ADO 中，创建命令时，若要指定参数化命令字符串，可使用什么符号？",
+        "options": [
+            "'?'",
+            "'%'",
+            "'#'",
+            "'$'"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "创建参数化命令字符串用 '?' 占位符，A 正确；B、C、D 不是 ADO 参数化命令的占位符，排除。"
+    },
+    {
+        "bank_name": "测试11",
+        "id": "4682590814151010534",
+        "number": 5,
+        "type": "多选",
+        "text": "Session 对象的属性有？",
+        "options": [
+            "CodePage",
+            "LCID",
+            "SessionID",
+            "Timeout"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B,C,D",
+        "analysis": "Session 对象的属性有 CodePage（代码页）、LCID（地区标识）、SessionID（会话标识符）、Timeout（超时周期），A、B、C、D 都正确。"
+    },
+    {
+        "bank_name": "测试11",
+        "id": "4684425572323152392",
+        "number": 6,
+        "type": "单选",
+        "text": "网站更新时，为避免用户误访问过期内容，可采取的措施是？",
+        "options": [
+            "给内容加上日期标注",
+            "删除过期内容",
+            "减少内容更新频率",
+            "不发布新内容"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "给内容加日期标注可避免用户误访问过期内容，A 正确；删除过期内容可能导致用户书签失效，B 错误；减少更新频率和不发布新内容不利于网站发展，C、D 错误。"
+    },
+    {
+        "bank_name": "测试11",
+        "id": "4690333455993691813",
+        "number": 7,
+        "type": "单选",
+        "text": "Ajax 应用程序的核心是？",
+        "options": [
+            "XMLHttpRequest 对象",
+            "JavaScript",
+            "XML",
+            "HTML"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "XMLHttpRequest 对象是 Ajax 应用程序的核心，A 正确；JavaScript、XML、HTML 是 Ajax 组成技术，但不是核心，排除 B、C、D。"
+    },
+    {
+        "bank_name": "测试11",
+        "id": "4691367883083570955",
+        "number": 8,
+        "type": "单选",
+        "text": "在 JSP 页面中，要获取当前用户的会话对象，可使用以下哪个内置对象？",
+        "options": [
+            "session",
+            "request",
+            "application",
+            "out"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "在 JSP 页面中，通过内置对象 session 可以获取当前用户的会话对象，用于存储和获取与该用户会话相关的数据，A 正确。request 对象用于获取客户端的请求信息，B 错误；application 对象代表整个 Web 应用程序，用于存储应用程序级别的数据，C 错误；out 对象用于向客户端输出数据，D 错误。"
+    },
+    {
+        "bank_name": "测试11",
+        "id": "4706413764941346923",
+        "number": 9,
+        "type": "多选",
+        "text": "Server 对象的方法有？",
+        "options": [
+            "CreateObject",
+            "Execute",
+            "GetLastError",
+            "HTMLEncode"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B,C,D",
+        "analysis": "Server 对象的方法有 CreateObject（创建对象实例）、Execute（转移页面执行控制权并返回）、GetLastError（获取错误信息）、HTMLEncode（对字符串进行 HTML 编码）等，A、B、C、D 都正确。"
+    },
+    {
+        "bank_name": "测试11",
+        "id": "4728355963092681478",
+        "number": 10,
+        "type": "单选",
+        "text": "JSP 技术强调可重用的组件，这些组件主要是？",
+        "options": [
+            "JavaBeans 或者 Enterprise JavaBeans 组件",
+            "HTML 组件",
+            "JavaScript 组件",
+            "CSS 组件"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "JSP 依赖 JavaBeans 或 Enterprise JavaBeans 组件实现可重用，A 正确；HTML、JavaScript、CSS 组件不是 JSP 强调的可重用组件，排除 B、C、D。"
+    },
+    {
+        "bank_name": "测试11",
+        "id": "4742955174717536155",
+        "number": 11,
+        "type": "单选",
+        "text": "在 PHP 中，以下哪种数据类型不能直接作为值存储到 Cookie 里，需要经过额外处理才行？",
+        "options": [
+            "数组",
+            "字符串",
+            "整数",
+            "布尔值"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "答案选 A。下面对各选项进行分析： 选项 A：PHP 的 Cookie 只能存储字符串类型的数据。数组不是字符串类型，若要将数组存储到 Cookie 中，需要先使用 serialize() 函数将数组序列化为字符串，之后从 Cookie 中取出时再用 unserialize() 函数还原。所以数组不能直接存储在 Cookie 里，该选项正确。 选项 B：字符串可以直接作为 Cookie 的值进行存储，PHP 能直接处理这种类型的数据，该选项错误。 选项 C：整数在存储到 Cookie 时，PHP 会自动将"
+    },
+    {
+        "bank_name": "测试11",
+        "id": "4774271899820420800",
+        "number": 12,
+        "type": "单选",
+        "text": "在网站建设中，分层结构的网站首页通常包含什么？",
+        "options": [
+            "到其他网页的链接，且每一页包含主要主题区及指向更多网页的链接",
+            "一个单独的、简单的网页，描述一个人、小业务或产品",
+            "一个长网页，被设计成从头到尾阅读",
+            "多个网页，网页间有复杂的网状链接"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "分层结构的网站首页包含到其他网页的链接，且每一页包含主要主题区，同时每个网页又可以包含指向更多网页的链接，形成树型结构，A 正确。B 是布告板类型网站特点，C 是单页线性网站特点，D 是网状结构网站特点，排除 B、C、D。"
+    },
+    {
+        "bank_name": "测试11",
+        "id": "4784207048660460019",
+        "number": 13,
+        "type": "单选",
+        "text": "在 ASP 中，若想获取客户端通过表单提交的信息，应使用 Request 对象的哪个集合？",
+        "options": [
+            "Form",
+            "QueryString",
+            "Cookies",
+            "ServerVariables"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "当 METHOD 属性值为 POST 时，Form 集合包含所有作为请求提交的 段中的 HTML 控件单元的值，用于获取表单提交信息；QueryString 用于获取 URL 后面的名称 / 数值对；Cookies 用于获取客户端的 Cookie 值；ServerVariables 用于获取 HTTP 报头值和服务器环境变量值，A 正确，B、C、D 错误。"
+    },
+    {
+        "bank_name": "测试11",
+        "id": "4795242631114560050",
+        "number": 14,
+        "type": "单选",
+        "text": "在 Web 网站维护中，规划更新内容时，以下哪项操作可以确保网站使用的是最新版本的文件？",
+        "options": [
+            "定期检查并替换过期文件",
+            "单击所有链接，替换或删除损坏的链接",
+            "让客户浏览网站，找出过期内容",
+            "查看是否有重要信息发生变化"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "定期检查并替换过期文件可以确保网站使用的是最新版本的文件，A 正确。单击所有链接是为了检查链接是否损坏，B 错误；让客户浏览网站找过期内容主要针对内容更新，C 错误；查看重要信息变化与确保文件是最新版本无关，D 错误。"
+    },
+    {
+        "bank_name": "测试11",
+        "id": "4824325933398712142",
+        "number": 15,
+        "type": "多选",
+        "text": "Request 对象的集合包括以下哪些？",
+        "options": [
+            "ClientCertificate",
+            "Cookies",
+            "Form",
+            "QueryString"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B,C,D",
+        "analysis": "Request 对象的集合有 ClientCertificate、Cookies、Form、QueryString、ServerVariables，A、B、C、D 都正确。"
+    },
+    {
+        "bank_name": "测试11",
+        "id": "4841541296540048409",
+        "number": 16,
+        "type": "单选",
+        "text": "ADO 中，Connection 对象的 Errors 集合包含什么？",
+        "options": [
+            "为响应与数据源有关的单一错误而创建的所有 Error 对象",
+            "所有命令执行错误信息",
+            "所有记录集操作错误信息",
+            "所有参数传递错误信息"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "Connection 对象的 Errors 集合包含与数据源有关的单一错误创建的所有 Error 对象，A 正确；不是命令、记录集、参数相关错误的全部信息，排除 B、C、D。"
+    },
+    {
+        "bank_name": "测试11",
+        "id": "4855254757136829642",
+        "number": 17,
+        "type": "多选",
+        "text": "Application 对象的方法包括？",
+        "options": [
+            "Contents.Remove",
+            "Contents.RemoveAll",
+            "Lock",
+            "Unlock"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B,C,D",
+        "analysis": "Application 对象的方法有 Contents.Remove（删除指定变量）、Contents.RemoveAll（删除所有变量）、Lock（锁定对象）、Unlock（解除锁定），A、B、C、D 都正确。"
+    },
+    {
+        "bank_name": "测试11",
+        "id": "4858046784809332014",
+        "number": 18,
+        "type": "单选",
+        "text": "将文件发布到 Web 服务器，可通过什么工具软件传输文件？",
+        "options": [
+            "FTP 工具软件",
+            "HTTP 工具软件",
+            "SMTP 工具软件",
+            "POP3 工具软件"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "通过 FTP 工具软件将文件传输到 Web 服务器，A 正确；HTTP 是协议不是工具软件，SMTP 用于邮件发送，POP3 用于邮件接收，排除 B、C、D。"
+    },
+    {
+        "bank_name": "测试11",
+        "id": "4866302436134909516",
+        "number": 19,
+        "type": "单选",
+        "text": "当前两种最流行的 Web 服务器是？",
+        "options": [
+            "运行于 Linux 平台的 Apache Web 服务器和运行于 Windows 平台的 Microsoft 的 IIS Web 服务器",
+            "运行于 Linux 平台的 IIS Web 服务器和运行于 Windows 平台的 Apache Web 服务器",
+            "运行于 Windows 平台的 Netscape Enterprise Server 和运行于 Linux 平台的 iPlanet Web Server",
+            "运行于 Windows 平台的 Apache Web 服务器和运行于 Linux 平台的 Netscape Enterprise Server"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "最流行的 Web 服务器是 Linux 上的 Apache 和 Windows 上的 IIS，A 正确；IIS 一般在 Windows 平台，Apache 一般在 Linux 平台，B、D 错误；Netscape Enterprise Server 和 iPlanet Web Server 不是最流行的，C 错误。"
+    },
+    {
+        "bank_name": "测试11",
+        "id": "4868478231864616359",
+        "number": 20,
+        "type": "单选",
+        "text": "JSP 引擎解释 JSP 标识和小脚本，生成的内容以什么格式返回给浏览器？",
+        "options": [
+            "XML 格式",
+            "HTML（或者 XML）格式",
+            "JSON 格式",
+            "纯文本格式"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "JSP 引擎生成的内容以 HTML（或者 XML）格式返回给浏览器，B 正确；JSON 格式和纯文本格式不是 JSP 引擎返回内容的常见格式，排除 C、D；A 选项不全面，排除 A。"
+    },
+    {
+        "bank_name": "测试11",
+        "id": "4869562384451281239",
+        "number": 21,
+        "type": "单选",
+        "text": "XMLHttpRequest 对象的事件是？",
+        "options": [
+            "onreadystatechange",
+            "onload",
+            "onclick",
+            "onchange"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "XMLHttpRequest 对象只有 onreadystatechange 事件，A 正确；onload、onclick、onchange 不是其事件，排除 B、C、D。"
+    },
+    {
+        "bank_name": "测试11",
+        "id": "4892561498649348082",
+        "number": 22,
+        "type": "单选",
+        "text": "XMLHttpRequest 对象的 status 属性在什么时候可用？",
+        "options": [
+            "仅当 readyState 属性的值为 3 或 4 时",
+            "仅当 readyState 属性的值为 0 时",
+            "仅当 readyState 属性的值为 1 时",
+            "仅当 readyState 属性的值为 2 时"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "status 属性在 readyState 为 3 或 4 时可用，A 正确；B、C、D 时不可用，排除。"
+    },
+    {
+        "bank_name": "测试11",
+        "id": "4897878577701907277",
+        "number": 23,
+        "type": "单选",
+        "text": "PHP 中，专门用于连接 MySQL 数据库的扩展（非弃用）是？",
+        "options": [
+            "mysqli",
+            "mysql",
+            "PDO（可用于多种数据库，包含 MySQL）",
+            "以上都不对"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "在连接 MySQL 数据库时，常用的非弃用扩展是 mysqli，A 正确。mysql 扩展已弃用，B 错误；PDO 是更通用的数据库抽象层扩展，可用于连接多种数据库，虽然也能连接 MySQL，但本题强调专门连接 MySQL 的扩展，C 错误。"
+    },
+    {
+        "bank_name": "测试11",
+        "id": "4906274467693997089",
+        "number": 24,
+        "type": "单选",
+        "text": "ADO 中，Recordset 对象的 BOF 属性和 EOF 属性同时为 True 时，表示什么？",
+        "options": [
+            "记录集为空",
+            "记录集只有一条记录",
+            "记录集到达开头",
+            "记录集到达末尾"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "当 Recordset 对象的 BOF（Begin Of File）属性和 EOF（End Of File）属性同时为 True 时，表示记录集为空，没有数据，A 正确。只有一条记录时 BOF 和 EOF 不会同时为 True，B 错误；记录集到达开头时只有 BOF 为 True，C 错误；到达末尾时只有 EOF 为 True，D 错误。"
+    },
+    {
+        "bank_name": "测试11",
+        "id": "4908918527727687415",
+        "number": 25,
+        "type": "单选",
+        "text": "在 JSP 中，若要以动态方式在页面中包含另一个 JSP 页面，可使用以下哪种 JSP 动作或指令？",
+        "options": [
+            "<%@ include file=\"被包含页面路径\" %>",
+            "<jsp:include page=\"被包含页面路径\" />",
+            "<%@ page import=\"包名\" %>",
+            "<jsp:forward page=\"目标页面路径\" />"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "答案选 B。各选项分析如下： 选项 A：<%@ include file=\"...\" %> 是静态包含，翻译阶段插入内容，非动态包含。 选项 B： 为动态包含，请求处理时嵌入被包含页输出。 选项 C：<%@ page import=\"...\" %> 用于导入 Java 包，与页面包含无关。 选项 D： 是请求转发，并非页面包含动作。"
+    },
+    {
+        "bank_name": "测试11",
+        "id": "4910395626913106502",
+        "number": 26,
+        "type": "单选",
+        "text": "JSP 页面被编译成什么运行？",
+        "options": [
+            "Java Servlet",
+            "HTML 文件",
+            "JavaScript 脚本",
+            "XML 文件"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "JSP 页面会被编译成 Java Servlet 在服务器端运行，A 正确。JSP 最终生成 HTML 格式内容发送给客户端，但本身不是编译成 HTML 文件运行，B 错误；JSP 与 JavaScript 脚本、XML 文件无关，C、D 错误。"
+    },
+    {
+        "bank_name": "测试11",
+        "id": "4923086105326378696",
+        "number": 27,
+        "type": "单选",
+        "text": "在 ADO 中，执行不返回数据的命令，通常使用哪个对象的 Execute 方法？",
+        "options": [
+            "Connection",
+            "Command",
+            "Recordset",
+            "Field"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "执行不返回数据的命令通常使用 Connection 对象的 Execute 方法，A 正确。Command 对象的 Execute 方法也可执行命令，但它更侧重于可高效重复利用的参数化命令执行，B 错误；Recordset 对象主要用于存储和操作数据，其 Open 方法用于打开记录集，C 错误；Field 对象代表记录集中的字段，不用于执行命令，D 错误。"
+    },
+    {
+        "bank_name": "测试11",
+        "id": "4927575430780855716",
+        "number": 28,
+        "type": "单选",
+        "text": "在 ADO 中，要对 Recordset 中的数据进行排序，可使用 Recordset 对象的哪个属性？",
+        "options": [
+            "Sort",
+            "Filter",
+            "Bookmark",
+            "EOF"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "在 ADO 中，使用 Recordset 对象的 Sort 属性可以对其中的数据进行排序，A 正确。Filter 属性用于筛选记录集，B 错误；Bookmark 属性用于定位记录集的特定行，C 错误；EOF 属性用于判断是否到达记录集末尾，D 错误。"
+    },
+    {
+        "bank_name": "测试11",
+        "id": "4930350290584014253",
+        "number": 29,
+        "type": "单选",
+        "text": "在 ADO 中，返回 Recordset 的方法不包括以下哪一个？",
+        "options": [
+            "Connection.Execute",
+            "Command.Execute",
+            "Recordset.Open",
+            "Field.GetValue"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "D",
+        "analysis": "Field.GetValue 不是返回 Recordset 的方法，A、B、C 是返回 Recordset 的方法，排除 A、B、C，选 D。"
+    },
+    {
+        "bank_name": "测试11",
+        "id": "4943006848752562065",
+        "number": 30,
+        "type": "单选",
+        "text": "以下哪项不是 JSP 相对于 ASP、PHP 的优点？",
+        "options": [
+            "内容的生成和显示分离",
+            "强调可重用的组件",
+            "采用标识简化页面开发",
+            "执行效率更高"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "D",
+        "analysis": "JSP 具有内容生成和显示分离、强调组件重用、标识简化开发等优点，但执行效率更高不是 JSP 相对 ASP、PHP 的优点，PHP 在某些场景下执行效率较高，D 符合题意；A、B、C 是 JSP 优点，排除。"
+    },
+    {
+        "bank_name": "测试11",
+        "id": "4948040681370213651",
+        "number": 31,
+        "type": "单选",
+        "text": "JSP 技术的设计目的是？",
+        "options": [
+            "使构造基于 Web 的应用程序更易和快捷",
+            "取代 HTML 技术",
+            "提高网页的加载速度",
+            "增强网页的安全性"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "JSP 技术设计目的是让基于 Web 的应用程序开发更简单快速，A 正确；JSP 是在 HTML 基础上发展的，并非取代 HTML，B 错误；提高加载速度和增强安全性不是其设计目的，C、D 错误。"
+    },
+    {
+        "bank_name": "测试11",
+        "id": "4967994139320851747",
         "number": 32,
         "type": "单选",
-        "text": "HTML 是哪种语言的一个应用？",
+        "text": "在 ADO 中，用于控制 Recordset 中可访问行的属性是？",
         "options": [
-            "标准通用型标注语言（SGML）",
-            "超文本传输协议（HTTP）",
-            "文件传输协议（FTP）",
-            "网络新闻资源协议（news）"
+            "Filter",
+            "Sort",
+            "Bookmark",
+            "EOF"
         ],
         "student_answer": "未提供",
         "correct_answer": "A",
-        "analysis": "HTML 是标准通用型标注语言（SGML）的一个应用，用于对文档进行格式化，所以选 A。"
+        "analysis": "Filter 属性控制 Recordset 中可访问的行，A 正确；Sort 控制行顺序，Bookmark 用于定位行，EOF 判断是否到记录集末尾，排除 B、C、D。"
     },
     {
-        "bank_name": "测试10",
-        "id": "5028749940868750024",
+        "bank_name": "测试11",
+        "id": "4975016544305134741",
         "number": 33,
         "type": "单选",
-        "text": "在 XML 中，CDATA 文本内容中不能出现的字符串是？",
+        "text": "多页线性网站结构与单页线性网站结构的主要区别是？",
         "options": [
-            "]]>",
-            "[[",
-            "]]",
-            "<<"
+            "多页线性被分解成多个逻辑上连贯的网页，单页线性是一个网页",
+            "多页线性有首页，单页线性没有",
+            "多页线性适合长文档，单页线性适合短文档",
+            "多页线性有目录，单页线性没有"
         ],
         "student_answer": "未提供",
         "correct_answer": "A",
-        "analysis": "在 XML 的 CDATA 文本内容中，不能出现]]>，因为它是 CDATA 数据块的结束标志，所以选 A。"
+        "analysis": "多页线性分解成多个连贯网页，单页线性是一个网页，A 正确；单页线性和多页线性都可能有首页，B 错误；多页线性和单页线性适合文档长度不是主要区别，C 错误；两者都不一定有目录，D 错误。"
     },
     {
-        "bank_name": "测试10",
-        "id": "5044157894122146233",
+        "bank_name": "测试11",
+        "id": "4981416035374956195",
         "number": 34,
         "type": "单选",
-        "text": "在 XML 中，CDATA 的基本语法是？",
+        "text": "Ajax 中，XMLHttpRequest 对象的 abort () 方法的作用是？",
         "options": [
-            "<![CDATA [文本内容]>",
-            "<[CDATA [文本内容]]>",
-            "{CDATA [文本内容]}",
-            "(CDATA [文本内容])"
+            "暂停与 XMLHttpRequest 对象相联系的 HTTP 请求，把该对象复位到未初始化状态",
+            "发送 HTTP 请求",
+            "设置请求的头部信息",
+            "检索响应的头部值"
         ],
         "student_answer": "未提供",
         "correct_answer": "A",
-        "analysis": "在 XML 中，CDATA 基本语法是 ，可使 XML 解析器将其中标记当作普通数据，所以选 A。"
+        "analysis": "abort () 方法用于暂停与 XMLHttpRequest 对象相联系的 HTTP 请求，并把该对象复位到未初始化状态，A 正确。send () 方法用于发送 HTTP 请求，B 错误；setRequestHeader () 方法用于设置请求的头部信息，C 错误；getRequestHeader () 方法用于检索响应的头部值，D 错误。"
     },
     {
-        "bank_name": "测试10",
-        "id": "5075325893743475038",
+        "bank_name": "测试11",
+        "id": "4992994431376849285",
         "number": 35,
-        "type": "单选",
-        "text": "早期的 Web 主要是哪种类型页面的浏览？",
+        "type": "多选",
+        "text": "JSP 技术的特点包括以下哪些？",
         "options": [
-            "静态页面",
-            "动态页面",
-            "交互页面",
-            "多媒体页面"
+            "内容的生成和显示分离",
+            "强调可重用的组件",
+            "采用标识简化页面开发",
+            "健壮性与安全性"
         ],
         "student_answer": "未提供",
-        "correct_answer": "A",
-        "analysis": "早期的 Web 主要是静态页面的浏览，适合组织静态文档元素间的链接，A 正确；动态页面是 Web 技术发展第二阶段的产物，B 错误；交互页面和多媒体页面也是在后期发展中出现的，C、D 错误。"
+        "correct_answer": "A,B,C,D",
+        "analysis": "JSP 具有内容生成和显示分离、强调组件重用、标识简化开发、健壮安全等特点，A、B、C、D 都正确。"
     },
     {
-        "bank_name": "测试10",
-        "id": "5129279878871927808",
+        "bank_name": "测试11",
+        "id": "5016742329510619877",
         "number": 36,
         "type": "单选",
-        "text": "在 HTML 中，设置文本与表框距离的属性是？",
+        "text": "在 JSP 中，用于实例化服务器端 JavaBean 的动作标识是？",
         "options": [
-            "cellpadding=#",
-            "align=#",
-            "valign=#",
-            "bgcolor=#"
+            "jsp:useBean",
+            "jsp:forward",
+            "jsp:include",
+            "jsp:param"
         ],
         "student_answer": "未提供",
         "correct_answer": "A",
-        "analysis": "在 HTML 中，cellpadding=# 用于设置文本与表框的距离，所以选 A。"
+        "analysis": "jsp:useBean用于实例化服务器端 JavaBean，A 正确；jsp:forward用于转发请求，jsp:include用于包含其他文件，jsp:param用于传递参数，排除 B、C、D。"
     },
     {
-        "bank_name": "测试10",
-        "id": "5141258210584954983",
+        "bank_name": "测试11",
+        "id": "5024731663590164553",
         "number": 37,
         "type": "单选",
-        "text": "当浏览器不支持框架时，会显示什么标记的内容？",
+        "text": "在 PHP 中，若要获取当前脚本所在的绝对路径，应该使用以下哪个预定义常量？",
         "options": [
-            "<frameset>",
-            "<frame>",
-            "<noframe>",
-            "<html>"
+            "__FILE__",
+            "__LINE__",
+            "__DIR__",
+            "__FUNCTION__"
         ],
         "student_answer": "未提供",
         "correct_answer": "C",
-        "analysis": "当浏览器不支持框架时，会显示 标记的内容，所以答案是 C。"
+        "analysis": "答案选 C。各选项分析如下： 选项 A：__FILE__ 返回当前 PHP 文件的完整路径和文件名，非单纯目录路径。 选项 B：__LINE__ 返回其在代码中所处的行号，与路径无关。 选项 C：__DIR__ 返回当前脚本所在目录的绝对路径，符合题意。 选项 D：__FUNCTION__ 返回当前函数的名称，和路径无关。"
     },
     {
-        "bank_name": "测试10",
-        "id": "5151330180526103942",
+        "bank_name": "测试11",
+        "id": "5050129971731476728",
         "number": 38,
         "type": "单选",
-        "text": "层叠样式表（CSS）最早是为哪种语言提出的？",
+        "text": "在 XMLHttpRequest 对象的方法中，用于发送 HTTP 请求的是？",
         "options": [
-            "HTML",
-            "XML",
-            "XSL",
-            "JavaScript"
+            "send",
+            "open",
+            "abort",
+            "setRequestHeader"
         ],
         "student_answer": "未提供",
         "correct_answer": "A",
-        "analysis": "CSS 最早是为方便 HTML 语言提出的，用于保证文档显示格式的一致性和格式化，A 正确，B、C、D 错误。"
+        "analysis": "send 方法用于发送 HTTP 请求，A 正确；open 用于初始化，abort 用于暂停请求，setRequestHeader 用于设置请求头部信息，排除 B、C、D。"
     },
     {
-        "bank_name": "测试10",
-        "id": "5156753175682841819",
+        "bank_name": "测试11",
+        "id": "5057734357280819261",
         "number": 39,
         "type": "单选",
-        "text": "在框架的基本结构中，定义框架结构的标记是？",
+        "text": "在 JSP 中，小脚本的作用不包括以下哪一项？",
         "options": [
-            "<frameset>",
-            "<frame>",
-            "<noframe>",
-            "<html>"
+            "执行不为标识所支持的功能",
+            "将所有东西捆绑在一起",
+            "确定当前时间并据此欢迎用户",
+            "创建 JavaBean 组件"
         ],
         "student_answer": "未提供",
-        "correct_answer": "A",
-        "analysis": "在框架基本结构中，标记定义了框架的结构，所以选 A。"
+        "correct_answer": "D",
+        "analysis": "小脚本可执行特殊功能、捆绑内容、确定时间并欢迎用户，但创建 JavaBean 组件是jsp:useBean的功能，D 符合题意；A、B、C 是小脚本作用，排除。"
     },
     {
-        "bank_name": "测试10",
-        "id": "5159492420225920524",
+        "bank_name": "测试11",
+        "id": "5082389609862499003",
         "number": 40,
         "type": "单选",
-        "text": "W3C 制定的书写 XML 解析器的标准接口规范是？",
+        "text": "PHP 与 ASP 相比，最重要的特点是？",
         "options": [
-            "文档对象模型（DOM）",
-            "简单应用程序接口（SAX）",
-            "ODBC/JDBC",
-            "以上都不是"
+            "对 MySQL 等数据库的存取更直接、简练，效率更高",
+            "免费开源",
+            "跨平台支持",
+            "易学易用"
         ],
         "student_answer": "未提供",
         "correct_answer": "A",
-        "analysis": "W3C 制定的书写 XML 解析器的标准接口规范是文档对象模型（DOM），所以选 A。"
+        "analysis": "PHP 相对 ASP，对 MySQL 等数据库存取直接简练、效率更高是其重要特点，A 正确；免费开源、跨平台支持、易学易用不是与 ASP 相比的最重要特点，排除 B、C、D。"
     },
     {
-        "bank_name": "测试10",
-        "id": "5179016005174329732",
+        "bank_name": "测试11",
+        "id": "5082648991237952621",
         "number": 41,
-        "type": "单选",
-        "text": "目前一般所说的 XSL 大多是指？",
+        "type": "多选",
+        "text": "Response 对象的方法有？",
         "options": [
-            "XSLT",
-            "FO",
-            "XPath",
-            "CSS"
+            "Write",
+            "Redirect",
+            "Flush",
+            "End"
         ],
         "student_answer": "未提供",
-        "correct_answer": "A",
-        "analysis": "现在一般所说的 XSL 大都是指 XSLT，其从 XSL 中分离出来专门用于描述树转换，A 正确，B、C、D 错误。"
+        "correct_answer": "A,B,C,D",
+        "analysis": "Response 对象的方法有 Write（写入内容）、Redirect（重定向页面）、Flush（发送缓冲内容）、End（结束处理页面脚本）等，A、B、C、D 都正确。"
     },
     {
-        "bank_name": "测试10",
-        "id": "5181919083050061836",
+        "bank_name": "测试11",
+        "id": "5091841618126742296",
         "number": 42,
         "type": "单选",
-        "text": "在 HTML 中，设置表格颜色的属性是？",
+        "text": "获得 Web 服务器空间的方式不包括以下哪一种？",
         "options": [
-            "width=#",
-            "height=#",
-            "border=#",
-            "bgcolor=#"
+            "企业或单位内部的已建 Web 服务器",
+            "托管 Web 主机",
+            "新建 Web 服务器",
+            "使用个人电脑作为 Web 服务器"
         ],
         "student_answer": "未提供",
         "correct_answer": "D",
-        "analysis": "在 HTML 中，bgcolor=# 用于设置表格颜色，所以选 D。"
+        "analysis": "获得 Web 服务器空间方式有企业内部服务器、托管主机、新建服务器，未提及用个人电脑作为 Web 服务器，A、B、C 是获取方式，排除 A、B、C，选 D。"
     },
     {
-        "bank_name": "测试10",
-        "id": "5182277548302001204",
+        "bank_name": "测试11",
+        "id": "5117042543812626268",
         "number": 43,
         "type": "单选",
-        "text": "在 XML 中，属性的取值必须用什么引起来？",
+        "text": "在 ADO 更新数据时，“批” 模式下，将更改传送给数据源的方法是？",
         "options": [
-            "引号",
-            "括号",
-            "花括号",
-            "尖括号"
+            "UpdateBatch",
+            "Update",
+            "CommitTrans",
+            "Rollback"
         ],
         "student_answer": "未提供",
         "correct_answer": "A",
-        "analysis": "在 XML 中，属性的取值必须用引号引起来，这与 HTML 不同，所以选 A。"
+        "analysis": "“批” 模式下用 UpdateBatch 将更改传送给数据源，A 正确；Update 用于立即模式下更新，CommitTrans 用于提交事务，Rollback 用于回滚事务，排除 B、C、D。"
     },
     {
-        "bank_name": "测试10",
-        "id": "5187695280894966276",
+        "bank_name": "测试11",
+        "id": "5118169428919033961",
         "number": 44,
         "type": "单选",
-        "text": "在 HTML 中，标记一个目标的方法是？",
+        "text": "在 Ajax 应用中，当 XMLHttpRequest 对象的 readyState 属性值为 2 时，表示？",
         "options": [
-            "<a href=\"URL\">字符串</a>",
-            "<a name=\"name\">text</a>",
-            "<a href=\"URL#name\">text</a>",
-            "<a href=\"URL\"><img src=\"URL\"></a>"
+            "XMLHttpRequest 对象已经通过 send () 方法把一个请求发送到服务器端，但还没有收到响应",
+            "未初始化状态，已经创建一个 XMLHttpRequest 对象，但未初始化",
+            "发送状态，用户已经调用了 open () 方法且准备好发送请求",
+            "接收状态，已经接收到 HTTP 响应头部信息，但消息体部分还没有完全接收结束"
         ],
         "student_answer": "未提供",
-        "correct_answer": "B",
-        "analysis": "在 HTML 中，标记一个目标的方法是 text ，所以选 B。"
+        "correct_answer": "A",
+        "analysis": "当 XMLHttpRequest 对象的 readyState 属性值为 2 时，表示 XMLHttpRequest 对象已经通过 send () 方法把一个请求发送到服务器端，但还没有收到响应，A 正确。未初始化状态是 0，B 错误；发送状态是 1，C 错误；接收状态是 3，D 错误。"
     },
     {
-        "bank_name": "测试10",
-        "id": "5192201552921444069",
+        "bank_name": "测试11",
+        "id": "5120591699381795898",
         "number": 45,
         "type": "单选",
-        "text": "XML 文档的基本语法中，格式正规的 XML 文档由哪三部分组成？",
+        "text": "PHP 中，以下哪个函数可以用于将字符串转换为整数？",
         "options": [
-            "可选的序言、文档的主体和可选的尾声",
-            "XML 声明、文档类型声明、处理指令",
-            "标记、字符数据、CDATA 数据块",
-            "注释、处理指示、空白"
+            "intval()",
+            "strval()",
+            "floatval()",
+            "doubleval()"
         ],
         "student_answer": "未提供",
         "correct_answer": "A",
-        "analysis": "格式正规的 XML 文档由可选的序言、文档的主体和可选的尾声组成，所以选 A。"
+        "analysis": "intval () 函数用于将字符串转换为整数，A 正确。strval () 用于将其他类型转换为字符串，B 错误；floatval () 用于将值转换为浮点数，C 错误；PHP 中没有 doubleval () 函数，D 错误。"
     },
     {
-        "bank_name": "测试10",
-        "id": "5199145363460121971",
+        "bank_name": "测试11",
+        "id": "5177003071201875401",
         "number": 46,
-        "type": "单选",
-        "text": "在 XML 中，以下关于标记结束的说法正确的是？",
-        "options": [
-            "不需要结束标记",
-            "可以随意结束",
-            "必须有正确的结束标记",
-            "开始标记和结束标记可不一致"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "C",
-        "analysis": "在 XML 中，标记必须有正确的结束标记，除空标记外，所以选 C。"
-    },
-    {
-        "bank_name": "测试10",
-        "id": "5213415278037432498",
-        "number": 47,
         "type": "多选",
-        "text": "一个格式正规的 XML 文档包含以下哪些部分？",
+        "text": "以下属于 Fireworks 特点的是？",
         "options": [
-            "可选的序言",
-            "文档的主体",
-            "可选的尾声",
-            "处理指令"
+            "采用图像映像技术，显示效果好",
+            "采用切片技术获得较高下载速度",
+            "能构建按钮和轮替图像",
+            "支持符号、实例和插帧等特性"
         ],
         "student_answer": "未提供",
-        "correct_answer": "A,B,C",
-        "analysis": "格式正规的 XML 文档由可选的序言、文档主体和可选的尾声组成，处理指令是序言可能包含的内容，并非文档基本组成部分，A、B、C 正确。"
+        "correct_answer": "A,B,C,D",
+        "analysis": "Fireworks 采用图像映像技术，通过切片技术提高下载速度，可构建按钮和轮替图像，还支持符号、实例和插帧等特性，A、B、C、D 都正确。"
     },
     {
-        "bank_name": "测试10",
-        "id": "5216305005280756554",
-        "number": 48,
+        "bank_name": "测试11",
+        "id": "5181781391681116402",
+        "number": 47,
         "type": "单选",
-        "text": "在 Fireworks 工具条中，若工具按钮右下角有小三角，意味着什么？",
+        "text": "在 ADO 对象模型中，用于体现命令概念的对象是？",
         "options": [
-            "该工具还有不同形式",
-            "该工具不能使用",
-            "该工具是隐藏工具",
-            "该工具为特殊工具"
+            "Command",
+            "Connection",
+            "Recordset",
+            "Field"
         ],
         "student_answer": "未提供",
         "correct_answer": "A",
-        "analysis": "在 Fireworks 工具条中，工具按钮右下角有小三角说明该工具还有不同形式，按住可显示其他形式，A 正确，B、C、D 错误。"
+        "analysis": "Command 对象体现命令概念，A 正确；Connection 用于连接，Recordset 用于存储数据，Field 代表字段，排除 B、C、D。"
     },
     {
-        "bank_name": "测试10",
-        "id": "5217799139041981097",
+        "bank_name": "测试11",
+        "id": "5189043142734026375",
+        "number": 48,
+        "type": "多选",
+        "text": "在 XML 文档显示中，使用 CSS 的优势有？",
+        "options": [
+            "方便为自定义元素定义显示格式",
+            "能产生多种显示格式信息",
+            "功能比 XSL 强大",
+            "不需要遵守任何语法规则"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B",
+        "analysis": "CSS 方便为 XML 自定义元素定义显示格式，可产生多种显示格式信息；CSS 功能不如 XSL 强大，且 CSS 也有自身语法规则，A、B 正确，C、D 错误。"
+    },
+    {
+        "bank_name": "测试11",
+        "id": "5191909960820951950",
         "number": 49,
         "type": "单选",
-        "text": "扩展样式表语言（XSL）遵守以下哪种语法规则？",
+        "text": "网站维护中，跟踪网站行为不包括以下哪一项？",
         "options": [
-            "XML 的语法规则",
-            "HTML 的语法规则",
-            "CSS 的语法规则",
-            "JavaScript 的语法规则"
+            "网站的访问次数",
+            "用户进入网站的途径",
+            "用户浏览网站的方式",
+            "网站的代码更新情况"
         ],
         "student_answer": "未提供",
-        "correct_answer": "A",
-        "analysis": "XSL 遵守 XML 的语法规则，本身就是一个 XML 文档，A 正确，B、C、D 错误。"
+        "correct_answer": "D",
+        "analysis": "跟踪网站行为包括访问次数、进入途径、浏览方式，不包括代码更新情况，A、B、C 是跟踪内容，排除 A、B、C，选 D。"
     },
     {
-        "bank_name": "测试10",
-        "id": "5222647370716254351",
+        "bank_name": "测试11",
+        "id": "5198517919870312089",
         "number": 50,
-        "type": "单选",
-        "text": "Dreamweaver 是哪家公司推出的主页编辑工具？",
-        "options": [
-            "Macromedia 公司（后被 Adobe 收购）",
-            "Microsoft 公司",
-            "Oracle 公司",
-            "IBM 公司"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "A",
-        "analysis": "Dreamweaver 最初由 Macromedia 公司推出，2005 年被 Adobe 公司收购，A 正确，B、C、D 错误。"
-    },
-    {
-        "bank_name": "测试10",
-        "id": "5235878432295768431",
-        "number": 51,
         "type": "多选",
-        "text": "在 HTML 的表格中，用于设置文本对齐方式的属性有哪些？",
+        "text": "在 Dreamweaver 中，以下哪些操作可以在属性面板中完成？",
         "options": [
-            "align",
-            "valign",
-            "cellpadding",
-            "cellspacing"
+            "修改图像的尺寸",
+            "设置表格的边框宽度",
+            "创建新的 HTML 页面",
+            "插入 Flash 动画"
         ],
         "student_answer": "未提供",
         "correct_answer": "A,B",
-        "analysis": "align 用于设置文本水平对齐（如 left、center、right ），valign 用于设置文本垂直对齐（如 top、middle、bottom、baseline）；cellpadding 设置文本与表框距离，cellspacing 设置表格间距，A、B 正确。"
+        "analysis": "在 Dreamweaver 中，选择图像时可在属性面板修改其尺寸，选择表格时可设置表格边框宽度；创建新的 HTML 页面通常在 “文件” 菜单操作，插入 Flash 动画一般通过 “插入” 菜单或相关面板完成，A、B 正确，C、D 错误。"
     },
     {
-        "bank_name": "测试10",
-        "id": "5243322541996341050",
+        "bank_name": "测试11",
+        "id": "5203427858050247978",
+        "number": 51,
+        "type": "单选",
+        "text": "当 XMLHttpRequest 对象的 readyState 属性值为 3 时，responseText 属性包含什么？",
+        "options": [
+            "一个空字符串",
+            "完整的响应信息",
+            "客户端还未完成的响应信息",
+            "服务器端的错误信息"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "C",
+        "analysis": "readyState 为 3 时，responseText 包含客户端未完成的响应信息，C 正确；0、1、2 时为空字符串，4 时为完整响应信息，A、B 错误；D 不是此时 responseText 的内容，排除 D。"
+    },
+    {
+        "bank_name": "测试11",
+        "id": "5205396645279544905",
         "number": 52,
         "type": "单选",
-        "text": "在 XML 中，标记间的嵌套规则是？",
+        "text": "Ajax 全称为？",
         "options": [
-            "必须正确嵌套，不能相互交叉",
-            "可以相互交叉",
-            "没有严格要求",
-            "只允许部分标记交叉"
+            "Asynchronous JavaScript and XML",
+            "Asynchronous Java and XML",
+            "Asynchronous JavaScript and XSL",
+            "Asynchronous Java and XSL"
         ],
         "student_answer": "未提供",
         "correct_answer": "A",
-        "analysis": "在 XML 中，标记间必须正确嵌套，不能相互交叉，所以选 A。"
+        "analysis": "Ajax 全称是 Asynchronous JavaScript and XML，A 正确；B 中 Java 错误，C 中 XSL 错误，D 中 Java 和 XSL 错误，排除 B、C、D。"
     },
     {
-        "bank_name": "测试10",
-        "id": "5245630685009104859",
+        "bank_name": "测试11",
+        "id": "5207033576250560721",
         "number": 53,
         "type": "单选",
-        "text": "XML 声明中，必须指定的属性是？",
+        "text": "ADO 是一个用于存取数据源的什么组件？",
         "options": [
-            "version",
-            "encoding",
-            "standalone",
-            "以上都不是"
+            "COM 组件",
+            ".NET 组件",
+            "Java 组件",
+            "Python 组件"
         ],
         "student_answer": "未提供",
         "correct_answer": "A",
-        "analysis": "XML 声明中，version 属性必须指定，用于指明所采用的 XML 版本号，所以选 A。"
+        "analysis": "ADO 是用于存取数据源的 COM 组件，A 正确；不是.NET、Java、Python 组件，排除 B、C、D。"
     },
     {
-        "bank_name": "测试10",
-        "id": "5251288367950708592",
+        "bank_name": "测试11",
+        "id": "5240655350399826247",
         "number": 54,
         "type": "单选",
-        "text": "在 XML 中，字符 <、>、&、' 和 \" 是？",
+        "text": "ADO 中，代表记录集行中字段的对象是？",
         "options": [
-            "保留字符",
-            "普通字符",
-            "自定义字符",
-            "无效字符"
+            "Field",
+            "Connection",
+            "Command",
+            "Recordset"
         ],
         "student_answer": "未提供",
         "correct_answer": "A",
-        "analysis": "在 XML 中，字符 <、>、&、' 和 \" 是保留字符，用于定义和说明元素、标记或属性等，所以选 A。"
+        "analysis": "Field 对象代表记录集行中的字段，A 正确；Connection 用于连接，Command 用于操作，Recordset 用于存储数据，排除 B、C、D。"
     },
     {
-        "bank_name": "测试10",
-        "id": "5262912785207825040",
+        "bank_name": "测试11",
+        "id": "5252631403703291833",
         "number": 55,
         "type": "单选",
-        "text": "在 HTML 文档中，指向一个目标的基本格式是？",
+        "text": "JSP 中，表达式是在什么标记间计算的？",
         "options": [
-            "<a href=\"URL\">字符串</a>",
-            "<a name=\"name\">text</a>",
-            "<a href=\"URL#name\">text</a>",
-            "<a href=\"URL\"><img src=\"URL\"></a>"
+            "<% 和 %>",
+            "<%@和 %>",
+            "<%= 和 %>",
+            "jsp: 和 /"
         ],
         "student_answer": "未提供",
-        "correct_answer": "A",
-        "analysis": "在 HTML 文档中，指向一个目标的基本格式是 字符串 ，所以 A 正确。"
+        "correct_answer": "C",
+        "analysis": "JSP 引擎在 <%= 和 %> 标记间计算表达式，C 正确；A 用于嵌入代码片段，B 用于设置指示，D 不是计算表达式的标记，排除 A、B、D。"
     },
     {
-        "bank_name": "测试10",
-        "id": "5277161689938082445",
+        "bank_name": "测试11",
+        "id": "5261879763280542963",
         "number": 56,
         "type": "单选",
-        "text": "HTML 使用的字符集是？",
+        "text": "在 Photoshop 中，要对图像进行色彩平衡调整，应使用以下哪个命令？",
         "options": [
-            "ISO 8859 Latin-1 字符集",
-            "UTF-8 字符集",
-            "GB2312 字符集",
-            "ASCII 字符集"
+            "色彩平衡",
+            "色阶",
+            "曲线",
+            "亮度 / 对比度"
         ],
         "student_answer": "未提供",
         "correct_answer": "A",
-        "analysis": "HTML 使用 ISO 8859 Latin-1 字符集，该字符集有许多标准键盘无法输入的字符，所以选 A。"
+        "analysis": "“色彩平衡” 命令用于在彩色图像中改变颜色的混合，实现色彩平衡调整；“色阶” 和 “曲线” 主要用于调整图像的高光、暗调和中间调部分；“亮度 / 对比度” 用于调整图像的整体亮度和对比度，A 正确，B、C、D 错误。"
     },
     {
-        "bank_name": "测试10",
-        "id": "5288101180834107918",
+        "bank_name": "测试11",
+        "id": "5275754520542075312",
         "number": 57,
-        "type": "单选",
-        "text": "HTML 中，用于使文本加粗的标签是？",
-        "options": [
-            "<i>",
-            "<u>",
-            "<s>",
-            "<b>"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "D",
-        "analysis": "答案选 D。在 HTML 标签里， 标签的作用是使文本加粗； 标签用于使文本倾斜； 标签用于给文本添加下划线； 标签用于给文本添加删除线。所以正确答案是 D。"
-    },
-    {
-        "bank_name": "测试10",
-        "id": "5314777361956003202",
-        "number": 58,
-        "type": "单选",
-        "text": "在 HTML 中，填充表格内容的标签是？",
-        "options": [
-            "<table>",
-            "<tr>",
-            "<th>",
-            "<td>"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "D",
-        "analysis": "在 HTML 中，用于填充由和组成的表格，所以选 D。"
-    },
-    {
-        "bank_name": "测试10",
-        "id": "5318659710962282759",
-        "number": 59,
         "type": "多选",
-        "text": "在 XML 声明中，以下哪些属性是可选的？",
+        "text": "关于 XSLT 的说法正确的是？",
         "options": [
-            "version",
-            "encoding",
-            "standalone",
-            "xml"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "B,C",
-        "analysis": "XML 声明中 version 属性必须指定，encoding 和 standalone 是可选属性，xml 不是属性，B、C 正确。"
-    },
-    {
-        "bank_name": "测试10",
-        "id": "5324888178281876921",
-        "number": 60,
-        "type": "单选",
-        "text": "在 Fireworks 中，以下哪种不是符号的类型？",
-        "options": [
-            "图像",
-            "动画",
-            "按钮",
-            "文本"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "D",
-        "analysis": "Fireworks 中符号分为图像、动画和按钮 3 种，不包括文本，D 正确，A、B、C 错误。"
-    },
-    {
-        "bank_name": "测试10",
-        "id": "5338859926928378805",
-        "number": 61,
-        "type": "单选",
-        "text": "Adobe Photoshop 是一款什么类型的软件？",
-        "options": [
-            "数字图像处理软件",
-            "网页编辑软件",
-            "动画制作软件",
-            "文字处理软件"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "A",
-        "analysis": "Adobe Photoshop 是数字图像处理软件中最优秀的软件之一，用于图像设计、处理和润饰，A 正确，B、C、D 错误。"
-    },
-    {
-        "bank_name": "测试10",
-        "id": "5350029907984487904",
-        "number": 62,
-        "type": "单选",
-        "text": "Fireworks 是一种专门针对什么设计而开发的软件？",
-        "options": [
-            "Web 图像",
-            "印刷图像",
-            "动画制作",
-            "文字排版"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "A",
-        "analysis": "Fireworks 是专门针对 Web 图像设计开发的软件，它简化了图像设计流程，A 正确；它不是基于出版印刷的图像处理软件，B 错误；虽然它能制作动画，但不是专门针对动画制作，C 错误；文字排版不是其主要功能，D 错误。"
-    },
-    {
-        "bank_name": "测试10",
-        "id": "5372086110979259125",
-        "number": 63,
-        "type": "多选",
-        "text": "在 XML 注释使用过程中，需要遵守哪些规则？",
-        "options": [
-            "注释文本中不能出现 -- 或 ->",
-            "注释不能嵌套",
-            "注释不能出现在标记中",
-            "注释可以包含任何字符"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "A,B",
-        "analysis": "在 XML 注释中，文本不能出现 -- 或 ->，且注释不能嵌套，A、B 正确。"
-    },
-    {
-        "bank_name": "测试10",
-        "id": "5373257244443308984",
-        "number": 64,
-        "type": "单选",
-        "text": "在框架中，创建多个列的属性是？",
-        "options": [
-            "cols=\"x\"",
-            "rows=\"x\"",
-            "border=\"x\"",
-            "frameborder=\"x\""
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "A",
-        "analysis": "在框架中，cols=\"x\" 属性可创建多个列，所以选 A。"
-    },
-    {
-        "bank_name": "测试10",
-        "id": "5399015091247132474",
-        "number": 65,
-        "type": "单选",
-        "text": "在 HTML 中，自定义列表的开始标签是？",
-        "options": [
-            "<ul>",
-            "<ol>",
-            "<dl>",
-            "<li>"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "C",
-        "analysis": "在 HTML 中，自定义列表以 开始，所以选 C。"
-    },
-    {
-        "bank_name": "测试10",
-        "id": "5417235115730729228",
-        "number": 66,
-        "type": "单选",
-        "text": "框架将浏览器的窗口分成多个区域，每个区域可以单独显示什么？",
-        "options": [
-            "一个 HTML 文档",
-            "一个 XML 文档",
-            "一个文本文件",
-            "一个图像文件"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "A",
-        "analysis": "框架可将浏览器窗口分成多个区域，每个区域能单独显示一个 HTML 文档，所以选 A。"
-    },
-    {
-        "bank_name": "测试10",
-        "id": "5419719692244263142",
-        "number": 67,
-        "type": "单选",
-        "text": "在 XML 中，属性是以哪种形式呈现的？",
-        "options": [
-            "“名称 = 取值” 对",
-            "“名称：取值” 对",
-            "“取值 = 名称” 对",
-            "“取值：名称” 对"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "A",
-        "analysis": "答案选 A。在 XML 里，属性是在标签内定义的，以 “名称 = 取值” 对的形式存在。这里的名称与取值之间用等号分隔，并且取值通常需要用引号（单引号或双引号）引起来。例如 ，其中 attribute 是属性名称，\"value\" 是属性取值。所以选项 A 正确。"
-    },
-    {
-        "bank_name": "测试10",
-        "id": "5429036495218551075",
-        "number": 68,
-        "type": "单选",
-        "text": "在 HTML 里，主要用于对文本进行分段的标签是以下哪一个？",
-        "options": [
-            "<p>",
-            "<hr>",
-            "<nobr>",
-            "<br>"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "A",
-        "analysis": "答案选 A。下面对各选项进行具体分析： 选项 A： 标签是专门用于定义段落的，使用该标签可以将文本内容分隔成不同的段落，所以它是主要用于文本分段的标签。 选项 B： 标签的作用是在 HTML 页面中创建一条水平线，用于分隔不同主题的内容，并非用于文本分段。 选项 C： 标签的功能是禁止内容自动换行，使文本在一行内显示，与文本分段没有关系。 选项 D： 标签是用来插入换行符的，它只是让文本换行，但并不像 标签那样明确地将内容划分为段落。"
-    },
-    {
-        "bank_name": "测试10",
-        "id": "5435490278990321507",
-        "number": 69,
-        "type": "单选",
-        "text": "在 HTML 中，当表格高度大于文本高度时，设置文本上对齐的属性值是？",
-        "options": [
-            "top",
-            "middle",
-            "bottom",
-            "baseline"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "A",
-        "analysis": "在 HTML 中，当表格高度大于文本高度时，valign=top 可使文本上对齐，所以选 A。"
-    },
-    {
-        "bank_name": "测试10",
-        "id": "5455915297288176972",
-        "number": 70,
-        "type": "单选",
-        "text": "XPath 的主要作用是？",
-        "options": [
-            "将 XML 文档转换为可浏览格式",
-            "格式化 XML 文档",
-            "创建文档",
-            "识别、选择、匹配 XML 文档中的各个构成元件"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "D",
-        "analysis": "XPath 用来描述如何识别、选择、匹配 XML 文档中的元素、属性、文字内容等构成元件，D 正确；A 是 XSLT 的功能，B 是 FO 的作用，C 表述不正确，A、B、C 错误。"
-    },
-    {
-        "bank_name": "测试10",
-        "id": "5456789178942015764",
-        "number": 71,
-        "type": "单选",
-        "text": "HTML 文档的扩展名通常是？",
-        "options": [
-            ".txt",
-            ".doc",
-            ".html 或.htm",
-            ".xml"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "C",
-        "analysis": "HTML 文档扩展名常见为.html 或.htm，用于标识其为 HTML 格式文件，因此选 C。"
-    },
-    {
-        "bank_name": "测试10",
-        "id": "5460929387691490250",
-        "number": 72,
-        "type": "单选",
-        "text": "在 HTML 中，有横向通栏的表格用什么属性说明？",
-        "options": [
-            "colspan",
-            "rowspan",
-            "width",
-            "height"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "A",
-        "analysis": "在 HTML 中，有横向通栏的表格用 colspan 属性说明，表示横向栏距，所以选 A。"
-    },
-    {
-        "bank_name": "测试10",
-        "id": "5468664114718901180",
-        "number": 73,
-        "type": "单选",
-        "text": "在 HTML 中，以下哪个标签可以禁止内容分行显示？",
-        "options": [
-            "<p>",
-            "<hr>",
-            "<br>",
-            "<nobr>"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "D",
-        "analysis": "选项 A： 标签用于定义段落，会将文本内容划分成不同段落，并非禁止分行显示。 选项 B： 标签用于在 HTML 页面中创建一条水平线，起到分隔内容的作用，与禁止分行无关。 选项 C： 标签用于在文本中插入换行符，会使内容换行显示，而不是禁止分行。 选项 D： 标签可以让其中的内容在一行内显示，若内容超出则裁剪，实现了禁止分行的效果。所以本题选 D。"
-    },
-    {
-        "bank_name": "测试10",
-        "id": "5479816661584299670",
-        "number": 74,
-        "type": "单选",
-        "text": "在 XML 文档的显示过程中，将源树转换为结果树的过程称为？",
-        "options": [
-            "树转换",
-            "格式化",
-            "解析",
-            "渲染"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "A",
-        "analysis": "XML 文档显示时，根据给定的 XSL 将源树转换为可以显示的结果树的过程是树转换，A 正确；格式化是按照 FO 解释结果树产生输出的过程，B 错误；解析通常指 XML 解析器对 XML 文档的分析，C 错误；渲染一般用于描述最终在界面上呈现的过程，D 错误。"
-    },
-    {
-        "bank_name": "测试10",
-        "id": "5491756932663471352",
-        "number": 75,
-        "type": "单选",
-        "text": "服务器端脚本编程方式试图使编程和网页联系更为紧密，并以怎样的方式运行？",
-        "options": [
-            "相对更简单、更快速",
-            "更复杂、更高效",
-            "更稳定、更安全",
-            "更灵活、更通用"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "A",
-        "analysis": "服务器端脚本编程试图使编程和网页联系更紧密，并以相对更简单、更快速的方式运行，A 正确，B、C、D 错误。"
-    },
-    {
-        "bank_name": "测试10",
-        "id": "5507897930888054624",
-        "number": 76,
-        "type": "单选",
-        "text": "XSL 语言不包括以下哪个部分？",
-        "options": [
-            "转换工具 XSLT",
-            "格式对象 FO",
-            "XML 分级命令处理工具 XPath",
-            "样式对象 SO"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "D",
-        "analysis": "XSL 语言分为转换工具 XSLT、格式对象 FO、XML 分级命令处理工具 XPath 这三个部分，不包括样式对象 SO，D 正确，A、B、C 错误。"
-    },
-    {
-        "bank_name": "测试10",
-        "id": "5532761272106253876",
-        "number": 77,
-        "type": "单选",
-        "text": "在 HTML 中，设置窗口背景图像的属性是？",
-        "options": [
-            "background",
-            "bgcolor",
-            "text",
-            "link"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "A",
-        "analysis": "在 HTML 的标签中，background 属性用于指定填充背景的图像，所以答案是 A。"
-    },
-    {
-        "bank_name": "测试10",
-        "id": "5534160736897017447",
-        "number": 78,
-        "type": "单选",
-        "text": "在 Dreamweaver 工作环境中，主菜单不包括以下哪一类？",
-        "options": [
-            "文件",
-            "编辑",
-            "站点",
-            "动画"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "D",
-        "analysis": "Dreamweaver 主菜单共分十大类，包括文件、编辑、查看、插入、修改、格式、命令、站点、窗口和帮助，不包括动画，D 正确，A、B、C 错误。"
-    },
-    {
-        "bank_name": "测试10",
-        "id": "5542011835726078339",
-        "number": 79,
-        "type": "多选",
-        "text": "在 HTML 中，以下哪些标签可用于设置文本的字体风格？",
-        "options": [
-            "<b>",
-            "<i>",
-            "<u>",
-            "<pre>"
+            "可将 XML 文档转换为多种格式",
+            "是 XSL 的一部分，用于树转换",
+            "其标准于 1999 年 11 月 16 日公布",
+            "只能将 XML 转换为 HTML 文档"
         ],
         "student_answer": "未提供",
         "correct_answer": "A,B,C",
-        "analysis": "答案选 A、B、C。选项 A： ：用于将文本设为粗体，增强视觉重量，突出重要信息，如 加粗文本 。 选项 B： ：使文本呈斜体样式，常用于强调、引用等，如 斜体文本 。 选项 C： ：为文本添加下划线，改变文本外观，但现代设计中使用较少，如 带下划线文本 。 选项 D： ：定义预格式化文本，保留空格和换行，用于排版而非设置字体风格，如 预格式化文本 。"
+        "analysis": "XSLT 可将 XML 文档转换为多种格式，如 HTML、XML、VRML 等；它是 XSL 用于树转换的部分，1999 年 11 月 16 日公布标准，A、B、C正确，D 错误。"
     },
     {
-        "bank_name": "测试10",
-        "id": "5545308382923148554",
-        "number": 80,
+        "bank_name": "测试11",
+        "id": "5276341351902898797",
+        "number": 58,
         "type": "单选",
-        "text": "在 Fireworks 中，利用什么可以快速构建多种风格的按钮？",
+        "text": "JSP 页面的内置脚本语言基于哪种语言？",
         "options": [
-            "按钮编辑器",
-            "文本工具",
-            "形状工具",
-            "路径工具"
+            "Java 编程语言",
+            "JavaScript 语言",
+            "C 语言",
+            "PHP 语言"
         ],
         "student_answer": "未提供",
         "correct_answer": "A",
-        "analysis": "在 Fireworks 中，按钮编辑器可以快速高效地构建多种风格的按钮，A 正确；文本工具用于输入文字，形状工具和路径工具主要用于绘制图形，B、C、D 错误。"
+        "analysis": "JSP 页面内置脚本语言基于 Java，A 正确；JavaScript、C、PHP 都不是 JSP 内置脚本语言，排除 B、C、D。"
     },
     {
-        "bank_name": "测试10",
-        "id": "5547797527255999231",
-        "number": 81,
+        "bank_name": "测试11",
+        "id": "5300776811137865382",
+        "number": 59,
         "type": "单选",
-        "text": "在 XML 中，小于号（<）的实体引用（内嵌替代符）是以下哪个？",
+        "text": "ADO 中，事务用于界定什么？",
         "options": [
-            "&lt;",
-            "&gt;",
-            "&amp;",
-            "&apos;"
+            "在连接过程中发生的一系列数据访问操作的开始和结束",
+            "命令的执行范围",
+            "记录集的操作范围",
+            "参数的传递范围"
         ],
         "student_answer": "未提供",
         "correct_answer": "A",
-        "analysis": "答案选 A。在 XML 里，某些字符具有特殊含义，为了能在文档中使用这些字符的字面意义，需要使用实体引用。具体分析各选项： 选项 A：< 是小于号（<）的实体引用，当要在 XML 中表示小于号本身时，就使用 <，避免被解析为标签的开始。 选项 B：> 是大于号（>）的实体引用，用于表示大于号本身。 选项 C：& 是和号（&）的实体引用，因为 & 是实体引用的起始符号，所以要表示 & 本身时用 &。 选项 D：' 是单引号（'）的实体引用，用于表示单引号本身。"
+        "analysis": "事务界定连接过程中数据访问操作的起止，A 正确；不是命令、记录集、参数相关范围的界定，排除 B、C、D。"
     },
     {
-        "bank_name": "测试10",
-        "id": "5554825370167153373",
-        "number": 82,
+        "bank_name": "测试11",
+        "id": "5325897732437670904",
+        "number": 60,
         "type": "多选",
-        "text": "以下哪些属于 HTML 文档的组成部分？",
+        "text": "ASP 提供的内嵌对象有？",
         "options": [
-            "文档头",
-            "文档体",
-            "脚本语言",
-            "样式定义"
+            "Request 对象",
+            "Response 对象",
+            "Application 对象",
+            "Session 对象"
         ],
         "student_answer": "未提供",
-        "correct_answer": "A,B",
-        "analysis": "HTML 文档由文档头和文档体构成，脚本语言和样式定义是文档头包含的元素，并非文档组成部分，A、B 正确。"
+        "correct_answer": "A,B,C,D",
+        "analysis": "ASP 提供了 Request、Response、Application、Session、Server 等内嵌对象，A、B、C、D 都正确。"
     },
     {
-        "bank_name": "测试10",
-        "id": "5557349611038656610",
-        "number": 83,
+        "bank_name": "测试11",
+        "id": "5347076947979057351",
+        "number": 61,
         "type": "单选",
-        "text": "在 Fireworks 中，文件窗口上的标签不包括以下哪种功能？",
+        "text": "Ajax 技术中，服务器端返回的 XML 响应，在客户端通过 XMLHttpRequest 对象的哪个属性获取？",
         "options": [
-            "编辑图像",
-            "预览图像",
-            "预览不同优化设定效果",
-            "导出图像"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "D",
-        "analysis": "Fireworks 文件窗口的标签可用于同时编辑和预览图像，还能预览 4 种不同优化设定产生的效果，导出图像不是文件窗口标签的功能，D 正确，A、B、C 错误。"
-    },
-    {
-        "bank_name": "测试10",
-        "id": "5574536478114123313",
-        "number": 84,
-        "type": "单选",
-        "text": "在 Dreamweaver 中，用于查看和更改所选对象或文本各种属性的是哪个面板？",
-        "options": [
-            "属性面板",
-            "应用程序栏",
-            "文档工具栏",
-            "面板"
+            "responseXML",
+            "responseText",
+            "status",
+            "statusText"
         ],
         "student_answer": "未提供",
         "correct_answer": "A",
-        "analysis": "属性面板用于查看和更改所选对象或文本的各种属性，A 正确；应用程序栏包含一些常用菜单和应用程序控件，B 错误；文档工具栏用于提供文档窗口视图选项和常用操作，C 错误；面板包含多种功能面板，但不是专门用于查看和更改属性的，D 错误。"
+        "analysis": "服务器端返回的 XML 响应，在客户端通过 XMLHttpRequest 对象的 responseXML 属性获取，前提是服务器端设置了正确的 MIME 类型，A 正确。responseText 用于获取文本响应内容，B 错误；status 用于获取 HTTP 状态代码，C 错误；statusText 用于获取 HTTP 状态代码文本，D 错误。"
     },
     {
-        "bank_name": "测试10",
-        "id": "5574948638548663858",
-        "number": 85,
+        "bank_name": "测试11",
+        "id": "5349664141939611619",
+        "number": 62,
         "type": "单选",
-        "text": "在 HTML 中，有序列表的开始标签是？",
+        "text": "JSP 网页是在传统网页中加入什么构成的？",
         "options": [
-            "<ul>",
-            "<ol>",
-            "<dl>",
-            "<li>"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "B",
-        "analysis": "在 HTML 中，有序列表以 开始，所以答案是 B。"
-    },
-    {
-        "bank_name": "测试10",
-        "id": "5612312586571895658",
-        "number": 86,
-        "type": "单选",
-        "text": "从字面上看，ASP 不包含以下哪方面含义？",
-        "options": [
-            "Active",
-            "Server",
-            "Pages",
-            "Program"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "D",
-        "analysis": "ASP 包含 Active（使用 ActiveX 技术）、Server（运行在服务器端）、Pages（返回标准 HTML 页面），不包括 Program，D 正确，A、B、C 错误。"
-    },
-    {
-        "bank_name": "测试10",
-        "id": "5617791662463119032",
-        "number": 87,
-        "type": "单选",
-        "text": "在 XML 中，注释的方法与 HTML 有何关系？",
-        "options": [
-            "完全相同",
-            "部分相同",
-            "完全不同",
-            "XML 注释方法更复杂"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "A",
-        "analysis": "XML 与 HTML 中注释方法完全相同，所以选 A。"
-    },
-    {
-        "bank_name": "测试10",
-        "id": "5624819680610162804",
-        "number": 88,
-        "type": "单选",
-        "text": "在 HTML 中，设置文本字号为绝对字号的格式是？",
-        "options": [
-            "<font size=字号>",
-            "<<font> size = 字号 >",
-            "{font size = 字号}",
-            "(font size = 字号)"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "A",
-        "analysis": "在 HTML 里，设置绝对字号格式为 ，所以 A 正确。"
-    },
-    {
-        "bank_name": "测试10",
-        "id": "5633000928759058794",
-        "number": 89,
-        "type": "单选",
-        "text": "在 XML 中使用层叠样式表的好处不包括以下哪点？",
-        "options": [
-            "方便为自定义元素和标记定义显示格式",
-            "产生多种显示格式信息",
-            "便于管理、修改、维护和复用",
-            "功能比扩展样式表语言强"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "D",
-        "analysis": "CSS 功能不如 XSL 强，但其实际开发过程相对容易，A、B、C 是 CSS 在 XML 中使用的好处，D 错误。"
-    },
-    {
-        "bank_name": "测试10",
-        "id": "5634311135517983310",
-        "number": 90,
-        "type": "单选",
-        "text": "在 Photoshop 中，利用什么工具可以根据颜色来自动选取所要部分？",
-        "options": [
-            "魔术棒工具或 “颜色范围” 命令",
-            "矩形面罩工具",
-            "椭圆面罩工具",
-            "套索工具"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "A",
-        "analysis": "在 Photoshop 中，魔术棒工具或 “颜色范围” 命令可以根据颜色来自动选取所要部分，A 正确；矩形面罩工具、椭圆面罩工具、套索工具主要用于选取特定形状范围，B、C、D 错误。"
-    },
-    {
-        "bank_name": "测试10",
-        "id": "5638528862547431623",
-        "number": 91,
-        "type": "单选",
-        "text": "Fireworks 默认打开时处于什么模式？",
-        "options": [
-            "位图模式",
-            "矢量模式",
-            "混合模式",
-            "动画模式"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "A",
-        "analysis": "Fireworks 默认打开时处于位图模式，但所绘制图形作为矢量对象处理，A 正确，B、C、D 错误。"
-    },
-    {
-        "bank_name": "测试10",
-        "id": "5643485042699169115",
-        "number": 92,
-        "type": "单选",
-        "text": "在 HTML 中，有纵向通栏的表格用什么属性说明？",
-        "options": [
-            "colspan",
-            "rowspan",
-            "width",
-            "height"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "B",
-        "analysis": "在 HTML 中，有纵向通栏的表格用 rowspan 属性说明，表示纵向栏距，所以选 B。"
-    },
-    {
-        "bank_name": "测试10",
-        "id": "5661218681581466582",
-        "number": 93,
-        "type": "单选",
-        "text": "以下哪个是 HTML 元素的起始标记和结束标记的正确示例？",
-        "options": [
-            "<p>...</p>",
-            "<p>...</<p>",
-            "{p}...</p}",
-            "(p)...</p>"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "A",
-        "analysis": "HTML 元素大多有起始和结束标记，起始标记如 ，结束标记在元素名前加斜杠，即 ，所以选 A。"
-    },
-    {
-        "bank_name": "测试10",
-        "id": "5668621537596703248",
-        "number": 94,
-        "type": "单选",
-        "text": "在 HTML 中，表格行的标签是？",
-        "options": [
-            "<table>",
-            "<tr>",
-            "<th>",
-            "<td>"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "B",
-        "analysis": "在 HTML 中，用于说明表格的一个行，所以答案是 B。"
-    },
-    {
-        "bank_name": "测试10",
-        "id": "5709137782868732530",
-        "number": 95,
-        "type": "单选",
-        "text": "Photoshop 的工作界面不包括以下哪个部分？",
-        "options": [
-            "标题栏",
-            "菜单栏",
-            "工具箱",
-            "导航栏"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "D",
-        "analysis": "Photoshop 工作界面包括标题栏、菜单栏、工具箱、控制面板、状态栏和图像窗口，不包括导航栏，D 正确，A、B、C 错误。"
-    },
-    {
-        "bank_name": "测试10",
-        "id": "5726448115495689203",
-        "number": 96,
-        "type": "单选",
-        "text": "在访问 XML 文档内容时，需要使用的工具是？",
-        "options": [
-            "XML 解析器",
-            "文本编辑器",
-            "浏览器",
-            "数据库管理工具"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "A",
-        "analysis": "访问 XML 文档内容时，需用 XML 解析器验证语法正确性并提取内容，所以选 A。"
-    },
-    {
-        "bank_name": "测试10",
-        "id": "5732815451605280087",
-        "number": 97,
-        "type": "单选",
-        "text": "在 HTML 中，表格的开始标签是？",
-        "options": [
-            "<table>",
-            "<tr>",
-            "<th>",
-            "<td>"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "A",
-        "analysis": "在 HTML 中，表格由开始，所以选 A。"
-    },
-    {
-        "bank_name": "测试10",
-        "id": "5739657949189534091",
-        "number": 98,
-        "type": "单选",
-        "text": "在 HTML 中，设置表格宽度的属性是？",
-        "options": [
-            "width=#",
-            "height=#",
-            "border=#",
-            "cellspacing=#"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "A",
-        "analysis": "在 HTML 中，width=# 用于设置表格宽度，所以选 A。"
-    },
-    {
-        "bank_name": "测试10",
-        "id": "5747987441394722043",
-        "number": 99,
-        "type": "单选",
-        "text": "在 HTML 中，设置表格边框宽度的属性是？",
-        "options": [
-            "width=#",
-            "height=#",
-            "border=#",
-            "cellspacing=#"
+            "Java 程序片段和 CSS 样式",
+            "JavaScript 脚本和 JSP 标记",
+            "Java 程序片段和 JSP 标记",
+            "Java 程序片段和 JavaScript 脚本"
         ],
         "student_answer": "未提供",
         "correct_answer": "C",
-        "analysis": "在 HTML 中，border=# 用于设置表格边框宽度，所以答案是 C。"
+        "analysis": "JSP 网页由传统 HTML 文件加 Java 程序片段和 JSP 标记构成，C 正确；A 中 CSS 样式不是 JSP 网页特有的添加内容，B、D 中 JavaScript 脚本不是关键构成部分，排除 A、B、D。"
     },
     {
-        "bank_name": "测试10",
-        "id": "5748061541051010416",
-        "number": 100,
-        "type": "单选",
-        "text": "以下哪种不是流行的服务器端脚本环境？",
+        "bank_name": "测试11",
+        "id": "5398406337798027901",
+        "number": 63,
+        "type": "多选",
+        "text": "在动态网页制作中，服务器端脚本环境流行的有？",
         "options": [
             "ASP",
             "JSP",
@@ -1596,8 +1004,1304 @@
             "HTML"
         ],
         "student_answer": "未提供",
+        "correct_answer": "A,B,C",
+        "analysis": "流行的服务器端脚本环境有 ASP、JSP、PHP 等，HTML 是超文本标记语言，不是服务器端脚本环境，A、B、C 正确，D 错误。"
+    },
+    {
+        "bank_name": "测试11",
+        "id": "5402628406394738286",
+        "number": 64,
+        "type": "单选",
+        "text": "XMLHttpRequest 对象的 readyState 属性值为 4 时，表示什么状态？",
+        "options": [
+            "响应已经被完全接收",
+            "未初始化状态",
+            "发送状态",
+            "接收状态"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "readyState 为 4 表示响应已完全接收，A 正确；0 是未初始化，1 是发送状态，3 是接收状态，排除 B、C、D。"
+    },
+    {
+        "bank_name": "测试11",
+        "id": "5412602983517263855",
+        "number": 65,
+        "type": "单选",
+        "text": "在网站维护中，为用户提供在线用户支持时，以下哪种功能不适合加入网站？",
+        "options": [
+            "复杂的数据库驱动搜索引擎（如果网站规模较小且内容简单）",
+            "反馈途径",
+            "FAQ 页面",
+            "简单的留言板"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "如果网站规模较小且内容简单，加入复杂的数据库驱动搜索引擎会增加网站的复杂性和维护成本，不适合加入，A 不适合。反馈途径、FAQ 页面、简单留言板都能为用户提供在线支持，B、C、D 适合。"
+    },
+    {
+        "bank_name": "测试11",
+        "id": "5415943410643041575",
+        "number": 66,
+        "type": "单选",
+        "text": "在 ADO 编程模型中，用于连接到数据源的对象是？",
+        "options": [
+            "Connection",
+            "Command",
+            "Recordset",
+            "Field"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "Connection 对象用于连接数据源，A 正确；Command 用于操作数据源，Recordset 用于存储数据，Field 代表记录集中的字段，排除 B、C、D。"
+    },
+    {
+        "bank_name": "测试11",
+        "id": "5421658606210512081",
+        "number": 67,
+        "type": "单选",
+        "text": "网站测试中，测试浏览器的可变性主要是为了确保？",
+        "options": [
+            "网页的外观对于所有浏览器都是可以接收的",
+            "网页在不同浏览器上加载速度相同",
+            "网页在不同浏览器上功能完全一致",
+            "网页在不同浏览器上代码相同"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "测试浏览器的可变性主要是确保网页的外观对于所有浏览器都是可以接收的，因为不同浏览器对网页的渲染可能存在差异，A 正确。不同浏览器加载速度受多种因素影响，很难保证相同，B 错误；功能完全一致也难以保证，一些功能可能因浏览器差异无法正常使用，C 错误；网页代码在不同浏览器上不需要相同，D 错误。"
+    },
+    {
+        "bank_name": "测试11",
+        "id": "5477750841729496548",
+        "number": 68,
+        "type": "单选",
+        "text": "在 JSP 中，若要在页面中导入一个 Java 包，应使用以下哪种 JSP 指示？",
+        "options": [
+            "<%@ page import=\"包名\" %>",
+            "<%@ include file=\"文件路径\" %>",
+            "<%@ taglib uri=\"标签库 URI\" %>",
+            "<%@ page language=\"语言类型\" %>"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "在 JSP 中，使用 <%@ page import=\"包名\" %> 来导入 Java 包，A 正确。<%@ include file=\"文件路径\" %> 用于包含其他文件，B 错误；<%@ taglib uri=\"标签库 URI\" %> 用于引入标签库，C 错误；<%@ page language=\"语言类型\" %> 用于指定页面使用的脚本语言，D 错误。"
+    },
+    {
+        "bank_name": "测试11",
+        "id": "5494125491389477686",
+        "number": 69,
+        "type": "单选",
+        "text": "JSP 指示是通过什么标记设置的？",
+        "options": [
+            "<%@和 %>",
+            "<% 和 %>",
+            "<%= 和 %>",
+            "jsp: 和 /"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "JSP 指示在 <%@和 %> 标记中设置，A 正确；B 用于嵌入 Java 代码片段，C 用于输出表达式的值，D 不是 JSP 指示标记，排除 B、C、D。"
+    },
+    {
+        "bank_name": "测试11",
+        "id": "5501890432201674617",
+        "number": 70,
+        "type": "单选",
+        "text": "PHP 中，用于将文件全部读出并输出到数组变量中的函数是？",
+        "options": [
+            "file",
+            "fopen",
+            "fputs",
+            "fclose"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "file 函数可将文件全部读出并输出到数组变量，A 正确；fopen 用于打开文件，fputs 用于写入文件，fclose 用于关闭文件，排除 B、C、D。"
+    },
+    {
+        "bank_name": "测试11",
+        "id": "5515480376901420274",
+        "number": 71,
+        "type": "单选",
+        "text": "在 ADO 操作步骤中，打开连接的主要方法是？",
+        "options": [
+            "Connection.Open 方法",
+            "Command.Execute 方法",
+            "Open 方法",
+            "Field.Value 方法"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "打开连接主要用 Connection.Open 方法，A 正确；Command.Execute 用于执行命令，Open 方法错误，Field.Value 用于获取或设置字段值，排除 B、C、D。"
+    },
+    {
+        "bank_name": "测试11",
+        "id": "5530457976426982527",
+        "number": 72,
+        "type": "多选",
+        "text": "Photoshop 支持的色彩模式有？",
+        "options": [
+            "位图模式",
+            "灰度模式",
+            "RGB 模式",
+            "CMYK 模式"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B,C,D",
+        "analysis": "Photoshop 支持位图模式、灰度模式、RGB 模式、CMYK 模式、Lab 模式、索引颜色模式、双色调模式和多通道模式等，A、B、C、D 都正确。"
+    },
+    {
+        "bank_name": "测试11",
+        "id": "5558040357670057238",
+        "number": 73,
+        "type": "多选",
+        "text": "Photoshop 的绘画功能包括以下哪些工具的使用？",
+        "options": [
+            "喷枪工具",
+            "笔刷工具",
+            "铅笔工具",
+            "渐变工具"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B,C,D",
+        "analysis": "Photoshop 绘画功能包括喷枪工具、笔刷工具、铅笔工具、渐变工具等多种工具的使用，A、B、C、D 都正确。"
+    },
+    {
+        "bank_name": "测试11",
+        "id": "5563384800958670437",
+        "number": 74,
+        "type": "多选",
+        "text": "PHP 中，以下哪个函数可以用于获取数组的长度？",
+        "options": [
+            "count()",
+            "sizeof()",
+            "length()",
+            "strlen()"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B",
+        "analysis": "在 PHP 中，count () 和 sizeof () 都可以用于获取数组的长度，A、B 正确。length () 不是 PHP 中获取数组长度的函数，C 错误；strlen () 用于获取字符串的长度，D 错误。"
+    },
+    {
+        "bank_name": "测试11",
+        "id": "5563879891347204695",
+        "number": 75,
+        "type": "单选",
+        "text": "在 PHP 计数器程序中，若要以追加形式打开文件，打开文件的模式应设置为？",
+        "options": [
+            "'r'",
+            "'r+'",
+            "'w'",
+            "'a'"
+        ],
+        "student_answer": "未提供",
         "correct_answer": "D",
-        "analysis": "ASP、JSP、PHP 是流行的服务器端脚本环境，HTML 是超文本标记语言，不是服务器端脚本环境，D 正确，A、B、C 错误。"
+        "analysis": "'a' 表示追加形式打开文件，D 正确；'r' 是只读，'r+' 可读可写且指针指向开头，'w' 是只写且截断文件，排除 A、B、C。"
+    },
+    {
+        "bank_name": "测试11",
+        "id": "5567845512166328464",
+        "number": 76,
+        "type": "多选",
+        "text": "ASP 的特点包括以下哪些？",
+        "options": [
+            "使用简单易懂的脚本语言结合 HTML 代码完成网站应用程序",
+            "无需编译，可在服务器端直接执行",
+            "与浏览器无关，客户端只需能执行 HTML 码的浏览器即可浏览",
+            "源程序不会被传到客户浏览器，提高了程序安全性"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B,C,D",
+        "analysis": "ASP 使用 VBScript、JScript 等简单脚本语言结合 HTML 代码开发网站应用；无需编译，在服务器端直接执行；与浏览器无关；源程序不会传到客户端，提高安全性，A、B、C、D 都正确。"
+    },
+    {
+        "bank_name": "测试11",
+        "id": "5580464247222254202",
+        "number": 77,
+        "type": "单选",
+        "text": "在 ADO 中，创建 Parameter 对象时，用于指定参数方向的属性是？",
+        "options": [
+            "Direction",
+            "Type",
+            "Value",
+            "Name"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "在 ADO 中，创建 Parameter 对象时，Direction 属性用于指定参数方向（如输入、输出等），A 正确。Type 属性用于指定参数的数据类型，B 错误；Value 属性用于设置参数的值，C 错误；Name 属性用于指定参数的名称，D 错误。"
+    },
+    {
+        "bank_name": "测试11",
+        "id": "5584895843710413539",
+        "number": 78,
+        "type": "多选",
+        "text": "在 JSP 中，以下关于 JavaBean 的说法错误的是？",
+        "options": [
+            "JavaBean 必须有一个无参构造函数",
+            "JavaBean 的属性必须通过 getter 和 setter 方法访问",
+            "JavaBean 可以实现业务逻辑",
+            "JSP 中使用 JavaBean 时，只能在一个页面内使用"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B,C",
+        "analysis": "JavaBean 可以在多个 JSP 页面中共享使用，D 错误。JavaBean 规范要求必须有一个无参构造函数，A 正确；通常通过 getter 和 setter 方法访问属性，B 正确；JavaBean 可用于实现业务逻辑，提高代码的可维护性和复用性，C 正确。"
+    },
+    {
+        "bank_name": "测试11",
+        "id": "5597797426010533615",
+        "number": 79,
+        "type": "单选",
+        "text": "在 ADO 中，Command 对象的哪个属性用于设置或获取命令文本？",
+        "options": [
+            "CommandText",
+            "CommandType",
+            "ActiveConnection",
+            "Parameters"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "Command 对象的 CommandText 属性用于设置或获取命令文本，A 正确。CommandType 属性用于指定命令的类型（如 SQL 语句、存储过程等），B 错误；ActiveConnection 属性用于指定 Command 对象要使用的连接，C 错误；Parameters 属性用于获取或设置命令的参数集合，D 错误。"
+    },
+    {
+        "bank_name": "测试11",
+        "id": "5600735599973565312",
+        "number": 80,
+        "type": "单选",
+        "text": "如果命令按行返回数据，这些行存储在哪个对象中？",
+        "options": [
+            "Recordset",
+            "Connection",
+            "Command",
+            "Field"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "按行返回的数据存储在 Recordset 对象中，A 正确；Connection 用于连接，Command 用于操作，Field 代表字段，排除 B、C、D。"
+    },
+    {
+        "bank_name": "测试11",
+        "id": "5623230934379677443",
+        "number": 81,
+        "type": "单选",
+        "text": "PHP 是一种什么类型的脚本描述语言？",
+        "options": [
+            "服务器端 HTML 嵌入式",
+            "客户端 HTML 嵌入式",
+            "服务器端非嵌入式",
+            "客户端非嵌入式"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "PHP 是服务器端 HTML 嵌入式脚本描述语言，A 正确；不是客户端和非嵌入式，排除 B、C、D。"
+    },
+    {
+        "bank_name": "测试11",
+        "id": "5631720003499985084",
+        "number": 82,
+        "type": "多选",
+        "text": "Dreamweaver 支持的技术有？",
+        "options": [
+            "跨浏览器的 Dynamic HTML",
+            "阶层式样式窗体",
+            "JavaScript 的动画",
+            "仅支持静态网页技术"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B,C",
+        "analysis": "Dreamweaver 支持跨浏览器的 Dynamic HTML、阶层式样式窗体、JavaScript 的动画等技术，并非仅支持静态网页技术，A、B、C 正确，D 错误。"
+    },
+    {
+        "bank_name": "测试11",
+        "id": "5657133947228708019",
+        "number": 83,
+        "type": "单选",
+        "text": "在创建网站时，布告板类型的网站通常具有什么特点？",
+        "options": [
+            "一个单独、简单的网页，包含指向网络上相关资源的链接",
+            "一个网页，被设计成从头到尾进行阅读",
+            "被分解成多个逻辑上连贯的网页",
+            "具有树型结构"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "布告板是单独简单网页，含指向网络资源的链接，A 正确；B 是单页线性特点，C 是多页线性特点，D 是分层结构特点，排除 B、C、D。"
+    },
+    {
+        "bank_name": "测试11",
+        "id": "5675242956208621558",
+        "number": 84,
+        "type": "多选",
+        "text": "在 Fireworks 中，浮动面板包括以下哪些？",
+        "options": [
+            "layer（图层）",
+            "frames（帧）",
+            "color mixs（颜色混合）",
+            "behavior（行为）"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B,C,D",
+        "analysis": "Fireworks 的浮动面板包括 layer（图层）、frames（帧）、color mixs（颜色混合）、behavior（行为）、optimize（优化）和 object（对象）等，A、B、C、D 都正确。"
+    },
+    {
+        "bank_name": "测试11",
+        "id": "5680965685673540886",
+        "number": 85,
+        "type": "多选",
+        "text": "在 XML 文档显示中，关于层叠样式表（CSS）和扩展样式表语言（XSL）的说法正确的是？",
+        "options": [
+            "CSS 是为方便 HTML 语言提出的，在 XML 中也可使用",
+            "XSL 遵守 XML 语法规则，是 XML 的一种具体应用",
+            "XSLT 是 XSL 的一部分，用于描述树转换",
+            "CSS 功能比 XSL 强"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B,C",
+        "analysis": "CSS 是为方便 HTML 提出的，在 XML 中可用于定义显示格式；XSL 遵守 XML 语法规则；XSLT 是 XSL 中用于描述树转换的部分，已从 XSL 中分离出来；CSS 功能不如 XSL 强，A、B、C 正确，D 错误。"
+    },
+    {
+        "bank_name": "测试11",
+        "id": "5689035392956061826",
+        "number": 86,
+        "type": "单选",
+        "text": "PHP 的语法借鉴了哪些语言？",
+        "options": [
+            "C、Java 及 Perl 语言",
+            "C、C++ 及 Java 语言",
+            "Java、JavaScript 及 Python 语言",
+            "C、Python 及 Ruby 语言"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "PHP 语法借鉴了 C、Java 及 Perl 语言，A 正确；B 中 C++、D 中 Python 和 Ruby、C 中 JavaScript 和 Python 不是 PHP 借鉴的主要语言，排除 B、C、D。"
+    },
+    {
+        "bank_name": "测试11",
+        "id": "5707675498945339739",
+        "number": 87,
+        "type": "单选",
+        "text": "在 PHP 图形计数器程序中，用于取部分字符串的函数是？",
+        "options": [
+            "substr",
+            "strlen",
+            "strcat",
+            "strcmp"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "substr 用于取部分字符串，A 正确；strlen 用于计算字符串长度，strcat 用于连接字符串，strcmp 用于比较字符串，排除 B、C、D。"
+    },
+    {
+        "bank_name": "测试11",
+        "id": "5727810711879918919",
+        "number": 88,
+        "type": "单选",
+        "text": "在 Web 网站创建过程中，若网站内容需要经常更新且对安全性要求较高，通常选择哪种获得 Web 服务器空间的方式？",
+        "options": [
+            "新建 Web 服务器",
+            "企业或单位内部的已建 Web 服务器",
+            "托管 Web 主机",
+            "使用免费的 Web 服务器空间"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "对于内容经常更新且对安全性要求较高的网站，新建 Web 服务器可以更好地满足定制化和安全需求，A 正确。企业或单位内部已建服务器不一定能满足更新和安全需求，B 错误；托管 Web 主机在安全性和定制性上相对受限，C 错误；免费 Web 服务器空间在功能、安全和稳定性上都难以保障，D 错误。"
+    },
+    {
+        "bank_name": "测试11",
+        "id": "5730929320966434475",
+        "number": 89,
+        "type": "单选",
+        "text": "在 PHP 中，用于打开文件的函数是？",
+        "options": [
+            "fopen",
+            "file",
+            "fputs",
+            "fclose"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "PHP 中用 fopen 打开文件，A 正确；file 用于读取文件，fputs 用于写入文件，fclose 用于关闭文件，排除 B、C、D。"
+    },
+    {
+        "bank_name": "测试11",
+        "id": "5750081609272196119",
+        "number": 90,
+        "type": "单选",
+        "text": "PHP 能够直接连接多种数据库，以下哪种数据库通常不被 PHP 直接支持（这里不考虑使用额外扩展或第三方库的情况）？",
+        "options": [
+            "Oracle",
+            "mSQL",
+            "MySQL",
+            "Cassandra"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "D",
+        "analysis": "答案选 D。以下是对各选项的分析： 选项 A：Oracle 是一款知名的商业数据库，PHP 提供了相应的扩展（如 OCI8）来支持与 Oracle 数据库的直接连接和交互，所以 PHP 支持连接 Oracle 数据库。 选项 B：mSQL（Mini SQL）是一个轻量级的数据库管理系统，PHP 可以直接连接 mSQL 数据库进行数据操作。 选项 C：MySQL 是一种广泛使用的开源关系型数据库，PHP 对 MySQL 的支持非常好，提供了多种扩展（如 mysqli、PDO_MySQL）来方便开发者连接和操"
+    },
+    {
+        "bank_name": "测试12",
+        "id": "4641444643649691420",
+        "number": 1,
+        "type": "多选",
+        "text": "在JavaScript中，哪些是数据类型？",
+        "options": [
+            "A. 数字",
+            "B. 字符串",
+            "C. 布尔值",
+            "D. 对象"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B,C,D",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试12",
+        "id": "4652682231804238646",
+        "number": 2,
+        "type": "单选",
+        "text": "下面说法错误的是（ ）。",
+        "options": [
+            "A. Page_Init事件在页面服务器控件被初始化时发生",
+            "B. Page_Load事件只在页面初次加载时发生",
+            "C. 利用IsPostBack属性，可以检查页面是否为传递回服务器的页面",
+            "D. 如果页面验证成功，IsValid属性值为True"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试12",
+        "id": "4701197551866783325",
+        "number": 3,
+        "type": "单选",
+        "text": "下列关于数据验证控件的说法不正确的是（ ）。",
+        "options": [
+            "A. 必填验证控件只能检查输入信息是否为空",
+            "B. 比较验证控件可以进行输入数据的类型检查",
+            "C. 范围验证控件需要使用Minimum和Maximum属性设置范围",
+            "D. 规则验证控件需要使用ValidationExpression属性设置文本格式"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试12",
+        "id": "4707871084043089702",
+        "number": 4,
+        "type": "单选",
+        "text": "下列ADO.NET的组件中，（ ）实现对数据源的数据操作功能。",
+        "options": [
+            "A. Connection对象",
+            "B. Command对象",
+            "C. DataAdapter对象",
+            "D. DataSet对象"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试12",
+        "id": "4716735967009953147",
+        "number": 5,
+        "type": "单选",
+        "text": "下面标记中哪个表示表格的行（ ）。",
+        "options": [
+            "A. TD",
+            "B. TR",
+            "C. TH",
+            "D. CAPTION"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试12",
+        "id": "4734256351867108500",
+        "number": 6,
+        "type": "单选",
+        "text": "现在需要验证某个TextBox控件的输入数据是否大于0。此时应该使用的验证控件是（ ）。",
+        "options": [
+            "A. CompareValidator",
+            "B. CompareValidator与RequiredFieldValidator",
+            "C. RangeValidator",
+            "D. RangeValidator与RequiredFieldValidator"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试12",
+        "id": "4743563410123693929",
+        "number": 7,
+        "type": "多选",
+        "text": "JavaScript中，哪些方法用于数组操作？",
+        "options": [
+            "A. `push()`",
+            "B. `pop()`",
+            "C. `shift()`",
+            "D. `unshift()`"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B,C,D",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试12",
+        "id": "4766537795619496053",
+        "number": 8,
+        "type": "单选",
+        "text": "应用程序中所有页面均可以访问（ ）变量。",
+        "options": [
+            "Ａ. Session",
+            "B. Application",
+            "C. Server",
+            "D. ViewState"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试12",
+        "id": "4769127154447289056",
+        "number": 9,
+        "type": "单选",
+        "text": "下列关于Web服务器端TextBox控件的说法不正确的是（ ）。",
+        "options": [
+            "A. TextBox控件显示为文本输入框",
+            "B. TextBox控件可以设置为多行文本输入",
+            "C. TextBox控件只能输入文本不能显示文本",
+            "D. TextBox控件可以设置为密码框输入"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "C",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试12",
+        "id": "4783592124349547581",
+        "number": 10,
+        "type": "单选",
+        "text": "下面的标签中，（ ）是可以单独使用的，不用成对使用。",
+        "options": [
+            "A. <B>",
+            "B. <BR>",
+            "C. <A>",
+            "D. <P>"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试12",
+        "id": "4790239326521683906",
+        "number": 11,
+        "type": "单选",
+        "text": "下面的标签中（ ）是加粗标签。",
+        "options": [
+            "A. <i></i>",
+            "B. <u></u>",
+            "C. <b></b>",
+            "D. <h></h>"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "C",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试12",
+        "id": "4795316487536751392",
+        "number": 12,
+        "type": "单选",
+        "text": "最简单的网页编辑工具是（ ）。",
+        "options": [
+            "A. 记事本",
+            "B.dreamweaver",
+            "C. frontpage",
+            "D. vs2005"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试12",
+        "id": "4802377269396482139",
+        "number": 13,
+        "type": "多选",
+        "text": "在Web开发中，以下哪些是版本控制工具？",
+        "options": [
+            "A. Git",
+            "B. SVN",
+            "C. CVS",
+            "D. Mercurial"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B,C,D",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试12",
+        "id": "4821249939022826163",
+        "number": 14,
+        "type": "单选",
+        "text": "JavaScript中，用于判断一个值是否为数组的函数是：",
+        "options": [
+            "A. `Array.isArray()`",
+            "B. `isArray()`",
+            "C. `isArray()`",
+            "D. `isType()`"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试12",
+        "id": "4833763709837203458",
+        "number": 15,
+        "type": "单选",
+        "text": "<A>标记的target属性值为（ ）的时候可以实现链接为弹出窗口的效果。",
+        "options": [
+            "A. _self",
+            "B. _blank",
+            "C. _parent",
+            "D. _top"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试12",
+        "id": "4842801494086639603",
+        "number": 16,
+        "type": "单选",
+        "text": "在（ ）模式下，允许重新启用被用户关闭的WebPart控件。",
+        "options": [
+            "A. BrowseDisplayMode",
+            "B. DesignDisplayMode",
+            "C. EditDisplayMode",
+            "D. CatalogDisplayMode"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "D",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试12",
+        "id": "4848695904266267371",
+        "number": 17,
+        "type": "单选",
+        "text": "若希望控件内容变换后立即回传表单，需要在控件中添加（ ）属性。",
+        "options": [
+            "A. AutoPostBack= false",
+            "B. AutoPostBack= true",
+            "C. IsPostBack=true",
+            "D. IsPostBack=false"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试12",
+        "id": "4863634939356353564",
+        "number": 18,
+        "type": "单选",
+        "text": "在HTML中，用于创建一个无序列表的标签是：",
+        "options": [
+            "A. `<ul>`",
+            "B. `<ol>`",
+            "C. `<dl>`",
+            "D. `<menu>`"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试12",
+        "id": "4871161296490897799",
+        "number": 19,
+        "type": "单选",
+        "text": "单击Button类型控件后能执行客户端脚本的属性是（ ）。",
+        "options": [
+            "A. OnCLientClick",
+            "B. OnClick",
+            "C. OnCommandClick",
+            "D. OnClientCommand"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试12",
+        "id": "4959716666629799546",
+        "number": 20,
+        "type": "单选",
+        "text": "CSS中，用于设置文本对齐的属性是：",
+        "options": [
+            "A. `text-align`",
+            "B. `align`",
+            "C. `align-text`",
+            "D. `justify`"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试12",
+        "id": "5016710359076221695",
+        "number": 21,
+        "type": "单选",
+        "text": "主题不包括（ ）。",
+        "options": [
+            "A. skin文件",
+            "B. css文件",
+            "C. 图片文件",
+            "D. config文件"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "D",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试12",
+        "id": "5047500982080019806",
+        "number": 22,
+        "type": "单选",
+        "text": "下面哪个属性指明图像的URL地址？（ ）",
+        "options": [
+            "A. WIDTH",
+            "B. HEIGHT",
+            "C. SRC",
+            "D. ALT"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "C",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试12",
+        "id": "5143693699817879739",
+        "number": 23,
+        "type": "单选",
+        "text": "下列关于用户自定义验证控件的说法不正确的是（ ）。",
+        "options": [
+            "A. 用户自定义验证控件可以根据需要通过程序进行数据检查",
+            "B. 用户自定义验证控件只能在服务器端进行数据检查",
+            "C. 用户自定义验证控件可以不设定ControlToValidate属性",
+            "D. 用户自定义验证控件可以在客户端完成数据检查"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试12",
+        "id": "5198651469036828570",
+        "number": 24,
+        "type": "单选",
+        "text": "一个元素可以有多个属性，属性及其属性值不区分大小写，且各个属性用（ ）分开。",
+        "options": [
+            "A. 分号",
+            "B. 空格",
+            "C. 冒号",
+            "D. 双引号"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试12",
+        "id": "5226592787917259819",
+        "number": 25,
+        "type": "多选",
+        "text": "CSS中，哪些属性用于设置文本样式？",
+        "options": [
+            "A. `font-size`",
+            "B. `font-family`",
+            "C. `line-height`",
+            "D. `color`"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B,C,D",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试12",
+        "id": "5252622478682088083",
+        "number": 26,
+        "type": "单选",
+        "text": "CSS中，用于设置元素的背景颜色的属性是：",
+        "options": [
+            "A. `background-color`",
+            "B. `bgcolor`",
+            "C. `background`",
+            "D. `color`"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试12",
+        "id": "5292159651590965918",
+        "number": 27,
+        "type": "单选",
+        "text": "（ ）属性用于指定验证控件所应用的控件。",
+        "options": [
+            "A. id",
+            "B. ControlToValidate",
+            "C. IsValid",
+            "D. ErrorMessage"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试12",
+        "id": "5294953786276885524",
+        "number": 28,
+        "type": "单选",
+        "text": "在HTML中，用于定义最重要的标题的标签是：",
+        "options": [
+            "A. `<h1>`",
+            "B. `<h6>`",
+            "C. `<h3>`",
+            "D. `<h2>`"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试12",
+        "id": "5306576810036114488",
+        "number": 29,
+        "type": "单选",
+        "text": "静态网页文件的扩展名是（ ）。",
+        "options": [
+            "Ａ. asp",
+            "B. aspx",
+            "C. htm",
+            "D. jsp"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "C",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试12",
+        "id": "5313213323933861393",
+        "number": 30,
+        "type": "单选",
+        "text": "当需要用控件输入性别时，应选择的控件是（ ）。",
+        "options": [
+            "A. CheckBox",
+            "B.CheckBoxList",
+            "C. Label",
+            "D. RadioButtonList"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "D",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试12",
+        "id": "5316229702905286034",
+        "number": 31,
+        "type": "单选",
+        "text": "下列哪个标签用于定义HTML文档的主体内容。",
+        "options": [
+            "A. <body>",
+            "B. <head>",
+            "C. <title>",
+            "D. <div>"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试12",
+        "id": "5339338039241465981",
+        "number": 32,
+        "type": "单选",
+        "text": "现在需要验证某个TextBox控件输入的年龄是否大于18且小于65。此时应该使用的验证控件是（ ）。",
+        "options": [
+            "A. CompareValidator",
+            "B. CompareValidator与RequiredFieldValidator",
+            "C. RangeValidator",
+            "D. RangeValidator"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "D",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试12",
+        "id": "5344838671119846550",
+        "number": 33,
+        "type": "单选",
+        "text": "关于动态网页，以下说法正确的是（ C）。",
+        "options": [
+            "Ａ. 只有包含在服务器端执行的脚本才是动态网页",
+            "B. 包含有动画、视频或声音的网页也是动态网页",
+            "C. 根据用户不同，请求返回不同结果的网页是动态网页",
+            "以上都不对"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "C",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试12",
+        "id": "5358677959080420094",
+        "number": 34,
+        "type": "单选",
+        "text": "JavaScript中，用于声明一个变量的关键字是：",
+        "options": [
+            "A. `var`",
+            "B. `let`",
+            "C. `const`",
+            "D. 以上都是"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "D",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试12",
+        "id": "5383941852538955841",
+        "number": 35,
+        "type": "单选",
+        "text": "下列哪个标签用于定义无序列表。",
+        "options": [
+            "A. <ul>",
+            "B. <li>",
+            "C. <ol>",
+            "D. <dl>"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试12",
+        "id": "5403333427830151196",
+        "number": 36,
+        "type": "单选",
+        "text": "母版页中使用导航控件，要求（ ）。",
+        "options": [
+            "A. 母版必须在根文件夹下",
+            "B. 母版页名字必须为Web.master",
+            "C. 与普通页一样使用",
+            "D. 必须有内容页才能查看效果"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "D",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试12",
+        "id": "5412780350246389413",
+        "number": 37,
+        "type": "单选",
+        "text": "在HTML中，哪些标签用于创建链接？",
+        "options": [
+            "A. `<a>`",
+            "B. `<link>`",
+            "C. `<anchor>`",
+            "D. `<url>`"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试12",
+        "id": "5414828224029562202",
+        "number": 38,
+        "type": "单选",
+        "text": "CSS的字体属性\"font-family\"用于指定文本的字体，可以设置多个字体名称，这些字体之间用什么符号隔开？",
+        "options": [
+            "A. 空格",
+            "B. 逗号",
+            "C. 分号",
+            "D. 冒号"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试12",
+        "id": "5430859491904900863",
+        "number": 39,
+        "type": "单选",
+        "text": "HTML5是以下哪个组织制定的标准？",
+        "options": [
+            "A. W3C",
+            "B. ISO",
+            "C. IETF",
+            "D. IEEE"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试12",
+        "id": "5477515519782790286",
+        "number": 40,
+        "type": "多选",
+        "text": "下列哪些是CSS选择器？",
+        "options": [
+            "A. 类选择器",
+            "B. ID选择器",
+            "C. 标签选择器",
+            "D. 伪类选择器"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B,C,D",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试12",
+        "id": "5490659809385949942",
+        "number": 41,
+        "type": "单选",
+        "text": "CSS中，用于设置字体颜色的属性是：",
+        "options": [
+            "A. `font-style`",
+            "B. `color`",
+            "C. `font-weight`",
+            "D. `text-align`"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试12",
+        "id": "5494899911364342905",
+        "number": 42,
+        "type": "单选",
+        "text": "下列关于Web服务器端Label控件的说法不正确的是（）。",
+        "options": [
+            "A. Label控件显示为文本信息",
+            "B. Label控件只能显示文本信息",
+            "C. Label控件不能接收文本信息",
+            "D. Label控件中文本不能使用<html>标记进行样式控制"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "D",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试12",
+        "id": "5510691826258083069",
+        "number": 43,
+        "type": "多选",
+        "text": "以下哪些是Web开发的测试工具？",
+        "options": [
+            "A. Selenium",
+            "B. JUnit",
+            "C. Mocha",
+            "D. PHPUnit"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,C,D",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试12",
+        "id": "5587340955903878686",
+        "number": 44,
+        "type": "单选",
+        "text": "要确保确认密码和密码两个文本框的内容输入是相同的，需要使用（ ）验证控件。",
+        "options": [
+            "A. RequiredFieldValidator",
+            "B. CompareValidator",
+            "C. RangeValidator",
+            "D. CustomValidator"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试12",
+        "id": "5606348546393495923",
+        "number": 45,
+        "type": "单选",
+        "text": "下列哪个HTTP状态码表示请求成功并返回用户请求的页面内容。",
+        "options": [
+            "A. 200",
+            "B. 404",
+            "C. 500",
+            "D. 503"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试12",
+        "id": "5620701544957626265",
+        "number": 46,
+        "type": "单选",
+        "text": "下列选项中，（ ）是Web服务器控件中不能为空的属性。",
+        "options": [
+            "A. Text",
+            "B. id",
+            "C. width",
+            "D. OnClick"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试12",
+        "id": "5626499892885598635",
+        "number": 47,
+        "type": "单选",
+        "text": "（ ）文件由Visual Studio.NET创建，用于定义Web应用程序的配置。",
+        "options": [
+            "Ａ. Global.asax",
+            "B. Web.config",
+            "C. ASPX",
+            "D. AssemblyInfo.cs"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试12",
+        "id": "5673140257981410307",
+        "number": 48,
+        "type": "多选",
+        "text": "下列哪些是Web开发的前端技术？",
+        "options": [
+            "A. HTML",
+            "B. CSS",
+            "C. JavaScript",
+            "D. SQL"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B,C",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试12",
+        "id": "5691755448336611934",
+        "number": 49,
+        "type": "多选",
+        "text": "以下哪些是Web开发的后端技术？",
+        "options": [
+            "A. PHP",
+            "B. Python",
+            "C. Ruby",
+            "D. Java"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B,C,D",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试12",
+        "id": "5696979411719324141",
+        "number": 50,
+        "type": "单选",
+        "text": "要实现限制用户在年龄输入框中所填写的数据在18到100之间，需要使用的验证控件是（ ）。",
+        "options": [
+            "A. RequiredFieldValidator",
+            "B. CompareValidator",
+            "C. RangeValidator",
+            "D. CustomValidator"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "C",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试12",
+        "id": "5709065490964686625",
+        "number": 51,
+        "type": "单选",
+        "text": "在HTML5中，用于定义一个节的标签是：",
+        "options": [
+            "A. `<section>`",
+            "B. `<article>`",
+            "C. `<aside>`",
+            "D. `<header>`"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试12",
+        "id": "5729218864724911888",
+        "number": 52,
+        "type": "单选",
+        "text": "JavaScript中，用于获取当前日期的函数是：",
+        "options": [
+            "A. `Date.now()`",
+            "B. `new Date()`",
+            "C. `Date.getNow()`",
+            "D. `new Date.now()`"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试12",
+        "id": "5744054831197620532",
+        "number": 53,
+        "type": "单选",
+        "text": "在JavaScript中，以下不属于数据类型的是：",
+        "options": [
+            "A. String",
+            "B. Boolean",
+            "C. Integer",
+            "D. Array"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "C",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试12",
+        "id": "5760450184248422120",
+        "number": 54,
+        "type": "单选",
+        "text": "在HTML5中，用于嵌入音频文件的标签是：",
+        "options": [
+            "A. `<audio>`",
+            "B. `<sound>`",
+            "C. `<music>`",
+            "D. `<audiofile>`"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "：【无】"
     },
     {
         "bank_name": "测试1",
