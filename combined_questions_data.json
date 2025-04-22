@@ -1,5 +1,2549 @@
 [
     {
+        "bank_name": "测试1",
+        "id": "4661660249085606254",
+        "number": 1,
+        "type": "单选",
+        "text": "数据传输速率在数值上，等于每秒钟传输构成数据代码的二进制比特数，它的单位为比特/秒，通常记做（）",
+        "options": [
+            "B/s",
+            "bps",
+            "bpers",
+            "baud"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试1",
+        "id": "4664973577295675701",
+        "number": 2,
+        "type": "单选",
+        "text": "能够向数据通信网络发送和接收数据信息的设备称为（）",
+        "options": [
+            "数据终端设备",
+            "调制解调器",
+            "数据线路端接设备",
+            "集线器"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试1",
+        "id": "4672558914596276771",
+        "number": 3,
+        "type": "单选",
+        "text": "目前公用电话网，使用的交换方式为（）",
+        "options": [
+            "电路交换",
+            "分组交换",
+            "数据报交换",
+            "报文交换"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试1",
+        "id": "4699184601455510205",
+        "number": 4,
+        "type": "单选",
+        "text": "ATM中，信息的基本单位是（）",
+        "options": [
+            "信元",
+            "帧",
+            "字节",
+            "比特"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试1",
+        "id": "4699946792517627202",
+        "number": 5,
+        "type": "单选",
+        "text": "以下哪项是衡量数据传输速率的重要指标？",
+        "options": [
+            "A. 波特率",
+            "B. 带宽",
+            "C. 误码率",
+            "D. 时延"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "答案：A（虽然波特率与比特率不同，但在选择题中常作为数据传输速率的指标提及，特别是与比特率区分时"
+    },
+    {
+        "bank_name": "测试1",
+        "id": "4711764372385250093",
+        "number": 6,
+        "type": "多选",
+        "text": "以下哪些编码方式属于数字信号的编码？",
+        "options": [
+            "A. AM调制",
+            "B. 曼彻斯特编码",
+            "D. 差分曼彻斯特编码",
+            "E. FM调制"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B,C",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试1",
+        "id": "4737065683393143787",
+        "number": 7,
+        "type": "单选",
+        "text": "把模拟量变为数字量的过程称为（）",
+        "options": [
+            "A/D转换",
+            "D/A转换",
+            "调制",
+            "解调"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "D",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试1",
+        "id": "4781999782541053778",
+        "number": 8,
+        "type": "单选",
+        "text": "在计算机网络通信系统中，作为信源的计算机发出的信号都是（ ）信号，作为信宿的计算机所能接受和识别的信号要求必须是（ ）信号。",
+        "options": [
+            "数字，数字",
+            "数字，模拟",
+            "模拟，数字",
+            "模拟，模拟"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试1",
+        "id": "4802083452235892763",
+        "number": 9,
+        "type": "多选",
+        "text": "在计算机网络中，数据编码的作用包括哪些？",
+        "options": [
+            "A. 提高数据传输效率",
+            "B. 减少误码率",
+            "C. 实现数据的同步",
+            "D. 增加数据的冗余度"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B,C",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试1",
+        "id": "4804026653558029141",
+        "number": 10,
+        "type": "单选",
+        "text": "报文交换网络中的节点通常负责哪些功能 ？",
+        "options": [
+            "A. 报文的存储和转发",
+            "B. 报文的路由选择",
+            "C. 报文的差错检测和纠正",
+            "D. 以上都是"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "D",
+        "analysis": "节点通常负责报文的存储、转发、路由选择以及差错检测和纠正等功能"
+    },
+    {
+        "bank_name": "测试1",
+        "id": "4805639160841799861",
+        "number": 11,
+        "type": "单选",
+        "text": "在数据通信中，如果要求数据传输的实时性高，但对数据传输的准确性要求相对较低，通常选择：（ ）",
+        "options": [
+            "A. 电路交换",
+            "B. 报文交换",
+            "C. 分组交换",
+            "D. 虚电路交换"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "电路交换的实时性通常较高，但数据传输的准确性依赖于物理线路的质量"
+    },
+    {
+        "bank_name": "测试1",
+        "id": "4807983728609210946",
+        "number": 12,
+        "type": "单选",
+        "text": "电路交换技术中，建立连接的过程称为 ：（ ）",
+        "options": [
+            "A. 呼叫建立",
+            "B. 数据传输",
+            "C. 连接释放",
+            "D. 路由选择"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试1",
+        "id": "4808772691318781672",
+        "number": 13,
+        "type": "单选",
+        "text": "报文交换网络中，报文通常包含哪些部分？",
+        "options": [
+            "A. 报文头和报文体",
+            "B. 源地址和目的地址",
+            "C. 数据和控制信息",
+            "D. 以上都是"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "D",
+        "analysis": "报文通常包含报文头（包含源地址、目的地址等控制信息）和报文体（包含实际传输的数据））"
+    },
+    {
+        "bank_name": "测试1",
+        "id": "4867235936973306906",
+        "number": 14,
+        "type": "单选",
+        "text": "计算机网络通信系统是（）",
+        "options": [
+            "电信号传输系统",
+            "文字通信系统",
+            "信号通信系统",
+            "数据通信系统"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "D",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试1",
+        "id": "4878285855868988252",
+        "number": 15,
+        "type": "多选",
+        "text": "关于香农定理，以下说法正确的是？",
+        "options": [
+            "A. 它给出了在存在噪声情况下的极限数据速率",
+            "B. 极限数据速率与带宽和信噪比有关",
+            "C. 信噪比通常使用分贝来表示",
+            "E. 带宽越大，极限数据速率一定越高"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B,C",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试1",
+        "id": "4894498183342045893",
+        "number": 16,
+        "type": "单选",
+        "text": "以下哪项不是影响数据传输效率的因素？",
+        "options": [
+            "网络拥塞程度",
+            "接收方的缓存容量不足",
+            "使用的颜色模式（RGB 或 CMYK）",
+            "数据包丢失率"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "C",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试1",
+        "id": "4896703903929811634",
+        "number": 17,
+        "type": "单选",
+        "text": "数据通信中，利用电话交换网与调制解调器进行数据传输的方法属于（）",
+        "options": [
+            "频带传输",
+            "宽带传输",
+            "基带传输",
+            "IP传输"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试1",
+        "id": "4924971599453456022",
+        "number": 18,
+        "type": "单选",
+        "text": "在分组交换网络中，数据包被分割成固定长度的部分称为：",
+        "options": [
+            "A. 帧",
+            "B. 报文",
+            "C. 分组",
+            "D. 段"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "C",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试1",
+        "id": "4937394913359851051",
+        "number": 19,
+        "type": "单选",
+        "text": "（）是信息传输的物理信道",
+        "options": [
+            "信道",
+            "数据",
+            "编码",
+            "介质"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "D",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试1",
+        "id": "4971474914693022105",
+        "number": 20,
+        "type": "单选",
+        "text": "在频分复用（FDM）系统中，为了避免信号间的干扰，相邻信道之间需要有一定的：",
+        "options": [
+            "A. 频率间隔",
+            "B. 时隙间隔",
+            "C. 码型间隔",
+            "D. 相位间隔"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试1",
+        "id": "5016936439040391739",
+        "number": 21,
+        "type": "单选",
+        "text": "计算机通信采用的交换技术有分组交换和电路交换，前者比后者（）",
+        "options": [
+            "实时性好，线路利用率高",
+            "实时性好，线路利用率低",
+            "实时性差，线路利用率高",
+            "实时性差，线路利用率低"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "C",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试1",
+        "id": "5026519224125736093",
+        "number": 22,
+        "type": "单选",
+        "text": "下列说法中哪些正确？ ①虚电路与电路交换中的电路没有实质不同 ②在通信的两站间只能建立一条虚电路 ③虚电路也有连接建立、数据传输、连接拆除三个阶段 ④虚电路的各个节点不需要为每个分组作路径选择判定",
+        "options": [
+            "①和②",
+            "②和③",
+            "③和④",
+            "①和④"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "C",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试1",
+        "id": "5029749474713199936",
+        "number": 23,
+        "type": "单选",
+        "text": "报文交换与电路交换的主要区别在于：（ ）",
+        "options": [
+            "A. 报文交换是实时的，电路交换不是",
+            "B. 报文交换需要建立物理连接，电路交换不需要",
+            "C. 报文交换中，数据以报文为单位进行传输；电路交换中，用户独占一条物理通道",
+            "D. 报文交换适用于短距离通信，电路交换适用于长距离通信"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "C",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试1",
+        "id": "5042096859484953031",
+        "number": 24,
+        "type": "单选",
+        "text": "差分曼彻斯特编码的特点是：",
+        "options": [
+            "A. 每个比特中间都有跳变",
+            "B. 每个比特开始时都有跳变",
+            "C. 比特“1”表示为电平不变，比特“0”表示为电平跳变",
+            "D. 比特“1”表示为电平跳变，比特“0”表示为电平不变"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "D",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试1",
+        "id": "5088830635191124738",
+        "number": 25,
+        "type": "多选",
+        "text": "在数据通信中，常见的通信方式有哪些？",
+        "options": [
+            "D. 异步通信",
+            "C. 全双工通信",
+            "E. 同步通信",
+            "B. 半双工通信"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B,C,D",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试1",
+        "id": "5092642758640824624",
+        "number": 26,
+        "type": "多选",
+        "text": "关于奈奎斯特定理，以下说法正确的是（ ）？",
+        "options": [
+            "B. 它给出了在无噪声情况下码元速度的最大值",
+            "C. 码元速度是带宽的两倍",
+            "D. 数据速率与码元速度和码元种类数有关",
+            "E. 它只适用于模拟信号"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试1",
+        "id": "5093843922920007871",
+        "number": 27,
+        "type": "单选",
+        "text": "在数据通信中，通过增加冗余信息来提高数据传输可靠性的技术称为：",
+        "options": [
+            "A. 差错检测",
+            "B. 差错纠正",
+            "C. 差错控制",
+            "D. 数据压缩"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "C",
+        "analysis": "虽然C不是直接的技术名称，但它涵盖了通过冗余提高可靠性的概念"
+    },
+    {
+        "bank_name": "测试1",
+        "id": "5126638516962622002",
+        "number": 28,
+        "type": "单选",
+        "text": "在数据通信中，将模拟信号转换为数字信号的过程称为：",
+        "options": [
+            "调制",
+            "解调",
+            "编码",
+            "采样"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "C",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试1",
+        "id": "5143159747711050173",
+        "number": 29,
+        "type": "单选",
+        "text": "报文交换网络的优点是 ：（ ）",
+        "options": [
+            "A. 传输延迟小",
+            "B. 电路利用率高",
+            "C. 实时性好",
+            "D. 交换设备简单"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试1",
+        "id": "5164056010181661355",
+        "number": 30,
+        "type": "单选",
+        "text": "波分复用（WDM）技术主要应用于： （）",
+        "options": [
+            "无线电通信",
+            "B. 光纤通信",
+            "C. 卫星通信",
+            "D. 移动通信"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试1",
+        "id": "5166788149759525972",
+        "number": 31,
+        "type": "单选",
+        "text": "在计算机网络中，ASCII码是一种用于表示：",
+        "options": [
+            "A. 汉字字符的编码",
+            "B. 英文字符的编码",
+            "C. 图片的编码",
+            "D. 音频的编码"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试1",
+        "id": "5286521583023831657",
+        "number": 32,
+        "type": "单选",
+        "text": "在数据传输中，需要建立连接的是（）",
+        "options": [
+            "信元交换",
+            "电路交换",
+            "报文交换",
+            "数据报交换"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试1",
+        "id": "5295850917655926578",
+        "number": 33,
+        "type": "单选",
+        "text": "ATM信元由53个字节组成，前 个字节是信头，其余 是信息字段。",
+        "options": [
+            "5 48",
+            "6 47",
+            "8 45",
+            "9 44"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试1",
+        "id": "5313336106577874796",
+        "number": 34,
+        "type": "单选",
+        "text": "数据传输的可靠性指标是",
+        "options": [
+            "速率",
+            "误码率",
+            "带宽",
+            "传输失败的二进制信号的个数"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试1",
+        "id": "5331807551981161909",
+        "number": 35,
+        "type": "单选",
+        "text": "数据通信中的信道传输速率单位是比特率(bps)，它的含义是（）",
+        "options": [
+            "Bits Per Second",
+            "Bytes Per Second",
+            "和具体传输介质有关",
+            "和网络类型有关"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试1",
+        "id": "5374047403788955212",
+        "number": 36,
+        "type": "单选",
+        "text": "在报文交换网络中，报文从源节点到目的节点可能经过的路径是： （ ）",
+        "options": [
+            "A. 固定的",
+            "B. 预先确定的",
+            "C. 由网络中的节点动态选择的",
+            "D. 不可预测的"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "C",
+        "analysis": "报文交换网络中的路径通常是根据网络状态和路由算法动态选择的"
+    },
+    {
+        "bank_name": "测试1",
+        "id": "5406636635278371065",
+        "number": 37,
+        "type": "单选",
+        "text": "在数字通信信道上，直接传输基带信号的方法称为（）",
+        "options": [
+            "宽带传输",
+            "基带传输",
+            "并行传输",
+            "频带传输"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试1",
+        "id": "5437619976423932811",
+        "number": 38,
+        "type": "多选",
+        "text": "在数据通信中，信道的特性包括哪些？",
+        "options": [
+            "C. 误码率",
+            "B. 噪声",
+            "A. 带宽",
+            "D. 传输介质"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B,C,D",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试1",
+        "id": "5452328184242561155",
+        "number": 39,
+        "type": "单选",
+        "text": "在报文交换网络中，如果报文很大，可能会导致的问题是： （ ）",
+        "options": [
+            "A. 传输延迟增加",
+            "B. 电路利用率降低",
+            "C. 数据丢失",
+            "D. 网络拥塞"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "大报文需要更长的传输时间和更多的存储转发操作，从而增加传输延迟）"
+    },
+    {
+        "bank_name": "测试1",
+        "id": "5454067633361725042",
+        "number": 40,
+        "type": "单选",
+        "text": "以下网络的技术指标中，可以用字节／秒作为单位的是（）",
+        "options": [
+            "比特率",
+            "波特率",
+            "吞吐量",
+            "误码率"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "C",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试1",
+        "id": "5459900838759991171",
+        "number": 41,
+        "type": "单选",
+        "text": "香农定理从定量的角度描述了“带宽”与“速率”的关系。在香农定理的公式中，与信道的最大传输速率相关的参数主要有信道带宽与（）",
+        "options": [
+            "频率特性",
+            "信噪比",
+            "相位特性",
+            "噪声功率"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试1",
+        "id": "5462454371628115761",
+        "number": 42,
+        "type": "单选",
+        "text": "码分复用（CDM）中，不同用户的数据是通过：（）",
+        "options": [
+            "不同的频率区分",
+            "不同的时隙区分",
+            "不同的码型区分",
+            "不同的相位区分"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "C",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试1",
+        "id": "5467287070016706019",
+        "number": 43,
+        "type": "单选",
+        "text": "报文交换网络中，数据交换的基本单位是：",
+        "options": [
+            "A. 比特",
+            "B. 字节",
+            "C. 报文",
+            "D. 分组"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "C",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试1",
+        "id": "5490557009436815078",
+        "number": 44,
+        "type": "单选",
+        "text": "报文交换网络适用于哪些场景？",
+        "options": [
+            "A. 实时性要求高的通信",
+            "B. 突发性数据传输",
+            "C. 大量连续数据传输",
+            "D. 固定速率的数据传输"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "（报文交换适用于突发性数据传输，因为可以动态分配网络资源）"
+    },
+    {
+        "bank_name": "测试1",
+        "id": "5495721755662902791",
+        "number": 45,
+        "type": "多选",
+        "text": "在数据通信中，以下哪些因素会影响信道的传输质量？",
+        "options": [
+            "A. 信道的带宽",
+            "B. 信噪比",
+            "D. 数据编码方式",
+            "C. 传输介质的类型"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B,C,D",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试1",
+        "id": "5526214615886331336",
+        "number": 46,
+        "type": "单选",
+        "text": "曼彻斯特编码是一种（）",
+        "options": [
+            "A. 自同步编码",
+            "B. 非归零编码",
+            "C. 归零编码",
+            "D. 相位编码"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试1",
+        "id": "5531817546284462885",
+        "number": 47,
+        "type": "单选",
+        "text": "虚电路交换方式属于：（）",
+        "options": [
+            "A. 电路交换",
+            "B. 报文交换",
+            "C. 分组交换",
+            "D. 以上都不是"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "C",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试1",
+        "id": "5549461973020165585",
+        "number": 48,
+        "type": "单选",
+        "text": "通信信道的每一端可以是发送端，也可以是接受端，信息可由这一端传输到那一端，也可以由那一端传输到这一端。但在同一时刻里，信息只能有一个传输方向的通信方式称为（）",
+        "options": [
+            "单工通信",
+            "半双工通信",
+            "全双工通信",
+            "模拟通信"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试1",
+        "id": "5549993156840586831",
+        "number": 49,
+        "type": "多选",
+        "text": "以下哪些属于基本的数据编码方式？",
+        "options": [
+            "C. 双极性码",
+            "D. 不归零码",
+            "B. 归零码",
+            "A. 单极性码"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B,C,D",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试1",
+        "id": "5559378915601656078",
+        "number": 50,
+        "type": "单选",
+        "text": "报文交换与分组交换的主要区别在于：（）",
+        "options": [
+            "报文交换传输的是整个报文，而分组交换传输的是报文的片段",
+            "报文交换是实时的，而分组交换不是",
+            "报文交换适用于长距离通信，而分组交换适用于短距离通信",
+            "报文交换不需要建立连接，而分组交换需要"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试1",
+        "id": "5562312781478715548",
+        "number": 51,
+        "type": "多选",
+        "text": "信道复用技术主要包括哪些（ ）？",
+        "options": [
+            "B. 频分复用",
+            "D. 码分复用",
+            "E. 波分复用",
+            "C. 时分复用"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B,C,D",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试1",
+        "id": "5598695408602901708",
+        "number": 52,
+        "type": "单选",
+        "text": "在数据传输中，（ ）交换的传输延迟最小。",
+        "options": [
+            "报文",
+            "分组",
+            "电路",
+            "信元"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "C",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试1",
+        "id": "5611845915591019694",
+        "number": 53,
+        "type": "单选",
+        "text": "下列关于信道容量的叙述，正确的是（）",
+        "options": [
+            "信道所能允许的最大数据传输速率",
+            "信道所能提供的同时通话的路数",
+            "以兆赫兹为单位的信道带宽",
+            "信道所允许的最大误码率"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试1",
+        "id": "5616612619372165634",
+        "number": 54,
+        "type": "单选",
+        "text": "报文交换网络的优点不包括：",
+        "options": [
+            "A. 电路利用率高",
+            "B. 传输延迟小",
+            "C. 无需建立物理连接",
+            "D. 可以实现不同速率、不同规程的终端之间的通信"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "无"
+    },
+    {
+        "bank_name": "测试1",
+        "id": "5650421331916059948",
+        "number": 55,
+        "type": "单选",
+        "text": "ATM（异步传输模式）是一种：（ ）",
+        "options": [
+            "A. 电路交换技术",
+            "B. 报文交换技术",
+            "C. 分组交换技术",
+            "D. 数据链路层协议"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "C",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试1",
+        "id": "5675795867251633726",
+        "number": 56,
+        "type": "多选",
+        "text": "关于差分曼彻斯特编码，以下说法正确的是？",
+        "options": [
+            "A. 它是一种自同步编码方式",
+            "B. 编码效率为100%",
+            "C. 常用于令牌环网",
+            "不需要额外传输同步信号"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,C,D",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试1",
+        "id": "5738304013915403463",
+        "number": 57,
+        "type": "单选",
+        "text": "在数据报交换方式中，每个数据包：（ ）",
+        "options": [
+            "A. 都有完整的路由信息",
+            "B. 需要预先建立连接",
+            "C. 沿着相同的路径传输",
+            "D. 传输顺序固定"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试1",
+        "id": "5741324103313135362",
+        "number": 58,
+        "type": "单选",
+        "text": "在时分复用（TDM）中，时间被划分为多个时隙，每个时隙用于 ： 答案：C",
+        "options": [
+            "A. 传输一个完整的比特",
+            "B. 传输一个完整的字节",
+            "C. 传输一个用户的数据",
+            "D. 传输一个数据帧"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "C",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试1",
+        "id": "5756608041835042282",
+        "number": 59,
+        "type": "单选",
+        "text": "下面哪一项是信元和分组的不同",
+        "options": [
+            "信无通常比分组小",
+            "信元不同物理地址可合并",
+            "所有信元都有固定长度",
+            "分组不能被交换"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "C",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "4613154894085199420",
+        "number": 1,
+        "type": "单选",
+        "text": "Photoshop 支持多种图像格式，以下哪种不是它支持的格式？",
+        "options": [
+            "PSD",
+            "JPEG",
+            "BMP",
+            "PPT"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "D",
+        "analysis": "Photoshop 支持 PSD、JPEG、BMP 等多种图像格式，PPT 是演示文稿格式，不是 Photoshop 支持的图像格式，D 正确，A、B、C 错误。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "4613327603562543129",
+        "number": 2,
+        "type": "单选",
+        "text": "在 XML 中，标记命名规则规定标记必须以什么开头？",
+        "options": [
+            "字母、下画线（_）或冒号（:）",
+            "数字",
+            "句号（.）",
+            "连字符（-）"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "在 XML 中，标记必须以字母、下画线（_）或冒号（:）开头，所以选 A。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "4617260909410551047",
+        "number": 3,
+        "type": "单选",
+        "text": "在 HTML 中，无序列表的开始标签是？",
+        "options": [
+            "<ul>",
+            "<ol>",
+            "<dl>",
+            "<li>"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "在 HTML 中，无序列表以 开始，所以选 A。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "4634520979714931773",
+        "number": 4,
+        "type": "单选",
+        "text": "Fireworks 采用切片技术的目的是什么？",
+        "options": [
+            "获得较高的下载速度",
+            "提高图像质量",
+            "使图像更美观",
+            "便于图像编辑"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "Fireworks 采用切片技术可将大图像分隔为多个小碎片，从而获得较高的下载速度，A 正确；切片技术与提高图像质量、美观度、便于编辑无直接关系，B、C、D 错误。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "4645439500207637341",
+        "number": 5,
+        "type": "单选",
+        "text": "在 XML 中，标记是否区分大小写？",
+        "options": [
+            "是",
+            "否",
+            "部分区分",
+            "视情况而定"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "在 XML 中，标记必须区分大小写， 和 是不同标记，所以选 A。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "4648487246692292991",
+        "number": 6,
+        "type": "单选",
+        "text": "在网页制作中，以下哪种工具不是常用的网页及素材制作工具软件？",
+        "options": [
+            "Fireworks",
+            "Dreamweaver",
+            "Adobe Photoshop",
+            "Visual Studio"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "D",
+        "analysis": "Visual Studio 主要用于软件开发，不是常用的网页及素材制作工具；Fireworks 用于网络图形设计，Dreamweaver 是主页编辑工具，Adobe Photoshop 用于图像处理，A、B、C 错误，D 正确。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "4676944041626322196",
+        "number": 7,
+        "type": "单选",
+        "text": "在 XML 中，注释文本中不能出现的字符或字符串是？",
+        "options": [
+            "-- 或 ->",
+            "<! 或>!",
+            "{或}",
+            "(或)"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "在 XML 注释文本中，不能出现 -- 或 ->，否则 XML 解析器可能混淆，所以选 A。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "4693421924276772089",
+        "number": 8,
+        "type": "单选",
+        "text": "统一资源定位器（URL）的构成不包括以下哪部分？",
+        "options": [
+            "protocol",
+            "machine.name",
+            "directory 和 filename",
+            "标记名"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "D",
+        "analysis": "URL 由 protocol、machine.name、port（通常可省略）、directory 和 filename 组成，不包括标记名，所以选 D。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "4744898554853166852",
+        "number": 9,
+        "type": "单选",
+        "text": "在 XML 中，空格属性名为？",
+        "options": [
+            "xml:space",
+            "xml:lang",
+            "space",
+            "lang"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "在 XML 中，空格属性名为 xml:space，用于说明是否保留 XML 元素数据内容中的空格字符，所以选 A。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "4747094877347081190",
+        "number": 10,
+        "type": "单选",
+        "text": "在 HTML 中，设置表格间距的属性是？",
+        "options": [
+            "width=#",
+            "height=#",
+            "border=#",
+            "cellspacing=#"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "D",
+        "analysis": "在 HTML 中，cellspacing=# 用于设置表格间距，所以选 D。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "4767635663643783994",
+        "number": 11,
+        "type": "单选",
+        "text": "在 XML 中，语言属性的取值多以什么为标准？",
+        "options": [
+            "国际标准 ISO639 中的编码",
+            "IANA 中定义的编码",
+            "用户自定义编码",
+            "ASCII 编码"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "XML 语言属性取值多以国际标准 ISO639 中的编码为标准，如英语编码是 en，所以选 A。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "4769307922501396758",
+        "number": 12,
+        "type": "单选",
+        "text": "在 HTML 中，<br>标签的作用是？",
+        "options": [
+            "分段",
+            "分行",
+            "划横线",
+            "设置文本字体"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "在 HTML 里， 用于强制换行，所以选 B。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "4789334281497338698",
+        "number": 13,
+        "type": "单选",
+        "text": "在框架中，创建多个行的属性是？",
+        "options": [
+            "cols=\"x\"",
+            "rows=\"x\"",
+            "border=\"x\"",
+            "frameborder=\"x\""
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "在框架中，rows=\"x\" 属性可创建多个行，所以选 B。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "4793628620881921272",
+        "number": 14,
+        "type": "单选",
+        "text": "在 HTML 中，用于创建一个段落的标签是？",
+        "options": [
+            "<hr>",
+            "<nobr>",
+            "<p>",
+            "<br>"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "C",
+        "analysis": "答案选 C。在 HTML 里， 标签用于定义一个段落； 标签是用来在页面中创建一条水平线，通常用于分隔内容主题； 标签用于禁止文本自动换行； 标签用于在文本中插入一个换行符。所以正确答案是 C。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "4796924361418708007",
+        "number": 15,
+        "type": "单选",
+        "text": "在 XML 中，处理指示的格式是？",
+        "options": [
+            "<?处理指示名 处理指示信息?>",
+            "<! 处理指示名 处理指示信息！>",
+            "{处理指示名 处理指示信息}",
+            "(处理指示名 处理指示信息)"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "在 XML 中，处理指示遵循的格式为 ，所以选 A。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "4809964244248338101",
+        "number": 16,
+        "type": "单选",
+        "text": "在 HTML 中，图像链接的格式是？",
+        "options": [
+            "<a href=\"URL\">字符串</a>",
+            "<a name=\"name\">text</a>",
+            "<a href=\"URL#name\">text</a>",
+            "<a href=\"URL\"><img src=\"URL\"></a>"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "D",
+        "analysis": "在 HTML 中，图像链接格式是 ，所以选 D。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "4815961819885245502",
+        "number": 17,
+        "type": "多选",
+        "text": "XML 与 HTML 相比，具有哪些特点？",
+        "options": [
+            "是元标记语言，用户可自定义标记",
+            "描述的是结构和语义，而非显示格式",
+            "文档显示需借助特有技术支持",
+            "标记固定，含义特定"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B,C",
+        "analysis": "XML 是元标记语言，描述结构和语义，显示需借助样式表等技术；HTML 标记固定，D 是 HTML 特点，A、B、C 正确。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "4816208674582438482",
+        "number": 18,
+        "type": "多选",
+        "text": "在 XML 标记属性中，空格属性和语言属性具有以下哪些特点？",
+        "options": [
+            "都是可继承属性",
+            "空格属性用于说明是否保留元素数据中的空格，语言属性用于指定元素使用的语言",
+            "空格属性取值只有 yes 和 no",
+            "语言属性取值只能用 ISO639 编码"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B",
+        "analysis": "空格属性和语言属性都是可继承属性，空格属性取值为 default 和 preserve，语言属性取值多以 ISO639 编码为标准，也可用 IANA 编码并加前缀等，C、D 错误，A、B 正确。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "4849109017161837688",
+        "number": 19,
+        "type": "单选",
+        "text": "在 XML 文档显示中，W3C 推荐的表达 XML 文档数据显示格式的标准不包括以下哪种？",
+        "options": [
+            "层叠样式表（CSS）",
+            "扩展样式表语言（XSL）",
+            "XSLT（XSL Transformations）",
+            "HTML"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "D",
+        "analysis": "HTML 主要用于网页内容格式化和布局，并非 W3C 推荐用于表达 XML 文档数据显示格式的标准；CSS 和 XSL 是相关标准，XSLT 是 XSL 的一部分，用于转换 XML 文档格式，A、B、C 错误，D 正确。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "4859514924544824048",
+        "number": 20,
+        "type": "单选",
+        "text": "在框架中，用于指定框架中显示的 HTML 文档位置的标记是？",
+        "options": [
+            "<frameset>",
+            "<frame>",
+            "<noframe>",
+            "<html>"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "在框架中，标记通过 src=\"x\" 来指定框架中显示的 HTML 文档位置，所以选 B。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "4894198797540615142",
+        "number": 21,
+        "type": "单选",
+        "text": "在 HTML 中，图像的基本格式中，alt 属性的作用是？",
+        "options": [
+            "指定图像文件的 URL",
+            "设置图像与文本的对齐方式",
+            "设置图像的大小",
+            "告诉不支持图像的浏览器用 text 代替该图"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "D",
+        "analysis": "在 HTML 图像基本格式中，alt 属性用于告诉不支持图像的浏览器用 text 代替该图，所以选 D。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "4896474775281225820",
+        "number": 22,
+        "type": "单选",
+        "text": "超文本链接由哪两部分组成？",
+        "options": [
+            "被指向的目标和指向目标的链接",
+            "统一资源定位器和指向目标的链接",
+            "图像和指向目标的链接",
+            "文本和指向目标的链接"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "超文本链接由被指向的目标和指向目标的链接两部分组成，所以选 A。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "4907444980065713240",
+        "number": 23,
+        "type": "单选",
+        "text": "在 HTML 中，当表格宽度大于文本宽度时，设置文本左对齐的属性值是？",
+        "options": [
+            "left",
+            "center",
+            "right",
+            "top"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "在 HTML 中，当表格宽度大于文本宽度时，align=left 可使文本左对齐，所以选 A。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "4958942720865600230",
+        "number": 24,
+        "type": "单选",
+        "text": "利用 XSLT 可以将 XML 文档转换为以下哪种格式？",
+        "options": [
+            "只能转换为 HTML 文档",
+            "只能转换为 XML 文档",
+            "只能转换为文本文件",
+            "可以转换为多种格式，如 HTML、XML、VRML 等"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "D",
+        "analysis": "XSLT 可以很好地描述 XML 文档向多种格式文档的转换方法，包括 HTML、XML、VRML、SVG 等，D 正确，A、B、C 错误。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "4971400791964793977",
+        "number": 25,
+        "type": "单选",
+        "text": "Dreamweaver 的特点不包括以下哪点？",
+        "options": [
+            "提供可视化网页开发，不降低 HTML 原码的控制",
+            "支持跨浏览器的 Dynamic HTML 等技术",
+            "提供行为和时间线控件进行动画处理",
+            "只能使用一种脚本语言"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "D",
+        "analysis": "Dreamweaver 可使用多种脚本语言，如 VBScript 和 JavaScript 等，A、B、C 是其特点，D 错误。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "4978492219884141124",
+        "number": 26,
+        "type": "多选",
+        "text": "HTML 中，以下哪些字符需要使用转义序列表示？",
+        "options": [
+            "<",
+            ">",
+            "&",
+            "#"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B,C",
+        "analysis": "在 HTML 使用的 ISO 8859 Latin - 1 字符集中，<、>、& 有特殊含义，需用转义序列表示，# 不需要，A、B、C 正确。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "4999855097112025060",
+        "number": 27,
+        "type": "单选",
+        "text": "动态网页技术主要依赖于什么编程？",
+        "options": [
+            "服务器端编程",
+            "客户端编程",
+            "前后端结合编程",
+            "云端编程"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "动态网页技术主要依赖服务器端编程，包括 CGI 版本、Server - API 程序、Java Serverlets 以及服务器端脚本语言等，A 正确，B、C、D 错误。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "5004021101544375407",
+        "number": 28,
+        "type": "单选",
+        "text": "在 HTML 中，小于号（<）的转义序列是以下哪一个？",
+        "options": [
+            "&amp; 或 &#38;",
+            "&gt; 或 &#62;",
+            "&lt; 或 &#60;",
+            "&quot; 或 &#34;"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "C",
+        "analysis": "答案选 C。下面对各选项进行分析： 选项 A：& 或 & 是和号（&）的转义序列，不是小于号的转义序列。 选项 B：> 或 > 是大于号（>）的转义序列，并非小于号的转义序列。 选项 C：< 或 < 是小于号（<）的转义序列，在 HTML 中，当需要显示小于号这个字符本身时，使用这两个转义序列来避免被解析为标签的开始。 选项 D：\" 或 \" 是引号（\"）的转义序列，与小于号无关。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "5006393531577073347",
+        "number": 29,
+        "type": "单选",
+        "text": "在 HTML 中，表格列名的标签是？",
+        "options": [
+            "<table>",
+            "<tr>",
+            "<th>",
+            "<td>"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "C",
+        "analysis": "在 HTML 中，用于说明表格的列数和相应栏目的名称，所以选 C。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "5016569551334882397",
+        "number": 30,
+        "type": "单选",
+        "text": "在 HTML 中，设置文本颜色的属性是？",
+        "options": [
+            "background",
+            "bgcolor",
+            "text",
+            "link"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "C",
+        "analysis": "在 HTML 的标签中，text 属性用于指定文本颜色，所以选 C。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "5020406574181562039",
+        "number": 31,
+        "type": "多选",
+        "text": "在 XML 元素中，以下哪些属于元素内容？",
+        "options": [
+            "其他元素",
+            "字符数据",
+            "实体引用",
+            "处理指令"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B,C,D",
+        "analysis": "XML 元素内容可包含其他元素、字符数据、实体引用、处理指令、注释和 CDATA 部分等，A、B、C、D 都正确。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "5022080396894746294",
+        "number": 32,
+        "type": "单选",
+        "text": "HTML 是哪种语言的一个应用？",
+        "options": [
+            "标准通用型标注语言（SGML）",
+            "超文本传输协议（HTTP）",
+            "文件传输协议（FTP）",
+            "网络新闻资源协议（news）"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "HTML 是标准通用型标注语言（SGML）的一个应用，用于对文档进行格式化，所以选 A。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "5028749940868750024",
+        "number": 33,
+        "type": "单选",
+        "text": "在 XML 中，CDATA 文本内容中不能出现的字符串是？",
+        "options": [
+            "]]>",
+            "[[",
+            "]]",
+            "<<"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "在 XML 的 CDATA 文本内容中，不能出现]]>，因为它是 CDATA 数据块的结束标志，所以选 A。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "5044157894122146233",
+        "number": 34,
+        "type": "单选",
+        "text": "在 XML 中，CDATA 的基本语法是？",
+        "options": [
+            "<![CDATA [文本内容]>",
+            "<[CDATA [文本内容]]>",
+            "{CDATA [文本内容]}",
+            "(CDATA [文本内容])"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "在 XML 中，CDATA 基本语法是 ，可使 XML 解析器将其中标记当作普通数据，所以选 A。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "5075325893743475038",
+        "number": 35,
+        "type": "单选",
+        "text": "早期的 Web 主要是哪种类型页面的浏览？",
+        "options": [
+            "静态页面",
+            "动态页面",
+            "交互页面",
+            "多媒体页面"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "早期的 Web 主要是静态页面的浏览，适合组织静态文档元素间的链接，A 正确；动态页面是 Web 技术发展第二阶段的产物，B 错误；交互页面和多媒体页面也是在后期发展中出现的，C、D 错误。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "5129279878871927808",
+        "number": 36,
+        "type": "单选",
+        "text": "在 HTML 中，设置文本与表框距离的属性是？",
+        "options": [
+            "cellpadding=#",
+            "align=#",
+            "valign=#",
+            "bgcolor=#"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "在 HTML 中，cellpadding=# 用于设置文本与表框的距离，所以选 A。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "5141258210584954983",
+        "number": 37,
+        "type": "单选",
+        "text": "当浏览器不支持框架时，会显示什么标记的内容？",
+        "options": [
+            "<frameset>",
+            "<frame>",
+            "<noframe>",
+            "<html>"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "C",
+        "analysis": "当浏览器不支持框架时，会显示 标记的内容，所以答案是 C。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "5151330180526103942",
+        "number": 38,
+        "type": "单选",
+        "text": "层叠样式表（CSS）最早是为哪种语言提出的？",
+        "options": [
+            "HTML",
+            "XML",
+            "XSL",
+            "JavaScript"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "CSS 最早是为方便 HTML 语言提出的，用于保证文档显示格式的一致性和格式化，A 正确，B、C、D 错误。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "5156753175682841819",
+        "number": 39,
+        "type": "单选",
+        "text": "在框架的基本结构中，定义框架结构的标记是？",
+        "options": [
+            "<frameset>",
+            "<frame>",
+            "<noframe>",
+            "<html>"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "在框架基本结构中，标记定义了框架的结构，所以选 A。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "5159492420225920524",
+        "number": 40,
+        "type": "单选",
+        "text": "W3C 制定的书写 XML 解析器的标准接口规范是？",
+        "options": [
+            "文档对象模型（DOM）",
+            "简单应用程序接口（SAX）",
+            "ODBC/JDBC",
+            "以上都不是"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "W3C 制定的书写 XML 解析器的标准接口规范是文档对象模型（DOM），所以选 A。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "5179016005174329732",
+        "number": 41,
+        "type": "单选",
+        "text": "目前一般所说的 XSL 大多是指？",
+        "options": [
+            "XSLT",
+            "FO",
+            "XPath",
+            "CSS"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "现在一般所说的 XSL 大都是指 XSLT，其从 XSL 中分离出来专门用于描述树转换，A 正确，B、C、D 错误。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "5181919083050061836",
+        "number": 42,
+        "type": "单选",
+        "text": "在 HTML 中，设置表格颜色的属性是？",
+        "options": [
+            "width=#",
+            "height=#",
+            "border=#",
+            "bgcolor=#"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "D",
+        "analysis": "在 HTML 中，bgcolor=# 用于设置表格颜色，所以选 D。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "5182277548302001204",
+        "number": 43,
+        "type": "单选",
+        "text": "在 XML 中，属性的取值必须用什么引起来？",
+        "options": [
+            "引号",
+            "括号",
+            "花括号",
+            "尖括号"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "在 XML 中，属性的取值必须用引号引起来，这与 HTML 不同，所以选 A。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "5187695280894966276",
+        "number": 44,
+        "type": "单选",
+        "text": "在 HTML 中，标记一个目标的方法是？",
+        "options": [
+            "<a href=\"URL\">字符串</a>",
+            "<a name=\"name\">text</a>",
+            "<a href=\"URL#name\">text</a>",
+            "<a href=\"URL\"><img src=\"URL\"></a>"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "在 HTML 中，标记一个目标的方法是 text ，所以选 B。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "5192201552921444069",
+        "number": 45,
+        "type": "单选",
+        "text": "XML 文档的基本语法中，格式正规的 XML 文档由哪三部分组成？",
+        "options": [
+            "可选的序言、文档的主体和可选的尾声",
+            "XML 声明、文档类型声明、处理指令",
+            "标记、字符数据、CDATA 数据块",
+            "注释、处理指示、空白"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "格式正规的 XML 文档由可选的序言、文档的主体和可选的尾声组成，所以选 A。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "5199145363460121971",
+        "number": 46,
+        "type": "单选",
+        "text": "在 XML 中，以下关于标记结束的说法正确的是？",
+        "options": [
+            "不需要结束标记",
+            "可以随意结束",
+            "必须有正确的结束标记",
+            "开始标记和结束标记可不一致"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "C",
+        "analysis": "在 XML 中，标记必须有正确的结束标记，除空标记外，所以选 C。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "5213415278037432498",
+        "number": 47,
+        "type": "多选",
+        "text": "一个格式正规的 XML 文档包含以下哪些部分？",
+        "options": [
+            "可选的序言",
+            "文档的主体",
+            "可选的尾声",
+            "处理指令"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B,C",
+        "analysis": "格式正规的 XML 文档由可选的序言、文档主体和可选的尾声组成，处理指令是序言可能包含的内容，并非文档基本组成部分，A、B、C 正确。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "5216305005280756554",
+        "number": 48,
+        "type": "单选",
+        "text": "在 Fireworks 工具条中，若工具按钮右下角有小三角，意味着什么？",
+        "options": [
+            "该工具还有不同形式",
+            "该工具不能使用",
+            "该工具是隐藏工具",
+            "该工具为特殊工具"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "在 Fireworks 工具条中，工具按钮右下角有小三角说明该工具还有不同形式，按住可显示其他形式，A 正确，B、C、D 错误。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "5217799139041981097",
+        "number": 49,
+        "type": "单选",
+        "text": "扩展样式表语言（XSL）遵守以下哪种语法规则？",
+        "options": [
+            "XML 的语法规则",
+            "HTML 的语法规则",
+            "CSS 的语法规则",
+            "JavaScript 的语法规则"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "XSL 遵守 XML 的语法规则，本身就是一个 XML 文档，A 正确，B、C、D 错误。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "5222647370716254351",
+        "number": 50,
+        "type": "单选",
+        "text": "Dreamweaver 是哪家公司推出的主页编辑工具？",
+        "options": [
+            "Macromedia 公司（后被 Adobe 收购）",
+            "Microsoft 公司",
+            "Oracle 公司",
+            "IBM 公司"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "Dreamweaver 最初由 Macromedia 公司推出，2005 年被 Adobe 公司收购，A 正确，B、C、D 错误。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "5235878432295768431",
+        "number": 51,
+        "type": "多选",
+        "text": "在 HTML 的表格中，用于设置文本对齐方式的属性有哪些？",
+        "options": [
+            "align",
+            "valign",
+            "cellpadding",
+            "cellspacing"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B",
+        "analysis": "align 用于设置文本水平对齐（如 left、center、right ），valign 用于设置文本垂直对齐（如 top、middle、bottom、baseline）；cellpadding 设置文本与表框距离，cellspacing 设置表格间距，A、B 正确。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "5243322541996341050",
+        "number": 52,
+        "type": "单选",
+        "text": "在 XML 中，标记间的嵌套规则是？",
+        "options": [
+            "必须正确嵌套，不能相互交叉",
+            "可以相互交叉",
+            "没有严格要求",
+            "只允许部分标记交叉"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "在 XML 中，标记间必须正确嵌套，不能相互交叉，所以选 A。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "5245630685009104859",
+        "number": 53,
+        "type": "单选",
+        "text": "XML 声明中，必须指定的属性是？",
+        "options": [
+            "version",
+            "encoding",
+            "standalone",
+            "以上都不是"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "XML 声明中，version 属性必须指定，用于指明所采用的 XML 版本号，所以选 A。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "5251288367950708592",
+        "number": 54,
+        "type": "单选",
+        "text": "在 XML 中，字符 <、>、&、' 和 \" 是？",
+        "options": [
+            "保留字符",
+            "普通字符",
+            "自定义字符",
+            "无效字符"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "在 XML 中，字符 <、>、&、' 和 \" 是保留字符，用于定义和说明元素、标记或属性等，所以选 A。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "5262912785207825040",
+        "number": 55,
+        "type": "单选",
+        "text": "在 HTML 文档中，指向一个目标的基本格式是？",
+        "options": [
+            "<a href=\"URL\">字符串</a>",
+            "<a name=\"name\">text</a>",
+            "<a href=\"URL#name\">text</a>",
+            "<a href=\"URL\"><img src=\"URL\"></a>"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "在 HTML 文档中，指向一个目标的基本格式是 字符串 ，所以 A 正确。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "5277161689938082445",
+        "number": 56,
+        "type": "单选",
+        "text": "HTML 使用的字符集是？",
+        "options": [
+            "ISO 8859 Latin-1 字符集",
+            "UTF-8 字符集",
+            "GB2312 字符集",
+            "ASCII 字符集"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "HTML 使用 ISO 8859 Latin-1 字符集，该字符集有许多标准键盘无法输入的字符，所以选 A。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "5288101180834107918",
+        "number": 57,
+        "type": "单选",
+        "text": "HTML 中，用于使文本加粗的标签是？",
+        "options": [
+            "<i>",
+            "<u>",
+            "<s>",
+            "<b>"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "D",
+        "analysis": "答案选 D。在 HTML 标签里， 标签的作用是使文本加粗； 标签用于使文本倾斜； 标签用于给文本添加下划线； 标签用于给文本添加删除线。所以正确答案是 D。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "5314777361956003202",
+        "number": 58,
+        "type": "单选",
+        "text": "在 HTML 中，填充表格内容的标签是？",
+        "options": [
+            "<table>",
+            "<tr>",
+            "<th>",
+            "<td>"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "D",
+        "analysis": "在 HTML 中，用于填充由和组成的表格，所以选 D。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "5318659710962282759",
+        "number": 59,
+        "type": "多选",
+        "text": "在 XML 声明中，以下哪些属性是可选的？",
+        "options": [
+            "version",
+            "encoding",
+            "standalone",
+            "xml"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B,C",
+        "analysis": "XML 声明中 version 属性必须指定，encoding 和 standalone 是可选属性，xml 不是属性，B、C 正确。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "5324888178281876921",
+        "number": 60,
+        "type": "单选",
+        "text": "在 Fireworks 中，以下哪种不是符号的类型？",
+        "options": [
+            "图像",
+            "动画",
+            "按钮",
+            "文本"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "D",
+        "analysis": "Fireworks 中符号分为图像、动画和按钮 3 种，不包括文本，D 正确，A、B、C 错误。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "5338859926928378805",
+        "number": 61,
+        "type": "单选",
+        "text": "Adobe Photoshop 是一款什么类型的软件？",
+        "options": [
+            "数字图像处理软件",
+            "网页编辑软件",
+            "动画制作软件",
+            "文字处理软件"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "Adobe Photoshop 是数字图像处理软件中最优秀的软件之一，用于图像设计、处理和润饰，A 正确，B、C、D 错误。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "5350029907984487904",
+        "number": 62,
+        "type": "单选",
+        "text": "Fireworks 是一种专门针对什么设计而开发的软件？",
+        "options": [
+            "Web 图像",
+            "印刷图像",
+            "动画制作",
+            "文字排版"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "Fireworks 是专门针对 Web 图像设计开发的软件，它简化了图像设计流程，A 正确；它不是基于出版印刷的图像处理软件，B 错误；虽然它能制作动画，但不是专门针对动画制作，C 错误；文字排版不是其主要功能，D 错误。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "5372086110979259125",
+        "number": 63,
+        "type": "多选",
+        "text": "在 XML 注释使用过程中，需要遵守哪些规则？",
+        "options": [
+            "注释文本中不能出现 -- 或 ->",
+            "注释不能嵌套",
+            "注释不能出现在标记中",
+            "注释可以包含任何字符"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B",
+        "analysis": "在 XML 注释中，文本不能出现 -- 或 ->，且注释不能嵌套，A、B 正确。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "5373257244443308984",
+        "number": 64,
+        "type": "单选",
+        "text": "在框架中，创建多个列的属性是？",
+        "options": [
+            "cols=\"x\"",
+            "rows=\"x\"",
+            "border=\"x\"",
+            "frameborder=\"x\""
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "在框架中，cols=\"x\" 属性可创建多个列，所以选 A。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "5399015091247132474",
+        "number": 65,
+        "type": "单选",
+        "text": "在 HTML 中，自定义列表的开始标签是？",
+        "options": [
+            "<ul>",
+            "<ol>",
+            "<dl>",
+            "<li>"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "C",
+        "analysis": "在 HTML 中，自定义列表以 开始，所以选 C。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "5417235115730729228",
+        "number": 66,
+        "type": "单选",
+        "text": "框架将浏览器的窗口分成多个区域，每个区域可以单独显示什么？",
+        "options": [
+            "一个 HTML 文档",
+            "一个 XML 文档",
+            "一个文本文件",
+            "一个图像文件"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "框架可将浏览器窗口分成多个区域，每个区域能单独显示一个 HTML 文档，所以选 A。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "5419719692244263142",
+        "number": 67,
+        "type": "单选",
+        "text": "在 XML 中，属性是以哪种形式呈现的？",
+        "options": [
+            "“名称 = 取值” 对",
+            "“名称：取值” 对",
+            "“取值 = 名称” 对",
+            "“取值：名称” 对"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "答案选 A。在 XML 里，属性是在标签内定义的，以 “名称 = 取值” 对的形式存在。这里的名称与取值之间用等号分隔，并且取值通常需要用引号（单引号或双引号）引起来。例如 ，其中 attribute 是属性名称，\"value\" 是属性取值。所以选项 A 正确。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "5429036495218551075",
+        "number": 68,
+        "type": "单选",
+        "text": "在 HTML 里，主要用于对文本进行分段的标签是以下哪一个？",
+        "options": [
+            "<p>",
+            "<hr>",
+            "<nobr>",
+            "<br>"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "答案选 A。下面对各选项进行具体分析： 选项 A： 标签是专门用于定义段落的，使用该标签可以将文本内容分隔成不同的段落，所以它是主要用于文本分段的标签。 选项 B： 标签的作用是在 HTML 页面中创建一条水平线，用于分隔不同主题的内容，并非用于文本分段。 选项 C： 标签的功能是禁止内容自动换行，使文本在一行内显示，与文本分段没有关系。 选项 D： 标签是用来插入换行符的，它只是让文本换行，但并不像 标签那样明确地将内容划分为段落。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "5435490278990321507",
+        "number": 69,
+        "type": "单选",
+        "text": "在 HTML 中，当表格高度大于文本高度时，设置文本上对齐的属性值是？",
+        "options": [
+            "top",
+            "middle",
+            "bottom",
+            "baseline"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "在 HTML 中，当表格高度大于文本高度时，valign=top 可使文本上对齐，所以选 A。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "5455915297288176972",
+        "number": 70,
+        "type": "单选",
+        "text": "XPath 的主要作用是？",
+        "options": [
+            "将 XML 文档转换为可浏览格式",
+            "格式化 XML 文档",
+            "创建文档",
+            "识别、选择、匹配 XML 文档中的各个构成元件"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "D",
+        "analysis": "XPath 用来描述如何识别、选择、匹配 XML 文档中的元素、属性、文字内容等构成元件，D 正确；A 是 XSLT 的功能，B 是 FO 的作用，C 表述不正确，A、B、C 错误。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "5456789178942015764",
+        "number": 71,
+        "type": "单选",
+        "text": "HTML 文档的扩展名通常是？",
+        "options": [
+            ".txt",
+            ".doc",
+            ".html 或.htm",
+            ".xml"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "C",
+        "analysis": "HTML 文档扩展名常见为.html 或.htm，用于标识其为 HTML 格式文件，因此选 C。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "5460929387691490250",
+        "number": 72,
+        "type": "单选",
+        "text": "在 HTML 中，有横向通栏的表格用什么属性说明？",
+        "options": [
+            "colspan",
+            "rowspan",
+            "width",
+            "height"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "在 HTML 中，有横向通栏的表格用 colspan 属性说明，表示横向栏距，所以选 A。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "5468664114718901180",
+        "number": 73,
+        "type": "单选",
+        "text": "在 HTML 中，以下哪个标签可以禁止内容分行显示？",
+        "options": [
+            "<p>",
+            "<hr>",
+            "<br>",
+            "<nobr>"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "D",
+        "analysis": "选项 A： 标签用于定义段落，会将文本内容划分成不同段落，并非禁止分行显示。 选项 B： 标签用于在 HTML 页面中创建一条水平线，起到分隔内容的作用，与禁止分行无关。 选项 C： 标签用于在文本中插入换行符，会使内容换行显示，而不是禁止分行。 选项 D： 标签可以让其中的内容在一行内显示，若内容超出则裁剪，实现了禁止分行的效果。所以本题选 D。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "5479816661584299670",
+        "number": 74,
+        "type": "单选",
+        "text": "在 XML 文档的显示过程中，将源树转换为结果树的过程称为？",
+        "options": [
+            "树转换",
+            "格式化",
+            "解析",
+            "渲染"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "XML 文档显示时，根据给定的 XSL 将源树转换为可以显示的结果树的过程是树转换，A 正确；格式化是按照 FO 解释结果树产生输出的过程，B 错误；解析通常指 XML 解析器对 XML 文档的分析，C 错误；渲染一般用于描述最终在界面上呈现的过程，D 错误。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "5491756932663471352",
+        "number": 75,
+        "type": "单选",
+        "text": "服务器端脚本编程方式试图使编程和网页联系更为紧密，并以怎样的方式运行？",
+        "options": [
+            "相对更简单、更快速",
+            "更复杂、更高效",
+            "更稳定、更安全",
+            "更灵活、更通用"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "服务器端脚本编程试图使编程和网页联系更紧密，并以相对更简单、更快速的方式运行，A 正确，B、C、D 错误。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "5507897930888054624",
+        "number": 76,
+        "type": "单选",
+        "text": "XSL 语言不包括以下哪个部分？",
+        "options": [
+            "转换工具 XSLT",
+            "格式对象 FO",
+            "XML 分级命令处理工具 XPath",
+            "样式对象 SO"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "D",
+        "analysis": "XSL 语言分为转换工具 XSLT、格式对象 FO、XML 分级命令处理工具 XPath 这三个部分，不包括样式对象 SO，D 正确，A、B、C 错误。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "5532761272106253876",
+        "number": 77,
+        "type": "单选",
+        "text": "在 HTML 中，设置窗口背景图像的属性是？",
+        "options": [
+            "background",
+            "bgcolor",
+            "text",
+            "link"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "在 HTML 的标签中，background 属性用于指定填充背景的图像，所以答案是 A。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "5534160736897017447",
+        "number": 78,
+        "type": "单选",
+        "text": "在 Dreamweaver 工作环境中，主菜单不包括以下哪一类？",
+        "options": [
+            "文件",
+            "编辑",
+            "站点",
+            "动画"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "D",
+        "analysis": "Dreamweaver 主菜单共分十大类，包括文件、编辑、查看、插入、修改、格式、命令、站点、窗口和帮助，不包括动画，D 正确，A、B、C 错误。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "5542011835726078339",
+        "number": 79,
+        "type": "多选",
+        "text": "在 HTML 中，以下哪些标签可用于设置文本的字体风格？",
+        "options": [
+            "<b>",
+            "<i>",
+            "<u>",
+            "<pre>"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B,C",
+        "analysis": "答案选 A、B、C。选项 A： ：用于将文本设为粗体，增强视觉重量，突出重要信息，如 加粗文本 。 选项 B： ：使文本呈斜体样式，常用于强调、引用等，如 斜体文本 。 选项 C： ：为文本添加下划线，改变文本外观，但现代设计中使用较少，如 带下划线文本 。 选项 D： ：定义预格式化文本，保留空格和换行，用于排版而非设置字体风格，如 预格式化文本 。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "5545308382923148554",
+        "number": 80,
+        "type": "单选",
+        "text": "在 Fireworks 中，利用什么可以快速构建多种风格的按钮？",
+        "options": [
+            "按钮编辑器",
+            "文本工具",
+            "形状工具",
+            "路径工具"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "在 Fireworks 中，按钮编辑器可以快速高效地构建多种风格的按钮，A 正确；文本工具用于输入文字，形状工具和路径工具主要用于绘制图形，B、C、D 错误。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "5547797527255999231",
+        "number": 81,
+        "type": "单选",
+        "text": "在 XML 中，小于号（<）的实体引用（内嵌替代符）是以下哪个？",
+        "options": [
+            "&lt;",
+            "&gt;",
+            "&amp;",
+            "&apos;"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "答案选 A。在 XML 里，某些字符具有特殊含义，为了能在文档中使用这些字符的字面意义，需要使用实体引用。具体分析各选项： 选项 A：< 是小于号（<）的实体引用，当要在 XML 中表示小于号本身时，就使用 <，避免被解析为标签的开始。 选项 B：> 是大于号（>）的实体引用，用于表示大于号本身。 选项 C：& 是和号（&）的实体引用，因为 & 是实体引用的起始符号，所以要表示 & 本身时用 &。 选项 D：' 是单引号（'）的实体引用，用于表示单引号本身。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "5554825370167153373",
+        "number": 82,
+        "type": "多选",
+        "text": "以下哪些属于 HTML 文档的组成部分？",
+        "options": [
+            "文档头",
+            "文档体",
+            "脚本语言",
+            "样式定义"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B",
+        "analysis": "HTML 文档由文档头和文档体构成，脚本语言和样式定义是文档头包含的元素，并非文档组成部分，A、B 正确。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "5557349611038656610",
+        "number": 83,
+        "type": "单选",
+        "text": "在 Fireworks 中，文件窗口上的标签不包括以下哪种功能？",
+        "options": [
+            "编辑图像",
+            "预览图像",
+            "预览不同优化设定效果",
+            "导出图像"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "D",
+        "analysis": "Fireworks 文件窗口的标签可用于同时编辑和预览图像，还能预览 4 种不同优化设定产生的效果，导出图像不是文件窗口标签的功能，D 正确，A、B、C 错误。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "5574536478114123313",
+        "number": 84,
+        "type": "单选",
+        "text": "在 Dreamweaver 中，用于查看和更改所选对象或文本各种属性的是哪个面板？",
+        "options": [
+            "属性面板",
+            "应用程序栏",
+            "文档工具栏",
+            "面板"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "属性面板用于查看和更改所选对象或文本的各种属性，A 正确；应用程序栏包含一些常用菜单和应用程序控件，B 错误；文档工具栏用于提供文档窗口视图选项和常用操作，C 错误；面板包含多种功能面板，但不是专门用于查看和更改属性的，D 错误。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "5574948638548663858",
+        "number": 85,
+        "type": "单选",
+        "text": "在 HTML 中，有序列表的开始标签是？",
+        "options": [
+            "<ul>",
+            "<ol>",
+            "<dl>",
+            "<li>"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "在 HTML 中，有序列表以 开始，所以答案是 B。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "5612312586571895658",
+        "number": 86,
+        "type": "单选",
+        "text": "从字面上看，ASP 不包含以下哪方面含义？",
+        "options": [
+            "Active",
+            "Server",
+            "Pages",
+            "Program"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "D",
+        "analysis": "ASP 包含 Active（使用 ActiveX 技术）、Server（运行在服务器端）、Pages（返回标准 HTML 页面），不包括 Program，D 正确，A、B、C 错误。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "5617791662463119032",
+        "number": 87,
+        "type": "单选",
+        "text": "在 XML 中，注释的方法与 HTML 有何关系？",
+        "options": [
+            "完全相同",
+            "部分相同",
+            "完全不同",
+            "XML 注释方法更复杂"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "XML 与 HTML 中注释方法完全相同，所以选 A。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "5624819680610162804",
+        "number": 88,
+        "type": "单选",
+        "text": "在 HTML 中，设置文本字号为绝对字号的格式是？",
+        "options": [
+            "<font size=字号>",
+            "<<font> size = 字号 >",
+            "{font size = 字号}",
+            "(font size = 字号)"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "在 HTML 里，设置绝对字号格式为 ，所以 A 正确。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "5633000928759058794",
+        "number": 89,
+        "type": "单选",
+        "text": "在 XML 中使用层叠样式表的好处不包括以下哪点？",
+        "options": [
+            "方便为自定义元素和标记定义显示格式",
+            "产生多种显示格式信息",
+            "便于管理、修改、维护和复用",
+            "功能比扩展样式表语言强"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "D",
+        "analysis": "CSS 功能不如 XSL 强，但其实际开发过程相对容易，A、B、C 是 CSS 在 XML 中使用的好处，D 错误。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "5634311135517983310",
+        "number": 90,
+        "type": "单选",
+        "text": "在 Photoshop 中，利用什么工具可以根据颜色来自动选取所要部分？",
+        "options": [
+            "魔术棒工具或 “颜色范围” 命令",
+            "矩形面罩工具",
+            "椭圆面罩工具",
+            "套索工具"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "在 Photoshop 中，魔术棒工具或 “颜色范围” 命令可以根据颜色来自动选取所要部分，A 正确；矩形面罩工具、椭圆面罩工具、套索工具主要用于选取特定形状范围，B、C、D 错误。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "5638528862547431623",
+        "number": 91,
+        "type": "单选",
+        "text": "Fireworks 默认打开时处于什么模式？",
+        "options": [
+            "位图模式",
+            "矢量模式",
+            "混合模式",
+            "动画模式"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "Fireworks 默认打开时处于位图模式，但所绘制图形作为矢量对象处理，A 正确，B、C、D 错误。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "5643485042699169115",
+        "number": 92,
+        "type": "单选",
+        "text": "在 HTML 中，有纵向通栏的表格用什么属性说明？",
+        "options": [
+            "colspan",
+            "rowspan",
+            "width",
+            "height"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "在 HTML 中，有纵向通栏的表格用 rowspan 属性说明，表示纵向栏距，所以选 B。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "5661218681581466582",
+        "number": 93,
+        "type": "单选",
+        "text": "以下哪个是 HTML 元素的起始标记和结束标记的正确示例？",
+        "options": [
+            "<p>...</p>",
+            "<p>...</<p>",
+            "{p}...</p}",
+            "(p)...</p>"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "HTML 元素大多有起始和结束标记，起始标记如 ，结束标记在元素名前加斜杠，即 ，所以选 A。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "5668621537596703248",
+        "number": 94,
+        "type": "单选",
+        "text": "在 HTML 中，表格行的标签是？",
+        "options": [
+            "<table>",
+            "<tr>",
+            "<th>",
+            "<td>"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "在 HTML 中，用于说明表格的一个行，所以答案是 B。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "5709137782868732530",
+        "number": 95,
+        "type": "单选",
+        "text": "Photoshop 的工作界面不包括以下哪个部分？",
+        "options": [
+            "标题栏",
+            "菜单栏",
+            "工具箱",
+            "导航栏"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "D",
+        "analysis": "Photoshop 工作界面包括标题栏、菜单栏、工具箱、控制面板、状态栏和图像窗口，不包括导航栏，D 正确，A、B、C 错误。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "5726448115495689203",
+        "number": 96,
+        "type": "单选",
+        "text": "在访问 XML 文档内容时，需要使用的工具是？",
+        "options": [
+            "XML 解析器",
+            "文本编辑器",
+            "浏览器",
+            "数据库管理工具"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "访问 XML 文档内容时，需用 XML 解析器验证语法正确性并提取内容，所以选 A。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "5732815451605280087",
+        "number": 97,
+        "type": "单选",
+        "text": "在 HTML 中，表格的开始标签是？",
+        "options": [
+            "<table>",
+            "<tr>",
+            "<th>",
+            "<td>"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "在 HTML 中，表格由开始，所以选 A。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "5739657949189534091",
+        "number": 98,
+        "type": "单选",
+        "text": "在 HTML 中，设置表格宽度的属性是？",
+        "options": [
+            "width=#",
+            "height=#",
+            "border=#",
+            "cellspacing=#"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "在 HTML 中，width=# 用于设置表格宽度，所以选 A。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "5747987441394722043",
+        "number": 99,
+        "type": "单选",
+        "text": "在 HTML 中，设置表格边框宽度的属性是？",
+        "options": [
+            "width=#",
+            "height=#",
+            "border=#",
+            "cellspacing=#"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "C",
+        "analysis": "在 HTML 中，border=# 用于设置表格边框宽度，所以答案是 C。"
+    },
+    {
+        "bank_name": "测试10",
+        "id": "5748061541051010416",
+        "number": 100,
+        "type": "单选",
+        "text": "以下哪种不是流行的服务器端脚本环境？",
+        "options": [
+            "ASP",
+            "JSP",
+            "PHP",
+            "HTML"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "D",
+        "analysis": "ASP、JSP、PHP 是流行的服务器端脚本环境，HTML 是超文本标记语言，不是服务器端脚本环境，D 正确，A、B、C 错误。"
+    },
+    {
         "bank_name": "测试11",
         "id": "4646602748264137029",
         "number": 1,
@@ -2304,948 +4848,1220 @@
         "analysis": "：【无】"
     },
     {
-        "bank_name": "测试1",
-        "id": "4661660249085606254",
+        "bank_name": "测试13",
+        "id": "4654665763246719403",
         "number": 1,
-        "type": "单选",
-        "text": "数据传输速率在数值上，等于每秒钟传输构成数据代码的二进制比特数，它的单位为比特/秒，通常记做（）",
+        "type": "多选",
+        "text": "数据服务中的逻辑存储安全能力包括",
         "options": [
-            "B/s",
-            "bps",
-            "bpers",
-            "baud"
+            "建立了数据逻辑存储管理安全规范和机制",
+            "建立数据分片和分布式存储安全规范和规则",
+            "明确了多租户数据逻辑存储隔离授权与操作规范",
+            "提供了细粒度安全审计和数据操作溯源技术与机制"
         ],
         "student_answer": "未提供",
-        "correct_answer": "B",
-        "analysis": "：【无】"
+        "correct_answer": "A,B,C,D",
+        "analysis": "数据服务中的逻辑存储安全能力包括建立安全规范和机制、数据分片和分布式存储规范、多租户数据隔离规范以及细粒度安全审计和溯源技术。"
     },
     {
-        "bank_name": "测试1",
-        "id": "4664973577295675701",
+        "bank_name": "测试13",
+        "id": "4663792066119809793",
         "number": 2,
         "type": "单选",
-        "text": "能够向数据通信网络发送和接收数据信息的设备称为（）",
+        "text": "以下哪个是一种常见的安全漏洞？",
         "options": [
-            "数据终端设备",
-            "调制解调器",
-            "数据线路端接设备",
-            "集线器"
+            "SQL注入",
+            "网络拓扑",
+            "传输层安全（TLS）",
+            "路由协议"
         ],
         "student_answer": "未提供",
         "correct_answer": "A",
-        "analysis": "：【无】"
+        "analysis": "SQL注入是一种通过在SQL查询中插入恶意代码，攻击数据库的安全漏洞。"
     },
     {
-        "bank_name": "测试1",
-        "id": "4672558914596276771",
+        "bank_name": "测试13",
+        "id": "4679099839115566665",
         "number": 3,
-        "type": "单选",
-        "text": "目前公用电话网，使用的交换方式为（）",
+        "type": "多选",
+        "text": "《网络安全法》要求，网络产品、服务应当符合相关国家标准的强制性要求。在此基础上，法律提出了以下具体要求（）。",
         "options": [
-            "电路交换",
-            "分组交换",
-            "数据报交换",
-            "报文交换"
+            "网络产品、服务的提供者不得设置恶意程序",
+            "网络产品、服务的提供者应当为其产品、服务持续提供安全维护",
+            "网络产品、服务的提供者发现其网络产品、服务存在安全缺陷、漏洞等风险时，应当立即向社会公布",
+            "网络产品、服务具有收集用户信息功能的，其提供者应当向用户明示并取得同意"
         ],
         "student_answer": "未提供",
-        "correct_answer": "A",
-        "analysis": "：【无】"
+        "correct_answer": "A,B,D",
+        "analysis": "《网络安全法》要求网络产品、服务符合强制性标准，并禁止设置恶意程序、要求持续安全维护、明示用户信息收集等。"
     },
     {
-        "bank_name": "测试1",
-        "id": "4699184601455510205",
+        "bank_name": "测试13",
+        "id": "4701609615566290916",
         "number": 4,
         "type": "单选",
-        "text": "ATM中，信息的基本单位是（）",
+        "text": "在密码学中，__________ 是一种将明文转换为不可读密文的过程。",
         "options": [
-            "信元",
-            "帧",
-            "字节",
-            "比特"
+            "加密",
+            "解密",
+            "身份验证",
+            "数字签名"
         ],
         "student_answer": "未提供",
         "correct_answer": "A",
-        "analysis": "：【无】"
+        "analysis": "加密是将明文转换为密文的过程，以保护数据的机密性。"
     },
     {
-        "bank_name": "测试1",
-        "id": "4699946792517627202",
+        "bank_name": "测试13",
+        "id": "4716713138965221712",
         "number": 5,
-        "type": "单选",
-        "text": "以下哪项是衡量数据传输速率的重要指标？",
+        "type": "多选",
+        "text": "数据安全能力成熟度模型的安全能力维度包括",
         "options": [
-            "A. 波特率",
-            "B. 带宽",
-            "C. 误码率",
-            "D. 时延"
+            "组织建设",
+            "制度流程",
+            "技术工具",
+            "人员能力"
         ],
         "student_answer": "未提供",
-        "correct_answer": "A",
-        "analysis": "答案：A（虽然波特率与比特率不同，但在选择题中常作为数据传输速率的指标提及，特别是与比特率区分时"
+        "correct_answer": "A,B,C,D",
+        "analysis": "数据安全能力成熟度模型的安全能力维度包括组织建设、制度流程、技术工具和人员能力。"
     },
     {
-        "bank_name": "测试1",
-        "id": "4711764372385250093",
+        "bank_name": "测试13",
+        "id": "4716947186537140792",
         "number": 6,
-        "type": "多选",
-        "text": "以下哪些编码方式属于数字信号的编码？",
+        "type": "单选",
+        "text": "以下用户操作场景不会被用户画像的是( )。",
         "options": [
-            "A. AM调制",
-            "B. 曼彻斯特编码",
-            "D. 差分曼彻斯特编码",
-            "E. FM调制"
+            "用真实个人信息完成社区论坛问卷调查并获得现金奖励",
+            "关闭安卓手机应用权限管理中所有的“读取应用列表”权限",
+            "将网购App中的商品加入到购物车",
+            "使用网络约车软件添加常用的目的地"
         ],
         "student_answer": "未提供",
-        "correct_answer": "B,C",
-        "analysis": "：【无】"
+        "correct_answer": "B",
+        "analysis": "如果使用安卓手机，可在应用权限管理中关闭所有“读取应用列表”权限，来降低被用户画像的概率。"
     },
     {
-        "bank_name": "测试1",
-        "id": "4737065683393143787",
+        "bank_name": "测试13",
+        "id": "4721292540999821791",
         "number": 7,
-        "type": "单选",
-        "text": "把模拟量变为数字量的过程称为（）",
-        "options": [
-            "A/D转换",
-            "D/A转换",
-            "调制",
-            "解调"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "D",
-        "analysis": "：【无】"
-    },
-    {
-        "bank_name": "测试1",
-        "id": "4781999782541053778",
-        "number": 8,
-        "type": "单选",
-        "text": "在计算机网络通信系统中，作为信源的计算机发出的信号都是（ ）信号，作为信宿的计算机所能接受和识别的信号要求必须是（ ）信号。",
-        "options": [
-            "数字，数字",
-            "数字，模拟",
-            "模拟，数字",
-            "模拟，模拟"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "A",
-        "analysis": "：【无】"
-    },
-    {
-        "bank_name": "测试1",
-        "id": "4802083452235892763",
-        "number": 9,
         "type": "多选",
-        "text": "在计算机网络中，数据编码的作用包括哪些？",
+        "text": "哪些是信息安全管体系（ISMS）标准族中的要求标准？（）",
         "options": [
-            "A. 提高数据传输效率",
-            "B. 减少误码率",
-            "C. 实现数据的同步",
-            "D. 增加数据的冗余度"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "A,B,C",
-        "analysis": "：【无】"
-    },
-    {
-        "bank_name": "测试1",
-        "id": "4804026653558029141",
-        "number": 10,
-        "type": "单选",
-        "text": "报文交换网络中的节点通常负责哪些功能 ？",
-        "options": [
-            "A. 报文的存储和转发",
-            "B. 报文的路由选择",
-            "C. 报文的差错检测和纠正",
-            "D. 以上都是"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "D",
-        "analysis": "节点通常负责报文的存储、转发、路由选择以及差错检测和纠正等功能"
-    },
-    {
-        "bank_name": "测试1",
-        "id": "4805639160841799861",
-        "number": 11,
-        "type": "单选",
-        "text": "在数据通信中，如果要求数据传输的实时性高，但对数据传输的准确性要求相对较低，通常选择：（ ）",
-        "options": [
-            "A. 电路交换",
-            "B. 报文交换",
-            "C. 分组交换",
-            "D. 虚电路交换"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "A",
-        "analysis": "电路交换的实时性通常较高，但数据传输的准确性依赖于物理线路的质量"
-    },
-    {
-        "bank_name": "测试1",
-        "id": "4807983728609210946",
-        "number": 12,
-        "type": "单选",
-        "text": "电路交换技术中，建立连接的过程称为 ：（ ）",
-        "options": [
-            "A. 呼叫建立",
-            "B. 数据传输",
-            "C. 连接释放",
-            "D. 路由选择"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "A",
-        "analysis": "：【无】"
-    },
-    {
-        "bank_name": "测试1",
-        "id": "4808772691318781672",
-        "number": 13,
-        "type": "单选",
-        "text": "报文交换网络中，报文通常包含哪些部分？",
-        "options": [
-            "A. 报文头和报文体",
-            "B. 源地址和目的地址",
-            "C. 数据和控制信息",
-            "D. 以上都是"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "D",
-        "analysis": "报文通常包含报文头（包含源地址、目的地址等控制信息）和报文体（包含实际传输的数据））"
-    },
-    {
-        "bank_name": "测试1",
-        "id": "4867235936973306906",
-        "number": 14,
-        "type": "单选",
-        "text": "计算机网络通信系统是（）",
-        "options": [
-            "电信号传输系统",
-            "文字通信系统",
-            "信号通信系统",
-            "数据通信系统"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "D",
-        "analysis": "：【无】"
-    },
-    {
-        "bank_name": "测试1",
-        "id": "4878285855868988252",
-        "number": 15,
-        "type": "多选",
-        "text": "关于香农定理，以下说法正确的是？",
-        "options": [
-            "A. 它给出了在存在噪声情况下的极限数据速率",
-            "B. 极限数据速率与带宽和信噪比有关",
-            "C. 信噪比通常使用分贝来表示",
-            "E. 带宽越大，极限数据速率一定越高"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "A,B,C",
-        "analysis": "：【无】"
-    },
-    {
-        "bank_name": "测试1",
-        "id": "4894498183342045893",
-        "number": 16,
-        "type": "单选",
-        "text": "以下哪项不是影响数据传输效率的因素？",
-        "options": [
-            "网络拥塞程度",
-            "接收方的缓存容量不足",
-            "使用的颜色模式（RGB 或 CMYK）",
-            "数据包丢失率"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "C",
-        "analysis": "：【无】"
-    },
-    {
-        "bank_name": "测试1",
-        "id": "4896703903929811634",
-        "number": 17,
-        "type": "单选",
-        "text": "数据通信中，利用电话交换网与调制解调器进行数据传输的方法属于（）",
-        "options": [
-            "频带传输",
-            "宽带传输",
-            "基带传输",
-            "IP传输"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "A",
-        "analysis": "：【无】"
-    },
-    {
-        "bank_name": "测试1",
-        "id": "4924971599453456022",
-        "number": 18,
-        "type": "单选",
-        "text": "在分组交换网络中，数据包被分割成固定长度的部分称为：",
-        "options": [
-            "A. 帧",
-            "B. 报文",
-            "C. 分组",
-            "D. 段"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "C",
-        "analysis": "：【无】"
-    },
-    {
-        "bank_name": "测试1",
-        "id": "4937394913359851051",
-        "number": 19,
-        "type": "单选",
-        "text": "（）是信息传输的物理信道",
-        "options": [
-            "信道",
-            "数据",
-            "编码",
-            "介质"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "D",
-        "analysis": "：【无】"
-    },
-    {
-        "bank_name": "测试1",
-        "id": "4971474914693022105",
-        "number": 20,
-        "type": "单选",
-        "text": "在频分复用（FDM）系统中，为了避免信号间的干扰，相邻信道之间需要有一定的：",
-        "options": [
-            "A. 频率间隔",
-            "B. 时隙间隔",
-            "C. 码型间隔",
-            "D. 相位间隔"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "A",
-        "analysis": "：【无】"
-    },
-    {
-        "bank_name": "测试1",
-        "id": "5016936439040391739",
-        "number": 21,
-        "type": "单选",
-        "text": "计算机通信采用的交换技术有分组交换和电路交换，前者比后者（）",
-        "options": [
-            "实时性好，线路利用率高",
-            "实时性好，线路利用率低",
-            "实时性差，线路利用率高",
-            "实时性差，线路利用率低"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "C",
-        "analysis": "：【无】"
-    },
-    {
-        "bank_name": "测试1",
-        "id": "5026519224125736093",
-        "number": 22,
-        "type": "单选",
-        "text": "下列说法中哪些正确？ ①虚电路与电路交换中的电路没有实质不同 ②在通信的两站间只能建立一条虚电路 ③虚电路也有连接建立、数据传输、连接拆除三个阶段 ④虚电路的各个节点不需要为每个分组作路径选择判定",
-        "options": [
-            "①和②",
-            "②和③",
-            "③和④",
-            "①和④"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "C",
-        "analysis": "：【无】"
-    },
-    {
-        "bank_name": "测试1",
-        "id": "5029749474713199936",
-        "number": 23,
-        "type": "单选",
-        "text": "报文交换与电路交换的主要区别在于：（ ）",
-        "options": [
-            "A. 报文交换是实时的，电路交换不是",
-            "B. 报文交换需要建立物理连接，电路交换不需要",
-            "C. 报文交换中，数据以报文为单位进行传输；电路交换中，用户独占一条物理通道",
-            "D. 报文交换适用于短距离通信，电路交换适用于长距离通信"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "C",
-        "analysis": "：【无】"
-    },
-    {
-        "bank_name": "测试1",
-        "id": "5042096859484953031",
-        "number": 24,
-        "type": "单选",
-        "text": "差分曼彻斯特编码的特点是：",
-        "options": [
-            "A. 每个比特中间都有跳变",
-            "B. 每个比特开始时都有跳变",
-            "C. 比特“1”表示为电平不变，比特“0”表示为电平跳变",
-            "D. 比特“1”表示为电平跳变，比特“0”表示为电平不变"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "D",
-        "analysis": "：【无】"
-    },
-    {
-        "bank_name": "测试1",
-        "id": "5088830635191124738",
-        "number": 25,
-        "type": "多选",
-        "text": "在数据通信中，常见的通信方式有哪些？",
-        "options": [
-            "D. 异步通信",
-            "C. 全双工通信",
-            "E. 同步通信",
-            "B. 半双工通信"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "A,B,C,D",
-        "analysis": "：【无】"
-    },
-    {
-        "bank_name": "测试1",
-        "id": "5092642758640824624",
-        "number": 26,
-        "type": "多选",
-        "text": "关于奈奎斯特定理，以下说法正确的是（ ）？",
-        "options": [
-            "B. 它给出了在无噪声情况下码元速度的最大值",
-            "C. 码元速度是带宽的两倍",
-            "D. 数据速率与码元速度和码元种类数有关",
-            "E. 它只适用于模拟信号"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "A,B",
-        "analysis": "：【无】"
-    },
-    {
-        "bank_name": "测试1",
-        "id": "5093843922920007871",
-        "number": 27,
-        "type": "单选",
-        "text": "在数据通信中，通过增加冗余信息来提高数据传输可靠性的技术称为：",
-        "options": [
-            "A. 差错检测",
-            "B. 差错纠正",
-            "C. 差错控制",
-            "D. 数据压缩"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "C",
-        "analysis": "虽然C不是直接的技术名称，但它涵盖了通过冗余提高可靠性的概念"
-    },
-    {
-        "bank_name": "测试1",
-        "id": "5126638516962622002",
-        "number": 28,
-        "type": "单选",
-        "text": "在数据通信中，将模拟信号转换为数字信号的过程称为：",
-        "options": [
-            "调制",
-            "解调",
-            "编码",
-            "采样"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "C",
-        "analysis": "：【无】"
-    },
-    {
-        "bank_name": "测试1",
-        "id": "5143159747711050173",
-        "number": 29,
-        "type": "单选",
-        "text": "报文交换网络的优点是 ：（ ）",
-        "options": [
-            "A. 传输延迟小",
-            "B. 电路利用率高",
-            "C. 实时性好",
-            "D. 交换设备简单"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "B",
-        "analysis": "：【无】"
-    },
-    {
-        "bank_name": "测试1",
-        "id": "5164056010181661355",
-        "number": 30,
-        "type": "单选",
-        "text": "波分复用（WDM）技术主要应用于： （）",
-        "options": [
-            "无线电通信",
-            "B. 光纤通信",
-            "C. 卫星通信",
-            "D. 移动通信"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "B",
-        "analysis": "：【无】"
-    },
-    {
-        "bank_name": "测试1",
-        "id": "5166788149759525972",
-        "number": 31,
-        "type": "单选",
-        "text": "在计算机网络中，ASCII码是一种用于表示：",
-        "options": [
-            "A. 汉字字符的编码",
-            "B. 英文字符的编码",
-            "C. 图片的编码",
-            "D. 音频的编码"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "B",
-        "analysis": "：【无】"
-    },
-    {
-        "bank_name": "测试1",
-        "id": "5286521583023831657",
-        "number": 32,
-        "type": "单选",
-        "text": "在数据传输中，需要建立连接的是（）",
-        "options": [
-            "信元交换",
-            "电路交换",
-            "报文交换",
-            "数据报交换"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "B",
-        "analysis": "：【无】"
-    },
-    {
-        "bank_name": "测试1",
-        "id": "5295850917655926578",
-        "number": 33,
-        "type": "单选",
-        "text": "ATM信元由53个字节组成，前 个字节是信头，其余 是信息字段。",
-        "options": [
-            "5 48",
-            "6 47",
-            "8 45",
-            "9 44"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "A",
-        "analysis": "：【无】"
-    },
-    {
-        "bank_name": "测试1",
-        "id": "5313336106577874796",
-        "number": 34,
-        "type": "单选",
-        "text": "数据传输的可靠性指标是",
-        "options": [
-            "速率",
-            "误码率",
-            "带宽",
-            "传输失败的二进制信号的个数"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "B",
-        "analysis": "：【无】"
-    },
-    {
-        "bank_name": "测试1",
-        "id": "5331807551981161909",
-        "number": 35,
-        "type": "单选",
-        "text": "数据通信中的信道传输速率单位是比特率(bps)，它的含义是（）",
-        "options": [
-            "Bits Per Second",
-            "Bytes Per Second",
-            "和具体传输介质有关",
-            "和网络类型有关"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "A",
-        "analysis": "：【无】"
-    },
-    {
-        "bank_name": "测试1",
-        "id": "5374047403788955212",
-        "number": 36,
-        "type": "单选",
-        "text": "在报文交换网络中，报文从源节点到目的节点可能经过的路径是： （ ）",
-        "options": [
-            "A. 固定的",
-            "B. 预先确定的",
-            "C. 由网络中的节点动态选择的",
-            "D. 不可预测的"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "C",
-        "analysis": "报文交换网络中的路径通常是根据网络状态和路由算法动态选择的"
-    },
-    {
-        "bank_name": "测试1",
-        "id": "5406636635278371065",
-        "number": 37,
-        "type": "单选",
-        "text": "在数字通信信道上，直接传输基带信号的方法称为（）",
-        "options": [
-            "宽带传输",
-            "基带传输",
-            "并行传输",
-            "频带传输"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "B",
-        "analysis": "：【无】"
-    },
-    {
-        "bank_name": "测试1",
-        "id": "5437619976423932811",
-        "number": 38,
-        "type": "多选",
-        "text": "在数据通信中，信道的特性包括哪些？",
-        "options": [
-            "C. 误码率",
-            "B. 噪声",
-            "A. 带宽",
-            "D. 传输介质"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "A,B,C,D",
-        "analysis": "：【无】"
-    },
-    {
-        "bank_name": "测试1",
-        "id": "5452328184242561155",
-        "number": 39,
-        "type": "单选",
-        "text": "在报文交换网络中，如果报文很大，可能会导致的问题是： （ ）",
-        "options": [
-            "A. 传输延迟增加",
-            "B. 电路利用率降低",
-            "C. 数据丢失",
-            "D. 网络拥塞"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "A",
-        "analysis": "大报文需要更长的传输时间和更多的存储转发操作，从而增加传输延迟）"
-    },
-    {
-        "bank_name": "测试1",
-        "id": "5454067633361725042",
-        "number": 40,
-        "type": "单选",
-        "text": "以下网络的技术指标中，可以用字节／秒作为单位的是（）",
-        "options": [
-            "比特率",
-            "波特率",
-            "吞吐量",
-            "误码率"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "C",
-        "analysis": "：【无】"
-    },
-    {
-        "bank_name": "测试1",
-        "id": "5459900838759991171",
-        "number": 41,
-        "type": "单选",
-        "text": "香农定理从定量的角度描述了“带宽”与“速率”的关系。在香农定理的公式中，与信道的最大传输速率相关的参数主要有信道带宽与（）",
-        "options": [
-            "频率特性",
-            "信噪比",
-            "相位特性",
-            "噪声功率"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "B",
-        "analysis": "：【无】"
-    },
-    {
-        "bank_name": "测试1",
-        "id": "5462454371628115761",
-        "number": 42,
-        "type": "单选",
-        "text": "码分复用（CDM）中，不同用户的数据是通过：（）",
-        "options": [
-            "不同的频率区分",
-            "不同的时隙区分",
-            "不同的码型区分",
-            "不同的相位区分"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "C",
-        "analysis": "：【无】"
-    },
-    {
-        "bank_name": "测试1",
-        "id": "5467287070016706019",
-        "number": 43,
-        "type": "单选",
-        "text": "报文交换网络中，数据交换的基本单位是：",
-        "options": [
-            "A. 比特",
-            "B. 字节",
-            "C. 报文",
-            "D. 分组"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "C",
-        "analysis": "：【无】"
-    },
-    {
-        "bank_name": "测试1",
-        "id": "5490557009436815078",
-        "number": 44,
-        "type": "单选",
-        "text": "报文交换网络适用于哪些场景？",
-        "options": [
-            "A. 实时性要求高的通信",
-            "B. 突发性数据传输",
-            "C. 大量连续数据传输",
-            "D. 固定速率的数据传输"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "B",
-        "analysis": "（报文交换适用于突发性数据传输，因为可以动态分配网络资源）"
-    },
-    {
-        "bank_name": "测试1",
-        "id": "5495721755662902791",
-        "number": 45,
-        "type": "多选",
-        "text": "在数据通信中，以下哪些因素会影响信道的传输质量？",
-        "options": [
-            "A. 信道的带宽",
-            "B. 信噪比",
-            "D. 数据编码方式",
-            "C. 传输介质的类型"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "A,B,C,D",
-        "analysis": "：【无】"
-    },
-    {
-        "bank_name": "测试1",
-        "id": "5526214615886331336",
-        "number": 46,
-        "type": "单选",
-        "text": "曼彻斯特编码是一种（）",
-        "options": [
-            "A. 自同步编码",
-            "B. 非归零编码",
-            "C. 归零编码",
-            "D. 相位编码"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "A",
-        "analysis": "：【无】"
-    },
-    {
-        "bank_name": "测试1",
-        "id": "5531817546284462885",
-        "number": 47,
-        "type": "单选",
-        "text": "虚电路交换方式属于：（）",
-        "options": [
-            "A. 电路交换",
-            "B. 报文交换",
-            "C. 分组交换",
-            "D. 以上都不是"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "C",
-        "analysis": "：【无】"
-    },
-    {
-        "bank_name": "测试1",
-        "id": "5549461973020165585",
-        "number": 48,
-        "type": "单选",
-        "text": "通信信道的每一端可以是发送端，也可以是接受端，信息可由这一端传输到那一端，也可以由那一端传输到这一端。但在同一时刻里，信息只能有一个传输方向的通信方式称为（）",
-        "options": [
-            "单工通信",
-            "半双工通信",
-            "全双工通信",
-            "模拟通信"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "B",
-        "analysis": "：【无】"
-    },
-    {
-        "bank_name": "测试1",
-        "id": "5549993156840586831",
-        "number": 49,
-        "type": "多选",
-        "text": "以下哪些属于基本的数据编码方式？",
-        "options": [
-            "C. 双极性码",
-            "D. 不归零码",
-            "B. 归零码",
-            "A. 单极性码"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "A,B,C,D",
-        "analysis": "：【无】"
-    },
-    {
-        "bank_name": "测试1",
-        "id": "5559378915601656078",
-        "number": 50,
-        "type": "单选",
-        "text": "报文交换与分组交换的主要区别在于：（）",
-        "options": [
-            "报文交换传输的是整个报文，而分组交换传输的是报文的片段",
-            "报文交换是实时的，而分组交换不是",
-            "报文交换适用于长距离通信，而分组交换适用于短距离通信",
-            "报文交换不需要建立连接，而分组交换需要"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "A",
-        "analysis": "：【无】"
-    },
-    {
-        "bank_name": "测试1",
-        "id": "5562312781478715548",
-        "number": 51,
-        "type": "多选",
-        "text": "信道复用技术主要包括哪些（ ）？",
-        "options": [
-            "B. 频分复用",
-            "D. 码分复用",
-            "E. 波分复用",
-            "C. 时分复用"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "A,B,C,D",
-        "analysis": "：【无】"
-    },
-    {
-        "bank_name": "测试1",
-        "id": "5598695408602901708",
-        "number": 52,
-        "type": "单选",
-        "text": "在数据传输中，（ ）交换的传输延迟最小。",
-        "options": [
-            "报文",
-            "分组",
-            "电路",
-            "信元"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "C",
-        "analysis": "：【无】"
-    },
-    {
-        "bank_name": "测试1",
-        "id": "5611845915591019694",
-        "number": 53,
-        "type": "单选",
-        "text": "下列关于信道容量的叙述，正确的是（）",
-        "options": [
-            "信道所能允许的最大数据传输速率",
-            "信道所能提供的同时通话的路数",
-            "以兆赫兹为单位的信道带宽",
-            "信道所允许的最大误码率"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "A",
-        "analysis": "：【无】"
-    },
-    {
-        "bank_name": "测试1",
-        "id": "5616612619372165634",
-        "number": 54,
-        "type": "单选",
-        "text": "报文交换网络的优点不包括：",
-        "options": [
-            "A. 电路利用率高",
-            "B. 传输延迟小",
-            "C. 无需建立物理连接",
-            "D. 可以实现不同速率、不同规程的终端之间的通信"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "B",
-        "analysis": "无"
-    },
-    {
-        "bank_name": "测试1",
-        "id": "5650421331916059948",
-        "number": 55,
-        "type": "单选",
-        "text": "ATM（异步传输模式）是一种：（ ）",
-        "options": [
-            "A. 电路交换技术",
-            "B. 报文交换技术",
-            "C. 分组交换技术",
-            "D. 数据链路层协议"
-        ],
-        "student_answer": "未提供",
-        "correct_answer": "C",
-        "analysis": "：【无】"
-    },
-    {
-        "bank_name": "测试1",
-        "id": "5675795867251633726",
-        "number": 56,
-        "type": "多选",
-        "text": "关于差分曼彻斯特编码，以下说法正确的是？",
-        "options": [
-            "A. 它是一种自同步编码方式",
-            "B. 编码效率为100%",
-            "C. 常用于令牌环网",
-            "不需要额外传输同步信号"
+            "ISO/IEC27001",
+            "ISO/IEC27005",
+            "ISO/IEC27006",
+            "ISO/IEC27009"
         ],
         "student_answer": "未提供",
         "correct_answer": "A,C,D",
-        "analysis": "：【无】"
+        "analysis": "信息安全管体系（ISMS）标准族中的要求标准包括ISO/IEC27001、ISO/IEC27006和ISO/IEC27009等。"
     },
     {
-        "bank_name": "测试1",
-        "id": "5738304013915403463",
-        "number": 57,
-        "type": "单选",
-        "text": "在数据报交换方式中，每个数据包：（ ）",
+        "bank_name": "测试13",
+        "id": "4726193719701868067",
+        "number": 8,
+        "type": "多选",
+        "text": "根据《网络安全法》，国务院标准化行政主管部门和国务院其他有关部门根据各自的职责，组织制定并适时修订有关网络安全管理以及网络（）安全的国家标准、行业标准。",
         "options": [
-            "A. 都有完整的路由信息",
-            "B. 需要预先建立连接",
-            "C. 沿着相同的路径传输",
-            "D. 传输顺序固定"
+            "产品",
+            "服务",
+            "系统",
+            "运行"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B,D",
+        "analysis": "根据《网络安全法》，国务院标准化行政主管部门和国务院其他有关部门负责组织制定并适时修订有关网络安全管理以及网络产品、服务和运行安全的国家标准、行业标准。"
+    },
+    {
+        "bank_name": "测试13",
+        "id": "4799156333610292300",
+        "number": 9,
+        "type": "多选",
+        "text": "《网络安全法》对网络安全标准提出的有关要求中，涉及（）",
+        "options": [
+            "国家标准",
+            "行业标准",
+            "团体标准",
+            "企业标准"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B",
+        "analysis": "《网络安全法》对网络安全标准的要求涉及国家标准和行业标准。"
+    },
+    {
+        "bank_name": "测试13",
+        "id": "4825120066647922501",
+        "number": 10,
+        "type": "多选",
+        "text": "数据时效性一般要求包括",
+        "options": [
+            "制定数据存储时效性管理策略和规程",
+            "明确存储数据分享、禁止使用和数据清除有效期，具备数据存储时效性授权与控制能力",
+            "具备数据时效性自动检测能力",
+            "建立过期存储数据的安全保护机制"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B,D",
+        "analysis": "数据时效性一般要求包括制定管理策略和规程、明确有效期和授权控制、建立安全保护机制。"
+    },
+    {
+        "bank_name": "测试13",
+        "id": "4829007851535878892",
+        "number": 11,
+        "type": "单选",
+        "text": "以下哪项是一种常见的身份验证方法？",
+        "options": [
+            "HTTP",
+            "SSL",
+            "双因素认证",
+            "SMTP"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "C",
+        "analysis": "双因素认证结合两种不同的身份验证因素，如密码和手机验证码，提高安全性。"
+    },
+    {
+        "bank_name": "测试13",
+        "id": "4829656931049857463",
+        "number": 12,
+        "type": "多选",
+        "text": "哪些是最终发布的国际标准出版物类型？（）",
+        "options": [
+            "TR",
+            "FDIS",
+            "Amd",
+            "Cor"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,C,D",
+        "analysis": "最终发布的国际标准出版物类型包括TR（技术报告）、FDIS（最终国际标准草案）、Amd（修正案）和Cor（勘误）。"
+    },
+    {
+        "bank_name": "测试13",
+        "id": "4829700635409343168",
+        "number": 13,
+        "type": "多选",
+        "text": "根据《网络安全法》，国务院标准化行政主管部门和国务院其他有关部门根据各自的职责，组织制定并适时修订有关网络安全管理以及网络产品、服务和运行安全的（）。",
+        "options": [
+            "国家标准",
+            "行业标准",
+            "团体标准",
+            "地方标准"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B",
+        "analysis": "根据《网络安全法》，国务院标准化行政主管部门和国务院其他有关部门负责组织制定并适时修订有关网络安全管理以及网络产品、服务和运行安全的国家标准和行业标准。"
+    },
+    {
+        "bank_name": "测试13",
+        "id": "4839337037508936761",
+        "number": 14,
+        "type": "多选",
+        "text": "数据安全中的数据指什么",
+        "options": [
+            "数字",
+            "设计文档",
+            "客户信息",
+            "企业组织机构"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B,C,D",
+        "analysis": "数据安全中的数据包括数字、设计文档、客户信息和企业组织机构等。"
+    },
+    {
+        "bank_name": "测试13",
+        "id": "4840880338179645804",
+        "number": 15,
+        "type": "多选",
+        "text": "GB/T31168《信息安全技术云计算服务安全能力要求》规定的安全计划所包含的内容包括但不限于（）。",
+        "options": [
+            "云平台的基本描述",
+            "所采取的安全措施的具体情况",
+            "对云服务商新增的安全目标及对应的安全措施的说明",
+            "对客户安全责任的说明，以及对客户应实施的安全措施的建议"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B,C,D",
+        "analysis": "GB/T31168规定的安全计划包含云平台描述、安全措施、新增安全目标及措施说明、客户安全责任说明等内容。"
+    },
+    {
+        "bank_name": "测试13",
+        "id": "4847408481696639615",
+        "number": 16,
+        "type": "多选",
+        "text": "根据《网络安全法》，以下产品中，（）不必在安全认证或者检测合格后方可销售或者提供",
+        "options": [
+            "通用网络设备",
+            "未有国家标准的强制性要求的产品",
+            "不在目录中的产品",
+            "网络安全专用产品"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B,C",
+        "analysis": "根据《网络安全法》，通用网络设备、未有国家标准的强制性要求的产品和不在目录中的产品不必在安全认证或检测合格后方可销售或提供。"
+    },
+    {
+        "bank_name": "测试13",
+        "id": "4867317860899386842",
+        "number": 17,
+        "type": "单选",
+        "text": "关于注销App的机制，不正确的是( )。",
+        "options": [
+            "注销渠道开放且可以使用，有较为明显的注销入口",
+            "账号注销机制应当有简洁易懂的说明",
+            "核验把关环节要适度、合理，操作应便捷",
+            "找不到注销入口，联系客服注销不给予回复"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "D",
+        "analysis": "App运用者应当设置合理的注销条件，符合用户习惯。"
+    },
+    {
+        "bank_name": "测试13",
+        "id": "4871794779019588754",
+        "number": 18,
+        "type": "单选",
+        "text": "防火墙的作用是什么？",
+        "options": [
+            "加密网络数据",
+            "阻止未经授权的访问",
+            "增加网络带宽",
+            "提供远程访问服务"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "防火墙主要用于监控和控制进出网络的流量，阻止未经授权的访问。"
+    },
+    {
+        "bank_name": "测试13",
+        "id": "4877624631694774478",
+        "number": 19,
+        "type": "多选",
+        "text": "重标识的主要方法有：",
+        "options": [
+            "分离",
+            "泛化",
+            "关联",
+            "推断"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,C,D",
+        "analysis": "重标识的主要方法包括分离、关联和推断。"
+    },
+    {
+        "bank_name": "测试13",
+        "id": "4887641957219966417",
+        "number": 20,
+        "type": "多选",
+        "text": "信息安全的CIA三性是指（）。",
+        "options": [
+            "保密性",
+            "完整性",
+            "可靠性",
+            "可用性"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B,D",
+        "analysis": "信息安全的CIA三性是指保密性、完整性和可用性。"
+    },
+    {
+        "bank_name": "测试13",
+        "id": "4894237031541177297",
+        "number": 21,
+        "type": "单选",
+        "text": "下列哪项是一种常见的网络安全威胁？",
+        "options": [
+            "防火墙",
+            "病毒",
+            "加密",
+            "双因素认证"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "病毒是一种恶意软件，通过感染计算机系统进行破坏，属于常见的网络安全威胁。"
+    },
+    {
+        "bank_name": "测试13",
+        "id": "4908948764377408819",
+        "number": 22,
+        "type": "单选",
+        "text": "现在游戏都设置了未成年人防沉迷机制，通常需要用户进行实名认证，填写实名信息过程，以下说明正确的是( )。",
+        "options": [
+            "随意填写信息",
+            "根据游戏要求填写所有信息，进行实名认证",
+            "仔细阅读实名认证所需信息，仅填写必要实名信息",
+            "以上说法都对"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "C",
+        "analysis": "有一些游戏会过度收集个人信息，如：家庭地址、身份证照片、手机号等，不能为了游戏体验而至个人信息安危于不顾。"
+    },
+    {
+        "bank_name": "测试13",
+        "id": "4912390456966746695",
+        "number": 23,
+        "type": "多选",
+        "text": "在国际标准化组织（ISO）出版物类型中，技术规范（TS）指（1），公开可用规范（PAS）指（2），技术报告（TR）指（3）。",
+        "options": [
+            "当所讨论的技术主题仍在开发中，或者由于任何其他原因，将来有可能但不是立即能达成可发布的国际标准时发布的出版物",
+            "技术委员会或分委员会收集的数据不同于能作为国际标准正式发布的数据时发布的出版物",
+            "制定完整的国际标准之前作为中间规范发布的出版物",
+            "技术委员会或分委员会下工作组层面提交的出版物"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B,C",
+        "analysis": "技术规范（TS）用于技术主题仍在开发中的情况，公开可用规范（PAS）用于收集的数据不同于正式发布标准的情况，技术报告（TR）作为制定完整国际标准前的中间规范。"
+    },
+    {
+        "bank_name": "测试13",
+        "id": "4939427929616614064",
+        "number": 24,
+        "type": "多选",
+        "text": "根据《网络安全法》，国家积极开展网络空间治理、网络技术研发和标准制定、打击网络违法犯罪等方面的国际交流与合作，推动构建（）的网络空间，建立多边、民主、透明的网络治理体系。",
+        "options": [
+            "和平",
+            "安全",
+            "开放",
+            "合作"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B,C,D",
+        "analysis": "根据《网络安全法》，国家积极推动构建和平、安全、开放、合作的网络空间。"
+    },
+    {
+        "bank_name": "测试13",
+        "id": "4952674036065043356",
+        "number": 25,
+        "type": "多选",
+        "text": "根据《网络安全法》，国家支持企业、研究机构、高等学校、网络相关行业组织参与网络安全（）的制定。",
+        "options": [
+            "国家标准",
+            "行业标准",
+            "团体标准",
+            "企业标准"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B",
+        "analysis": "根据《网络安全法》，国家支持企业、研究机构、高等学校和网络相关行业组织参与网络安全国家标准和行业标准的制定。"
+    },
+    {
+        "bank_name": "测试13",
+        "id": "4968829879553813439",
+        "number": 26,
+        "type": "单选",
+        "text": "App申请的“电话/设备信息”权限不用于( )。",
+        "options": [
+            "用户常用设备的标识",
+            "显示步数、心率等数据",
+            "监测应用账户异常登录",
+            "关联用户行为"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "App申请的“传感器”权限通常用于显示步数、心率等数据。"
+    },
+    {
+        "bank_name": "测试13",
+        "id": "4984984662889314644",
+        "number": 27,
+        "type": "多选",
+        "text": "根据《网络安全法》，（）应当符合相关国家标准的强制性要求。",
+        "options": [
+            "网络产品",
+            "网络系统",
+            "网络设备",
+            "网络服务"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,D",
+        "analysis": "根据《网络安全法》，网络产品和服务应当符合相关国家标准的强制性要求。"
+    },
+    {
+        "bank_name": "测试13",
+        "id": "5025752998632636724",
+        "number": 28,
+        "type": "多选",
+        "text": "GB/T31168《信息安全技术云计算服务安全能力要求》提出的安全要求是通常情况下云服务商应具备的基本安全能力。在具体的应用场景下，云服务商有可能需要对这些安全要求进行调整。调整的方式有（）。",
+        "options": [
+            "删减",
+            "补充",
+            "忽视",
+            "替代"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B,D",
+        "analysis": "GB/T31168允许通过删减、补充和替代的方式对安全要求进行调整。"
+    },
+    {
+        "bank_name": "测试13",
+        "id": "5027884694603812696",
+        "number": 29,
+        "type": "多选",
+        "text": "重标识的主要工作包括：",
+        "options": [
+            "选取属性特征，确保区分度足够小",
+            "选取属性特征，确保区分度足够大",
+            "基于选取的属性特征，与身份信息关联",
+            "基于选取的属性特征，去掉与身份信息的关联"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B,C",
+        "analysis": "重标识的主要工作包括选取具有足够大区分度的属性特征，并与身份信息关联。"
+    },
+    {
+        "bank_name": "测试13",
+        "id": "5067088410742634599",
+        "number": 30,
+        "type": "单选",
+        "text": "数据加密在网络通信中的作用是什么？",
+        "options": [
+            "防止网络延迟",
+            "提供远程访问",
+            "保护数据的机密性",
+            "增加网络带宽"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "C",
+        "analysis": "数据加密通过将数据转换为不可读格式，保护数据在传输过程中的机密性。"
+    },
+    {
+        "bank_name": "测试13",
+        "id": "5101884232638487483",
+        "number": 31,
+        "type": "多选",
+        "text": "在不同情况下，实施云计算安全措施的主体可能包括（）。",
+        "options": [
+            "云服务商",
+            "客户",
+            "云服务商和客户共同承担",
+            "其他组织承担"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B,C,D",
+        "analysis": "在不同情况下，实施云计算安全措施的主体可能包括云服务商、客户、云服务商和客户共同承担以及其他组织。"
+    },
+    {
+        "bank_name": "测试13",
+        "id": "5127065112322494854",
+        "number": 32,
+        "type": "单选",
+        "text": "以下哪个生活习惯属有助于保护用户个人信息( )。",
+        "options": [
+            "银行卡充值后的回单随手扔掉",
+            "在网站上随意下载免费和破解软件",
+            "在手机和电脑上安装防偷窥的保护膜",
+            "看见二维码，先扫了再说"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "C",
+        "analysis": "防偷窥保护膜可以防止他人通过侧面角度从屏幕看到通讯内容、用户登录账号等个人信息。"
+    },
+    {
+        "bank_name": "测试13",
+        "id": "5146232386726286073",
+        "number": 33,
+        "type": "单选",
+        "text": "关于个人生物特征识别信息，以下哪种是合理的处理方式( )。",
+        "options": [
+            "在隐私政策文本中告知收集目的",
+            "向合作伙伴共享个人生物识别信息",
+            "公开披露个人生物识别信息",
+            "仅保留个人生物识别信息的摘要信息"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "D",
+        "analysis": "个人生物特征识别信息应当仅保留个人生物识别信息的摘要信息。"
+    },
+    {
+        "bank_name": "测试13",
+        "id": "5150437192117396079",
+        "number": 34,
+        "type": "单选",
+        "text": "以下关于个人信息保护的做法不正确的是( )。",
+        "options": [
+            "在社交网站类软件上发布火车票、飞机票、护照、照片、日程、行踪等",
+            "在图书馆、打印店等公共场合，或是使用他人手机登录账号，不要选择自动保存密码，离开时记得退出账号。",
+            "从常用应用商店下载App，不从陌生、不知名应用商店、网站页面下载App。",
+            "填写调查问卷、扫二维码注册尽可能不使用真实个人信息。"
         ],
         "student_answer": "未提供",
         "correct_answer": "A",
-        "analysis": "：【无】"
+        "analysis": "在社交软件上发布火车票、飞机票、护照、照片、日程、行踪可能会造成个人信息泄露，是不可取的做法。"
     },
     {
-        "bank_name": "测试1",
-        "id": "5741324103313135362",
-        "number": 58,
+        "bank_name": "测试13",
+        "id": "5155979443308254479",
+        "number": 35,
         "type": "单选",
-        "text": "在时分复用（TDM）中，时间被划分为多个时隙，每个时隙用于 ： 答案：C",
+        "text": "以下关于使用APP的习惯不正确的是( )。",
         "options": [
-            "A. 传输一个完整的比特",
-            "B. 传输一个完整的字节",
-            "C. 传输一个用户的数据",
-            "D. 传输一个数据帧"
+            "不使用强制收集无关个人信息的APP",
+            "为了获取更多积分，填写真实姓名、出生日期、手机号码等所有的信息",
+            "谨慎使用各种需要填写个人信息的问卷调查的App",
+            "加强对不良APP的辨识能力，不轻易被赚钱等噱头迷惑"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "填写与APP功能无关的真实姓名、出生日期、手机号码等信息可能会造成个人信息泄露。"
+    },
+    {
+        "bank_name": "测试13",
+        "id": "5166068169821593412",
+        "number": 36,
+        "type": "单选",
+        "text": "以下哪种不属于个人信息范畴内( )。",
+        "options": [
+            "个人身份证件",
+            "电话号码",
+            "个人书籍",
+            "家庭住址"
         ],
         "student_answer": "未提供",
         "correct_answer": "C",
-        "analysis": "：【无】"
+        "analysis": "个人信息是指以电子或者其他方式记录的能够单独或者与其他信息结合识别特定自然人身份或者反映特定自然人活动情况的各种信息，个人书籍属于私有财产，不属于个人信息范畴。"
     },
     {
-        "bank_name": "测试1",
-        "id": "5756608041835042282",
+        "bank_name": "测试13",
+        "id": "5187182542579849567",
+        "number": 37,
+        "type": "多选",
+        "text": "即使对同等安全能力水平的云服务商，其实现安全要求的方式也可能会有差异。为此，GB/T31168《信息安全技术云计算服务安全能力要求》在描述安全要求时引入了（）。",
+        "options": [
+            "赋值",
+            "重复",
+            "细化",
+            "选择"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,D",
+        "analysis": "GB/T31168通过赋值和选择的方式描述安全要求，以适应不同云服务商的差异。"
+    },
+    {
+        "bank_name": "测试13",
+        "id": "5187815201122888075",
+        "number": 38,
+        "type": "单选",
+        "text": "下面哪个是一种常见的密码破解方法？",
+        "options": [
+            "传输层安全（TLS）",
+            "二次身份验证",
+            "基于字典的攻击",
+            "防火墙"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "C",
+        "analysis": "基于字典的攻击是通过尝试字典中的常见密码来破解用户密码的方法。"
+    },
+    {
+        "bank_name": "测试13",
+        "id": "5212168248904326348",
+        "number": 39,
+        "type": "单选",
+        "text": "下列哪项是一种常见的网络身份验证方法？",
+        "options": [
+            "SSL",
+            "HTTP",
+            "FTP",
+            "SSH"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "D",
+        "analysis": "SSH（Secure Shell）是一种常用的网络身份验证和加密通信协议。"
+    },
+    {
+        "bank_name": "测试13",
+        "id": "5219289119925915219",
+        "number": 40,
+        "type": "单选",
+        "text": "预防个人信息泄露不正确的方法有( )。",
+        "options": [
+            "增强个人信息安全意识，不要轻易将个人信息提供给无关人员",
+            "妥善处置快递单、车票、购物小票等包含个人信息的单据",
+            "个人电子邮箱、网络支付及银行卡等密码要有差异",
+            "经常参加来源不明的网上、网下调查活动"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "D",
+        "analysis": "参加不明来路的网上、网下调查活动可能会造成个人信息泄露。"
+    },
+    {
+        "bank_name": "测试13",
+        "id": "5229386249099527843",
+        "number": 41,
+        "type": "单选",
+        "text": "为了避免个人信息泄露，以下做法正确的是( )：",
+        "options": [
+            "撕毁快递箱上的面单",
+            "把快递箱子放进可回收垃圾里",
+            "把快递面单撕下来再放进干垃圾分类中",
+            "以上做法都可以"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "因为个人信息都在快递单上，不管是快递盒直接放入垃圾桶还是把快递单撕下来在放进干垃圾分类中都有可能泄露个人信息。"
+    },
+    {
+        "bank_name": "测试13",
+        "id": "5233751459903251010",
+        "number": 42,
+        "type": "多选",
+        "text": "下列场景，外单位人员可能接触到数据的有：",
+        "options": [
+            "内部使用",
+            "领地公开共享",
+            "受控公开共享",
+            "完全公开共享"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B,C,D",
+        "analysis": "在领地公开共享、受控公开共享和完全公开共享的场景下，外单位人员可能接触到数据。"
+    },
+    {
+        "bank_name": "测试13",
+        "id": "5234427754757746093",
+        "number": 43,
+        "type": "单选",
+        "text": "在安装新的APP时，弹窗提示隐私政策后，最简易的做法是( )。",
+        "options": [
+            "跳过阅读尽快完成安装",
+            "粗略浏览，看过就行",
+            "仔细逐条阅读后，再进行判断是否继续安装该APP",
+            "以上说法都对"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "C",
+        "analysis": "隐私政策是APP所有者与用户的协议，里面详细列出了一系列的条款，有一些APP可能会在隐私政策中注明一些对用户不利条款，比如发生黑客攻击时信息泄露公司不负责或者写明只要安装就是同意所有条款。"
+    },
+    {
+        "bank_name": "测试13",
+        "id": "5235071025259698724",
+        "number": 44,
+        "type": "多选",
+        "text": "去标识化的目标包括：",
+        "options": [
+            "删除所有标识符",
+            "数据重标识风险尽可能低",
+            "将数据尽可能泛化处理",
+            "数据尽可能有用"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B,D",
+        "analysis": "去标识化的目标包括降低数据重标识风险和确保数据尽可能有用。"
+    },
+    {
+        "bank_name": "测试13",
+        "id": "5235395701741345058",
+        "number": 45,
+        "type": "多选",
+        "text": "国际标准是（）以及ISO确认并公布的其他国际组织制定的标准。",
+        "options": [
+            "ISO",
+            "IEC",
+            "IEEE",
+            "ITU"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B,D",
+        "analysis": "国际标准是ISO、IEC和ITU等组织制定的标准。"
+    },
+    {
+        "bank_name": "测试13",
+        "id": "5256778050957218132",
+        "number": 46,
+        "type": "单选",
+        "text": "以下哪个是一种常见的网络入侵检测系统（IDS）？",
+        "options": [
+            "防火墙",
+            "路由器",
+            "蠕虫",
+            "Snort"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "D",
+        "analysis": "Snort是一种开源的网络入侵检测系统，用于监控和分析网络流量。"
+    },
+    {
+        "bank_name": "测试13",
+        "id": "5257148090421184880",
+        "number": 47,
+        "type": "单选",
+        "text": "下列哪项不是网络安全的三要素之一？",
+        "options": [
+            "机密性",
+            "可用性",
+            "完整性",
+            "可追溯性"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "D",
+        "analysis": "网络安全的三要素是机密性、可用性和完整性，可追溯性不属于这三要素。"
+    },
+    {
+        "bank_name": "测试13",
+        "id": "5259865723078696045",
+        "number": 48,
+        "type": "单选",
+        "text": "身份证件号码、个人生物识别信息、通信记录和内容、健康生理信息等属于哪类信息( )。",
+        "options": [
+            "属于个人敏感信息",
+            "属于公共信息",
+            "属于个人信息",
+            "以上都对"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "身份证件号码、个人生物识别信息、通信记录和内容、健康生理信息等属于个人敏感信息。"
+    },
+    {
+        "bank_name": "测试13",
+        "id": "5267642241553536180",
+        "number": 49,
+        "type": "单选",
+        "text": "在密码学中，__________ 是一种通过使用相同密钥进行加密和解密的过程。",
+        "options": [
+            "对称加密",
+            "非对称加密",
+            "数字签名",
+            "SSL"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "对称加密使用相同的密钥进行加密和解密，如AES算法。"
+    },
+    {
+        "bank_name": "测试13",
+        "id": "5296305224107237385",
+        "number": 50,
+        "type": "多选",
+        "text": "根据《网络安全法》，（）应当按照相关国家标准的强制性要求，由具备资格的机构安全认证合格或者安全检测符合要求后，方可销售或者提供。",
+        "options": [
+            "网络安全设备",
+            "网络关键设备",
+            "网络安全产品",
+            "网络安全专用产品"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B,D",
+        "analysis": "根据《网络安全法》，网络关键设备和网络安全专用产品应当按照相关国家标准的强制性要求，由具备资格的机构安全认证合格或者安全检测符合要求后，方可销售或者提供。"
+    },
+    {
+        "bank_name": "测试13",
+        "id": "5307767601106525242",
+        "number": 51,
+        "type": "单选",
+        "text": "以下说法不正确的是( )。",
+        "options": [
+            "不需要共享热点时及时关闭共享热点功能",
+            "在安装和使用手机App时，不用阅读隐私政策或用户协议，直接掠过即可",
+            "定期清除后台运行的App进程",
+            "及时将App更新到最新版"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "在安装和使用手机App时，应阅读隐私政策或用户协议。"
+    },
+    {
+        "bank_name": "测试13",
+        "id": "5323792642776516374",
+        "number": 52,
+        "type": "单选",
+        "text": "下列哪项是一种常见的网络安全威胁分析工具？",
+        "options": [
+            "Wireshark",
+            "Ping",
+            "Tracert",
+            "Telnet"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "Wireshark是一种常用的网络协议分析工具，用于捕获和分析网络流量，帮助识别安全威胁。"
+    },
+    {
+        "bank_name": "测试13",
+        "id": "5325122423073490482",
+        "number": 53,
+        "type": "多选",
+        "text": "在日常生活中，以下哪些选项容易造成我们的敏感信息被非法窃取？",
+        "options": [
+            "随意丢弃快递单或包裹",
+            "定期更新各类平台的密码，密码中涵盖数字、大小写字母和特殊符号",
+            "电脑不设置锁屏密码",
+            "在网上注册网站会员后详细填写真实姓名、电话、身份证号、住址等信息"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,C,D",
+        "analysis": "随意丢弃快递单或包裹、电脑不设置锁屏密码、在网上注册网站会员后详细填写真实信息都可能导致敏感信息被非法窃取。"
+    },
+    {
+        "bank_name": "测试13",
+        "id": "5346416299283163261",
+        "number": 54,
+        "type": "单选",
+        "text": "关于App涉及的赚钱福利活动，以下说法正确的是( )。",
+        "options": [
+            "转发“集赞”、“活动”的链接不会导致个人信息泄露",
+            "登记身份证实名信息可以杜绝冒领礼品的行为",
+            "“看新闻赚钱”之所以提现难，是因为个人能贡献的流量和阅读量极其有限",
+            "邀请好友参与活动，不会对好友产生影响"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "C",
+        "analysis": "许多“赚钱类”APP时常以刷新闻、看视频、玩游戏、多步数为赚钱噱头吸引用户下载注册，其背后原因是流量成本越来越贵，难以形成集中的阅读量和爆发性增长的产品。"
+    },
+    {
+        "bank_name": "测试13",
+        "id": "5426906842064622468",
+        "number": 55,
+        "type": "单选",
+        "text": "以下关于“隐私政策”的说法，不正确的是( )。",
+        "options": [
+            "App实际的个人信息处理行为可以超出隐私政策所述范围",
+            "App实际的个人信息处理行为应与“隐私政策”等公开的收集使用规则一致",
+            "点击同意“隐私政策”，并不意味着个人信息都会被收集，很多都需用户在具体的业务场景下进行再次授权。",
+            "完善的隐私政策通常包含收集使用个人信息的目的、方式、范围，与第三方共享个人信息情况。"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "App实际的个人信息处理行为应与“隐私政策”等公开的收集使用规则一致。"
+    },
+    {
+        "bank_name": "测试13",
+        "id": "5483986425552519624",
+        "number": 56,
+        "type": "多选",
+        "text": "信息安全治理过程包括（）。",
+        "options": [
+            "评价",
+            "指导",
+            "监督",
+            "沟通"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B,C,D",
+        "analysis": "信息安全治理过程包括评价、指导、监督和沟通。"
+    },
+    {
+        "bank_name": "测试13",
+        "id": "5496491510228156840",
+        "number": 57,
+        "type": "单选",
+        "text": "常见的网络攻击类型中，以下哪个是一种拒绝服务（DoS）攻击？",
+        "options": [
+            "木马",
+            "SQL注入",
+            "垃圾邮件",
+            "SYN洪水攻击"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "D",
+        "analysis": "SYN洪水攻击通过大量发送SYN请求，使目标系统资源耗尽，属于典型的拒绝服务（DoS）攻击。"
+    },
+    {
+        "bank_name": "测试13",
+        "id": "5504143761915853886",
+        "number": 58,
+        "type": "多选",
+        "text": "数据权限申请、审批、使用、展示数据需（）原则",
+        "options": [
+            "看看就行",
+            "敏感信息脱敏",
+            "随便发生",
+            "遵循最小化够用"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B,D",
+        "analysis": "数据权限申请、审批、使用、展示数据需遵循敏感信息脱敏和最小化够用原则。"
+    },
+    {
+        "bank_name": "测试13",
+        "id": "5519582045507848153",
         "number": 59,
         "type": "单选",
-        "text": "下面哪一项是信元和分组的不同",
+        "text": "App在申请可收集个人信息的权限时，以下说法正确的( )。",
         "options": [
-            "信无通常比分组小",
-            "信元不同物理地址可合并",
-            "所有信元都有固定长度",
-            "分组不能被交换"
+            "应同步告知收集使用的目的",
+            "直接使用就好",
+            "默认用户同意",
+            "在隐秘或不易发现位置提示用户"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "“直接使用就好”、“默认用户同意”和“在隐秘或不易发现位置提示用户”以上三种做法都存在隐瞒真实目的，不尊重用户知情权的问题。"
+    },
+    {
+        "bank_name": "测试13",
+        "id": "5529243814012372936",
+        "number": 60,
+        "type": "单选",
+        "text": "以下哪项是一种常见的社会工程学攻击方式？",
+        "options": [
+            "拒绝服务攻击",
+            "逆向工程",
+            "钓鱼攻击",
+            "网络针对攻击"
         ],
         "student_answer": "未提供",
         "correct_answer": "C",
-        "analysis": "：【无】"
+        "analysis": "钓鱼攻击通过伪装成可信来源，诱骗用户提供敏感信息，属于社会工程学攻击。"
+    },
+    {
+        "bank_name": "测试13",
+        "id": "5532464399629543924",
+        "number": 61,
+        "type": "多选",
+        "text": "采用国际标准的国家标准与相应国际标准的一致性程度分为（）。",
+        "options": [
+            "等同",
+            "修改",
+            "非等效",
+            "非等同"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B,C",
+        "analysis": "采用国际标准的国家标准与相应国际标准的一致性程度分为等同、修改和非等效。"
+    },
+    {
+        "bank_name": "测试13",
+        "id": "5543472638284189971",
+        "number": 62,
+        "type": "单选",
+        "text": "以下生活习惯属于容易造成个人信息泄露的是( )。",
+        "options": [
+            "废旧名片当垃圾丢弃",
+            "淘汰手机卡直接卖给二手货市场",
+            "使用即时通讯软件传输身份证复印件",
+            "以上都有可能"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "D",
+        "analysis": "答案中的三种行为均可能造成个人信息被他人提取并用于其他目的，对个人权益造成伤害。"
+    },
+    {
+        "bank_name": "测试13",
+        "id": "5548810401662336967",
+        "number": 63,
+        "type": "单选",
+        "text": "以下哪个是一种常见的网络安全认证标准？",
+        "options": [
+            "WPA",
+            "HTTP",
+            "TCP/IP",
+            "SMTP"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "WPA（Wi-Fi Protected Access）是一种用于保护无线网络安全的认证标准。"
+    },
+    {
+        "bank_name": "测试13",
+        "id": "5553950407906241295",
+        "number": 64,
+        "type": "多选",
+        "text": "《网络安全法》规定，国家支持（）参与网络安全国家标准、行业标准的制定。",
+        "options": [
+            "企业",
+            "研究机构",
+            "高等学校",
+            "网络相关行业组织"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B,C,D",
+        "analysis": "《网络安全法》规定，国家支持企业、研究机构、高等学校和网络相关行业组织参与网络安全国家标准、行业标准的制定。"
+    },
+    {
+        "bank_name": "测试13",
+        "id": "5561469023019590651",
+        "number": 65,
+        "type": "单选",
+        "text": "下列不属于收集个人信息的合法性要求的有( )。",
+        "options": [
+            "不得欺诈、诱骗、强迫个人信息主体提供其个人信息",
+            "隐瞒产品或服务所具有的收集个人信息的功能",
+            "不得从非法渠道获取个人信息",
+            "不得收集法律法规明令禁止收集的个人信息"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "GB/T35273-2017《信息安全技术个人信息安全规范》规定，收集个人信息的合法性要求为1.不得欺诈、诱骗、强迫个人信息主体提供其个人信息，2.不得隐瞒产品或服务所具有的收集个人信息的功能，3.不得从非法渠道获取个人信息，4.不得收集法律法规明令禁止收集的个人信息。"
+    },
+    {
+        "bank_name": "测试13",
+        "id": "5571594040999720553",
+        "number": 66,
+        "type": "单选",
+        "text": "在网上进行用户注册，设置用户密码时应当( )。",
+        "options": [
+            "涉及财产、支付类账户的密码应采用高强度密码",
+            "设置123456等简单好记的数字、字母为密码",
+            "所有账号都是一种密码，方便使用",
+            "使用自己或父母生日作为密码"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "连续数字或字母、自己或父母生日都是容易被猜到或获取的信息，因此如果使用生日作为密码风险很大。而如果所有账号都使用一种密码，一旦密码丢失，则容易造成更大损失。"
+    },
+    {
+        "bank_name": "测试13",
+        "id": "5573489590748814334",
+        "number": 67,
+        "type": "多选",
+        "text": "ISO/IEC29100:2011《信息技术 安全技术 隐私框架》中定义的处理个人可识别信息（PII）的参与者包括：（）。",
+        "options": [
+            "PII主体",
+            "PII控制者",
+            "PII处理者",
+            "第三方"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B,C,D",
+        "analysis": "ISO/IEC29100定义了处理个人可识别信息（PII）的参与者包括PII主体、PII控制者、PII处理者和第三方。"
+    },
+    {
+        "bank_name": "测试13",
+        "id": "5575645290245508384",
+        "number": 68,
+        "type": "单选",
+        "text": "防止浏览行为被追踪，以下做法正确的是( )：",
+        "options": [
+            "不使用浏览器",
+            "可以通过清除浏览器Cookie或者拒绝Cookie等方式",
+            "在不连接网络情况下使用浏览器",
+            "以上做法都可以"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "可以通过清除浏览器Cookie或者拒绝Cookie等方式防止浏览行为被追踪。"
+    },
+    {
+        "bank_name": "测试13",
+        "id": "5606616244066309303",
+        "number": 69,
+        "type": "单选",
+        "text": "以下说法正确的是( )。",
+        "options": [
+            "App申请的“短信”权限可用于验证码自动填写",
+            "App申请的“通讯录”权限通常用于添加、邀请通讯录好友等",
+            "App申请的“日历”权限通常用于制定计划日程，设定基于系统日历的重要事项提醒等",
+            "以上说法都正确"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "D",
+        "analysis": "App为实现业务功能所需，申请和使用系统权限收集个人信息已经成为一种常态，以上说法均为正确说法。"
+    },
+    {
+        "bank_name": "测试13",
+        "id": "5641735141014404318",
+        "number": 70,
+        "type": "单选",
+        "text": "漏洞扫描的目的是什么？",
+        "options": [
+            "发现网络攻击者",
+            "阻止DoS攻击",
+            "发现系统和应用程序中的安全漏洞",
+            "加密网络数据"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "C",
+        "analysis": "漏洞扫描通过检测系统和应用程序中的安全漏洞，帮助管理员修复这些漏洞。"
+    },
+    {
+        "bank_name": "测试13",
+        "id": "5642158341313390300",
+        "number": 71,
+        "type": "单选",
+        "text": "下列哪项不是恶意软件的类型？",
+        "options": [
+            "病毒",
+            "木马",
+            "防火墙",
+            "蠕虫"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "C",
+        "analysis": "防火墙是一种网络安全设备，不属于恶意软件类型。"
+    },
+    {
+        "bank_name": "测试13",
+        "id": "5649859991004100272",
+        "number": 72,
+        "type": "单选",
+        "text": "以下哪个是一种常见的网络安全协议？",
+        "options": [
+            "HTTP",
+            "FTP",
+            "TCP",
+            "IP"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "C",
+        "analysis": "TCP（传输控制协议）是一种面向连接的、可靠的传输层协议，常用于网络安全通信。"
+    },
+    {
+        "bank_name": "测试13",
+        "id": "5660088482164520694",
+        "number": 73,
+        "type": "单选",
+        "text": "在网络安全中，__________ 是一种通过将数据包装在另一个协议的数据包中来隐藏数据的方法。",
+        "options": [
+            "路由",
+            "隧道",
+            "代理",
+            "网关"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "隧道技术通过将数据封装在另一个协议的数据包中，实现数据的隐藏和安全传输。"
+    },
+    {
+        "bank_name": "测试13",
+        "id": "5672164539748679682",
+        "number": 74,
+        "type": "多选",
+        "text": "根据《网络安全法》的规定，国务院和省、自治区、直辖市人民政府应当统筹规划，加大投入，扶持重点网络安全技术产业和项目，（）。",
+        "options": [
+            "支持企业、研究机构和高等学校等参与国家网络安全技术创新项目",
+            "支持网络安全技术的研究开发和应用",
+            "推广安全可信的网络产品和服务",
+            "保护网络技术知识产权"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A,B,C,D",
+        "analysis": "根据《网络安全法》，国务院和省、自治区、直辖市人民政府应支持网络安全技术创新、研究开发、"
+    },
+    {
+        "bank_name": "测试13",
+        "id": "5707675258179266035",
+        "number": 75,
+        "type": "单选",
+        "text": "下面哪些行为可能会导致电脑被安装木马程序( )。",
+        "options": [
+            "上安全网站浏览资讯",
+            "发现邮箱中有一封陌生邮件，杀毒后下载邮件中的附件",
+            "下载资源时，优先考虑安全性较高的绿色网站",
+            "搜索下载可免费看全部集数《长安十二时辰》的播放器"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "D",
+        "analysis": "务必在正规应用商店下载播放器，不要安装不明来源的播放器，防止电脑被安装木马程序。"
+    },
+    {
+        "bank_name": "测试13",
+        "id": "5733772300391680334",
+        "number": 76,
+        "type": "单选",
+        "text": "国家( )负责统筹协调网络安全工作和相关监督管理工作。",
+        "options": [
+            "公安部门",
+            "网信部门",
+            "工业和信息化部门",
+            "通讯管理部门"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "《网络安全法》第五十条规定国家网信部门和有关部门依法履行网络信息安全监督管理职责。"
     },
     {
         "bank_name": "测试2",
@@ -12286,5 +15102,1613 @@
         "student_answer": "未提供",
         "correct_answer": "A,B,C",
         "analysis": "前三个是自动化安装工具，Vagrant用于开发环境（第4章4.3.3节）"
+    },
+    {
+        "bank_name": "软件质量保证与测试1",
+        "id": "5509548025257331590",
+        "number": 1,
+        "type": "单选",
+        "text": "所有满足条件组合覆盖标准的测试用例集，也满足判定覆盖标准",
+        "options": [
+            "正确",
+            "错误"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试1",
+        "id": "4982983139382782050",
+        "number": 2,
+        "type": "单选",
+        "text": "软件测试的目的在于发现错误、改正错误",
+        "options": [
+            "正确",
+            "错误"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "改正错误是开发的工作"
+    },
+    {
+        "bank_name": "软件质量保证与测试1",
+        "id": "5293192682297547212",
+        "number": 3,
+        "type": "单选",
+        "text": "在白盒测试中，如果某种覆盖率达到100%，就可以保证把所有隐藏的程序缺陷都揭露出来",
+        "options": [
+            "正确",
+            "错误"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "各种不同的覆盖标准覆盖的程度是不一样的"
+    },
+    {
+        "bank_name": "软件质量保证与测试1",
+        "id": "5172783850720618075",
+        "number": 4,
+        "type": "单选",
+        "text": "白盒测试的条件覆盖标准强于判定覆盖",
+        "options": [
+            "正确",
+            "错误"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "判定覆盖和条件覆盖互不包含"
+    },
+    {
+        "bank_name": "软件质量保证与测试1",
+        "id": "4775878695571734698",
+        "number": 5,
+        "type": "单选",
+        "text": "判定覆盖包含了语句覆盖",
+        "options": [
+            "正确",
+            "错误"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试1",
+        "id": "5068721394050630942",
+        "number": 6,
+        "type": "单选",
+        "text": "因为会进行动态白盒测试，因此代码审查意义不大，可以忽略",
+        "options": [
+            "正确",
+            "错误"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试1",
+        "id": "5135626557751802556",
+        "number": 7,
+        "type": "单选",
+        "text": "只要采用自动化测试，工作效率将马上提高。（ ）",
+        "options": [
+            "正确",
+            "错误"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试1",
+        "id": "5615272558424046262",
+        "number": 8,
+        "type": "单选",
+        "text": "所有的测试工作都可以实现自动化。( ）",
+        "options": [
+            "正确",
+            "错误"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试1",
+        "id": "5185698856372957923",
+        "number": 9,
+        "type": "单选",
+        "text": "自动化测试的执行是不受上下班时间限制的，甚至于可以24小时不间断。（ ）",
+        "options": [
+            "正确",
+            "错误"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试1",
+        "id": "5492786424810815319",
+        "number": 10,
+        "type": "单选",
+        "text": "在相同的测试设计、执行相同的测试数据的情况下，自动化测试比手工测试发现的缺陷多。（ ）",
+        "options": [
+            "正确",
+            "错误"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试1",
+        "id": "4911945721432728931",
+        "number": 11,
+        "type": "单选",
+        "text": "测试用例可完全由测试工具自动生成。( ）",
+        "options": [
+            "正确",
+            "错误"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试1",
+        "id": "5676880658706108014",
+        "number": 12,
+        "type": "单选",
+        "text": "自动化测试可适用于任何测试场景。( ）",
+        "options": [
+            "正确",
+            "错误"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试1",
+        "id": "5310026342499176009",
+        "number": 13,
+        "type": "单选",
+        "text": "技术评审既是一种技术手段，也是一种质量管理手段。( ）",
+        "options": [
+            "正确",
+            "错误"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试1",
+        "id": "5090854584682767722",
+        "number": 14,
+        "type": "单选",
+        "text": "详细设计评审是所有的评审活动中最难的一个。（）",
+        "options": [
+            "正确",
+            "错误"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试1",
+        "id": "5522148989717814366",
+        "number": 15,
+        "type": "单选",
+        "text": "评审的主要目标在于检测错误、核对与标准的偏离。( ）",
+        "options": [
+            "正确",
+            "错误"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试1",
+        "id": "5075613212560615514",
+        "number": 16,
+        "type": "单选",
+        "text": "数据库设计一般要求遵循 4NF。( ）",
+        "options": [
+            "正确",
+            "错误"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试1",
+        "id": "5168313103290382059",
+        "number": 17,
+        "type": "单选",
+        "text": "应选择那些最复杂和最危险的部分进行评审。（ ）",
+        "options": [
+            "正确",
+            "错误"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试1",
+        "id": "4931743085407919379",
+        "number": 18,
+        "type": "单选",
+        "text": "应该将发现缺陷的工作推后，最后再处理，这样效率高。( ）",
+        "options": [
+            "正确",
+            "错误"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试1",
+        "id": "4709219073894159816",
+        "number": 19,
+        "type": "单选",
+        "text": "软件质量保证的独特性是由软件产品不同于其他制造产品的本质决定的",
+        "options": [
+            "正确",
+            "错误"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试1",
+        "id": "5029410022198950520",
+        "number": 20,
+        "type": "单选",
+        "text": "TMM分解为3个级别，在最高级中，测试不是行为，而是一种自觉的约束，不用太多的测试投入即可产生低风险的软件。",
+        "options": [
+            "正确",
+            "错误"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试1",
+        "id": "4852604400937463387",
+        "number": 21,
+        "type": "单选",
+        "text": "CMMI并不包括CMM，更加适用于企业的过程改进实施。",
+        "options": [
+            "正确",
+            "错误"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试1",
+        "id": "5552884847010092355",
+        "number": 22,
+        "type": "单选",
+        "text": "只有客户才会有新区透彻定义软件需求以确保他约定的软件产品的质量。",
+        "options": [
+            "正确",
+            "错误"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试1",
+        "id": "5677656567130222416",
+        "number": 23,
+        "type": "单选",
+        "text": "测试人员要坚持原则，缺陷未完全修复坚决不予通过。",
+        "options": [
+            "正确",
+            "错误"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试1",
+        "id": "5463472976439055427",
+        "number": 24,
+        "type": "单选",
+        "text": "在软件测试中，预设输出结果是检验待测系统在特定执行下是否正确的方法。",
+        "options": [
+            "正确",
+            "错误"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试1",
+        "id": "4969045733201041102",
+        "number": 25,
+        "type": "单选",
+        "text": "发现缺陷越多的模块隐藏的缺陷可能也越少。",
+        "options": [
+            "正确",
+            "错误"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试1",
+        "id": "4938657461726333276",
+        "number": 26,
+        "type": "单选",
+        "text": "在进行压力测试时，通常不需要考虑系统的资源利用率情况。",
+        "options": [
+            "对",
+            "错"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "在压力测试中，监控和分析系统资源利用率是非常重要的 主要需要关注的系统资源包括: CPU使用率 内存使用情况 磁盘I/O 网络带宽使用率 监控资源利用率可以帮助我们: 发现系统瓶颈 确定系统的最大承载能力 预测系统崩溃点 评估系统的稳定性"
+    },
+    {
+        "bank_name": "软件质量保证与测试1",
+        "id": "5702083321955189952",
+        "number": 27,
+        "type": "单选",
+        "text": "性能测试中，响应时间是指系统从接收请求到产生响应所花费的时间",
+        "options": [
+            "对",
+            "错"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "响应时间是性能测试中的一个关键指标 它准确地衡量了从用户发起请求到接收到完整响应的整个过程时间 响应时间包含的环节: 请求在网络中的传输时间 服务器处理请求的时间 响应返回给用户的传输时间 这个指标直接反映了用户体验，是评估系统性能的重要依据"
+    },
+    {
+        "bank_name": "软件质量保证与测试1",
+        "id": "5389807186200222310",
+        "number": 28,
+        "type": "单选",
+        "text": "性能测试中的响应时间指从用户发出请求到系统返回结果所需的全部时间。",
+        "options": [
+            "对",
+            "错"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "响应时间确实是指从用户发起请求到接收到系统返回结果的完整时间，包括网络传输时间、服务器处理时间等所有环节的耗时总和。"
+    },
+    {
+        "bank_name": "软件质量保证与测试1",
+        "id": "5621840340255636136",
+        "number": 29,
+        "type": "单选",
+        "text": "兼容性测试只需要测试不同的操作系统平台即可。",
+        "options": [
+            "对",
+            "错"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "兼容性测试范围包括但不限于：操作系统、浏览器、硬件设备、网络环境、分辨率、数据库等多个方面的兼容性测试。"
+    },
+    {
+        "bank_name": "软件质量保证与测试1",
+        "id": "5614040396729426330",
+        "number": 30,
+        "type": "单选",
+        "text": "负载测试的并发用户数一定要大于压力测试的并发用户数。",
+        "options": [
+            "对",
+            "错"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "负载测试是模拟系统在正常负载和峰值负载下的性能表现，而压力测试是测试系统在超出正常负载的极限情况下的表现，因此压力测试的并发用户数通常大于负载测试。"
+    },
+    {
+        "bank_name": "软件质量保证与测试1",
+        "id": "4856208371077918615",
+        "number": 31,
+        "type": "单选",
+        "text": "性能测试工具使用前不需要进行工具本身的性能验证。",
+        "options": [
+            "对",
+            "错"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "在进行性能测试前，需要验证测试工具本身的性能和稳定性，确保工具不会成为性能瓶颈，影响测试结果的准确性。"
+    },
+    {
+        "bank_name": "软件质量保证与测试1",
+        "id": "5365839930045524290",
+        "number": 32,
+        "type": "单选",
+        "text": "负载测试中的TPS（每秒事务数）越高，说明系统性能一定越好。",
+        "options": [
+            "对",
+            "错"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "TPS只是性能指标之一，还需要结合响应时间、资源使用率等多个指标综合评估。有时高TPS可能导致系统其他方面的性能下降。"
+    },
+    {
+        "bank_name": "软件质量保证与测试1",
+        "id": "5537173036500135607",
+        "number": 33,
+        "type": "单选",
+        "text": "负载测试中的TPS（每秒事务数）越高，说明系统性能一定越好。",
+        "options": [
+            "对",
+            "错"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "TPS只是性能指标之一，还需要结合响应时间、资源使用率等多个指标综合评估。有时高TPS可能导致系统其他方面的性能下降。"
+    },
+    {
+        "bank_name": "软件质量保证与测试1",
+        "id": "5134161310506293113",
+        "number": 34,
+        "type": "单选",
+        "text": "在进行性能测试时，测试数据量越大越好。",
+        "options": [
+            "对",
+            "错"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "测试数据量需要根据实际业务场景和系统规模来确定，过大的数据量可能导致测试成本增加且意义不大，关键是保证数据的真实性和代表性。"
+    },
+    {
+        "bank_name": "软件质量保证与测试1",
+        "id": "4751690826573909002",
+        "number": 35,
+        "type": "单选",
+        "text": "性能测试中出现性能瓶颈时，一定是服务器硬件配置不足导致的。",
+        "options": [
+            "对",
+            "错"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "性能瓶颈可能来自多个方面，包括但不限于：程序代码效率、数据库设计、网络带宽、中间件配置等，不能简单归因于硬件配置问题。"
+    },
+    {
+        "bank_name": "软件质量保证与测试1",
+        "id": "5444703589404049659",
+        "number": 36,
+        "type": "单选",
+        "text": "性能测试中的吞吐量和并发用户数呈线性正相关关系。",
+        "options": [
+            "对",
+            "错"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "吐量与并发用户数的关系通常呈现出先上升后趋于平稳最后下降的曲线特征。这是因为系统资源有限，当并发用户数超过某个阈值后，系统处理能力会达到饱和，继续增加用户数可能导致性能下降，出现排队等待现象。"
+    },
+    {
+        "bank_name": "软件质量保证与测试1",
+        "id": "5398353900774607734",
+        "number": 37,
+        "type": "单选",
+        "text": "没有可运行的程序，就无法进行任何测试工作。( ）",
+        "options": [
+            "对",
+            "错"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试1",
+        "id": "5239226900598259322",
+        "number": 38,
+        "type": "单选",
+        "text": "软件测试针对的是初级程序员编写的程序，资深程序员编写的程序无需测试。()",
+        "options": [
+            "对",
+            "错"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试1",
+        "id": "4889265275950701150",
+        "number": 39,
+        "type": "单选",
+        "text": "测试是为了验证软件已正确地实现了用户的要求。( )",
+        "options": [
+            "对",
+            "错"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试1",
+        "id": "4939267638583493909",
+        "number": 40,
+        "type": "单选",
+        "text": "测试一个程序，只需按程序的预期工作方式运行它就行了。( )",
+        "options": [
+            "对",
+            "错"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试1",
+        "id": "5122297277911051141",
+        "number": 41,
+        "type": "单选",
+        "text": "软件测试工具可以代替软件测试员。( ）",
+        "options": [
+            "对",
+            "错"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试1",
+        "id": "5677783542165066735",
+        "number": 42,
+        "type": "单选",
+        "text": "在软件开发过程中，若能推迟暴露其中的错误,则为修复和改进错误所花费的代价就会降低（）",
+        "options": [
+            "对",
+            "错"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试1",
+        "id": "5647161960181925781",
+        "number": 43,
+        "type": "单选",
+        "text": "程序员与测试工作无关。()",
+        "options": [
+            "对",
+            "错"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试1",
+        "id": "5445534676802005135",
+        "number": 44,
+        "type": "单选",
+        "text": "我是个很棒的程序员，我无需进行单元测试。( ）",
+        "options": [
+            "对",
+            "错"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试1",
+        "id": "5524551321544659856",
+        "number": 45,
+        "type": "单选",
+        "text": "软件测试就是为了验证软件功能实现的是否正确，是否完成既定目标的活动，所以软件测试在软件工程的后期才需要开始工作（ ）",
+        "options": [
+            "对",
+            "错"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试1",
+        "id": "5736069182774946065",
+        "number": 46,
+        "type": "单选",
+        "text": "软件测试只能发现错误，但不能保证测试后的软件没有错误（）",
+        "options": [
+            "对",
+            "错"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试1",
+        "id": "5376367024824643132",
+        "number": 47,
+        "type": "单选",
+        "text": "软件测试是有效的排除软件缺陷的手段",
+        "options": [
+            "对",
+            "错"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试1",
+        "id": "5231773825706869170",
+        "number": 48,
+        "type": "单选",
+        "text": "产品说明书（需求文档）的变更应当受到控制",
+        "options": [
+            "对",
+            "错"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试1",
+        "id": "5175400292415613908",
+        "number": 49,
+        "type": "单选",
+        "text": "软件缺陷都存在于程序代码中",
+        "options": [
+            "对",
+            "错"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试1",
+        "id": "4860425908238878983",
+        "number": 50,
+        "type": "单选",
+        "text": "黑盒测试的测试用例是根据程序内部逻辑设计的。( ）",
+        "options": [
+            "对",
+            "错"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试1",
+        "id": "4925324602073224606",
+        "number": 51,
+        "type": "单选",
+        "text": "集成测试计划在需求分析阶段提交。(）",
+        "options": [
+            "对",
+            "错"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试1",
+        "id": "5521014131267180576",
+        "number": 52,
+        "type": "单选",
+        "text": "必须要求用户参与的测试阶段是（）",
+        "options": [
+            "单元测试",
+            "集成测试",
+            "系统测试",
+            "验收测试"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "D",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试1",
+        "id": "5097089032862759870",
+        "number": 53,
+        "type": "单选",
+        "text": "在进行单元测试时，常用的方法是（）",
+        "options": [
+            "采用黑盒测试，辅之以白盒测试",
+            "采用白盒测试，辅之以黑盒测试",
+            "只使用黑盒测试",
+            "只使用白盒测试"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试1",
+        "id": "5253145812207619798",
+        "number": 54,
+        "type": "单选",
+        "text": "软件设计阶段的测试主要采取的方式是（）",
+        "options": [
+            "评审",
+            "白盒测试",
+            "黑盒测试",
+            "动态测试"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试1",
+        "id": "5179951647026825755",
+        "number": 55,
+        "type": "单选",
+        "text": "测试某等价类的代表值就等于对其他值的测试。该说法是否正确？",
+        "options": [
+            "正确",
+            "错误"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试1",
+        "id": "5417718468506332234",
+        "number": 56,
+        "type": "单选",
+        "text": "测试某等价类的代表值就等于对其他值的测试。该说法是否正确？",
+        "options": [
+            "正确",
+            "错误"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试1",
+        "id": "5398033099299003493",
+        "number": 57,
+        "type": "单选",
+        "text": "利用等价类中一个元素作为代表对程序进行测试，而不是使用该类的全体成员，借此以减少总的测试用例数量。该说法是否正确？",
+        "options": [
+            "正确",
+            "错误"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试2",
+        "id": "5509548025257331590",
+        "number": 1,
+        "type": "单选",
+        "text": "所有满足条件组合覆盖标准的测试用例集，也满足判定覆盖标准",
+        "options": [
+            "正确",
+            "错误"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试2",
+        "id": "4982983139382782050",
+        "number": 2,
+        "type": "单选",
+        "text": "软件测试的目的在于发现错误、改正错误",
+        "options": [
+            "正确",
+            "错误"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "改正错误是开发的工作"
+    },
+    {
+        "bank_name": "软件质量保证与测试2",
+        "id": "5293192682297547212",
+        "number": 3,
+        "type": "单选",
+        "text": "在白盒测试中，如果某种覆盖率达到100%，就可以保证把所有隐藏的程序缺陷都揭露出来",
+        "options": [
+            "正确",
+            "错误"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "各种不同的覆盖标准覆盖的程度是不一样的"
+    },
+    {
+        "bank_name": "软件质量保证与测试2",
+        "id": "5172783850720618075",
+        "number": 4,
+        "type": "单选",
+        "text": "白盒测试的条件覆盖标准强于判定覆盖",
+        "options": [
+            "正确",
+            "错误"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "判定覆盖和条件覆盖互不包含"
+    },
+    {
+        "bank_name": "软件质量保证与测试2",
+        "id": "4775878695571734698",
+        "number": 5,
+        "type": "单选",
+        "text": "判定覆盖包含了语句覆盖",
+        "options": [
+            "正确",
+            "错误"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试2",
+        "id": "5068721394050630942",
+        "number": 6,
+        "type": "单选",
+        "text": "因为会进行动态白盒测试，因此代码审查意义不大，可以忽略",
+        "options": [
+            "正确",
+            "错误"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试2",
+        "id": "5135626557751802556",
+        "number": 7,
+        "type": "单选",
+        "text": "只要采用自动化测试，工作效率将马上提高。（ ）",
+        "options": [
+            "正确",
+            "错误"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试2",
+        "id": "5615272558424046262",
+        "number": 8,
+        "type": "单选",
+        "text": "所有的测试工作都可以实现自动化。( ）",
+        "options": [
+            "正确",
+            "错误"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试2",
+        "id": "5185698856372957923",
+        "number": 9,
+        "type": "单选",
+        "text": "自动化测试的执行是不受上下班时间限制的，甚至于可以24小时不间断。（ ）",
+        "options": [
+            "正确",
+            "错误"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试2",
+        "id": "5492786424810815319",
+        "number": 10,
+        "type": "单选",
+        "text": "在相同的测试设计、执行相同的测试数据的情况下，自动化测试比手工测试发现的缺陷多。（ ）",
+        "options": [
+            "正确",
+            "错误"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试2",
+        "id": "4911945721432728931",
+        "number": 11,
+        "type": "单选",
+        "text": "测试用例可完全由测试工具自动生成。( ）",
+        "options": [
+            "正确",
+            "错误"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试2",
+        "id": "5676880658706108014",
+        "number": 12,
+        "type": "单选",
+        "text": "自动化测试可适用于任何测试场景。( ）",
+        "options": [
+            "正确",
+            "错误"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试2",
+        "id": "5310026342499176009",
+        "number": 13,
+        "type": "单选",
+        "text": "技术评审既是一种技术手段，也是一种质量管理手段。( ）",
+        "options": [
+            "正确",
+            "错误"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试2",
+        "id": "5090854584682767722",
+        "number": 14,
+        "type": "单选",
+        "text": "详细设计评审是所有的评审活动中最难的一个。（）",
+        "options": [
+            "正确",
+            "错误"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试2",
+        "id": "5522148989717814366",
+        "number": 15,
+        "type": "单选",
+        "text": "评审的主要目标在于检测错误、核对与标准的偏离。( ）",
+        "options": [
+            "正确",
+            "错误"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试2",
+        "id": "5075613212560615514",
+        "number": 16,
+        "type": "单选",
+        "text": "数据库设计一般要求遵循 4NF。( ）",
+        "options": [
+            "正确",
+            "错误"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试2",
+        "id": "5168313103290382059",
+        "number": 17,
+        "type": "单选",
+        "text": "应选择那些最复杂和最危险的部分进行评审。（ ）",
+        "options": [
+            "正确",
+            "错误"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试2",
+        "id": "4931743085407919379",
+        "number": 18,
+        "type": "单选",
+        "text": "应该将发现缺陷的工作推后，最后再处理，这样效率高。( ）",
+        "options": [
+            "正确",
+            "错误"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试2",
+        "id": "4709219073894159816",
+        "number": 19,
+        "type": "单选",
+        "text": "软件质量保证的独特性是由软件产品不同于其他制造产品的本质决定的",
+        "options": [
+            "正确",
+            "错误"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试2",
+        "id": "5029410022198950520",
+        "number": 20,
+        "type": "单选",
+        "text": "TMM分解为3个级别，在最高级中，测试不是行为，而是一种自觉的约束，不用太多的测试投入即可产生低风险的软件。",
+        "options": [
+            "正确",
+            "错误"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试2",
+        "id": "4852604400937463387",
+        "number": 21,
+        "type": "单选",
+        "text": "CMMI并不包括CMM，更加适用于企业的过程改进实施。",
+        "options": [
+            "正确",
+            "错误"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试2",
+        "id": "5552884847010092355",
+        "number": 22,
+        "type": "单选",
+        "text": "只有客户才会有新区透彻定义软件需求以确保他约定的软件产品的质量。",
+        "options": [
+            "正确",
+            "错误"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试2",
+        "id": "5677656567130222416",
+        "number": 23,
+        "type": "单选",
+        "text": "测试人员要坚持原则，缺陷未完全修复坚决不予通过。",
+        "options": [
+            "正确",
+            "错误"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试2",
+        "id": "5463472976439055427",
+        "number": 24,
+        "type": "单选",
+        "text": "在软件测试中，预设输出结果是检验待测系统在特定执行下是否正确的方法。",
+        "options": [
+            "正确",
+            "错误"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试2",
+        "id": "4969045733201041102",
+        "number": 25,
+        "type": "单选",
+        "text": "发现缺陷越多的模块隐藏的缺陷可能也越少。",
+        "options": [
+            "正确",
+            "错误"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试2",
+        "id": "4938657461726333276",
+        "number": 26,
+        "type": "单选",
+        "text": "在进行压力测试时，通常不需要考虑系统的资源利用率情况。",
+        "options": [
+            "对",
+            "错"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "在压力测试中，监控和分析系统资源利用率是非常重要的 主要需要关注的系统资源包括: CPU使用率 内存使用情况 磁盘I/O 网络带宽使用率 监控资源利用率可以帮助我们: 发现系统瓶颈 确定系统的最大承载能力 预测系统崩溃点 评估系统的稳定性"
+    },
+    {
+        "bank_name": "软件质量保证与测试2",
+        "id": "5702083321955189952",
+        "number": 27,
+        "type": "单选",
+        "text": "性能测试中，响应时间是指系统从接收请求到产生响应所花费的时间",
+        "options": [
+            "对",
+            "错"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "响应时间是性能测试中的一个关键指标 它准确地衡量了从用户发起请求到接收到完整响应的整个过程时间 响应时间包含的环节: 请求在网络中的传输时间 服务器处理请求的时间 响应返回给用户的传输时间 这个指标直接反映了用户体验，是评估系统性能的重要依据"
+    },
+    {
+        "bank_name": "软件质量保证与测试2",
+        "id": "5389807186200222310",
+        "number": 28,
+        "type": "单选",
+        "text": "性能测试中的响应时间指从用户发出请求到系统返回结果所需的全部时间。",
+        "options": [
+            "对",
+            "错"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "响应时间确实是指从用户发起请求到接收到系统返回结果的完整时间，包括网络传输时间、服务器处理时间等所有环节的耗时总和。"
+    },
+    {
+        "bank_name": "软件质量保证与测试2",
+        "id": "5621840340255636136",
+        "number": 29,
+        "type": "单选",
+        "text": "兼容性测试只需要测试不同的操作系统平台即可。",
+        "options": [
+            "对",
+            "错"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "兼容性测试范围包括但不限于：操作系统、浏览器、硬件设备、网络环境、分辨率、数据库等多个方面的兼容性测试。"
+    },
+    {
+        "bank_name": "软件质量保证与测试2",
+        "id": "5614040396729426330",
+        "number": 30,
+        "type": "单选",
+        "text": "负载测试的并发用户数一定要大于压力测试的并发用户数。",
+        "options": [
+            "对",
+            "错"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "负载测试是模拟系统在正常负载和峰值负载下的性能表现，而压力测试是测试系统在超出正常负载的极限情况下的表现，因此压力测试的并发用户数通常大于负载测试。"
+    },
+    {
+        "bank_name": "软件质量保证与测试2",
+        "id": "4856208371077918615",
+        "number": 31,
+        "type": "单选",
+        "text": "性能测试工具使用前不需要进行工具本身的性能验证。",
+        "options": [
+            "对",
+            "错"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "在进行性能测试前，需要验证测试工具本身的性能和稳定性，确保工具不会成为性能瓶颈，影响测试结果的准确性。"
+    },
+    {
+        "bank_name": "软件质量保证与测试2",
+        "id": "5365839930045524290",
+        "number": 32,
+        "type": "单选",
+        "text": "负载测试中的TPS（每秒事务数）越高，说明系统性能一定越好。",
+        "options": [
+            "对",
+            "错"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "TPS只是性能指标之一，还需要结合响应时间、资源使用率等多个指标综合评估。有时高TPS可能导致系统其他方面的性能下降。"
+    },
+    {
+        "bank_name": "软件质量保证与测试2",
+        "id": "5537173036500135607",
+        "number": 33,
+        "type": "单选",
+        "text": "负载测试中的TPS（每秒事务数）越高，说明系统性能一定越好。",
+        "options": [
+            "对",
+            "错"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "TPS只是性能指标之一，还需要结合响应时间、资源使用率等多个指标综合评估。有时高TPS可能导致系统其他方面的性能下降。"
+    },
+    {
+        "bank_name": "软件质量保证与测试2",
+        "id": "5134161310506293113",
+        "number": 34,
+        "type": "单选",
+        "text": "在进行性能测试时，测试数据量越大越好。",
+        "options": [
+            "对",
+            "错"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "测试数据量需要根据实际业务场景和系统规模来确定，过大的数据量可能导致测试成本增加且意义不大，关键是保证数据的真实性和代表性。"
+    },
+    {
+        "bank_name": "软件质量保证与测试2",
+        "id": "4751690826573909002",
+        "number": 35,
+        "type": "单选",
+        "text": "性能测试中出现性能瓶颈时，一定是服务器硬件配置不足导致的。",
+        "options": [
+            "对",
+            "错"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "性能瓶颈可能来自多个方面，包括但不限于：程序代码效率、数据库设计、网络带宽、中间件配置等，不能简单归因于硬件配置问题。"
+    },
+    {
+        "bank_name": "软件质量保证与测试2",
+        "id": "5444703589404049659",
+        "number": 36,
+        "type": "单选",
+        "text": "性能测试中的吞吐量和并发用户数呈线性正相关关系。",
+        "options": [
+            "对",
+            "错"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "吐量与并发用户数的关系通常呈现出先上升后趋于平稳最后下降的曲线特征。这是因为系统资源有限，当并发用户数超过某个阈值后，系统处理能力会达到饱和，继续增加用户数可能导致性能下降，出现排队等待现象。"
+    },
+    {
+        "bank_name": "软件质量保证与测试2",
+        "id": "5398353900774607734",
+        "number": 37,
+        "type": "单选",
+        "text": "没有可运行的程序，就无法进行任何测试工作。( ）",
+        "options": [
+            "对",
+            "错"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试2",
+        "id": "5239226900598259322",
+        "number": 38,
+        "type": "单选",
+        "text": "软件测试针对的是初级程序员编写的程序，资深程序员编写的程序无需测试。()",
+        "options": [
+            "对",
+            "错"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试2",
+        "id": "4889265275950701150",
+        "number": 39,
+        "type": "单选",
+        "text": "测试是为了验证软件已正确地实现了用户的要求。( )",
+        "options": [
+            "对",
+            "错"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试2",
+        "id": "4939267638583493909",
+        "number": 40,
+        "type": "单选",
+        "text": "测试一个程序，只需按程序的预期工作方式运行它就行了。( )",
+        "options": [
+            "对",
+            "错"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试2",
+        "id": "5122297277911051141",
+        "number": 41,
+        "type": "单选",
+        "text": "软件测试工具可以代替软件测试员。( ）",
+        "options": [
+            "对",
+            "错"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试2",
+        "id": "5677783542165066735",
+        "number": 42,
+        "type": "单选",
+        "text": "在软件开发过程中，若能推迟暴露其中的错误,则为修复和改进错误所花费的代价就会降低（）",
+        "options": [
+            "对",
+            "错"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试2",
+        "id": "5647161960181925781",
+        "number": 43,
+        "type": "单选",
+        "text": "程序员与测试工作无关。()",
+        "options": [
+            "对",
+            "错"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试2",
+        "id": "5445534676802005135",
+        "number": 44,
+        "type": "单选",
+        "text": "我是个很棒的程序员，我无需进行单元测试。( ）",
+        "options": [
+            "对",
+            "错"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试2",
+        "id": "5524551321544659856",
+        "number": 45,
+        "type": "单选",
+        "text": "软件测试就是为了验证软件功能实现的是否正确，是否完成既定目标的活动，所以软件测试在软件工程的后期才需要开始工作（ ）",
+        "options": [
+            "对",
+            "错"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试2",
+        "id": "5736069182774946065",
+        "number": 46,
+        "type": "单选",
+        "text": "软件测试只能发现错误，但不能保证测试后的软件没有错误（）",
+        "options": [
+            "对",
+            "错"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试2",
+        "id": "5376367024824643132",
+        "number": 47,
+        "type": "单选",
+        "text": "软件测试是有效的排除软件缺陷的手段",
+        "options": [
+            "对",
+            "错"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试2",
+        "id": "5231773825706869170",
+        "number": 48,
+        "type": "单选",
+        "text": "产品说明书（需求文档）的变更应当受到控制",
+        "options": [
+            "对",
+            "错"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试2",
+        "id": "5175400292415613908",
+        "number": 49,
+        "type": "单选",
+        "text": "软件缺陷都存在于程序代码中",
+        "options": [
+            "对",
+            "错"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试2",
+        "id": "4860425908238878983",
+        "number": 50,
+        "type": "单选",
+        "text": "黑盒测试的测试用例是根据程序内部逻辑设计的。( ）",
+        "options": [
+            "对",
+            "错"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试2",
+        "id": "4925324602073224606",
+        "number": 51,
+        "type": "单选",
+        "text": "集成测试计划在需求分析阶段提交。(）",
+        "options": [
+            "对",
+            "错"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试2",
+        "id": "5521014131267180576",
+        "number": 52,
+        "type": "单选",
+        "text": "必须要求用户参与的测试阶段是（）",
+        "options": [
+            "单元测试",
+            "集成测试",
+            "系统测试",
+            "验收测试"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "D",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试2",
+        "id": "5097089032862759870",
+        "number": 53,
+        "type": "单选",
+        "text": "在进行单元测试时，常用的方法是（）",
+        "options": [
+            "采用黑盒测试，辅之以白盒测试",
+            "采用白盒测试，辅之以黑盒测试",
+            "只使用黑盒测试",
+            "只使用白盒测试"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试2",
+        "id": "5253145812207619798",
+        "number": 54,
+        "type": "单选",
+        "text": "软件设计阶段的测试主要采取的方式是（）",
+        "options": [
+            "评审",
+            "白盒测试",
+            "黑盒测试",
+            "动态测试"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试2",
+        "id": "5179951647026825755",
+        "number": 55,
+        "type": "单选",
+        "text": "测试某等价类的代表值就等于对其他值的测试。该说法是否正确？",
+        "options": [
+            "正确",
+            "错误"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "B",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试2",
+        "id": "5417718468506332234",
+        "number": 56,
+        "type": "单选",
+        "text": "测试某等价类的代表值就等于对其他值的测试。该说法是否正确？",
+        "options": [
+            "正确",
+            "错误"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "：【无】"
+    },
+    {
+        "bank_name": "软件质量保证与测试2",
+        "id": "5398033099299003493",
+        "number": 57,
+        "type": "单选",
+        "text": "利用等价类中一个元素作为代表对程序进行测试，而不是使用该类的全体成员，借此以减少总的测试用例数量。该说法是否正确？",
+        "options": [
+            "正确",
+            "错误"
+        ],
+        "student_answer": "未提供",
+        "correct_answer": "A",
+        "analysis": "：【无】"
     }
 ]
