@@ -15,23 +15,24 @@ import threading
 import http.server
 import socketserver
 import signal
-import queue # Added for SSE message passing
-import select # Added for non-blocking queue read in SSE handler
+import queue
+import select
 
 # --- Configuration ---
 OCR_LANG = 'ch'
-USE_GPU = False
+USE_GPU = False  # 如果有N卡并装了paddle-gpu，改为True
 CONFIG_FILE = 'ocr_config.json'
+OCR_INTERVAL_SECONDS = 0.5  # 缩短检测间隔，因为现在有画面变化检测，反应可以更快
+
 # --- Hotkeys ---
 TOGGLE_OCR_HOTKEY = 'ctrl+alt+o'
 RESELECT_HOTKEY = 'ctrl+alt+r'
 QUIT_HOTKEY = 'ctrl+alt+q'
+
 # --- Server Configuration ---
 SERVER_PORT = 8088
 SERVER_ADDRESS = "localhost"
-SSE_ENDPOINT = "/ocr-events" # Path for Server-Sent Events
-# --- OCR Loop ---
-OCR_INTERVAL_SECONDS = 1.0
+SSE_ENDPOINT = "/ocr-events"
 
 # --- Global variables ---
 capture_region_coords = None
@@ -40,340 +41,335 @@ httpd = None
 server_thread = None
 running = True
 ocr_active = False
-last_cleaned_text = "" # Store last *successfully processed* cleaned text
-sse_clients = [] # List to keep track of connected SSE client queues
-sse_message_queue = queue.Queue() # Queue for Python OCR loop to send messages to SSE handlers
+last_cleaned_text = ""
+last_processed_image_hash = None  # 用于检测画面变化
+sse_clients = []  # 存储 (client_address, queue)
+sse_lock = threading.Lock()  # 线程锁，保护 sse_clients
 
-# --- Config Management (load_config, save_config - unchanged) ---
+
+# --- Config Management ---
 def load_config():
     global capture_region_coords
     if os.path.exists(CONFIG_FILE):
         try:
-            with open(CONFIG_FILE, 'r') as f: config = json.load(f)
-            if isinstance(config.get('region'), dict) and all(k in config['region'] for k in ['top', 'left', 'width', 'height']):
-                capture_region_coords = config['region']; print(f"Loaded region: {capture_region_coords}"); return True
-            else: print(f"Invalid region format in {CONFIG_FILE}.")
-        except Exception as e: print(f"Error loading config {CONFIG_FILE}: {e}")
-    print("Config file not found/invalid.")
+            with open(CONFIG_FILE, 'r') as f:
+                config = json.load(f)
+            if isinstance(config.get('region'), dict):
+                capture_region_coords = config['region']
+                print(f"已加载截图区域: {capture_region_coords}")
+                return True
+        except Exception as e:
+            print(f"加载配置失败: {e}")
     return False
+
 
 def save_config(region):
     try:
-        with open(CONFIG_FILE, 'w') as f: json.dump({'region': region}, f, indent=4)
-        print(f"Saved region: {region}")
-    except Exception as e: print(f"Error saving config: {e}")
+        with open(CONFIG_FILE, 'w') as f:
+            json.dump({'region': region}, f, indent=4)
+        print(f"已保存截图区域: {region}")
+    except Exception as e:
+        print(f"保存配置失败: {e}")
 
 
-# --- Region Selection GUI (select_region_gui - unchanged) ---
+# --- GUI Region Selection ---
 def select_region_gui():
-    print("\nPlease select capture region...")
-    root = tk.Tk(); root.attributes("-alpha", 0.3); root.attributes("-fullscreen", True)
-    root.wait_visibility(root); root.attributes("-topmost", True)
-    canvas = tk.Canvas(root, cursor="cross", bg='gray'); canvas.pack(fill=tk.BOTH, expand=tk.YES)
-    start_x, start_y, rect_id, selected_region = None, None, None, None
-    def on_m_down(e): nonlocal start_x,start_y; start_x,start_y=e.x,e.y; canvas.delete(rect_id) if rect_id else None
-    def on_m_drag(e):
-        nonlocal rect_id
-        if start_x is not None: canvas.delete(rect_id) if rect_id else None; rect_id=canvas.create_rectangle(start_x,start_y,e.x,e.y,outline='red',width=2)
-    def on_m_up(e):
-        nonlocal selected_region
-        if start_x is not None:
-            x1,y1=min(start_x,e.x),min(start_y,e.y); x2,y2=max(start_x,e.x),max(start_y,e.y)
-            if x2-x1 > 10 and y2-y1 > 10: selected_region = {'top': y1, 'left': x1, 'width': x2-x1, 'height': y2-y1}
-        root.quit()
-    canvas.bind("<ButtonPress-1>",on_m_down); canvas.bind("<B1-Motion>",on_m_drag); canvas.bind("<ButtonRelease-1>",on_m_up)
-    root.mainloop()
-    try: root.destroy()
-    except: pass
-    if selected_region: print(f"Region selected: {selected_region}"); return selected_region
-    else: print("Region selection cancelled/invalid."); return None
+    print("\n请在屏幕上框选识别区域...")
+    root = tk.Tk()
+    root.attributes("-alpha", 0.3)
+    root.attributes("-fullscreen", True)
+    root.attributes("-topmost", True)
 
-# --- Text Cleaning (clean_ocr_text - unchanged) ---
+    canvas = tk.Canvas(root, cursor="cross", bg='gray')
+    canvas.pack(fill=tk.BOTH, expand=tk.YES)
+
+    start_x, start_y, rect_id, selected_region = None, None, None, None
+
+    def on_mouse_down(e):
+        nonlocal start_x, start_y
+        start_x, start_y = e.x, e.y
+        if rect_id: canvas.delete(rect_id)
+
+    def on_mouse_drag(e):
+        nonlocal rect_id
+        if start_x:
+            if rect_id: canvas.delete(rect_id)
+            rect_id = canvas.create_rectangle(start_x, start_y, e.x, e.y, outline='red', width=2)
+
+    def on_mouse_up(e):
+        nonlocal selected_region
+        if start_x:
+            x1, y1 = min(start_x, e.x), min(start_y, e.y)
+            x2, y2 = max(start_x, e.x), max(start_y, e.y)
+            if x2 - x1 > 10 and y2 - y1 > 10:
+                selected_region = {'top': y1, 'left': x1, 'width': x2 - x1, 'height': y2 - y1}
+        root.quit()
+
+    canvas.bind("<ButtonPress-1>", on_mouse_down)
+    canvas.bind("<B1-Motion>", on_mouse_drag)
+    canvas.bind("<ButtonRelease-1>", on_mouse_up)
+
+    # 添加退出绑定的Esc键
+    root.bind("<Escape>", lambda e: root.quit())
+
+    root.mainloop()
+    try:
+        root.destroy()
+    except:
+        pass
+
+    if selected_region:
+        print(f"区域已选择: {selected_region}")
+        return selected_region
+    print("区域选择取消。")
+    return None
+
+
+# --- OCR Utilities ---
 def clean_ocr_text(text):
     if not text: return ""
-    cleaned_text = re.sub(r'[^\u4e00-\u9fffA-Za-z]', '', text)
-    return cleaned_text
+    # 保留中文、英文、数字
+    return re.sub(r'[^\u4e00-\u9fffA-Za-z0-9]', '', text)
 
-# --- Image Preprocessing (preprocess_screen_capture - unchanged) ---
-def preprocess_screen_capture(img_np):
+
+def preprocess_image(img_np):
     try:
         gray = cv2.cvtColor(img_np, cv2.COLOR_BGRA2GRAY)
-        processed_img = cv2.adaptiveThreshold(gray, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY_INV, 11, 5)
-        return processed_img
-    except Exception as e: print(f"Preprocessing error: {e}"); return None
+        # 简单的自适应二值化增强文字
+        return cv2.adaptiveThreshold(gray, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY_INV, 11, 5)
+    except:
+        return None
 
 
-# --- Custom HTTP Handler with SSE ---
-class RequestHandler(http.server.SimpleHTTPRequestHandler):
-    # Override constructor to specify directory
+def images_are_similar(img1, img2):
+    """简单的像素差异比较，如果变化很小则无需OCR"""
+    if img1 is None or img2 is None: return False
+    if img1.shape != img2.shape: return False
+    try:
+        diff = cv2.absdiff(img1, img2)
+        non_zero_count = np.count_nonzero(diff)
+        total_pixels = img1.size
+        # 如果差异像素少于 1%，认为画面静止
+        return (non_zero_count / total_pixels) < 0.01
+    except:
+        return False
+
+
+# --- HTTP Request Handler ---
+class SSEHandler(http.server.SimpleHTTPRequestHandler):
     def __init__(self, *args, directory=None, **kwargs):
-        if directory is None:
-            directory = os.getcwd()
-        self.directory = directory
+        self.directory = directory or os.getcwd()
         super().__init__(*args, **kwargs)
 
-    # Override translate_path to use the stored directory
-    def translate_path(self, path):
-        # Borrowed from standard library, but uses self.directory
-        path = path.split('?',1)[0]
-        path = path.split('#',1)[0]
-        # Don't forget explicit trailing slash when normalizing. Issue17324
-        trailing_slash = path.rstrip().endswith('/')
-        try:
-            path = urllib.parse.unquote(path, errors='surrogatepass')
-        except UnicodeDecodeError:
-            path = urllib.parse.unquote(path)
-        path = os.path.normpath(path)
-        words = path.split(os.sep)
-        words = filter(None, words)
-        path = self.directory # Use the instance directory
-        for word in words:
-            if os.path.dirname(word) or word in (os.curdir, os.pardir):
-                continue # Ignore components that are not simple filenames
-            path = os.path.join(path, word)
-        if trailing_slash:
-            path += '/'
-        return path
-
+    def log_message(self, format, *args):
+        pass  # 禁用烦人的 HTTP 日志输出
 
     def do_GET(self):
-        global sse_message_queue, running
-        # Handle SSE connection request
         if self.path == SSE_ENDPOINT:
-            self.send_response(200)
-            self.send_header('Content-Type', 'text/event-stream')
-            self.send_header('Cache-Control', 'no-cache')
-            self.send_header('Connection', 'keep-alive')
-            self.send_header('Access-Control-Allow-Origin', '*') # Allow connections from file:/// or other origins if needed
-            self.end_headers()
-
-            print(f"SSE Client connected: {self.client_address}")
-            local_queue = queue.Queue() # Each client gets its own queue copy mechanism (not ideal, but simple)
-            sse_clients.append(local_queue) # Add this client's queue to the global list
-
-            try:
-                while running: # Keep connection open while script is running
-                    try:
-                        # Use select for non-blocking check on the socket
-                        # This allows checking the `running` flag more frequently
-                        ready_to_read, _, _ = select.select([self.rfile], [], [], 0.1)
-                        if ready_to_read:
-                            # If client sends data or closes connection, reading will succeed/fail
-                            if not self.rfile.read(1): # Try reading 1 byte
-                                print(f"SSE Client {self.client_address} closed connection (read check).")
-                                break # Client likely disconnected
-
-                        # Check our message queue (non-blocking)
-                        message = None
-                        while not sse_message_queue.empty(): # Drain the global queue into local
-                            msg_item = sse_message_queue.get_nowait()
-                            message = msg_item # Keep the last message if multiple came quickly
-                            sse_message_queue.task_done()
-
-                        if message is not None:
-                            # Format and send SSE message: data: message_content\n\n
-                            sse_data = f"data: {message}\n\n"
-                            self.wfile.write(sse_data.encode('utf-8'))
-                            self.wfile.flush() # Ensure data is sent immediately
-                            # print(f"Sent to {self.client_address}: {message}") # Optional: Verbose logging
-
-                    except queue.Empty:
-                        time.sleep(0.1) # Wait briefly if queue is empty
-                        continue
-                    except BrokenPipeError:
-                         print(f"SSE Client {self.client_address} disconnected (BrokenPipeError).")
-                         break # Exit loop if client disconnects
-                    except ConnectionResetError:
-                         print(f"SSE Client {self.client_address} disconnected (ConnectionResetError).")
-                         break
-                    except Exception as e:
-                         print(f"Error in SSE loop for {self.client_address}: {e}")
-                         break # Exit on other errors too
-            finally:
-                print(f"SSE Client disconnected: {self.client_address}")
-                # Clean up: Remove this client's queue (needs robust handling if queues are shared)
-                # Simple approach for this example: clear the global list (not ideal for multiple clients)
-                # A better approach would involve unique client IDs and removing specific queues.
-                # For simplicity here, we just note disconnection. If using shared queues, proper removal is crucial.
-
-
-        # Handle regular file requests (HTML, JSON, JS etc.)
+            self.handle_sse()
         else:
-            # Fallback to SimpleHTTPRequestHandler's file serving logic
-            # The overridden translate_path ensures it uses the correct base directory
             super().do_GET()
 
-# --- Web Server Functions ---
+    def handle_sse(self):
+        global sse_clients
+        self.send_response(200)
+        self.send_header('Content-Type', 'text/event-stream')
+        self.send_header('Cache-Control', 'no-cache')
+        self.send_header('Connection', 'keep-alive')
+        self.send_header('Access-Control-Allow-Origin', '*')
+        self.end_headers()
+
+        client_queue = queue.Queue()
+        client_id = self.client_address
+        print(f"SSE 客户端已连接: {client_id}")
+
+        with sse_lock:
+            sse_clients.append((client_id, client_queue))
+
+        try:
+            while running:
+                # 使用 select 监听 socket 是否关闭
+                r, _, _ = select.select([self.rfile], [], [], 0.1)
+                if r:
+                    # 客户端关闭连接
+                    break
+
+                try:
+                    # 获取消息，超时以便检查 running 状态
+                    msg = client_queue.get(timeout=0.1)
+                    data = f"data: {msg}\n\n"
+                    self.wfile.write(data.encode('utf-8'))
+                    self.wfile.flush()
+                    client_queue.task_done()
+                except queue.Empty:
+                    continue
+                except (BrokenPipeError, ConnectionResetError):
+                    break
+        finally:
+            print(f"SSE 客户端断开: {client_id}")
+            with sse_lock:
+                # 安全移除
+                sse_clients = [c for c in sse_clients if c[0] != client_id]
+
+
+# --- Server Management ---
+class ThreadingHTTPServer(socketserver.ThreadingMixIn, socketserver.TCPServer):
+    daemon_threads = True  # 允许主线程退出时杀死子线程
+
+
 def start_web_server(port, directory):
     global httpd, server_thread
     try:
-        # Use functools.partial to pass the directory to the handler constructor
         from functools import partial
-        handler_with_directory = partial(RequestHandler, directory=directory)
-
-        socketserver.TCPServer.allow_reuse_address = True
-        httpd = socketserver.TCPServer((SERVER_ADDRESS, port), handler_with_directory)
-
-        print(f"Serving HTTP+SSE on http://{SERVER_ADDRESS}:{port}/ from directory {directory}...")
+        handler = partial(SSEHandler, directory=directory)
+        httpd = ThreadingHTTPServer((SERVER_ADDRESS, port), handler)
         server_thread = threading.Thread(target=httpd.serve_forever, daemon=True)
         server_thread.start()
+        print(f"服务器运行中: http://{SERVER_ADDRESS}:{port}/")
         return True
-    except OSError as e:
-        print(f"Error starting web server (Port {port} likely in use): {e}")
-        return False
     except Exception as e:
-        print(f"Unexpected error starting web server: {e}")
+        print(f"启动服务器失败 (端口 {port} 可能被占用): {e}")
         return False
 
-# stop_web_server remains the same
-def stop_web_server():
-    global httpd, server_thread
-    if httpd:
-        print("\nShutting down web server..."); httpd.shutdown(); httpd.server_close()
-        print("Web server stopped.")
-    if server_thread and server_thread.is_alive(): server_thread.join(timeout=1)
+
+def broadcast_message(message):
+    """向所有连接的 SSE 客户端发送消息"""
+    with sse_lock:
+        if not sse_clients: return
+        for _, q in sse_clients:
+            q.put(message)
 
 
-# --- OCR Cycle ---
-def perform_ocr_and_search_cycle():
-    global capture_region_coords, ocr_instance, last_cleaned_text, sse_message_queue
+# --- Logic Core ---
+def perform_ocr_cycle(sct):
+    global last_cleaned_text, last_processed_image_hash
 
-    if not capture_region_coords or ocr_instance is None: return
+    if not capture_region_coords or not ocr_instance: return
 
     try:
-        with mss() as sct: sct_img = sct.grab(capture_region_coords)
+        # 获取截图 (BGR)
+        sct_img = sct.grab(capture_region_coords)
         img_np = np.array(sct_img)
-        processed_image = preprocess_screen_capture(img_np)
+
+        # 预处理
+        processed_image = preprocess_image(img_np)
         if processed_image is None: return
 
-        result = ocr_instance.ocr(processed_image, cls=False)
+        # === 优化: 检查画面是否变化 ===
+        if images_are_similar(processed_image, last_processed_image_hash):
+            return  # 画面无变化，跳过 OCR
 
+        last_processed_image_hash = processed_image.copy()  # 更新缓存
+
+        # 执行 OCR
+        result = ocr_instance.ocr(processed_image, cls=False)
         if not result or not result[0]: return
 
+        # 提取文本
         lines = [line[1][0] for res_list in result for line in res_list]
         raw_text = "".join(lines).strip()
         cleaned_text = clean_ocr_text(raw_text)
 
-        # Check if cleaned text is valid and different from last time
-        if cleaned_text and cleaned_text != last_cleaned_text:
-            print(f"\n[{time.strftime('%H:%M:%S')}] OCR Found New Text:")
-            print(f"    Cleaned: '{cleaned_text}'")
-
-            last_cleaned_text = cleaned_text # Update history
-
-            # --- Send to SSE Queue ---
-            sse_message_queue.put(cleaned_text)
-            print(f"    Sent to SSE queue for browser update.")
-            # --- NO webbrowser.open() here anymore ---
+        # 只有文本有意义且发生变化时才发送
+        if cleaned_text and len(cleaned_text) > 1 and cleaned_text != last_cleaned_text:
+            timestamp = time.strftime('%H:%M:%S')
+            print(f"[{timestamp}] 识别到新内容: {cleaned_text}")
+            last_cleaned_text = cleaned_text
+            broadcast_message(cleaned_text)
 
     except Exception as e:
-        print(f"\nError during OCR cycle: {e}")
+        print(f"OCR 循环错误: {e}")
+
 
 # --- Hotkey Callbacks ---
-def toggle_ocr_active():
-    global ocr_active, last_cleaned_text
+def toggle_ocr():
+    global ocr_active, last_cleaned_text, last_processed_image_hash
     ocr_active = not ocr_active
     if ocr_active:
-        last_cleaned_text = "!RESET!" # Force update on first OCR after activation
-        print(f"\n--- Continuous OCR Activated (Interval: {OCR_INTERVAL_SECONDS}s) ---")
+        last_cleaned_text = "RESET"  # 强制刷新
+        last_processed_image_hash = None
+        print(f"\n>>> OCR 已开启 (间隔: {OCR_INTERVAL_SECONDS}s)")
     else:
-        print("\n--- Continuous OCR Deactivated ---")
+        print("\n<<< OCR 已暂停")
 
-# trigger_reselect remains the same
-def trigger_reselect():
+
+def request_reselect():
     global capture_region_coords, ocr_active
     was_active = ocr_active
-    if ocr_active: toggle_ocr_active() # Pause OCR
-    print(f"\n--- Hotkey '{RESELECT_HOTKEY}' pressed: Reselecting region ---")
+    ocr_active = False  # 暂停
+    print("\n重新选择区域...")
     new_region = select_region_gui()
     if new_region:
-        capture_region_coords = new_region; save_config(capture_region_coords)
-        print("Region updated. OCR remains deactivated.")
-    else:
-        print("Reselection cancelled. OCR remains deactivated.")
-        # if was_active: toggle_ocr_active() # Option to restart if cancelled
+        capture_region_coords = new_region
+        save_config(new_region)
+    if was_active:
+        toggle_ocr()  # 恢复之前的状态
 
-# trigger_quit remains the same
-def trigger_quit():
+
+def request_quit():
     global running
-    print(f"\n--- Hotkey '{QUIT_HOTKEY}' pressed: Initiating shutdown ---")
+    print("\n正在退出...")
     running = False
 
-# --- Initialization ---
-# initialize_ocr remains the same
-def initialize_ocr():
-    global ocr_instance
-    print(f"\nInitializing PaddleOCR...")
-    try:
-        ocr_instance = PaddleOCR(use_angle_cls=False, lang=OCR_LANG, use_gpu=USE_GPU, show_log=False)
-        print("PaddleOCR initialized.")
-        return True
-    except Exception as e: print(f"\nFATAL OCR Init Error: {e}"); return False
 
-# signal_handler remains the same
-def signal_handler(sig, frame): print("\nTermination signal received..."); trigger_quit()
-
-# --- Main Execution ---
+# --- Main ---
 if __name__ == "__main__":
-    signal.signal(signal.SIGINT, signal_handler); signal.signal(signal.SIGTERM, signal_handler)
-    print("--- Real-time OCR -> Single Web Page Update via SSE ---")
-    print("      (Requires Admin/Root privileges)")
+    # 处理 Ctrl+C
+    signal.signal(signal.SIGINT, lambda s, f: request_quit())
 
     script_dir = os.path.dirname(os.path.abspath(__file__))
-    print(f"Script Directory: {script_dir}")
+    os.chdir(script_dir)  # 确保工作目录正确
 
-    # Verify files
-    search_html_path=os.path.join(script_dir,'search_questions.html')
-    json_data_path=os.path.join(script_dir,'combined_questions_data.json')
-    if not os.path.exists(search_html_path) or not os.path.exists(json_data_path):
-         print(f"\nERROR: Missing files in {script_dir}\n - search_questions.html: {'OK' if os.path.exists(search_html_path) else 'MISSING!'}\n - combined_questions_data.json: {'OK' if os.path.exists(json_data_path) else 'MISSING!'}")
-         sys.exit(1)
+    # 检查依赖文件
+    if not os.path.exists('search_questions.html') or not os.path.exists('combined_questions_data.json'):
+        print("错误: 缺少 html 或 json 数据文件。")
+        sys.exit(1)
 
-    # Start Server
-    if not start_web_server(SERVER_PORT, script_dir): sys.exit(1)
+    # 启动服务器
+    if not start_web_server(SERVER_PORT, script_dir):
+        sys.exit(1)
 
-    print(f"\n--- Hotkey Setup ---")
-    print(f" - Press '{TOGGLE_OCR_HOTKEY}' to START/STOP continuous OCR.")
-    print(f" - Press '{RESELECT_HOTKEY}' to redefine capture region (stops OCR).")
-    print(f" - Press '{QUIT_HOTKEY}' to exit.")
-
-    # Load/Select Region
+    # 加载配置
     if not load_config():
         new_region = select_region_gui()
-        if new_region: capture_region_coords = new_region; save_config(new_region)
-        else: print("\nERROR: Region selection required."); stop_web_server(); sys.exit(1)
+        if new_region:
+            capture_region_coords = new_region
+            save_config(new_region)
+        else:
+            sys.exit(1)
 
-    # Initialize OCR
-    if not initialize_ocr(): stop_web_server(); sys.exit(1)
-
-    # Setup Hotkeys
+    # 初始化 OCR
+    print("正在初始化 PaddleOCR (首次运行可能较慢)...")
     try:
-        keyboard.add_hotkey(TOGGLE_OCR_HOTKEY, toggle_ocr_active, trigger_on_release=False)
-        keyboard.add_hotkey(RESELECT_HOTKEY, trigger_reselect, trigger_on_release=False)
-        keyboard.add_hotkey(QUIT_HOTKEY, trigger_quit, trigger_on_release=False)
-        print("\nHotkeys registered.")
+        ocr_instance = PaddleOCR(use_angle_cls=False, lang=OCR_LANG, use_gpu=USE_GPU, show_log=False)
     except Exception as e:
-         print(f"\nERROR registering hotkeys: {e}\nEnsure Admin/Root privileges."); stop_web_server(); sys.exit(1)
+        print(f"OCR 初始化失败: {e}")
+        sys.exit(1)
 
-    # --- Open browser ONCE ---
-    initial_url = f"http://{SERVER_ADDRESS}:{SERVER_PORT}/search_questions.html"
-    print(f"\nOpening search page: {initial_url}")
-    webbrowser.open_new_tab(initial_url) # Use open_new_tab to prefer a new tab
-    print(f"Press '{TOGGLE_OCR_HOTKEY}' to start sending OCR updates to the page.")
-    # ---
+    # 注册热键
+    keyboard.add_hotkey(TOGGLE_OCR_HOTKEY, toggle_ocr)
+    keyboard.add_hotkey(RESELECT_HOTKEY, request_reselect)
+    keyboard.add_hotkey(QUIT_HOTKEY, request_quit)
 
-    # --- Main Loop ---
-    last_ocr_time = time.time()
-    print("\nWaiting for hotkey commands or exit signal...")
-    while running:
-        current_time = time.time()
-        if ocr_active and (current_time - last_ocr_time >= OCR_INTERVAL_SECONDS):
-            perform_ocr_and_search_cycle()
-            last_ocr_time = current_time
+    print(f"\n=== 就绪 ===")
+    print(f"控制: {TOGGLE_OCR_HOTKEY} (开关) | {RESELECT_HOTKEY} (重选) | {QUIT_HOTKEY} (退出)")
 
-        time.sleep(0.05) # Prevent high CPU usage
-    # --- End Main Loop ---
+    # 打开浏览器
+    url = f"http://{SERVER_ADDRESS}:{SERVER_PORT}/search_questions.html"
+    threading.Timer(1.0, lambda: webbrowser.open_new_tab(url)).start()
 
-    # Cleanup
-    stop_web_server()
-    print("\nScript finished.")
+    # 主循环
+    with mss() as sct:  # 初始化一次 MSS
+        while running:
+            start_time = time.time()
+            if ocr_active:
+                perform_ocr_cycle(sct)
+
+            # 智能休眠
+            elapsed = time.time() - start_time
+            sleep_time = max(0.05, OCR_INTERVAL_SECONDS - elapsed)
+            time.sleep(sleep_time)
+
+    # 清理
+    if httpd: httpd.shutdown()
+    print("程序已结束。")
