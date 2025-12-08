@@ -1,140 +1,86 @@
-# 基于i博思的题库提取，实时屏幕 OCR 题目搜索工具
+# 基于i博思的题库提取，实时屏幕 OCR 题目搜索工具 (SSE 实时版)
 
+本项目使您能够对屏幕选定区域（通常包含来自考试、测验或学习资料的题目）执行实时光学字符识别（OCR），并通过 **Server-Sent Events (SSE)** 技术，将识别到的文本实时推送到本地网页中，自动在本地题库中搜索匹配项。
 
-本项目使您能够对屏幕选定区域（通常包含来自考试、测验或学习资料的题目）执行实时光学字符识别（OCR），然后自动在从 HTML 文件生成的本地数据库中搜索匹配的题目，并在具有模糊搜索功能的浏览器界面中显示结果。
-
+**相较于旧版本，本项目已实现“单页面实时刷新”，不再频繁弹出新浏览器标签页。**
 
 ## 目前配适题库（题库数量有限，欢迎共同维护）
 1.  **网络测试与评价**
 2.  **操作系统原理**
 3.  **软件质量保证与测试**
 
-
-
-
-
-
-
 **核心组件:**
 
-1.  **`extract_questions.py`**: 从本地 HTML 文件解析题目数据，生成结构化的 JSON 数据库。
-2.  **`realtime_ocr.py`**: 捕获屏幕区域，执行 OCR，清理文本，并触发浏览器搜索。
-3.  **`search_questions.html`**: 一个 Web 界面，加载 JSON 数据库并使用 Fuse.js 提供模糊搜索功能。
+1.  **`extract_questions.py`**: 智能数据处理脚本。支持从结构化和**非结构化（纯文本）**的 HTML 文件中解析题目，执行**基于内容指纹的智能去重与融合**，生成 JSON 数据库。
+2.  **`realtime_ocr.py`**: 核心服务脚本。捕获屏幕、执行 OCR、**检测画面变化**、并通过 SSE 协议向前端推送数据。
+3.  **`search_questions.html`**: 前端搜索界面。通过 SSE 监听服务端消息，实现无刷新自动搜索，集成 Fuse.js 模糊匹配与结果高亮。
 
 ## 功能特性
 
-*   **实时 OCR**: 使用 PaddleOCR 持续监控选定的屏幕区域。
-*   **自动搜索**: 当监控区域中的文本发生变化时，在本地题库中触发搜索。
-*   **模糊搜索**: 在浏览器中使用 Fuse.js 进行强大的搜索，即使 OCR 结果部分或略有不准确也能匹配。
-*   **本地数据**: 完全离线保存您的题库数据。
-*   **可配置热键**: 使用键盘快捷键启动/停止 OCR、重新选择捕获区域以及退出应用程序。
-*   **HTML 和 JSON 数据整合**:
-    *   **HTML 提取**:  从结构化的 HTML 文件中提取题目数据，构建初始题库。
-    *   **JSON 合并**:  **新增功能**：自动合并项目目录中所有 JSON 格式的题库数据文件，实现题库数据的统一管理。
-    *   **数据去重**:  **新增功能**：在合并过程中，自动检测并移除重复的题目条目，确保题库数据的唯一性和精简性。
-*   **区域选择图形界面**: 简单的图形界面，用于定义 OCR 的屏幕区域。
-*   **图像预处理**: 基本的图像预处理，可能提高 OCR 准确率。
-
-
+*   **⚡ 实时 SSE 推送**: 告别浏览器标签页轰炸。OCR 结果通过长连接实时推送到同一个网页，体验丝般顺滑。
+*   **🧠 智能去重与融合**: 
+    *   **指纹识别**: 忽略标点、空格、大小写和序号，精准识别重复题目。
+    *   **数据融合**: 自动合并重复题目的信息（如：用新题目的解析补充旧题目的空缺，合并题库来源标记）。
+*   **📄 全能格式支持**: 不仅支持标准的 `div` 结构 HTML，新增**正则状态机**，完美支持由 Word 导出或格式混乱的纯文本型 HTML 题库。
+*   **🚀 性能优化**: 
+    *   **图像差异检测**: 在执行耗时的 OCR 前先进行像素级比对，画面静止时不消耗计算资源。
+    *   **前端渲染优化**: 限制搜索结果显示数量，防止搜“的”等高频字时浏览器卡死。
+*   **🔍 模糊搜索**: 使用 Fuse.js，即使 OCR 识别错一两个字也能精准找到原题。
+*   **🛠️ 交互优化**: 提供清空按钮、状态栏指示器（连接状态/错误提示）以及输入框视觉反馈。
+*   **💻 离线与隐私**: 所有数据处理和搜索均在本地运行，无需联网。
 
 ## 演示视频
 
-
+*(此处可保留原视频链接，或更新为展示单页面实时刷新的新视频)*
 https://github.com/user-attachments/assets/0469141c-b061-4482-adcf-d57b468892c9
 
 B站完整版：https://www.bilibili.com/video/BV18WdbYLEFn
 
 ## 工作原理
 
-1.  **(一次性设置 / 数据更新):** 运行 `extract_questions.py`。此脚本会查找其目录中的所有 `.html` 文件，解析它们以提取问题、答案和解析，并将所有内容保存到 `combined_questions_data.json`。
-2.  **运行工具:** 执行 `realtime_ocr.py`。
-    *   此脚本会启动一个本地 Web 服务器，用于提供 `search_questions.html` 和 `combined_questions_data.json` 文件。
-    *   如果之前未配置，它会提示您选择一个屏幕区域进行 OCR。
-    *   它会监听全局热键。
-3.  **激活 OCR:** 按下 `Ctrl+Alt+O` 热键（默认）。
-4.  **捕获与搜索:** 将选定的屏幕区域对准您想要查找的题目。
-    *   脚本会定期捕获该区域的内容。
-    *   它对捕获的图像执行 OCR。
-    *   识别出的文本会被清理（去除多余的空格、标点符号等）。
-    *   如果清理后的文本是新的且与上次搜索不同，它会在您的默认浏览器中打开 `search_questions.html`，并将清理后的文本作为搜索查询（例如 `http://localhost:8088/search_questions.html?query=你的OCR文本`）。
-5.  **查看结果:** `search_questions.html` 页面加载 `combined_questions_data.json`，使用 Fuse.js 根据 URL 查询执行模糊搜索，并显示数据库中最相关的匹配题目，同时高亮显示搜索词。您也可以在该页面的搜索框中手动输入进行搜索。
+1.  **(数据准备):** 运行 `extract_questions.py`。它会扫描目录下的 HTML 文件，智能识别题目结构，与现有的 JSON 数据进行指纹比对、去重和融合，生成最终的 `combined_questions_data.json`。
+2.  **(启动服务):** 运行 `realtime_ocr.py`。
+    *   启动一个支持多线程和 SSE 的本地 Web 服务器。
+    *   自动打开默认浏览器访问搜索页面。
+    *   监听全局热键。
+3.  **(激活与识别):** 按下 `Ctrl+Alt+O` 开启 OCR。
+    *   脚本定期截取选定区域。
+    *   **差异检测**: 如果截图与上一帧相同，直接跳过（节省 CPU/GPU）。
+    *   **OCR**: 如果画面变化，执行文字识别。
+    *   **推送**: 如果识别出新文本，通过 SSE 通道发送给前端。
+4.  **(即时展示):** 网页收到消息后，自动填入搜索框并触发模糊搜索，结果毫秒级呈现。
 
-## 组件说明
+## 组件说明详细
 
-### `extract_questions.py`
+### `extract_questions.py` (数据工厂)
 
-此脚本现在是项目的 **数据准备和整合工具**。其主要职责已扩展为：
+这是项目的“大脑”，负责清洗和整理数据。
 
-*   **HTML 数据提取 (功能与之前相同):**
-    *   **查找源文件:** 使用 `glob` 在其所在目录中搜索所有以 `.html` 扩展名结尾的文件。
-    *   **解析 HTML:** 对找到的每个 HTML 文件（`search_questions.html` 本身除外），使用 `BeautifulSoup` 和 `lxml` 解析器分析 HTML 结构。
-    *   **识别题目:** 特别查找带有 `question-item` 类的 `<div>` 元素，假定每个这样的 div 代表一个题目块。
-    *   **提取数据字段:**  （与之前描述相同，包括 ID, 编号和类型, 题目文本, 选项, 答案, 解析）。
-    *   **清理文本:** 使用 `clean_text` 函数去除多余的空白、常见的样板前缀，并处理空值或占位符。
-    *   **标记题库名称:** 根据源 HTML 文件名生成可读的“题库名称”。
-    *   **整合数据:** 将从所有处理过的 HTML 文件中提取的所有题目字典聚合到一个列表中。
-    *   **初步 JSON 输出:**  将提取的题目数据 **立即保存到** `combined_questions_data.json` 文件中，作为中间步骤和初始数据备份。
+*   **双重解析策略**:
+    *   **策略 A (结构化)**: 优先寻找 `<div class="question-item">` 等标准标签。
+    *   **策略 B (纯文本/正则)**: 如果未找到标签，自动切换到**正则状态机模式**。智能识别 `1.【单选】`、`A.`、`我的答案：` 等文本特征，从杂乱的 HTML 文本中提取题目。
+*   **智能指纹去重**: 
+    *   生成题目内容的“指纹”（去除所有符号、空格、转小写）。
+    *   仅当指纹不同时才视为新题。
+*   **数据融合 (Merge)**: 
+    *   当发现重复题目时，不会简单丢弃，而是**取长补短**。例如：旧数据没解析，新数据有解析，合并后保留解析；自动合并 `bank_name` (如 "题库A / 题库B")。
 
-*   **JSON 数据合并与去重 (新增功能):**
-    *   **查找 JSON 文件:** 在脚本所在目录中，使用 `glob` 查找所有以 `*.json` 结尾的文件，**包括刚刚从 HTML 提取生成的 `combined_questions_data.json` 以及任何其他 JSON 文件**。
-    *   **加载 JSON 数据:** 从找到的每个 JSON 文件中加载数据。脚本 **假设每个 JSON 文件都包含一个题目列表** 作为顶层结构。如果文件内容不是列表，则会发出警告并跳过该文件的数据。
-    *   **合并数据:** 将从所有 JSON 文件加载的数据合并到一个总列表中。
-    *   **数据去重:**  使用基于 JSON 序列化签名的方法，检测并移除 **完全重复** 的题目条目。去重过程会记录移除的重复条目数量，并保留第一个遇到的唯一条目。
-    *   **最终 JSON 输出:** 将去重后的 **唯一题目数据** 列表 **覆盖保存回** `combined_questions_data.json` 文件。这意味着最终的 `combined_questions_data.json` 文件将包含从所有 HTML 文件提取并与所有其他 JSON 文件合并，并且去重后的结果。
+### `realtime_ocr.py` (核心引擎)
 
-**关键更新说明:**
+负责视觉识别与即时通讯。
 
-*   `extract_questions.py` 现在不仅处理 HTML 文件，还会 **合并当前目录下所有 `*.json` 文件的数据**，并对所有数据进行 **去重**。
-*   脚本执行流程变为：先从 HTML 提取并保存初始 JSON，然后加载所有 JSON 文件进行合并和去重，最后将去重结果覆盖保存到 `combined_questions_data.json`。
-*   合并过程包括之前生成的 `combined_questions_data.json` 本身，这意味着您可以多次运行 `extract_questions.py`，它会将新的 HTML 提取结果与之前的数据合并，并自动去重，保持 `combined_questions_data.json` 内容的最新和唯一。
+*   **SSE Server**: 基于 `http.server` 实现了 Server-Sent Events 协议，维护客户端连接队列，实现一对多的消息广播。
+*   **视觉优化**: 
+    *   引入 `opencv` 进行图像预处理（二值化）提高识别率。
+    *   引入 `images_are_similar` 算法，计算前后帧像素差异，差异小于 1% 时跳过 OCR，大幅降低待机资源占用。
+*   **稳定性**: 使用 `ThreadingTCPServer` 替代单线程服务器，防止请求阻塞。优化了 SSE 客户端断开连接后的资源清理逻辑。
 
-**注意:**  此脚本仍然期望源 HTML 文件具有一致的结构以便提取题目信息。同时，合并的 JSON 文件应包含题目列表。如有需要，您可能需要根据您的 HTML 和 JSON 数据结构调整脚本中的选择器和数据处理逻辑。
+### `search_questions.html` (交互前端)
 
-
-
-### `realtime_ocr.py`
-
-主应用程序脚本，现在进行了重大更新，以实现 **通过 Server-Sent Events (SSE) 与 Web 界面进行实时通信**。 它仍然负责屏幕捕获、OCR 处理和热键监听，但搜索触发机制已更改。 其主要职责包括:
-
-*   **屏幕捕获**:  使用 `mss` 库高效地捕获用户定义的屏幕区域的图像。
-*   **OCR 处理**: 使用 PaddleOCR 引擎对捕获的图像进行光学字符识别，提取文本。
-*   **文本清理**: 对 OCR 结果进行预处理和清理，移除噪声字符，得到可用于搜索的干净文本。
-*   **图像预处理**:  使用 OpenCV (`opencv-python`) 对捕获的图像进行灰度化和自适应阈值处理，以提升 OCR 效果。
-*   **本地 Web 服务器 (改进)**:
-    *   使用 `http.server` 和 `socketserver` 启动一个本地 HTTP 服务器，用于托管 `search_questions.html` 页面和 `combined_questions_data.json` 数据文件。
-    *   **新增 SSE 端点**:  在服务器中集成 **Server-Sent Events (SSE) 功能**，通过 `/ocr-events` 路径提供 SSE 端点。
-    *   **定制的请求处理器**:  使用自定义的 `RequestHandler` 类，扩展了 `SimpleHTTPRequestHandler`，以处理 SSE 连接和文件服务，并允许指定服务目录。
-*   **SSE 通信**:
-    *   **实时文本推送**: 当 OCR 识别出新的、与上次不同的文本时，`realtime_ocr.py` **不再直接打开新的浏览器标签页**。而是将 **识别出的文本通过 SSE 连接实时推送** 到已打开的 `search_questions.html` 页面。
-    *   **单页面更新**:  `search_questions.html` 页面保持打开状态，并通过 JavaScript 监听来自 SSE 端点的实时文本消息。接收到消息后，页面 **自动更新搜索框内容并触发搜索**，无需用户手动操作或页面重新加载。
-    *   **优化的用户体验**:  通过 SSE，实现了 **更流畅、更集成的搜索体验**。用户只需启动脚本并打开 `search_questions.html` 页面一次，后续的所有 OCR 识别和搜索都将在该页面内实时更新显示。
-*   **热键控制**:  仍然使用 `keyboard` 库监听全局热键，用于：
-    *   **`Ctrl+Alt+O` (默认)**: 切换连续 OCR 功能的开启和关闭。
-    *   **`Ctrl+Alt+R` (默认)**: 重新选择屏幕捕获区域。
-    *   **`Ctrl+Alt+Q` (默认)**: 安全退出 `realtime_ocr.py` 脚本并关闭本地 Web 服务器。
-*   **配置**:  仍然支持通过 `ocr_config.json` 文件保存和加载屏幕区域配置，以及通过脚本内的变量配置 OCR 语言、GPU 使用、热键和服务器端口等。
-
-**关键更新说明:**
-
-*   **SSE 实时通信**:  `realtime_ocr.py` 的核心更新是引入了 SSE 功能，实现了与 `search_questions.html` 页面的实时双向通信。
-*   **无浏览器跳转搜索**:  移除了之前每次 OCR 识别都打开新浏览器标签页的行为。现在，搜索结果在 **同一个 `search_questions.html` 页面内实时更新**。
-*   **更流畅的用户体验**:  用户体验得到显著提升，操作更加连贯和高效。
-*   **优化的服务器**:  Web 服务器部分进行了重构，更清晰地处理静态文件服务和 SSE 连接。
-
-**依赖项**:  与之前版本基本相同，主要变化是强调了对 `queue` 和 `select` 模块的依赖，这两个模块是实现 SSE 消息队列和非阻塞 socket 操作所必需的。 完整依赖列表请参考之前的 README 文档。
-
-
-
-### `search_questions.html`
-
-一个自包含的 HTML 文件，用作搜索前端界面。
-
-*   使用标准的 HTML、CSS 和 JavaScript。
-*   异步获取 `combined_questions_data.json`。
-*   集成 `Fuse.js`（从 CDN 加载）以在加载的题目数据上执行客户端模糊搜索。
-*   动态渲染搜索结果，高亮显示匹配的术语。
-*   响应由 `realtime_ocr.py` 传递的 URL 查询参数（`?query=...`）。
-*   允许通过输入字段进行手动搜索。
+*   **SSE Client**: 使用 `EventSource` API 监听 `/ocr-events`。
+*   **视觉反馈**: 接收到新 OCR 结果时，输入框会闪烁绿色，提示用户数据已更新。
+*   **性能保护**: 默认限制显示前 50 条匹配结果，防止 DOM 节点过多导致页面崩溃。
+*   **状态管理**: 顶部状态栏实时显示“已连接”、“连接断开”等状态。
 
 ## 安装
 
@@ -144,120 +90,65 @@ B站完整版：https://www.bilibili.com/video/BV18WdbYLEFn
     cd <仓库目录>
     ```
 
-2.  **先决条件:**
-    *   Python 3.7+
-    *   `pip` (Python 包安装器)
-    *   **PaddlePaddle:** 根据您的系统安装 CPU 或 GPU 版本。请遵循官方指南：[PaddlePaddle 安装指南](https://www.paddlepaddle.org.cn/install/quick?docurl=/documentation/docs/zh/install/pip/linux-pip_cn.html)
-    *   **(Windows 特定):** 您可能需要 Microsoft Visual C++ Redistributable。PaddleOCR 可能需要特定的依赖项；请查阅其文档。
-    *   **(Linux 特定):** `keyboard` 库可能需要 root 权限才能捕获全局热键。`mss` 可能需要特定的 X11 库。
-
-3.  **安装 Python 依赖:**
-    创建一个名为 `requirements.txt` 的文件，包含以下内容：
-
+2.  **安装 Python 依赖:**
+    创建 `requirements.txt`:
     ```txt
-    paddleocr>=2.6 # 或者你测试时使用的特定版本
-    # paddlepaddle 或 paddlepaddle-gpu (根据官方指南手动安装)
+    paddleocr>=2.6
     opencv-python
     numpy
     beautifulsoup4
     lxml
     mss
     keyboard
+    # paddlepaddle 或 paddlepaddle-gpu 请根据官网指南单独安装
     ```
-
-    然后安装它们：
+    安装:
     ```bash
     pip install -r requirements.txt
     ```
-    *请记住单独安装正确的 `paddlepaddle` 版本。*
 
-4.  **准备题目数据:**
-    *   将您的源 HTML 题库文件（例如 `exam1.html`, `quiz_topicA.html`）放在与 Python 脚本相同的目录中。
+3.  **准备数据:**
+    *   将 `.html` 题库文件放入脚本同级目录。
     *   运行提取脚本：
         ```bash
         python extract_questions.py
         ```
-    *   验证 `combined_questions_data.json` 文件已成功创建。
+    *   观察控制台输出，确认提取数量及去重/融合情况。
 
 ## 使用方法
 
-1.  **运行 OCR 工具:**
-    以 **管理员（Windows）** 或使用 **`sudo`（Linux/macOS）** 打开终端或命令提示符，因为 `keyboard` 库需要提升权限才能监听全局热键。
+1.  **启动工具:**
+    (需要管理员权限以监听热键)
     ```bash
-    sudo python realtime_ocr.py
-    # 或者在 Windows (管理员终端) 中:
+    # Windows (管理员终端)
     python realtime_ocr.py
+    
+    # Linux/macOS
+    sudo python realtime_ocr.py
     ```
 
-2.  **选择区域 (首次 / 重新选择):**
-    *   如果没有 `ocr_config.json` 文件，或者您按下了重新选择的热键（默认为 `Ctrl+Alt+R`），屏幕上会出现一个半透明的覆盖层。
-    *   单击并拖动以在您想要监控题目的屏幕区域周围绘制一个矩形。
-    *   释放鼠标按钮以确认。坐标将保存到 `ocr_config.json`。
+2.  **初始化:**
+    *   脚本会自动打开浏览器访问 `http://localhost:8088/search_questions.html`。
+    *   如果是首次运行，请按提示在屏幕上框选题目显示的区域。
 
-3.  **使用热键:**
-    *   **`Ctrl+Alt+O` (默认):** 切换连续 OCR 的开启/关闭。开启时，脚本会监控区域并执行搜索。
-    *   **`Ctrl+Alt+R` (默认):** 停止 OCR（如果活动），并重新运行区域选择过程。
-    *   **`Ctrl+Alt+Q` (默认):** 优雅地退出 `realtime_ocr.py` 脚本，并关闭服务器。
+3.  **操作热键:**
+    *   **`Ctrl+Alt+O`**: **[核心]** 开启/暂停 OCR 监听。开启后，只要屏幕区域文字变化，网页搜索结果就会自动刷新。
+    *   **`Ctrl+Alt+R`**: 重新框选屏幕区域。
+    *   **`Ctrl+Alt+Q`**: 退出程序。
 
-4.  **执行搜索:**
-    *   确保 OCR 已激活（如果需要，请按 `Ctrl+Alt+O`）。
-    *   将定义的屏幕区域定位在您想要搜索的题目文本上。
-    *   稍等片刻（由脚本中的 `OCR_INTERVAL_SECONDS` 控制）。
-    *   如果 OCR 检测到新文本，您的默认浏览器应打开/聚焦一个带有 `search_questions.html` 的标签页，显示检测到的文本的搜索结果。
+## 常见问题 (Troubleshooting)
 
-## 配置
-
-您可以直接在 `realtime_ocr.py` 脚本中调整设置：
-
-*   `OCR_LANG`: PaddleOCR 的语言模型（例如，'ch' 用于中文+英文，'en' 用于英文）。
-*   `USE_GPU`: 如果您有兼容的 GPU 并安装了 GPU 版本的 PaddlePaddle，则设置为 `True`。
-*   `CONFIG_FILE`: 存储所选区域坐标的文件名。
-*   `TOGGLE_OCR_HOTKEY`, `RESELECT_HOTKEY`, `QUIT_HOTKEY`: 更改键盘快捷键。
-*   `SERVER_PORT`: 本地 Web 服务器的端口号（如果 8088 被占用，请更改）。
-*   `OCR_INTERVAL_SECONDS`: 当 OCR 激活时，脚本捕获和处理屏幕区域的频率（以秒为单位）。
-
-在 `search_questions.html` 中，您可以配置 `fuseOptions` JavaScript 对象来微调模糊搜索行为（例如 `threshold`, `keys`, `weight`）。
-
-## 故障排除
-
-*   **热键不工作:** 确保您是以管理员/root 权限运行 `realtime_ocr.py`。检查是否与其他使用相同热键的应用程序冲突。
-*   **服务器错误 / 端口冲突:** 如果脚本报告启动 Web 服务器时出错，则 `SERVER_PORT`（默认为 8088）可能已被其他应用程序占用。请在 `realtime_ocr.py` 中更改端口号。
-*   **OCR 不准确:**
-    *   确保所选区域紧密贴合文本区域。
-    *   如果可能，尝试调整光线或背景对比度。
-    *   尝试调整 `realtime_ocr.py` 中的 `preprocess_screen_capture` 函数（例如，调整 `adaptiveThreshold` 的 `blockSize` 和 `C` 参数）。
-    *   确保设置了正确的 `OCR_LANG`。
-*   **"无法加载题目数据" / 搜索页空白:**
-    *   确保您已成功运行 `python extract_questions.py` 并且 `combined_questions_data.json` 文件存在于同一目录中。
-    *   检查 `combined_questions_data.json` 是否为空且包含有效的 JSON 数据。
-    *   确保 `realtime_ocr.py` 正在运行（它负责提供文件）。
-    *   检查浏览器开发者控制台（F12）在加载 `search_questions.html` 时是否有错误。
-*   **提取失败 / `combined_questions_data.json` 为空:**
-    *   验证您的源 HTML 文件是否包含预期的结构（`div.question-item` 等）。您可能需要调整 `extract_questions.py` 中的选择器。
-    *   检查运行 `extract_questions.py` 时的控制台输出是否有错误。
-
-## 依赖项
-
-*   Python 3.x
-*   PaddleOCR & PaddlePaddle (CPU or GPU)
-*   OpenCV (`opencv-python`)
-*   NumPy
-*   Beautiful Soup 4 (`beautifulsoup4`)
-*   lxml
-*   MSS (`mss`)
-*   Keyboard (`keyboard`)
-*   Fuse.js (通过 CDN 包含在 `search_questions.html` 中)
+*   **网页显示“正在连接 OCR 服务...”且一直变黄？**
+    *   请检查 Python 脚本是否正在运行。
+    *   尝试关闭杀毒软件或防火墙，它们可能拦截了 SSE 本地连接。
+    *   刷新网页。
+*   **搜索不到题目？**
+    *   检查 `extract_questions.py` 是否成功生成了 `combined_questions_data.json`。
+    *   确认 OCR 识别出的文本（在 Python 控制台可以看到）是否正确。如果是乱码，可能需要调整截图区域或图像预处理参数。
+*   **OCR 反应慢？**
+    *   脚本默认间隔 0.5秒。如果画面无变化，OCR 不会运行。
+    *   如果没有 NVIDIA 显卡，OCR 使用 CPU 计算，会有一定延迟。
 
 ## 许可证
 
-本项目根据 Apache-2.0 许可证授权 
-
-## 致谢
-
-*   [PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR) 开发团队。
-*   [Fuse.js](https://fusejs.io/) 提供客户端模糊搜索功能。
-*   相关库: MSS, Keyboard, BeautifulSoup, OpenCV, NumPy。
-
-
-
-
+Apache-2.0 License
